@@ -26,14 +26,10 @@ public class DataProcessor : MonoBehaviour
             dialogueData.option2 = row[5];
             int.TryParse(row[6], out dialogueData.option1_sentenceID);
             int.TryParse(row[7], out dialogueData.option2_sentenceID);
+            bool.TryParse(row[8], out dialogueData.checkIfEnd);
 
             dataList.Add(dialogueData);
         }
-    }
-
-    public void StartDialogue()
-    {
-        FindObjectOfType<DialogueManager>().OpenDialogue(name);
     }
 }
 
@@ -47,4 +43,5 @@ public class DialogueData
     public string option2;
     public int option1_sentenceID;
     public int option2_sentenceID;
+    public bool checkIfEnd;
 }
