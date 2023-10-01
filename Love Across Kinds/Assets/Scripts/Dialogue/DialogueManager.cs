@@ -19,7 +19,7 @@ public class DialogueManager : MonoBehaviour
     private List<DialogueData> datas;
 
     //Indicator
-    private int currIndexPos;
+    public static int currIndexPos = 0;
     public int currSentenceId = 0;
     public static bool dialogueActive = false;
 
@@ -53,10 +53,10 @@ public class DialogueManager : MonoBehaviour
     {
         anim.SetBool("isOpenDialogue", true);
         dialogueActive = true;
+        currIndexPos = 0;
 
         for(int i = 0; i <= datas.Count - 1; i++)
         {
-            Debug.Log(i);
             if(datas[i].name == objName)
             {
                 currIndexPos = i;
@@ -81,7 +81,6 @@ public class DialogueManager : MonoBehaviour
 
                 if (datas[i].checkIfOption)
                 {
-                    Debug.Log("Show Option");
                     ShowOptions();
                 }
 
@@ -114,6 +113,11 @@ public class DialogueManager : MonoBehaviour
     {
         anim.SetBool("isOpenDialogue", false);
         dialogueActive = false;
+
+        if (datas[currIndexPos].checkIfAffection)
+        {
+            AffectionSystem.Instance.GetAffection();
+        }
     }
 
     //Method to Show options
