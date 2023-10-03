@@ -5,6 +5,7 @@ using UnityEngine;
 public class MainMenuOpener : MonoBehaviour
 {
     public GameObject CreditPanel;
+    public GameObject SettingsPanel;
 
 
     public void OpenCreditPanel()
@@ -18,6 +19,22 @@ public class MainMenuOpener : MonoBehaviour
                 bool isOpen = animator.GetBool("openCredit");
 
                 animator.SetBool("openCredit", !isOpen);
+            }
+
+        }
+
+    }
+    public void OpenSettingsPanel()
+    {
+        if (SettingsPanel != null)
+        {
+
+            Animator animator = SettingsPanel.GetComponent<Animator>();
+            if (animator != null)
+            {
+                bool isOpen = animator.GetBool("openSettings");
+
+                animator.SetBool("openSettings", !isOpen);
             }
 
         }
