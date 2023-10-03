@@ -16,6 +16,9 @@ public class AffectionSystem : MonoBehaviour
     [SerializeField] private TextMeshProUGUI Xina;
     [SerializeField] private TextMeshProUGUI Bernia;
     [SerializeField] private TextMeshProUGUI Florine;
+    [SerializeField] private TextMeshProUGUI XinaAffectionPoint;
+    [SerializeField]private TextMeshProUGUI BerniaAffectionPoint;
+    [SerializeField] private TextMeshProUGUI FlorineAffectionPoint;
 
     //Array of Class
     public CharacterAffection[] characterAffections = new CharacterAffection[3];
@@ -52,6 +55,10 @@ public class AffectionSystem : MonoBehaviour
                 characterAffections[i].affectionPoint++;
             }
         }
+
+        XinaAffectionPoint.text = characterAffections[0].affectionPoint.ToString();
+        BerniaAffectionPoint.text = characterAffections[1].affectionPoint.ToString();
+        FlorineAffectionPoint.text = characterAffections[2].affectionPoint.ToString();
     }
 
     public void OpenAffectionWindow()
