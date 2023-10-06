@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class AffectionSystem : MonoBehaviour
 {
@@ -13,12 +14,9 @@ public class AffectionSystem : MonoBehaviour
 
     //UI stuffs
     [SerializeField] private GameObject AffectionUIParent;
-    [SerializeField] private TextMeshProUGUI Xina;
-    [SerializeField] private TextMeshProUGUI Bernia;
-    [SerializeField] private TextMeshProUGUI Florine;
-    [SerializeField] private TextMeshProUGUI XinaAffectionPoint;
-    [SerializeField]private TextMeshProUGUI BerniaAffectionPoint;
-    [SerializeField] private TextMeshProUGUI FlorineAffectionPoint;
+    //[SerializeField] private TextMeshProUGUI Xina;
+    //[SerializeField] private TextMeshProUGUI Benia;
+    //[SerializeField] private TextMeshProUGUI Florine;
 
     //Array of Class
     public CharacterAffection[] characterAffections = new CharacterAffection[3];
@@ -38,7 +36,7 @@ public class AffectionSystem : MonoBehaviour
         }
 
         characterAffections[0].name = "Xina";
-        characterAffections[1].name = "Bernia";
+        characterAffections[1].name = "Benia";
         characterAffections[2].name = "Florine";
 
         dialogueDatas = DataProcessor.dataList;
@@ -52,13 +50,10 @@ public class AffectionSystem : MonoBehaviour
         {
             if(dialogueDatas[DialogueManager.currIndexPos].name == characterAffections[i].name && characterAffections[i].affectionPoint < maxAffectionPoint)
             {
-                characterAffections[i].affectionPoint++;
+                int num = characterAffections[i].affectionPoint++;
+                characterAffections[i].hearts[num].SetActive(true);
             }
         }
-
-        XinaAffectionPoint.text = characterAffections[0].affectionPoint.ToString();
-        BerniaAffectionPoint.text = characterAffections[1].affectionPoint.ToString();
-        FlorineAffectionPoint.text = characterAffections[2].affectionPoint.ToString();
     }
 
     public void OpenAffectionWindow()
@@ -77,4 +72,5 @@ public class CharacterAffection
 {
     public string name;
     public int affectionPoint;
+    public GameObject[] hearts;
 }
