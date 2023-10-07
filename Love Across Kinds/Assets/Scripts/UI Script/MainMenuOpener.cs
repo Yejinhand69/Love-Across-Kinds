@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuOpener : MonoBehaviour
 {
     public GameObject CreditPanel;
     public GameObject SettingsPanel;
-
+    
 
     public void OpenCreditPanel()
     {
@@ -39,5 +40,10 @@ public class MainMenuOpener : MonoBehaviour
 
         }
 
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("DevScene Ervin");
     }
 }
