@@ -48,7 +48,7 @@ public class AffectionSystem : MonoBehaviour
     {
         for(int i = 0; i < characterAffections.Length; i++)
         {
-            if(dialogueDatas[DialogueManager.currIndexPos].name == characterAffections[i].name && characterAffections[i].affectionPoint < maxAffectionPoint)
+            if(EventClick.interactObjectName == characterAffections[i].name && characterAffections[i].affectionPoint < maxAffectionPoint)
             {
                 int num = characterAffections[i].affectionPoint++;
                 characterAffections[i].hearts[num].SetActive(true);

@@ -10,21 +10,26 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     public string sceneToLoad;
     public Animator animator;
 
-    public static string objectName;
+    public static string interactObjectName;
 
     public float delayBeforeLoad = 1.0f;
+
+    private DialogueTrigger DialogueTrigger;
+
     private void Awake()
     {
-
+        DialogueTrigger = GetComponent<DialogueTrigger>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        animator.SetTrigger("FadeOut");
+        //animator.SetTrigger("FadeOut");
 
-        StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
+        //StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
 
-        objectName = name;
+        interactObjectName = name;
+
+        DialogueTrigger.StartDialogue();
     }
     public void OnPointerUp(PointerEventData eventData)
     {
