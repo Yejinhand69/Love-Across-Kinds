@@ -10,6 +10,8 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     public string sceneToLoad;
     public Animator animator;
 
+    public static string objectName;
+
     public float delayBeforeLoad = 1.0f;
     private void Awake()
     {
@@ -21,6 +23,8 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
         animator.SetTrigger("FadeOut");
 
         StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
+
+        objectName = name;
     }
     public void OnPointerUp(PointerEventData eventData)
     {
