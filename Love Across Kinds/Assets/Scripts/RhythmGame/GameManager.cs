@@ -21,6 +21,11 @@ public class GameManager : MonoBehaviour
     public int currentScore;
     public int scorePerNote = 100;
 
+    public GameObject resultsScreen;
+    public GameObject inGameUI;
+
+    public Text finalScoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +42,15 @@ public class GameManager : MonoBehaviour
                 startPlaying = true;
                 theBS.hasStarted = true;
                 theMusic.Play();
+            }
+        }
+        else
+        {
+            if (!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
+            {
+                resultsScreen.SetActive(true);
+                inGameUI.SetActive(false);
+                finalScoreText.text = "Score: " + currentScore;
             }
         }
     }
