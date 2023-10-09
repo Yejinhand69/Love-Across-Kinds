@@ -6,10 +6,16 @@ public class CameraRotateScript : MonoBehaviour
 {
     public float sensitivity = -0.2f;
     private Vector3 touchStart;
-
+    private bool dialogueActive = false; // Track the state of the dialogue
 
     void Update()
     {
+        // Check if the dialogue is active; if so, don't allow camera rotation
+        if (dialogueActive)
+        {
+            return; // Don't allow camera rotation
+        }
+
         // Check for touch input
         if (Input.touchCount > 0)
         {
@@ -33,5 +39,17 @@ public class CameraRotateScript : MonoBehaviour
                 touchStart = touch.position;
             }
         }
+    }
+
+    // Call this function when you want to activate the dialogue
+    public void FreezeCamera()
+    {
+        dialogueActive = true;
+    }
+
+    // Call this function when you want to deactivate the dialogue
+    public void UnfreezeCamera()
+    {
+        dialogueActive = false;
     }
 }

@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI option2Text;
     public TextMeshProUGUI option3Text;
 
+    public CameraRotateScript dialogueSensor;
+
     //Stroing data of Dialogues from .csv
     private List<DialogueData> datas;
 
@@ -51,6 +53,7 @@ public class DialogueManager : MonoBehaviour
     //Method to show DialogueBox & Search the upmost data of each character by NAME
     public void OpenDialogue(string objName, int startID)
     {
+        dialogueSensor.FreezeCamera();
         anim.SetBool("isOpenDialogue", true);
         dialogueActive = true;
         currIndexPos = 0;
@@ -111,6 +114,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        dialogueSensor.UnfreezeCamera();
         anim.SetBool("isOpenDialogue", false);
         dialogueActive = false;
 
