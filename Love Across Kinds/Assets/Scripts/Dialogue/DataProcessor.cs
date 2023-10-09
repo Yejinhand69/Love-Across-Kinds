@@ -19,7 +19,7 @@ public class DataProcessor : MonoBehaviour
         {
             //Spilt data into each columm by comma
             string[] row = data[i].Split(new char[] { '\t' });
-
+            
             DialogueData dialogueData = new DialogueData();
 
             //Inseting each data into variable respectively
