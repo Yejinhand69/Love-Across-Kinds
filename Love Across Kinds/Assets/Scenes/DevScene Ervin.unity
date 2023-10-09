@@ -746,7 +746,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &171428917
 GameObject:
@@ -1196,7 +1196,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &254183426
 MonoBehaviour:
@@ -1515,7 +1515,7 @@ RectTransform:
   - {fileID: 758348250}
   - {fileID: 1375993858}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2702,7 +2702,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &637330772
 MonoBehaviour:
@@ -2970,7 +2970,7 @@ Transform:
   m_Children:
   - {fileID: 2625669}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &678810131
 MonoBehaviour:
@@ -3510,6 +3510,7 @@ MonoBehaviour:
   option1Text: {fileID: 66951621}
   option2Text: {fileID: 1893602105}
   option3Text: {fileID: 1991643454}
+  dialogueSensor: {fileID: 254183428}
   currSentenceId: 0
 --- !u!114 &773676209
 MonoBehaviour:
@@ -4655,6 +4656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PhonePanel: {fileID: 833031160}
   SettingPanel: {fileID: 1375993857}
+  cameraRotateScript: {fileID: 254183428}
 --- !u!114 &1033616452
 MonoBehaviour:
   m_ObjectHideFlags: 0
