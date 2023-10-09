@@ -6,13 +6,7 @@ public class CameraRotateScript : MonoBehaviour
 {
     public float sensitivity = -0.2f;
     private Vector3 touchStart;
-    private Vector3 touchEnd;
 
-    private float rotationY = 0.0f; // Current camera Y rotation
-
-    // Define the limits for left and right rotation (in degrees)
-    public float minRotationY = -90.0f;
-    public float maxRotationY = 90.0f;
 
     void Update()
     {
@@ -29,14 +23,11 @@ public class CameraRotateScript : MonoBehaviour
             else if (touch.phase == TouchPhase.Moved)
             {
                 // Calculate the difference between the current and starting touch positions
-                touchEnd = touch.position;
+                Vector3 touchEnd = touch.position;
                 Vector3 delta = touchEnd - touchStart;
 
-                // Rotate the camera based on touch delta (only left and right)
-                rotationY += delta.x * sensitivity;
-                rotationY = Mathf.Clamp(rotationY, minRotationY, maxRotationY);
-
-                transform.rotation = Quaternion.Euler(0, rotationY, 0);
+                // Rotate the camera based on touch delta (left and right)
+                transform.Rotate(Vector3.up * delta.x * sensitivity);
 
                 // Update the starting touch position for the next frame
                 touchStart = touch.position;

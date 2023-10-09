@@ -5,6 +5,7 @@ using UnityEngine;
 public class PhoneOpener : MonoBehaviour
 {
     public GameObject PhonePanel;
+    public GameObject SettingPanel;
 
 
     public void OpenPhone()
@@ -20,6 +21,24 @@ public class PhoneOpener : MonoBehaviour
                 bool isOpen = animator.GetBool("openPhone");
 
                 animator.SetBool("openPhone", !isOpen);
+            }
+
+        }
+
+    }
+    public void OpenSettingPanel()
+    {
+        if (SettingPanel != null)
+        {
+            //bool isActive = Panel.activeSelf;//added
+            //Panel.SetActive(!isActive);//added
+
+            Animator animator = SettingPanel.GetComponent<Animator>();
+            if (animator != null)
+            {
+                bool isOpen = animator.GetBool("openSettingPanel");
+
+                animator.SetBool("openSettingPanel", !isOpen);
             }
 
         }
