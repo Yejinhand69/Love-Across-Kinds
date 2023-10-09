@@ -7,7 +7,10 @@ public class MainMenuOpener : MonoBehaviour
 {
     public GameObject CreditPanel;
     public GameObject SettingsPanel;
-    
+    public Animator animator;
+
+    public string sceneToLoad;
+    public float delayBeforeLoad = 1.0f;
 
     public void OpenCreditPanel()
     {
@@ -44,6 +47,15 @@ public class MainMenuOpener : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("DevScene Ervin");
+        animator.SetTrigger("FadeOut");
+
+        StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
+
+    }
+    private IEnumerator LoadSceneWithDelay(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        SceneManager.LoadScene(sceneName);
     }
 }

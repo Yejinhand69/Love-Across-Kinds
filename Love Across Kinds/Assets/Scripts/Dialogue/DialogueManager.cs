@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI option1Text;
     public TextMeshProUGUI option2Text;
     public TextMeshProUGUI option3Text;
+
+    public CameraRotateScript dialogueSensor;
 
     //Stroing data of Dialogues from .csv
     private List<DialogueData> datas;
@@ -51,6 +54,7 @@ public class DialogueManager : MonoBehaviour
     //Method to show DialogueBox & Search the upmost data of each character by NAME
     public void OpenDialogue(string objName, int startID)
     {
+        dialogueSensor.FreezeCamera();
         anim.SetBool("isOpenDialogue", true);
         dialogueActive = true;
         currIndexPos = 0;
@@ -111,6 +115,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        dialogueSensor.UnfreezeCamera();
         anim.SetBool("isOpenDialogue", false);
         dialogueActive = false;
 
@@ -118,6 +123,7 @@ public class DialogueManager : MonoBehaviour
         {
             AffectionSystem.Instance.GetAffection();
         }
+        
     }
 
     //Method to Show options
@@ -148,5 +154,6 @@ public class DialogueManager : MonoBehaviour
         currSentenceId = datas[currIndexPos].option3_sentenceID;
         optionBox.SetActive(false);
         NextSentence();
+        SceneManager.LoadScene("Rhythm Game"); // put here first , change later ......... ( for testing purposes )
     }
 }
