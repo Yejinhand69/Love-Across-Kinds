@@ -26,10 +26,12 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
         //animator.SetTrigger("FadeOut");
 
         //StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
+        if (!DialogueManager.dialogueActive)
+        {
+            interactObjectName = name;
 
-        interactObjectName = name;
-
-        DialogueTrigger.StartDialogue();
+            DialogueTrigger.StartDialogue();
+        }
     }
     public void OnPointerUp(PointerEventData eventData)
     {

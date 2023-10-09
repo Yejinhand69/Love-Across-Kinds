@@ -9,7 +9,7 @@ public class DataProcessor : MonoBehaviour
     public void Awake()
     {
         //Read/Load .csv file
-        TextAsset dialogue = Resources.Load<TextAsset>("DialogueData");
+        TextAsset dialogue = Resources.Load<TextAsset>("TabFile");
 
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
@@ -18,13 +18,13 @@ public class DataProcessor : MonoBehaviour
         for(int i = 1; i < data.Length - 1; i++)
         {
             //Spilt data into each columm by comma
-            string[] row = data[i].Split(new char[] { ',' });
+            string[] row = data[i].Split(new char[] { '\t' });
 
             DialogueData dialogueData = new DialogueData();
 
             //Inseting each data into variable respectively
             dialogueData.name = row[0];
-            int.TryParse(row[1], out dialogueData.id);
+            int.TryParse(row[1], out dialogueData.sentenceID);
             dialogueData.sentence = row[2];
             int.TryParse(row[3], out dialogueData.nextSentenceID);
             bool.TryParse(row[4], out dialogueData.checkIfOption);
@@ -47,7 +47,7 @@ public class DataProcessor : MonoBehaviour
 public class DialogueData
 {
     public string name;
-    public int id;
+    public int sentenceID;
     public string sentence;
     public int nextSentenceID;
     public bool checkIfOption;
