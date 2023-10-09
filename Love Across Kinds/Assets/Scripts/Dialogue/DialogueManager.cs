@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -122,6 +123,7 @@ public class DialogueManager : MonoBehaviour
         {
             AffectionSystem.Instance.GetAffection();
         }
+        
     }
 
     //Method to Show options
@@ -152,5 +154,6 @@ public class DialogueManager : MonoBehaviour
         currSentenceId = datas[currIndexPos].option3_sentenceID;
         optionBox.SetActive(false);
         NextSentence();
+        SceneManager.LoadScene("Rhythm Game"); // put here first , change later ......... ( for testing purposes )
     }
 }

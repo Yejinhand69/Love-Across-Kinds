@@ -7,7 +7,7 @@ public class LevelUI : MonoBehaviour
 {
     public void BackToMain()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Lobby");
     }
 
     public void Retry()
