@@ -21,16 +21,21 @@ public class AffectionSystem : MonoBehaviour
     //Array of Class
     public CharacterAffection[] characterAffections = new CharacterAffection[3];
 
-    private void Start()
+    private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (Instance == null)
         {
-            Destroy(this);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Instance = this;
+            Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
 
         characterAffections[0].name = "Xina";
         characterAffections[1].name = "Benia";

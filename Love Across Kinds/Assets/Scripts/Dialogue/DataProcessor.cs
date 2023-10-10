@@ -9,7 +9,7 @@ public class DataProcessor : MonoBehaviour
     public void Awake()
     {
         //Read/Load .csv file
-        TextAsset dialogue = Resources.Load<TextAsset>("TabFile");
+        TextAsset dialogue = Resources.Load<TextAsset>("POCTestDialogueTxt");
 
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
