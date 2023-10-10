@@ -1,14 +1,14 @@
 name,sentenceId,sentence,nextSentenceID,checkIfOption,option1,option2,option3,option1_sentenceID,option2_sentenceID,option3_sentenceID,checkIfEnd,checkIfAffection
-Tester ,0,Test 1,1,FALSE,-,-,-,-,-,-,FALSE,FALSE
-Player Tester,1,Test 2,2,FALSE,-,-,-,-,-,-,FALSE,FALSE
-Tester ,2,Test 3,3,FALSE,-,-,-,-,-,-,FALSE,FALSE
-Player Tester,3,Test 4,4,FALSE,-,-,-,-,-,-,FALSE,FALSE
-Tester ,4,Test 5,5,FALSE,-,-,-,-,-,-,FALSE,FALSE
-Dialogue Test,5,Test 6,6,FALSE,-,-,-,-,-,-,FALSE,FALSE
-Dialogue Test,6,Test 7,7,FALSE,-,-,-,-,-,-,FALSE,FALSE
-Dialogue Test,7,Test 8,8,FALSE,-,-,-,-,-,-,FALSE,FALSE
-Dialogue Test,8,Test 9,9,FALSE,-,-,-,-,-,-,FALSE,FALSE
-Player Tester,9,Test 10,10,FALSE,-,-,-,-,-,-,FALSE,FALSE
+Xina,0,"Hello, Im Xina.",1,FALSE,-,-,-,-,-,-,FALSE,FALSE
+Xina,1,I like you,-,TRUE,I like you too (Affection +1),We just met…,Let's play a game.,2,3,4,FALSE,FALSE
+Xina,2,Muahhh,-,FALSE,-,-,-,-,-,-,TRUE,TRUE
+Xina,3,I guess we have to know each other more.,-,FALSE,-,-,-,-,-,-,TRUE,FALSE
+Xina,4,ogehh,-,FALSE,-,-,-,-,-,-,TRUE,FALSE
+Benia,5,"Hello, Im Benia",6,FALSE,-,-,-,-,-,-,FALSE,FALSE
+Benia,6,Let's go for a date.,-,TRUE,Let's go!! (Affection +1),You are not my type,Let's play a game.,7,8,9,FALSE,FALSE
+Benia,7,Muahhh,-,FALSE,-,-,-,-,-,-,TRUE,TRUE
+Benia,8,TT,-,FALSE,-,-,-,-,-,-,TRUE,FALSE
+Benia,9,Ogehh,-,FALSE,-,-,-,-,-,-,TRUE,FALSE
 Dialogue Test,10,Test 11,11,FALSE,-,-,-,-,-,-,FALSE,FALSE
 Dialogue Test,11,Test 12,12,FALSE,-,-,-,-,-,-,FALSE,FALSE
 Dialogue Test,12,Test 13,13,FALSE,-,-,-,-,-,-,FALSE,FALSE

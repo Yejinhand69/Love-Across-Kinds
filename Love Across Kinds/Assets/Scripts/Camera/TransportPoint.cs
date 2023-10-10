@@ -15,10 +15,12 @@ public class TransportPoint : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        animator.SetTrigger("FadeOut");
+        if(!DialogueManager.dialogueActive)
+        {
+            animator.SetTrigger("FadeOut");
 
-        StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
-       
+            StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
+        }       
     }
     public void OnPointerUp(PointerEventData eventData)
     {
