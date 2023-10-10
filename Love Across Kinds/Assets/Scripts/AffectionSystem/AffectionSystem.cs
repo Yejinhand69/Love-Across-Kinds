@@ -21,9 +21,6 @@ public class AffectionSystem : MonoBehaviour
     //Array of Class
     public CharacterAffection[] characterAffections = new CharacterAffection[3];
 
-    //Storage for dialogue data list
-    private List<DialogueData> dialogueDatas;
-
     private void Start()
     {
         if (Instance != null && Instance != this)
@@ -38,8 +35,6 @@ public class AffectionSystem : MonoBehaviour
         characterAffections[0].name = "Xina";
         characterAffections[1].name = "Benia";
         characterAffections[2].name = "Florine";
-
-        dialogueDatas = DataProcessor.dataList;
     }
 
     //Call this method when need to + affection

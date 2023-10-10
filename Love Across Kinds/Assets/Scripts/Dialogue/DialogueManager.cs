@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -19,9 +20,9 @@ public class DialogueManager : MonoBehaviour
     private List<DialogueData> datas;
 
     //Indicator
-    public static int currIndexPos = 0;
-    public int currSentenceId = 0;
-    public static bool dialogueActive = false;
+    private int currIndexPos = 0;
+    private int currSentenceId = 0;
+    public static bool dialogueActive;
 
     //Animator
     private Animator anim;
@@ -29,7 +30,9 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         datas = DataProcessor.dataList;
+
         dialogueText.text = string.Empty;
+        dialogueActive = false;
 
         anim = GetComponent<Animator>();
     }
@@ -52,7 +55,7 @@ public class DialogueManager : MonoBehaviour
     public void OpenDialogue(string objName, int startID)
     {
         anim.SetBool("isOpenDialogue", true);
-        dialogueActive = true;
+        StartCoroutine(DelayDialogueActive());
         currIndexPos = 0;
 
         for(int i = 0; i <= datas.Count - 1; i++)
@@ -61,7 +64,7 @@ public class DialogueManager : MonoBehaviour
             {
                 currIndexPos = i;
                 currSentenceId = startID;
-                nameText.text = datas[i].name;
+                
                 break;
             }
         }
@@ -74,12 +77,14 @@ public class DialogueManager : MonoBehaviour
     {
         for(int i = currIndexPos; i <= datas.Count - 1; i++)
         {
-            if(datas[i].id == currSentenceId)
+            if(datas[i].sentenceID == currSentenceId)
             {
+                Debug.Log("Display");
                 currIndexPos = i;
+                nameText.text = datas[currIndexPos].name;
                 dialogueText.text = datas[currIndexPos].sentence;
 
-                if (datas[i].checkIfOption)
+                if (datas[currIndexPos].checkIfOption)
                 {
                     ShowOptions();
                 }
@@ -88,7 +93,6 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        
     }
 
     //Method to Display next sentence/ End the dialogue
@@ -118,6 +122,7 @@ public class DialogueManager : MonoBehaviour
         {
             AffectionSystem.Instance.GetAffection();
         }
+        
     }
 
     //Method to Show options
@@ -148,5 +153,12 @@ public class DialogueManager : MonoBehaviour
         currSentenceId = datas[currIndexPos].option3_sentenceID;
         optionBox.SetActive(false);
         NextSentence();
+        SceneManager.LoadScene("Rhythm Game"); // put here first , change later ......... ( for testing purposes )
+    }
+
+    IEnumerator DelayDialogueActive()
+    {
+        yield return new WaitForSeconds(1);
+        dialogueActive = true;
     }
 }

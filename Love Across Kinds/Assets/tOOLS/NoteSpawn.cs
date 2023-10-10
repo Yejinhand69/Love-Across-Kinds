@@ -3,20 +3,20 @@ using UnityEditor;
 
 public class NoteSpawn : EditorWindow
 {
-    public float xPosition;
-    string ObjectBaseName01 = "Blue Note";
+    public float zPosition;
+    string ObjectBaseName01 = "Red Note";
     int ObjectID01 = 1;
     GameObject ObjectToSpawn01;
 
-    string ObjectBaseName02 = "Red Note";
+    string ObjectBaseName02 = "Yellow Note";
     int ObjectID02 = 1;
     GameObject ObjectToSpawn02;
 
-    string ObjectBaseName03 = "Yellow Note";
+    string ObjectBaseName03 = "Green Note";
     int ObjectID03 = 1;
     GameObject ObjectToSpawn03;
 
-    string ObjectBaseName04 = "Green Note";
+    string ObjectBaseName04 = "Blue Note";
     int ObjectID04 = 1;
     GameObject ObjectToSpawn04;
 
@@ -28,7 +28,7 @@ public class NoteSpawn : EditorWindow
 
     private void OnGUI()
     {
-        xPosition = EditorGUILayout.FloatField("Y Position", xPosition);
+        zPosition = EditorGUILayout.FloatField("Y Position", zPosition);
 
         GUILayout.Label("Spawn Red Note", EditorStyles.boldLabel);
 
@@ -97,14 +97,14 @@ public class NoteSpawn : EditorWindow
             return;
         }
 
-        Vector3 SpawnPos = new Vector3(1f, xPosition, 10f);
+        Vector3 SpawnPos = new Vector3(-32, 1f, zPosition);
 
         GameObject NewObject = Instantiate(ObjectToSpawn01, SpawnPos, Quaternion.identity);
 
         NewObject.name = ObjectBaseName01 + ObjectID01;
 
         ObjectID01++;
-        xPosition = xPosition + 8;
+        zPosition = zPosition + 8;
     }
 
     private void SpawnYellowNote()
@@ -116,14 +116,14 @@ public class NoteSpawn : EditorWindow
         }
 
 
-        Vector3 SpawnPos = new Vector3(9f, xPosition, 17f);
+        Vector3 SpawnPos = new Vector3(-24, 1f, zPosition);
 
         GameObject NewObject = Instantiate(ObjectToSpawn02, SpawnPos, Quaternion.identity);
 
         NewObject.name = ObjectBaseName02 + ObjectID02;
 
         ObjectID02++;
-        xPosition = xPosition + 8;
+        zPosition = zPosition + 8;
     }
 
     private void SpawnGreenNote()
@@ -135,14 +135,14 @@ public class NoteSpawn : EditorWindow
         }
 
 
-        Vector3 SpawnPos = new Vector3(17f, xPosition, 24f);
+        Vector3 SpawnPos = new Vector3(-16, 1f, zPosition);
 
         GameObject NewObject = Instantiate(ObjectToSpawn03, SpawnPos, Quaternion.identity);
 
         NewObject.name = ObjectBaseName03 + ObjectID03;
 
         ObjectID03++;
-        xPosition = xPosition + 8;
+        zPosition = zPosition + 8;
     }
 
     private void SpawnBlueNote()
@@ -154,19 +154,19 @@ public class NoteSpawn : EditorWindow
         }
 
 
-        Vector3 SpawnPos = new Vector3(25f, xPosition, 31f);
+        Vector3 SpawnPos = new Vector3(-8, 1f, zPosition);
 
         GameObject NewObject = Instantiate(ObjectToSpawn04, SpawnPos, Quaternion.identity);
 
         NewObject.name = ObjectBaseName04 + ObjectID04;
 
         ObjectID04++;
-        xPosition = xPosition + 8;
+        zPosition = zPosition + 8;
     }
 
     private void SpawnEmptyNote()
     {
-        xPosition = xPosition + 8;
+        zPosition = zPosition + 8;
     }
 
     private void ResetID()

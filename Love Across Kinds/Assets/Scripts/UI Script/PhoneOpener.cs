@@ -6,7 +6,7 @@ public class PhoneOpener : MonoBehaviour
 {
     public GameObject PhonePanel;
     public GameObject SettingPanel;
-
+    public CameraRotateScript cameraRotateScript;
 
     public void OpenPhone()
     {
@@ -14,7 +14,7 @@ public class PhoneOpener : MonoBehaviour
         {
             //bool isActive = Panel.activeSelf;//added
             //Panel.SetActive(!isActive);//added
-
+            //cameraRotateScript.FreezeCamera();
             Animator animator = PhonePanel.GetComponent<Animator>();
             if (animator != null)
             {
@@ -22,10 +22,12 @@ public class PhoneOpener : MonoBehaviour
 
                 animator.SetBool("openPhone", !isOpen);
             }
-
+            
         }
+       
 
     }
+   
     public void OpenSettingPanel()
     {
         if (SettingPanel != null)
