@@ -7,13 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    public string sceneToLoad;
-    public Animator animator;
-
     public static string interactObjectName;
-
-    public float delayBeforeLoad = 1.0f;
-
     private DialogueTrigger DialogueTrigger;
 
     private void Awake()
@@ -23,9 +17,7 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        //animator.SetTrigger("FadeOut");
-
-        //StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
+      
         if (!DialogueManager.dialogueActive)
         {
             interactObjectName = name;
@@ -50,11 +42,6 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
         //empty
     }
 
-    private IEnumerator LoadSceneWithDelay(string sceneName, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-
-        SceneManager.LoadScene(sceneName);
-    }
+   
 
 }
