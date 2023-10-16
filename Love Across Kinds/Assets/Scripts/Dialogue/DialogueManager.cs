@@ -79,7 +79,6 @@ public class DialogueManager : MonoBehaviour
         {
             if(datas[i].sentenceID == currSentenceId)
             {
-                Debug.Log("Display");
                 currIndexPos = i;
                 nameText.text = datas[currIndexPos].name;
                 dialogueText.text = datas[currIndexPos].sentence;
