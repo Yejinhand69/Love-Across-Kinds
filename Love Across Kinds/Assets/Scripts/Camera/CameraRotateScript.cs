@@ -30,7 +30,7 @@ public class CameraRotateScript : MonoBehaviour
             {
                 // Record the starting touch position
                 touchStart = touch.position;
-                transportPoint.StartSwiping();
+                //transportPoint.StartSwiping();
             }
             else if (touch.phase == TouchPhase.Moved)
             {
@@ -47,7 +47,7 @@ public class CameraRotateScript : MonoBehaviour
             }
             else if (touch.phase == TouchPhase.Ended)
             {
-                transportPoint.StopSwiping();
+                //transportPoint.StopSwiping();
             }
         }
     }
