@@ -45,10 +45,7 @@ public class CameraRotateScript : MonoBehaviour
                 // Update the starting touch position for the next frame
                 touchStart = touch.position;
             }
-            else if (touch.phase == TouchPhase.Ended)
-            {
-                //transportPoint.StopSwiping();
-            }
+       
         }
     }
 }

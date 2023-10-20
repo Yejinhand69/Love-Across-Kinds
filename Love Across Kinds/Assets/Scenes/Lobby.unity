@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3252,7 +3252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e752da85b4771eb47b6f48b26e90e394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: -0.1
+  sensitivity: -0.05
 --- !u!114 &1013514253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5339,6 +5339,7 @@ MonoBehaviour:
   sceneToLoad: Recording Room
   animator: {fileID: 687590043}
   delayBeforeLoad: 1
+  swipeThreshold: 0.2
 --- !u!136 &1469527092
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6035,6 +6036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1c7838762933f468e1d2065f329902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swipeThreshold: 0.2
 --- !u!4 &1662686599
 Transform:
   m_ObjectHideFlags: 0
@@ -7594,6 +7596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1c7838762933f468e1d2065f329902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swipeThreshold: 0.2
 --- !u!4 &2110663125
 Transform:
   m_ObjectHideFlags: 0
