@@ -8,18 +8,18 @@ public class DataProcessor : MonoBehaviour
 
     public void Awake()
     {
-        //Read/Load .csv file
-        TextAsset dialogue = Resources.Load<TextAsset>("POCTestDialogueTxt");
+        //Read/Load dialogue file
+        TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/DialogueDataTxt");
 
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
 
         //Data Processing
-        for(int i = 1; i < data.Length - 1; i++)
+        for (int i = 1; i < data.Length - 1; i++)
         {
             //Spilt data into each columm by comma
             string[] row = data[i].Split(new char[] { '\t' });
-            
+
             DialogueData dialogueData = new DialogueData();
 
             //Inseting each data into variable respectively
@@ -44,8 +44,8 @@ public class DataProcessor : MonoBehaviour
 
     public void ProcessDialogueData()
     {
-        //Read/Load .csv file
-        TextAsset dialogue = Resources.Load<TextAsset>("POCTestDialogueTxt");
+        //Read/Load dialogue file
+        TextAsset dialogue = Resources.Load<TextAsset>("DialogueData");
 
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });

@@ -779,7 +779,7 @@ MonoBehaviour:
   CreditPanel: {fileID: 1348633498}
   SettingsPanel: {fileID: 2132810661}
   animator: {fileID: 778555427}
-  sceneToLoad: Cutscenes
+  sceneToLoad: Episode0
   delayBeforeLoad: 1.5
 --- !u!4 &432341149
 Transform:
@@ -2971,12 +2971,13 @@ MonoBehaviour:
   _SFXSource: {fileID: 686563885}
   _VoiceOverSource: {fileID: 0}
   bGM_Datas:
-  - SceneName: PreProduction
+  - Name: 
     BGM: {fileID: 8300000, guid: 68627fe58cd597a46a018308f5285aa6, type: 3}
-  - SceneName: Filming
+  - Name: 
     BGM: {fileID: 8300000, guid: 454bad299bf27574499def09979022b3, type: 3}
-  - SceneName: FreeTime
+  - Name: 
     BGM: {fileID: 8300000, guid: e720ff77fd2aba54496d258d4ede350e, type: 3}
+  voiceOverScript: {fileID: 0}
 --- !u!4 &1944534519
 Transform:
   m_ObjectHideFlags: 0

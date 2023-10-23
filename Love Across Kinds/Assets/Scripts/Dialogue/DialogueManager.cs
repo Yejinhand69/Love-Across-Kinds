@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
 
     //Indicator
     private int currIndexPos = 0;
-    private int currSentenceId = 0;
+    [HideInInspector] public int currSentenceId = 0;
     public static bool dialogueActive;
 
     //Animator

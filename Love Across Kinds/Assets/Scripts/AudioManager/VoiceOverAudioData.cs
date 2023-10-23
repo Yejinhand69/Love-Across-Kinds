@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-
+[ExecuteInEditMode]
 public class VoiceOverAudioData : MonoBehaviour
 {
     public string FolderName;
