@@ -80,6 +80,9 @@ public class DialogueManager : MonoBehaviour
             if(datas[i].sentenceID == currSentenceId)
             {
                 currIndexPos = i;
+
+                AudioManager.instance.PlayVoice(currSentenceId);
+
                 nameText.text = datas[currIndexPos].name;
                 dialogueText.text = datas[currIndexPos].sentence;
 

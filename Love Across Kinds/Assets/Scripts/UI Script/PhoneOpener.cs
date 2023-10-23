@@ -18,6 +18,8 @@ public class PhoneOpener : MonoBehaviour
             Animator animator = PhonePanel.GetComponent<Animator>();
             if (animator != null)
             {
+                AudioManager.instance.PlaySFX("Button Press");
+
                 bool isOpen = animator.GetBool("openPhone");
 
                 animator.SetBool("openPhone", !isOpen);
@@ -38,6 +40,8 @@ public class PhoneOpener : MonoBehaviour
             Animator animator = SettingPanel.GetComponent<Animator>();
             if (animator != null)
             {
+                AudioManager.instance.PlaySFX("Button Press");
+
                 bool isOpen = animator.GetBool("openSettingPanel");
 
                 animator.SetBool("openSettingPanel", !isOpen);

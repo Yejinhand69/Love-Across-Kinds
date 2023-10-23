@@ -5875,8 +5875,19 @@ MonoBehaviour:
   _SFXSource: {fileID: 1545795626}
   _VoiceOverSource: {fileID: 0}
   bGM_Datas:
-  - SceneName: 
-    BGM: {fileID: 0}
+  - SceneName: PreProduction
+    BGM: {fileID: 8300000, guid: 68627fe58cd597a46a018308f5285aa6, type: 3}
+  - SceneName: Filming
+    BGM: {fileID: 8300000, guid: 454bad299bf27574499def09979022b3, type: 3}
+  - SceneName: FreeTime
+    BGM: {fileID: 8300000, guid: e720ff77fd2aba54496d258d4ede350e, type: 3}
+  sFX_Datas:
+  - ClipName: 
+    SFX: {fileID: 8300000, guid: a748ad9292518c94ea8e9362ead6c39d, type: 3}
+  - ClipName: 
+    SFX: {fileID: 8300000, guid: e6ba9198992fd24489c0311270221222, type: 3}
+  - ClipName: 
+    SFX: {fileID: 8300000, guid: 93d8ac74402737a41b3c06c2b5b2677c, type: 3}
 --- !u!4 &1056858633
 Transform:
   m_ObjectHideFlags: 0
