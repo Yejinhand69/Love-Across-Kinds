@@ -20,6 +20,8 @@ public class MainMenuOpener : MonoBehaviour
             Animator animator = CreditPanel.GetComponent<Animator>();
             if (animator != null)
             {
+                AudioManager.instance.PlaySFX("Button Press");
+
                 bool isOpen = animator.GetBool("openCredit");
 
                 animator.SetBool("openCredit", !isOpen);
@@ -36,6 +38,8 @@ public class MainMenuOpener : MonoBehaviour
             Animator animator = SettingsPanel.GetComponent<Animator>();
             if (animator != null)
             {
+                AudioManager.instance.PlaySFX("Button Press");
+
                 bool isOpen = animator.GetBool("openSettings");
 
                 animator.SetBool("openSettings", !isOpen);
@@ -47,6 +51,8 @@ public class MainMenuOpener : MonoBehaviour
 
     public void StartGame()
     {
+        AudioManager.instance.PlaySFX("Button Press");
+
         animator.SetTrigger("FadeOut");
 
         StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));

@@ -1,0 +1,51 @@
+name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection
+Xina	0	"Hello, Im Xina."	1	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Xina	1	I like you	-	TRUE	I like you too (Affection +1)	We just met...	Let's play a game.	2	3	4	FALSE	FALSE
+Xina	2	Muahhh	-	FALSE	-	-	-	-	-	-	TRUE	TRUE
+Xina	3	I guess we have to know each other more.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE
+Xina	4	ogehh	-	FALSE	-	-	-	-	-	-	TRUE	FALSE
+Benia	5	"Hello, Im Benia"	6	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Benia	6	Let's go for a date.	-	TRUE	Let's go!! (Affection +1)	You are not my type	Let's play a game.	7	8	9	FALSE	FALSE
+Benia	7	Muahhh	-	FALSE	-	-	-	-	-	-	TRUE	TRUE
+Benia	8	TT	-	FALSE	-	-	-	-	-	-	TRUE	FALSE
+Benia	9	Ogehh	-	FALSE	-	-	-	-	-	-	TRUE	FALSE
+Dialogue Test	10	Test 11	11	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	11	Test 12	12	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	12	Test 13	13	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	13	Test 14	-	TRUE	Test Option 1	Test Option 2	Test Option 3	14	15	16	FALSE	FALSE
+Dialogue Test	14	Option Test 1	18	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	15	Option Test 2	17	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	16	Option Test 3	18	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	17	Test 15	18	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	18	Test 16	19	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	19	Test 17	20	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	20	Test 18	21	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	21	Test 19	22	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	22	Test 20	23	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	23	Test 21	24	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	24	Test 22	25	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	25	Test 23	26	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	26	Test 24	27	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	27	Test 25	28	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	28	Test 26	29	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	29	Test 27	30	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	30	Test 28	31	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	31	Test 29	32	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	32	Test 30	33	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	33	Test 31	34	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	34	Test 32	35	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	35	Test 33	36	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	36	Test 34	37	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	37	Test 35	38	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	38	Test 36	39	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	39	Test 37	40	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	40	Test 38	41	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	41	Test 39	42	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	42	Test 40	43	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	43	Test 41	44	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	44	Test 42	45	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	45	Test 43	46	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Player Tester	46	Test 44	47	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	47	Test 45	48	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	48	Test 46	49	FALSE	-	-	-	-	-	-	FALSE	FALSE
+Dialogue Test	49	Test 47	50	FALSE	-	-	-	-	-	-	TRUE	FALSE

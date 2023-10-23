@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class AudioManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class AudioManager : MonoBehaviour
     public AudioSource _VoiceOverSource;
 
     public BGM_Data[] bGM_Datas;
+    public List<SFX_Data> sFX_Datas;
+    public VoiceOverAudioData voiceOverScript;
 
     private void Awake()
     {
@@ -28,8 +31,6 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        _VoiceOverSource = GameObject.Find("VoiceOver_Source").GetComponent<AudioSource>();
-
         _BGMSource.Stop();
         for(int i = 0; i < bGM_Datas.Length; i++)
         {
@@ -39,6 +40,37 @@ public class AudioManager : MonoBehaviour
                 _BGMSource.Play();
             }
         }
+        
+        UpdateSFX();
+
+    }
+
+    public void UpdateSFX()
+    {
+        var clips_SFX = Resources.LoadAll("SFX", typeof(AudioClip)).Cast<AudioClip>().ToArray();
+
+        sFX_Datas = new List<SFX_Data>();
+
+        for (int i = 0; i < clips_SFX.Length; i++)
+        {
+            SFX_Data sFX_Data = new SFX_Data();
+
+            sFX_Data.SFX = clips_SFX[i];
+            sFX_Data.ClipName = clips_SFX[i].name;
+
+            sFX_Datas.Add(sFX_Data);
+        }
+    }
+
+    public void PlaySFX(string clipName)
+    {
+        for(int i = 0; i < sFX_Datas.Count; i++)
+        {
+            if(clipName == sFX_Datas[i].ClipName)
+            {
+                _SFXSource.PlayOneShot(sFX_Datas[i].SFX);
+            }
+        }
     }
 
     public void PlaySFX(AudioClip clip)
@@ -46,10 +78,10 @@ public class AudioManager : MonoBehaviour
         _SFXSource.PlayOneShot(clip);
     }
 
-    public void PlayVoice(AudioClip clip)
+    public void PlayVoice(int dialogueID)
     {
         _VoiceOverSource.Stop();
-        _VoiceOverSource.PlayOneShot(clip);
+        _VoiceOverSource.PlayOneShot(voiceOverScript._VoiceClips[dialogueID].voiceClip);
     }
 }
 
@@ -58,4 +90,10 @@ public class BGM_Data
 {
     public string SceneName;
     public AudioClip BGM;
+}
+
+public class SFX_Data
+{
+    public string ClipName;
+    public AudioClip SFX;
 }

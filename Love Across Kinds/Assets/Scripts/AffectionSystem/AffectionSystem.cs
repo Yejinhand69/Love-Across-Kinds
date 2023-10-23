@@ -50,6 +50,7 @@ public class AffectionSystem : MonoBehaviour
         {
             if(EventClick.interactObjectName == characterAffections[i].name && characterAffections[i].affectionPoint < maxAffectionPoint)
             {
+                AudioManager.instance.PlaySFX("Affection Gain");
                 int num = characterAffections[i].affectionPoint++;
                 characterAffections[i].hearts[num].SetActive(true);
             }
