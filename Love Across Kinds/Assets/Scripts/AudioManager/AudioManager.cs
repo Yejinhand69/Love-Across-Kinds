@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
 
     public BGM_Data[] bGM_Datas;
     public List<SFX_Data> sFX_Datas;
+    [HideInInspector] 
     public VoiceOverAudioData voiceOverScript;
 
     private void Awake()
@@ -34,7 +35,7 @@ public class AudioManager : MonoBehaviour
         _BGMSource.Stop();
         for(int i = 0; i < bGM_Datas.Length; i++)
         {
-            if(bGM_Datas[i].SceneName == SceneManager.GetActiveScene().name)
+            if(bGM_Datas[i].Name == SceneManager.GetActiveScene().name)//currentPhase)
             {
                 _BGMSource.clip = bGM_Datas[i].BGM;
                 _BGMSource.Play();
@@ -88,7 +89,7 @@ public class AudioManager : MonoBehaviour
 [System.Serializable]
 public class BGM_Data
 {
-    public string SceneName;
+    public string Name;
     public AudioClip BGM;
 }
 
