@@ -4,11 +4,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PhaseChanger : MonoBehaviour, IPointerDownHandler
+public class PhaseChanger : MonoBehaviour/*, IPointerDownHandler*/
 {
     public string[] phases = { "preproduction", "filming", "free time" };
-    private int currentPhaseIndex = 0;
+  
     public string currentPhase;
+
+    private PhaseManager phaseManager;
 
     // Reference to the camera transform
     public Transform cameraTransform;
@@ -18,26 +20,31 @@ public class PhaseChanger : MonoBehaviour, IPointerDownHandler
 
     private void Start()
     {
+        phaseManager = FindObjectOfType<PhaseManager>();    
         UpdatePhaseText();
     }
 
     public void Update()
     {
-       
+        Debug.Log(phaseManager.currentPhaseIndex);
     }
 
     private void UpdatePhaseText()
     {
-        currentPhase = phases[currentPhaseIndex];
+        currentPhase = phases[phaseManager.currentPhaseIndex];
         Debug.Log("Current Phase: " + currentPhase);
 
-       
-        //TransformCamera();
+
+        TransformCamera();
 
 
         // You can update a UI text field or any other display with the currentPhase value.
     }
-
+    public void ChangePhase()
+    {
+        phaseManager.currentPhaseIndex = (phaseManager.currentPhaseIndex + 1) % phases.Length;
+        UpdatePhaseText();
+    }
     private void TransformCamera()
     {
         //camera
@@ -59,18 +66,4 @@ public class PhaseChanger : MonoBehaviour, IPointerDownHandler
     }
 
 
-
-    public void ChangePhase()
-    {
-        currentPhaseIndex = (currentPhaseIndex + 1) % phases.Length;
-        UpdatePhaseText();
-    }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        if(tag == "phase changer")
-        {
-            ChangePhase();
-        }
-    }
 }

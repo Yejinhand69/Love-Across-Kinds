@@ -742,6 +742,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Recording Room_WIP 2_For POC
       objectReference: {fileID: 0}
+    - target: {fileID: 4120891128054691643, guid: 6428a58141514cb44a9f988a81f36479,
+        type: 3}
+      propertyPath: m_TagString
+      value: phase changer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6428a58141514cb44a9f988a81f36479, type: 3}
 --- !u!4 &205171856 stripped
@@ -826,6 +831,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210057391}
   m_CullTransparentMesh: 1
+--- !u!1 &225014334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4120891128054691643, guid: 6428a58141514cb44a9f988a81f36479,
+    type: 3}
+  m_PrefabInstance: {fileID: 205171855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &225014338
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225014334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.036055, y: 3.249758, z: 1.114115}
+  m_Center: {x: -0.14121097, y: 0.000000012625074, z: 0.5570575}
 --- !u!1 &243437389
 GameObject:
   m_ObjectHideFlags: 0
@@ -8019,7 +8043,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1904508883}
-  - component: {fileID: 1904508882}
+  - component: {fileID: 1904508885}
+  - component: {fileID: 1904508884}
   m_Layer: 0
   m_Name: game manager
   m_TagString: Untagged
@@ -8027,20 +8052,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1904508882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904508881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5732c892af7464f46b6d5a78fa68f8ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  modelsToMove:
-  - {fileID: 561067444}
 --- !u!4 &1904508883
 Transform:
   m_ObjectHideFlags: 0
@@ -8056,6 +8067,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1904508884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904508881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b559d501e8862d44bfb1cc8764a2d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phases:
+  - preproduction
+  - filming
+  - free time
+  currentPhase: 
+  cameraTransform: {fileID: 278861139}
+--- !u!114 &1904508885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904508881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee84ef5437e614e4184e17a88b99bb62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1909788951
 GameObject:
   m_ObjectHideFlags: 0
