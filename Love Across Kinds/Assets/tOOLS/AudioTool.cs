@@ -6,6 +6,7 @@ using UnityEditor;
 public class AudioTool : EditorWindow
 {
     public static TextAsset dialogueData;
+    public DefaultAsset voiceOverFolder;
 
     private List<string> nameList;
     private List<int> idList;
@@ -23,6 +24,8 @@ public class AudioTool : EditorWindow
         GUILayout.Label("Dialogue File", EditorStyles.boldLabel);
         
         dialogueData = EditorGUILayout.ObjectField(new GUIContent("Dialogue Data File", "Fill this section with Dialogue Data File(.txt)"), dialogueData, typeof(TextAsset), false) as TextAsset;
+
+        voiceOverFolder = EditorGUILayout.ObjectField(new GUIContent("VoiceOver Folder", "Drag VoiceOver Folder here"), voiceOverFolder, typeof(DefaultAsset), false) as DefaultAsset;
 
         if (GUILayout.Button("Process Dialogue Data"))
         {
@@ -76,6 +79,12 @@ public class AudioTool : EditorWindow
 
     private void GenerateAudioSource()
     {
+        if(nameList == null || idList == null || sentenceList == null)
+        {
+            Debug.Log("No Dialouge Data processed");
+            return;
+        }
+
         if (GameObject.Find("VoiceOver_Clips") != null)
         {
             DestroyImmediate(GameObject.Find("VoiceOver_Clips"));
@@ -85,7 +94,8 @@ public class AudioTool : EditorWindow
         _VoiceOverClips.AddComponent<VoiceOverAudioData>();
 
         VoiceOverAudioData audioData = _VoiceOverClips.GetComponent<VoiceOverAudioData>();
-
+        audioData.folderName = voiceOverFolder.name;
+        
         audioData._VoiceClips = new List<VoiceOverData>();
 
         for(int i = 0; i < idList.Count; i++)
