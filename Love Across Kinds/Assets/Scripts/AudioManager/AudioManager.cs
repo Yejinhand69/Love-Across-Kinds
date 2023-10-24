@@ -17,6 +17,9 @@ public class AudioManager : MonoBehaviour
     [HideInInspector] 
     public VoiceOverAudioData voiceOverScript;
 
+    public string currentPhase = " ";
+    public int currentEpisode = 0;
+
     private void Awake()
     {
         if (instance == null)
@@ -27,23 +30,26 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }
+        }   
     }
 
     private void Start()
+    { 
+        UpdateSFX();
+    }
+
+    public void PlayBGM()
     {
         _BGMSource.Stop();
-        for(int i = 0; i < bGM_Datas.Length; i++)
+
+        for (int i = 0; i < bGM_Datas.Length; i++)
         {
-            if(bGM_Datas[i].Name == SceneManager.GetActiveScene().name)//currentPhase)
+            if (bGM_Datas[i].Name == currentPhase)
             {
                 _BGMSource.clip = bGM_Datas[i].BGM;
                 _BGMSource.Play();
             }
         }
-        
-        UpdateSFX();
-
     }
 
     public void UpdateSFX()

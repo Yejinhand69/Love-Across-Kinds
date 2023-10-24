@@ -5,7 +5,7 @@ using UnityEditor;
 
 public class AudioTool : EditorWindow
 {
-    public TextAsset dialogueData;
+    public static TextAsset dialogueData;
 
     private List<string> nameList;
     private List<int> idList;
@@ -76,16 +76,16 @@ public class AudioTool : EditorWindow
 
     private void GenerateAudioSource()
     {
-        if (GameObject.Find("VoiceOver_Source") != null)
+        if (GameObject.Find("VoiceOver_Clips") != null)
         {
-            DestroyImmediate(GameObject.Find("VoiceOver_Source"));
+            DestroyImmediate(GameObject.Find("VoiceOver_Clips"));
         }
         
-        GameObject _VoiceOverSource = new GameObject("VoiceOver_Source");
-        _VoiceOverSource.AddComponent<AudioSource>().playOnAwake = false;
-        _VoiceOverSource.AddComponent<VoiceOverAudioData>();
+        GameObject _VoiceOverClips = new GameObject("VoiceOver_Clips_" + dialogueData.name);
+        //_VoiceOverClips.AddComponent<AudioSource>().playOnAwake = false;
+        _VoiceOverClips.AddComponent<VoiceOverAudioData>();
 
-        VoiceOverAudioData audioData = _VoiceOverSource.GetComponent<VoiceOverAudioData>();
+        VoiceOverAudioData audioData = _VoiceOverClips.GetComponent<VoiceOverAudioData>();
 
         audioData._VoiceClips = new List<VoiceOverData>();
 

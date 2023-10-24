@@ -9,11 +9,10 @@ public class VoiceOverAudioData : MonoBehaviour
     public string FolderName;
     public List<VoiceOverData> _VoiceClips;
 
-
     private void Start()
     {
-        this.transform.parent = GameObject.Find("AudioManager").transform;
-        AudioManager.instance._VoiceOverSource = GetComponent<AudioSource>();
+        //this.transform.parent = GameObject.Find("AudioManager").transform;
+        //AudioManager.instance._VoiceOverSource = GetComponent<AudioSource>();
         AudioManager.instance.voiceOverScript = GetComponent<VoiceOverAudioData>();
     }
 
