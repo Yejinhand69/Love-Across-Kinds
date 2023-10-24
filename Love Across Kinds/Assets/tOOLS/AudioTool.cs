@@ -82,7 +82,6 @@ public class AudioTool : EditorWindow
         }
         
         GameObject _VoiceOverClips = new GameObject("VoiceOver_Clips_" + dialogueData.name);
-        //_VoiceOverClips.AddComponent<AudioSource>().playOnAwake = false;
         _VoiceOverClips.AddComponent<VoiceOverAudioData>();
 
         VoiceOverAudioData audioData = _VoiceOverClips.GetComponent<VoiceOverAudioData>();
