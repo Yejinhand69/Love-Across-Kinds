@@ -14,7 +14,11 @@ public class AudioManager : MonoBehaviour
 
     public BGM_Data[] bGM_Datas;
     public List<SFX_Data> sFX_Datas;
+    [HideInInspector] 
     public VoiceOverAudioData voiceOverScript;
+
+    public string currentPhase = " ";
+    public int currentEpisode = 0;
 
     private void Awake()
     {
@@ -26,23 +30,26 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }
+        }   
     }
 
     private void Start()
+    { 
+        UpdateSFX();
+    }
+
+    public void PlayBGM()
     {
         _BGMSource.Stop();
-        for(int i = 0; i < bGM_Datas.Length; i++)
+
+        for (int i = 0; i < bGM_Datas.Length; i++)
         {
-            if(bGM_Datas[i].SceneName == SceneManager.GetActiveScene().name)
+            if (bGM_Datas[i].Name == currentPhase)
             {
                 _BGMSource.clip = bGM_Datas[i].BGM;
                 _BGMSource.Play();
             }
         }
-        
-        UpdateSFX();
-
     }
 
     public void UpdateSFX()
@@ -88,7 +95,7 @@ public class AudioManager : MonoBehaviour
 [System.Serializable]
 public class BGM_Data
 {
-    public string SceneName;
+    public string Name;
     public AudioClip BGM;
 }
 

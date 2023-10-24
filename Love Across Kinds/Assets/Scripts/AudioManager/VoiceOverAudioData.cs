@@ -3,23 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-
+[ExecuteInEditMode]
 public class VoiceOverAudioData : MonoBehaviour
 {
-    public string FolderName;
+    public string folderName;
     public List<VoiceOverData> _VoiceClips;
-
 
     private void Start()
     {
-        this.transform.parent = GameObject.Find("AudioManager").transform;
-        AudioManager.instance._VoiceOverSource = GetComponent<AudioSource>();
         AudioManager.instance.voiceOverScript = GetComponent<VoiceOverAudioData>();
     }
 
     private void Update()
     {
-        var voiceOver = Resources.LoadAll(FolderName).Cast<AudioClip>().ToArray();
+        var voiceOver = Resources.LoadAll(folderName).Cast<AudioClip>().ToArray();
 
         for (int i = 0; i < voiceOver.Length; i++)
         {

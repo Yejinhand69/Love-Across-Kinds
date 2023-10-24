@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DataProcessor : MonoBehaviour
 {
@@ -8,18 +9,30 @@ public class DataProcessor : MonoBehaviour
 
     public void Awake()
     {
-        //Read/Load .csv file
-        TextAsset dialogue = Resources.Load<TextAsset>("POCTestDialogueTxt");
+        if (SceneManager.GetActiveScene().name == "Episode 0")
+        {
+            AudioManager.instance.currentPhase = "Prologue";
+        }
+
+        AudioManager.instance.PlayBGM();
+
+        ProcessDialogueData();
+    }
+
+    public void ProcessDialogueData()
+    {
+        //Read/Load dialogue file
+        TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/Episode" + AudioManager.instance.currentEpisode + AudioManager.instance.currentPhase);
 
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
 
         //Data Processing
-        for(int i = 1; i < data.Length - 1; i++)
+        for (int i = 1; i < data.Length - 1; i++)
         {
             //Spilt data into each columm by comma
             string[] row = data[i].Split(new char[] { '\t' });
-            
+
             DialogueData dialogueData = new DialogueData();
 
             //Inseting each data into variable respectively
