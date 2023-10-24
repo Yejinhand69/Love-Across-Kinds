@@ -459,8 +459,8 @@ MonoBehaviour:
   - preproduction
   - filming
   - free time
-  currentPhase: preproduction
-  animator: {fileID: 1013514259}
+  currentPhase: 
+  cameraTransform: {fileID: 1013514258}
 --- !u!1 &172985615
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,8 +921,8 @@ MonoBehaviour:
   - preproduction
   - filming
   - free time
-  currentPhase: free time
-  animator: {fileID: 1013514259}
+  currentPhase: 
+  cameraTransform: {fileID: 1013514258}
 --- !u!65 &264902139
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4345,7 +4345,6 @@ GameObject:
   - component: {fileID: 1013514254}
   - component: {fileID: 1013514252}
   - component: {fileID: 1013514253}
-  - component: {fileID: 1013514259}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4515,26 +4514,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1013514259
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013514251}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 13e7d43f83a23ad40a2d21f9472a3143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1051377053
 GameObject:
   m_ObjectHideFlags: 0
@@ -6978,8 +6957,8 @@ MonoBehaviour:
   - preproduction
   - filming
   - free time
-  currentPhase: filming
-  animator: {fileID: 1013514259}
+  currentPhase: 
+  cameraTransform: {fileID: 1013514258}
 --- !u!65 &1561082294
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -9,33 +9,21 @@ public class PhaseChanger : MonoBehaviour, IPointerDownHandler
     public string[] phases = { "preproduction", "filming", "free time" };
     private int currentPhaseIndex = 0;
     public string currentPhase;
-    public Animator animator;
+
+    // Reference to the camera transform
+    public Transform cameraTransform;
+    private Vector3 preproductionPosition = new Vector3(0f, 1f, -7.06f);
+    private Vector3 filmingPosition = new Vector3(0f, 4.589f, -7.06f);
+    private Vector3 freeTimePosition = new Vector3(0f, 8.523f, -7.06f);
 
     private void Start()
     {
         UpdatePhaseText();
     }
 
-    private void Update()
+    public void Update()
     {
-        // Reset all phase boolean parameters to false
-        animator.SetBool("IsPreproduction", false);
-        animator.SetBool("IsFilming", false);
-        animator.SetBool("IsFreeTime", false);
-
-        if (currentPhase == "preproduction")
-        {
-            animator.SetBool("IsPreproduction", true);
-        }
-        else if (currentPhase == "filming")
-        {
-            animator.SetBool("IsFilming", true);
-        }
-        else if (currentPhase == "free time")
-        {
-            animator.SetBool("IsFreeTime", true);
-        }
-
+       
     }
 
     private void UpdatePhaseText()
@@ -43,8 +31,34 @@ public class PhaseChanger : MonoBehaviour, IPointerDownHandler
         currentPhase = phases[currentPhaseIndex];
         Debug.Log("Current Phase: " + currentPhase);
 
+       
+        //TransformCamera();
+
+
         // You can update a UI text field or any other display with the currentPhase value.
     }
+
+    private void TransformCamera()
+    {
+        //camera
+        if (currentPhase == "preproduction")
+        {
+            Debug.Log("Changing to preproduction phase");
+            cameraTransform.position = preproductionPosition;
+        }
+        else if (currentPhase == "filming")
+        {
+            Debug.Log("Changing to filming phase");
+            cameraTransform.position = filmingPosition;
+        }
+        else if (currentPhase == "free time")
+        {
+            Debug.Log("Changing to free time phase");
+            cameraTransform.position = freeTimePosition;
+        }
+    }
+
+
 
     public void ChangePhase()
     {
