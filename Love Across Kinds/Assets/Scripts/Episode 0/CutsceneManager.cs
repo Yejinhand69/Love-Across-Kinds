@@ -25,13 +25,13 @@ public class CutsceneManager : MonoBehaviour
             anim.SetTrigger("1to2");
         }
 
-        if (dialogueManager.currSentenceId == 26 && !(DialogueManager.dialogueActive))
+        if (dialogueManager.currSentenceId == 25 && !(DialogueManager.dialogueActive))
         {
             anim.SetTrigger("2to3");
             StartCoroutine(PlayPhoneRinging());
         }
 
-        if(dialogueManager.currSentenceId == 60 && !(DialogueManager.dialogueActive))
+        if(dialogueManager.currSentenceId == 61 && !(DialogueManager.dialogueActive))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             AudioManager.instance.currentPhase = "PreProduction";
@@ -50,6 +50,6 @@ public class CutsceneManager : MonoBehaviour
         yield return new WaitForSeconds(4f);
         AudioManager.instance.PlaySFX("Together Succesfully");
         yield return new WaitForSeconds(2f);
-        trigger.StartDialogue("???", 27);
+        trigger.StartDialogue(" ", 26);
     }
 }

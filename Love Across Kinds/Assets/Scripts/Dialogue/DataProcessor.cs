@@ -22,7 +22,7 @@ public class DataProcessor : MonoBehaviour
     public void ProcessDialogueData()
     {
         //Read/Load dialogue file
-        TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/Episode" + AudioManager.instance.currentEpisode + AudioManager.instance.currentPhase);
+        TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/DialogueDataEpisode" + AudioManager.instance.currentEpisode + AudioManager.instance.currentPhase);
 
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
