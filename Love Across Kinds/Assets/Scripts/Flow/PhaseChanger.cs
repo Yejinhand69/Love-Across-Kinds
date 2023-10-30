@@ -9,23 +9,31 @@ public class PhaseChanger : MonoBehaviour/*, IPointerDownHandler*/
     private static PhaseChanger instance;
 
     private string[] phases = { "PreProduction", "Filming", "FreeTime" };
-  
+
     public string currentPhase;
 
-    //Reference Character
-    public GameObject preproductionCharacter;
-    public GameObject filmingCharacter;
-    public GameObject freeTimeCharacter;
+    // Reference to the character transform
+    public Transform characterTransform;
+    private Vector3 preproductionPosition = new Vector3(-1.411109f, 0.6155657f, 0.5493989f);
+    private Vector3 filmingPosition = new Vector3(2.8f, 0.6155657f, 0.5493989f);
+    private Vector3 freeTimePosition = new Vector3(1.411109f, 0.6155657f, 3.11f);
+
+    ////Reference Character
+    //public GameObject preproductionCharacter;
+    //public GameObject filmingCharacter;
+    //public GameObject freeTimeCharacter;
 
     public int currentPhaseIndex = 0;
 
     private void Awake()
     {
+
         // Ensure only one instance of this script exists
         if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            
         }
         else
         {
@@ -63,23 +71,26 @@ public class PhaseChanger : MonoBehaviour/*, IPointerDownHandler*/
         if (currentPhase == "PreProduction")
         {
             Debug.Log("Changing to preproduction phase");
-            preproductionCharacter.SetActive(true);
-            filmingCharacter.SetActive(false);
-            freeTimeCharacter.SetActive(false);
+            characterTransform.position = preproductionPosition;
+            //preproductionCharacter.SetActive(true);
+            //filmingCharacter.SetActive(false);
+            //freeTimeCharacter.SetActive(false);
         }
         else if (currentPhase == "Filming")
         {
             Debug.Log("Changing to filming phase");
-            preproductionCharacter.SetActive(false);
-            filmingCharacter.SetActive(true);
-            freeTimeCharacter.SetActive(false);
+            characterTransform.position = filmingPosition;
+            //preproductionCharacter.SetActive(false);
+            //filmingCharacter.SetActive(true);
+            //freeTimeCharacter.SetActive(false);
         }
         else if (currentPhase == "FreeTime")
         {
             Debug.Log("Changing to free time phase");
-            preproductionCharacter.SetActive(false);
-            filmingCharacter.SetActive(false);
-            freeTimeCharacter.SetActive(true);
+            characterTransform.position = freeTimePosition;
+            //preproductionCharacter.SetActive(false);
+            //filmingCharacter.SetActive(false);
+            //freeTimeCharacter.SetActive(true);
         }
     }
 
