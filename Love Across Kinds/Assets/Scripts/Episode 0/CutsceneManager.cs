@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CutsceneManager : MonoBehaviour
 {
-    private DialogueManager dialogueManager;
+    //private DialogueManager dialogueManager;
     private DialogueTrigger trigger;
     private Animator anim;
 
     private void Start()
     {
-        dialogueManager = FindObjectOfType<DialogueManager>();
+        //dialogueManager = FindObjectOfType<DialogueManager>();
         trigger = GetComponent<DialogueTrigger>();
         anim = GetComponent<Animator>();
 
@@ -20,18 +20,18 @@ public class CutsceneManager : MonoBehaviour
 
     private void Update()
     {
-        if (dialogueManager.currSentenceId == 12)
+        if (DialogueManager.instance.currSentenceId == 12)
         {
             anim.SetTrigger("1to2");
         }
 
-        if (dialogueManager.currSentenceId == 25 && !(DialogueManager.dialogueActive))
+        if (DialogueManager.instance.currSentenceId == 25 && !(DialogueManager.dialogueActive))
         {
             anim.SetTrigger("2to3");
             StartCoroutine(PlayPhoneRinging());
         }
 
-        if(dialogueManager.currSentenceId == 61 && !(DialogueManager.dialogueActive))
+        if(DialogueManager.instance.currSentenceId == 61 && !(DialogueManager.dialogueActive))
         {
             Skip();
         }

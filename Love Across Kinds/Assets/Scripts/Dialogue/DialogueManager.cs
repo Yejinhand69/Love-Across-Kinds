@@ -59,15 +59,7 @@ public class DialogueManager : MonoBehaviour
             {
                 if (Input.anyKeyDown)
                 {
-                    if(dialogueText.text == datas[currIndexPos].sentence)
-                    {
-                        NextSentence();
-                    }
-                    else
-                    {
-                        StopAllCoroutines();
-                        dialogueText.text = datas[currIndexPos].sentence;
-                    }
+                    NextSentence();
                 }
             }
         }
@@ -139,9 +131,7 @@ public class DialogueManager : MonoBehaviour
                     }
                 }
 
-                datas[currIndexPos].sentence = sentence;
-
-                StartCoroutine(TypeSentence(datas[currIndexPos].sentence));
+                dialogueText.text = sentence;
 
                 if (datas[currIndexPos].checkIfOption)
                 {
@@ -219,15 +209,5 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         dialogueActive = true;
-    }
-
-    IEnumerator TypeSentence(string sentenceToDisplay)
-    {
-        dialogueText.text = "";
-        foreach (char letter in sentenceToDisplay.ToCharArray())
-        {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(textSpeed);
-        }
     }
 }
