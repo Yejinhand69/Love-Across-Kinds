@@ -33,9 +33,7 @@ public class CutsceneManager : MonoBehaviour
 
         if(dialogueManager.currSentenceId == 61 && !(DialogueManager.dialogueActive))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            PhaseChanger.instance.currentPhase = "PreProduction";
-            PhaseChanger.instance.currentPhaseIndex = 1;
+            Skip();
         }
     }
 
@@ -51,5 +49,12 @@ public class CutsceneManager : MonoBehaviour
         AudioManager.instance.PlaySFX("Together Succesfully");
         yield return new WaitForSeconds(2f);
         trigger.StartDialogue(" ", 26);
+    }
+
+    public void Skip()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PhaseChanger.instance.currentPhase = "PreProduction";
+        PhaseChanger.instance.currentPhaseIndex = 1;
     }
 }
