@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ClickToChangePhase : MonoBehaviour
 {
+    
     private PhaseChanger phaseChanger; // Reference to your PhaseChanger script
 
     private void Start()

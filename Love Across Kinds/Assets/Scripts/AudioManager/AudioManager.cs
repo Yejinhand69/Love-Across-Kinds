@@ -77,7 +77,7 @@ public class AudioManager : MonoBehaviour
 
         AudioClip audioClip;
 
-        if (BGMDictionary.TryGetValue(PhaseChanger.instance.currentPhase, out audioClip))
+        if (BGMDictionary.TryGetValue(PhaseManager.instance.currentPhase, out audioClip))
         {
             _BGMSource.clip = audioClip;
             _BGMSource.Play();
