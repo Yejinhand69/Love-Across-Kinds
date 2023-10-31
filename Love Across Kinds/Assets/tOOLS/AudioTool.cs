@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 public class AudioTool : EditorWindow
 {
     public static TextAsset dialogueData;
@@ -110,3 +111,4 @@ public class AudioTool : EditorWindow
         }
     }
 }
+#endif

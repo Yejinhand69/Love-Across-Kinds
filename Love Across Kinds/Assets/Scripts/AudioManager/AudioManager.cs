@@ -17,8 +17,8 @@ public class AudioManager : MonoBehaviour
     [HideInInspector] 
     public VoiceOverAudioData voiceOverScript;
 
-    public string currentPhase = " ";
-    public int currentEpisode = 0;
+    //public string currentPhase = " ";
+    //public int currentEpisode = 0;
 
     private void Awake()
     {
@@ -44,7 +44,7 @@ public class AudioManager : MonoBehaviour
 
         for (int i = 0; i < bGM_Datas.Length; i++)
         {
-            if (bGM_Datas[i].Name == currentPhase)
+            if (bGM_Datas[i].Name == PhaseChanger.instance.currentPhase)
             {
                 _BGMSource.clip = bGM_Datas[i].BGM;
                 _BGMSource.Play();

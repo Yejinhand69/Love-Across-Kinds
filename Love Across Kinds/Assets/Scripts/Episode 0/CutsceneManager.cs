@@ -34,8 +34,8 @@ public class CutsceneManager : MonoBehaviour
         if(dialogueManager.currSentenceId == 61 && !(DialogueManager.dialogueActive))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            AudioManager.instance.currentPhase = "PreProduction";
-            AudioManager.instance.currentEpisode = 1;
+            PhaseChanger.instance.currentPhase = "PreProduction";
+            PhaseChanger.instance.currentPhaseIndex = 1;
         }
     }
 

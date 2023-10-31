@@ -511,7 +511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.14473839, y: 0}
   m_AnchorMax: {x: 0.28821522, y: 1}
-  m_AnchoredPosition: {x: 0.14004517, y: -0.1136322}
+  m_AnchoredPosition: {x: 0.14001465, y: -0.1136322}
   m_SizeDelta: {x: 1.7238007, y: -1.5974884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &59655348
@@ -587,7 +587,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.14473839, y: 0}
   m_AnchorMax: {x: 0.28821522, y: 1}
-  m_AnchoredPosition: {x: 0.14004517, y: -0.1136322}
+  m_AnchoredPosition: {x: 0.14001465, y: -0.1136322}
   m_SizeDelta: {x: 1.7238007, y: -1.5974884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &63100218
@@ -3195,7 +3195,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29200003, y: 0.056}
   m_AnchorMax: {x: 0.7112963, y: 0.09327204}
-  m_AnchoredPosition: {x: -1.5, y: 2.500122}
+  m_AnchoredPosition: {x: -1.5, y: 2.5}
   m_SizeDelta: {x: 11.01001, y: 6.002014}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565928802
@@ -5875,19 +5875,13 @@ MonoBehaviour:
   _SFXSource: {fileID: 1545795626}
   _VoiceOverSource: {fileID: 0}
   bGM_Datas:
-  - SceneName: PreProduction
+  - Name: 
     BGM: {fileID: 8300000, guid: 68627fe58cd597a46a018308f5285aa6, type: 3}
-  - SceneName: Filming
+  - Name: 
     BGM: {fileID: 8300000, guid: 454bad299bf27574499def09979022b3, type: 3}
-  - SceneName: FreeTime
+  - Name: 
     BGM: {fileID: 8300000, guid: e720ff77fd2aba54496d258d4ede350e, type: 3}
-  sFX_Datas:
-  - ClipName: 
-    SFX: {fileID: 8300000, guid: a748ad9292518c94ea8e9362ead6c39d, type: 3}
-  - ClipName: 
-    SFX: {fileID: 8300000, guid: e6ba9198992fd24489c0311270221222, type: 3}
-  - ClipName: 
-    SFX: {fileID: 8300000, guid: 93d8ac74402737a41b3c06c2b5b2677c, type: 3}
+  voiceOverScript: {fileID: 0}
 --- !u!4 &1056858633
 Transform:
   m_ObjectHideFlags: 0
@@ -7543,6 +7537,7 @@ MonoBehaviour:
   option1Text: {fileID: 1690983692}
   option2Text: {fileID: 134253224}
   option3Text: {fileID: 1380444141}
+  currSentenceId: 0
 --- !u!114 &1497465678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10082,6 +10077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa917ef805801ed4887e280582446c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  folderName: 
   _VoiceClips:
   - actorName: Xina
     dialogueID: 0
@@ -11117,7 +11113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.14473839, y: 0}
   m_AnchorMax: {x: 0.28821522, y: 1}
-  m_AnchoredPosition: {x: 0.14004517, y: -0.1136322}
+  m_AnchoredPosition: {x: 0.14001465, y: -0.1136322}
   m_SizeDelta: {x: 1.7238007, y: -1.5974884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099242876
