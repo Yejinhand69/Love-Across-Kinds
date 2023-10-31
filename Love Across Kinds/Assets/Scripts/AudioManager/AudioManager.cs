@@ -17,8 +17,8 @@ public class AudioManager : MonoBehaviour
     [HideInInspector] 
     public VoiceOverAudioData voiceOverScript;
 
-    //public string currentPhase = " ";
-    //public int currentEpisode = 0;
+    public Dictionary<string, AudioClip> SFXDictionary;
+    public Dictionary<string, AudioClip> BGMDictionary;
 
     private void Awake()
     {
@@ -34,21 +34,23 @@ public class AudioManager : MonoBehaviour
     }
 
     private void Start()
-    { 
-        UpdateSFX();
-    }
-
-    public void PlayBGM()
     {
-        _BGMSource.Stop();
+        //Initialise dictionary
+        SFXDictionary = new Dictionary<string, AudioClip>();
+        BGMDictionary = new Dictionary<string, AudioClip>();
 
-        for (int i = 0; i < bGM_Datas.Length; i++)
+        UpdateSFX();
+        
+        //Adding SFX data into Dictionary<>
+        for(int i = 0; i < sFX_Datas.Count; i++)
         {
-            if (bGM_Datas[i].Name == PhaseChanger.instance.currentPhase)
-            {
-                _BGMSource.clip = bGM_Datas[i].BGM;
-                _BGMSource.Play();
-            }
+            SFXDictionary.Add(sFX_Datas[i].ClipName, sFX_Datas[i].SFX);
+        }
+
+        //Adding BGM data into Dictionary<>
+        for(int i = 0; i < bGM_Datas.Length; i++)
+        {
+            BGMDictionary.Add(bGM_Datas[i].Name, bGM_Datas[i].BGM);
         }
     }
 
@@ -69,14 +71,26 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayBGM()
+    {
+        _BGMSource.Stop();
+
+        AudioClip audioClip;
+
+        if (BGMDictionary.TryGetValue(PhaseChanger.instance.currentPhase, out audioClip))
+        {
+            _BGMSource.clip = audioClip;
+            _BGMSource.Play();
+        }
+    }
+
     public void PlaySFX(string clipName)
     {
-        for(int i = 0; i < sFX_Datas.Count; i++)
+        AudioClip audioClip;
+        
+        if(SFXDictionary.TryGetValue(clipName, out audioClip))
         {
-            if(clipName == sFX_Datas[i].ClipName)
-            {
-                _SFXSource.PlayOneShot(sFX_Datas[i].SFX);
-            }
+            _SFXSource.PlayOneShot(audioClip);
         }
     }
 
