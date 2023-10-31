@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -597,142 +597,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &374976684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 374976687}
-  - component: {fileID: 374976686}
-  - component: {fileID: 374976685}
-  m_Layer: 5
-  m_Name: Option2Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &374976685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374976684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Option
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &374976686
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374976684}
-  m_CullTransparentMesh: 1
---- !u!224 &374976687
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374976684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1066542548}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: 0.000027657}
-  m_SizeDelta: {x: 667.57, y: 101.76}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &414302286
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,546 +629,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &441359325
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 441359326}
-  - component: {fileID: 441359328}
-  - component: {fileID: 441359327}
-  m_Layer: 5
-  m_Name: Option3Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &441359326
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441359325}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1070614166}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: -0.000247}
-  m_SizeDelta: {x: 667.57, y: 101.76}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &441359327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441359325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Option
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &441359328
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441359325}
-  m_CullTransparentMesh: 1
---- !u!1 &515614214
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 515614215}
-  - component: {fileID: 515614217}
-  - component: {fileID: 515614216}
-  m_Layer: 5
-  m_Name: DialogueBox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &515614215
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515614214}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 602060804}
-  m_Father: {fileID: 1544261706}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.065331176, y: 0.166865}
-  m_AnchorMax: {x: 0.93725926, y: 0.41500002}
-  m_AnchoredPosition: {x: -1.5, y: -1.362793}
-  m_SizeDelta: {x: 4.9329834, y: -1.0859985}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &515614216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515614214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.68380207, g: 0.7043873, b: 0.9245283, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &515614217
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515614214}
-  m_CullTransparentMesh: 1
---- !u!1 &520263121
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 520263123}
-  - component: {fileID: 520263122}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &520263122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520263121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38efebc079c056844ae1b440d984ad8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _BGMSource: {fileID: 753874763}
-  _SFXSource: {fileID: 857228091}
-  _VoiceOverSource: {fileID: 0}
-  bGM_Datas:
-  - Name: 
-    BGM: {fileID: 8300000, guid: 68627fe58cd597a46a018308f5285aa6, type: 3}
-  - Name: 
-    BGM: {fileID: 8300000, guid: 454bad299bf27574499def09979022b3, type: 3}
-  - Name: 
-    BGM: {fileID: 8300000, guid: e720ff77fd2aba54496d258d4ede350e, type: 3}
-  voiceOverScript: {fileID: 0}
---- !u!4 &520263123
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520263121}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 211.5, y: -23.162537, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 753874764}
-  - {fileID: 857228092}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &524518999
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 524519003}
-  - component: {fileID: 524519002}
-  - component: {fileID: 524519000}
-  - component: {fileID: 524519001}
-  m_Layer: 5
-  m_Name: Option1Box
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &524519000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524518999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 0.7058824, b: 0.9254902, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!114 &524519001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524518999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 524519000}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1544261703}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: ChooseOption1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!222 &524519002
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524518999}
-  m_CullTransparentMesh: 1
---- !u!224 &524519003
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524518999}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1302090271}
-  m_Father: {fileID: 769818555}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.999996, y: 603}
-  m_SizeDelta: {x: 667.57, y: 101.761}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &602060801
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 602060804}
-  - component: {fileID: 602060803}
-  - component: {fileID: 602060802}
-  m_Layer: 5
-  m_Name: DialogueText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &602060802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602060801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Fill Text
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 58
-  m_fontSizeBase: 58
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &602060803
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602060801}
-  m_CullTransparentMesh: 1
---- !u!224 &602060804
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602060801}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 515614215}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.906307, y: -9.45}
-  m_SizeDelta: {x: 927.0096, y: 523.5776}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &638749814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,7 +824,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 907681760}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1565,554 +889,131 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687590041}
   m_CullTransparentMesh: 1
---- !u!1 &753874762
-GameObject:
+--- !u!1001 &731979405
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 753874764}
-  - component: {fileID: 753874763}
-  m_Layer: 0
-  m_Name: BGM_Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &753874763
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753874762}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 907681760}
+    m_Modifications:
+    - target: {fileID: 4499437054624545240, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_RootOrder
       value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_AnchorMax.x
       value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &753874764
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753874762}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 520263123}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &762008544
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 762008545}
-  m_Layer: 5
-  m_Name: DialogueUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &762008545
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04f53118add5f664cbba9df9348b4d05, type: 3}
+--- !u!224 &731979406 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
+    type: 3}
+  m_PrefabInstance: {fileID: 731979405}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762008544}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1544261706}
-  - {fileID: 769818555}
-  m_Father: {fileID: 907681760}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &769818554
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 769818555}
-  m_Layer: 5
-  m_Name: OptionStuff
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &769818555
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769818554}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 524519003}
-  - {fileID: 1066542548}
-  - {fileID: 1070614166}
-  m_Father: {fileID: 762008545}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &801997512
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 801997515}
-  - component: {fileID: 801997513}
-  - component: {fileID: 801997514}
-  m_Layer: 0
-  m_Name: VoiceOver_Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!82 &801997513
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801997512}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &801997514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801997512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa917ef805801ed4887e280582446c44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  folderName: 
-  _VoiceClips:
-  - actorName: Xina
-    dialogueID: 0
-    sentence: '"Hello, Im Xina."'
-    voiceClip: {fileID: 8300000, guid: a748ad9292518c94ea8e9362ead6c39d, type: 3}
-  - actorName: Xina
-    dialogueID: 1
-    sentence: I like you
-    voiceClip: {fileID: 8300000, guid: e6ba9198992fd24489c0311270221222, type: 3}
-  - actorName: Xina
-    dialogueID: 2
-    sentence: Muahhh
-    voiceClip: {fileID: 8300000, guid: 93d8ac74402737a41b3c06c2b5b2677c, type: 3}
-  - actorName: Xina
-    dialogueID: 3
-    sentence: I guess we have to know each other more.
-    voiceClip: {fileID: 8300000, guid: d2a9e850491881a46b77ff517428d62f, type: 3}
-  - actorName: Xina
-    dialogueID: 4
-    sentence: ogehh
-    voiceClip: {fileID: 8300000, guid: 59abab35a93240043862133a87e8c1cc, type: 3}
-  - actorName: Benia
-    dialogueID: 5
-    sentence: '"Hello, Im Benia"'
-    voiceClip: {fileID: 8300000, guid: 14f1c543ea7164f4a91c7ba465a99fb1, type: 3}
-  - actorName: Benia
-    dialogueID: 6
-    sentence: Let's go for a date.
-    voiceClip: {fileID: 8300000, guid: 31504ad58a12d174ea6892440c237349, type: 3}
-  - actorName: Benia
-    dialogueID: 7
-    sentence: Muahhh
-    voiceClip: {fileID: 8300000, guid: 1fb9d13d466c2db489bdeac795a1cc5d, type: 3}
-  - actorName: Benia
-    dialogueID: 8
-    sentence: TT
-    voiceClip: {fileID: 8300000, guid: 3d7cbc4802111e149b17efb465dee80d, type: 3}
-  - actorName: Benia
-    dialogueID: 9
-    sentence: Ogehh
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 10
-    sentence: Test 11
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 11
-    sentence: Test 12
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 12
-    sentence: Test 13
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 13
-    sentence: Test 14
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 14
-    sentence: Option Test 1
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 15
-    sentence: Option Test 2
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 16
-    sentence: Option Test 3
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 17
-    sentence: Test 15
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 18
-    sentence: Test 16
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 19
-    sentence: Test 17
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 20
-    sentence: Test 18
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 21
-    sentence: Test 19
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 22
-    sentence: Test 20
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 23
-    sentence: Test 21
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 24
-    sentence: Test 22
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 25
-    sentence: Test 23
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 26
-    sentence: Test 24
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 27
-    sentence: Test 25
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 28
-    sentence: Test 26
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 29
-    sentence: Test 27
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 30
-    sentence: Test 28
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 31
-    sentence: Test 29
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 32
-    sentence: Test 30
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 33
-    sentence: Test 31
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 34
-    sentence: Test 32
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 35
-    sentence: Test 33
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 36
-    sentence: Test 34
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 37
-    sentence: Test 35
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 38
-    sentence: Test 36
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 39
-    sentence: Test 37
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 40
-    sentence: Test 38
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 41
-    sentence: Test 39
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 42
-    sentence: Test 40
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 43
-    sentence: Test 41
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 44
-    sentence: Test 42
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 45
-    sentence: Test 43
-    voiceClip: {fileID: 0}
-  - actorName: Player Tester
-    dialogueID: 46
-    sentence: Test 44
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 47
-    sentence: Test 45
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 48
-    sentence: Test 46
-    voiceClip: {fileID: 0}
-  - actorName: Dialogue Test
-    dialogueID: 49
-    sentence: Test 47
-    voiceClip: {fileID: 0}
---- !u!4 &801997515
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801997512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &807891200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,134 +1129,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
---- !u!1 &857228090
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 857228092}
-  - component: {fileID: 857228091}
-  m_Layer: 0
-  m_Name: SFX_Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &857228091
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857228090}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &857228092
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857228090}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 520263123}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &907681756
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,8 +1221,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 762008545}
   - {fileID: 687590042}
+  - {fileID: 731979406}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2739,274 +1512,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1066542547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1066542548}
-  - component: {fileID: 1066542551}
-  - component: {fileID: 1066542550}
-  - component: {fileID: 1066542549}
-  m_Layer: 5
-  m_Name: Option2Box
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1066542548
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066542547}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 374976687}
-  m_Father: {fileID: 769818555}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: 365}
-  m_SizeDelta: {x: 667.57, y: 101.761}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1066542549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066542547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 524519000}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1544261703}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: ChooseOption2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1066542550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066542547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 0.7058824, b: 0.9254902, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1066542551
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066542547}
-  m_CullTransparentMesh: 1
---- !u!1 &1070614165
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1070614166}
-  - component: {fileID: 1070614169}
-  - component: {fileID: 1070614168}
-  - component: {fileID: 1070614167}
-  m_Layer: 5
-  m_Name: Option3Box
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1070614166
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070614165}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 441359326}
-  m_Father: {fileID: 769818555}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: 120}
-  m_SizeDelta: {x: 667.57, y: 101.761}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1070614167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070614165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 524519000}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1544261703}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: ChooseOption3
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1070614168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070614165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 0.7058824, b: 0.9254902, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1070614169
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070614165}
-  m_CullTransparentMesh: 1
 --- !u!1 &1101813755
 GameObject:
   m_ObjectHideFlags: 0
@@ -3081,142 +1586,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swipeThreshold: 0.2
---- !u!1 &1161603501
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1161603504}
-  - component: {fileID: 1161603503}
-  - component: {fileID: 1161603502}
-  m_Layer: 5
-  m_Name: NameText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1161603502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161603501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Name
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 48.9
-  m_fontSizeBase: 48.9
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1161603503
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161603501}
-  m_CullTransparentMesh: 1
---- !u!224 &1161603504
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161603501}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1788813221}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.6938, y: -3}
-  m_SizeDelta: {x: 159.39, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1275932297
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,142 +1654,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1302090268
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1302090271}
-  - component: {fileID: 1302090270}
-  - component: {fileID: 1302090269}
-  m_Layer: 5
-  m_Name: Option1Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1302090269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302090268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Option
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1302090270
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302090268}
-  m_CullTransparentMesh: 1
---- !u!224 &1302090271
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302090268}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 524519003}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: -0.000247}
-  m_SizeDelta: {x: 667.57, y: 101.76}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1469527088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3542,7 +1775,7 @@ PrefabInstance:
     - target: {fileID: 2859185882322292721, guid: 6f6a21e953d53b14ba5393e3d3f7e707,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2859185882322292721, guid: 6f6a21e953d53b14ba5393e3d3f7e707,
         type: 3}
@@ -3601,98 +1834,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f6a21e953d53b14ba5393e3d3f7e707, type: 3}
---- !u!1 &1544261702
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1544261706}
-  - component: {fileID: 1544261705}
-  - component: {fileID: 1544261703}
-  - component: {fileID: 1544261704}
-  m_Layer: 5
-  m_Name: DIalogueStuff
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1544261703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544261702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62d3e038828edff43b17af6a3dbecac7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  optionBox: {fileID: 769818554}
-  nameText: {fileID: 1161603502}
-  dialogueText: {fileID: 602060802}
-  option1Text: {fileID: 1302090269}
-  option2Text: {fileID: 374976685}
-  option3Text: {fileID: 441359327}
-  currSentenceId: 0
---- !u!114 &1544261704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544261702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a6b85411705e4408716a742a9951f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &1544261705
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544261702}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2fd276744138d824b886814c142730b5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!224 &1544261706
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544261702}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 515614215}
-  - {fileID: 1788813221}
-  m_Father: {fileID: 762008545}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1601415479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3767,6 +1908,868 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swipeThreshold: 0.2
+--- !u!1 &1624002144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624002146}
+  - component: {fileID: 1624002145}
+  m_Layer: 0
+  m_Name: VoiceOver_Clips_DialogueDataEpisode1PreProduction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1624002145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624002144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa917ef805801ed4887e280582446c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  folderName: SFX
+  _VoiceClips:
+  - actorName: ' '
+    dialogueID: 0
+    sentence: A loud notification from your phone drags you out of bed
+    voiceClip: {fileID: 8300000, guid: a748ad9292518c94ea8e9362ead6c39d, type: 3}
+  - actorName: Joe Hand
+    dialogueID: 1
+    sentence: '"Goooooodddd Morning Human Contestant! I hope you''re ready for the
+      day ahead cause we will be filming the first episode of season 86 in just a
+      few hours. Here''s some advice free of charge! Get to know your fellow contestants
+      a little better. Get to know how they lie, it could prove useful during the
+      episode''s challenge. Too da loo~ I wish you success during filming later!"'
+    voiceClip: {fileID: 8300000, guid: e6ba9198992fd24489c0311270221222, type: 3}
+  - actorName: Player
+    dialogueID: 2
+    sentence: I should probably go get some breakfast before doing anything.
+    voiceClip: {fileID: 8300000, guid: 93d8ac74402737a41b3c06c2b5b2677c, type: 3}
+  - actorName: Player
+    dialogueID: 3
+    sentence: "Find out how each person lies\u2026"
+    voiceClip: {fileID: 8300000, guid: d2a9e850491881a46b77ff517428d62f, type: 3}
+  - actorName: Player
+    dialogueID: 4
+    sentence: How the heck am I going to do that?
+    voiceClip: {fileID: 8300000, guid: 59abab35a93240043862133a87e8c1cc, type: 3}
+  - actorName: ' '
+    dialogueID: 5
+    sentence: Game Host Joe's hologram is projected in the middle of the recording
+      studio.
+    voiceClip: {fileID: 8300000, guid: 14f1c543ea7164f4a91c7ba465a99fb1, type: 3}
+  - actorName: ' '
+    dialogueID: 6
+    sentence: He seems to have been waiting for you.
+    voiceClip: {fileID: 8300000, guid: 31504ad58a12d174ea6892440c237349, type: 3}
+  - actorName: Game Host Joe
+    dialogueID: 7
+    sentence: '"Well hello there, [Player Name]"'
+    voiceClip: {fileID: 8300000, guid: 1fb9d13d466c2db489bdeac795a1cc5d, type: 3}
+  - actorName: Game Host Joe
+    dialogueID: 8
+    sentence: We still have a bit of time before filming begins
+    voiceClip: {fileID: 8300000, guid: 3d7cbc4802111e149b17efb465dee80d, type: 3}
+  - actorName: Game Host Joe
+    dialogueID: 9
+    sentence: You're welcome to go and speak with the other contestants in the meantime.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 10
+    sentence: You're welcome to go and speak with the other contestants in the meantime.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 11
+    sentence: You see Xina trying to open a door that's just beside the entrance
+      to the Recording Studio.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 12
+    sentence: It's a traditional door with a simple security system attached to it's
+      door frame.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 13
+    sentence: The way Xina is trying to open the door is almost comical.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 14
+    sentence: Her legs aren't even on the floor anymore and she's attempting to use
+      her whole body weight to forcibly open the door.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 15
+    sentence: She's failing spectacularly.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 16
+    sentence: She's failing spectacularly.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 17
+    sentence: WAH!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 18
+    sentence: It seems you've startled her.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 19
+    sentence: She falls to the floor in a comical manner
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 20
+    sentence: '[Player Name]!'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 21
+    sentence: Xina looks up at you from the floor while in a goofy pose.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 22
+    sentence: She seems unharmed from the wacky fall.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 23
+    sentence: '"Hehe, it''s not what it looks like."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 24
+    sentence: '"Hehe, it''s not what it looks like."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 25
+    sentence: '"Oh, Joe told me."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 26
+    sentence: "I ran into him yesterday while I was exploring and I realised I forgot
+      to ask your name\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 27
+    sentence: So he just told me!
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 28
+    sentence: He doesn't make you call him Game Host Joe?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 29
+    sentence: Xina looks a little confused by your question.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 30
+    sentence: No?
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 31
+    sentence: Anyway-
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 32
+    sentence: A poor innocent girl NOT trying to trespass into a restricted area
+      of a starcruiser?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 33
+    sentence: A long silence follows while Xina and you lock eyes while she's on
+      the floor.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 34
+    sentence: ANYWAY-
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 35
+    sentence: She seems to be trying to quickly change the subject.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 36
+    sentence: Xina swiftly scrambles to her feet as if she wasn't just having a conversation
+      while on the floor.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 37
+    sentence: What brings you here?
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 38
+    sentence: Filming doesn't start for a while so we got time to do whatever we
+      want!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 39
+    sentence: "You remember the message Game Host Joe sent you in the morning\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 40
+    sentence: "Find out how each person lies\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 41
+    sentence: "Find out how each person lies\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 42
+    sentence: "Uhhh Whatttt I totally do NOT want to go in there\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 43
+    sentence: Xina is refusing to make eye contact with you.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 44
+    sentence: "It's quite clear she's lying\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 45
+    sentence: '"Awh, that''s sweet of you."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 46
+    sentence: I had fun talking with you too!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 47
+    sentence: "\"Let's talk more during Free Time, right now I'm a bit busy\u2026\""
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 48
+    sentence: '"She starts fidgeting a bit, it''s clear she''s hiding something from
+      you and under your questioning gaze she caves."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 49
+    sentence: Damn! This corridor is too conspicuous huh?
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 50
+    sentence: Hehe-
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 51
+    sentence: '"She starts fidgeting a bit, it''s clear she''s hiding something from
+      you and under your questioning gaze she caves."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 52
+    sentence: '"Ok, ok you caught me."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 53
+    sentence: Xina puts up her arms and tentacle appendages in surrender.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 54
+    sentence: But I have a good reason as to why I want to get in this room!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 55
+    sentence: "\"Truth is, I dropped something important to me while exploring yesterday\u2026\""
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 56
+    sentence: But this room wasn't locked yesterday and this was one of the rooms
+      I explored.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 57
+    sentence: "There are a few more places I haven't checked yet like the pool and
+      entertainment room\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 58
+    sentence: '"But this is my own problem so you don''t have to help, [Player Name]!"'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 59
+    sentence: '"Well, see you in a bit then!"'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 60
+    sentence: '"I''ll figure something out, this door will open eventually!"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 61
+    sentence: '"You could help Xina by finding her thing,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 62
+    sentence: She said she hadn't checked the pool & entertainment room yet so you
+      should go look around there if you want to help.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 63
+    sentence: "You notice something shining in the pool\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 64
+    sentence: Crouching down you see a sparkly bracelet that seems to be made of
+      shiny seashells.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 65
+    sentence: It's at the bottom of the pool and you doubt your arm could reach far
+      enough to get it.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 66
+    sentence: It's at the bottom of the pool and you doubt your arm could reach far
+      enough to get it.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 67
+    sentence: '"You get down on your belly and reach for the bracelet,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 68
+    sentence: But as you reach down it seems that it is actually further than you
+      expect!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 69
+    sentence: You tip yourself too far into the pool and fall right in.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 70
+    sentence: As you get up from crouching you suddenly lose balance and fall face
+      first into the pool.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 71
+    sentence: You thought you could ignore it?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 72
+    sentence: THINK AGAIN.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 73
+    sentence: You fall into the pool with a splash.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 74
+    sentence: '"Soaked to the bone, you decide to pick up the bracelet since you''re
+      already wet."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 75
+    sentence: "After you get out of the water you examine Xina's bracelet a little
+      closer\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 76
+    sentence: '"The bracelet is quite beautiful, various shiny alien seashells joined
+      together by a metallic blue stainless steel chain."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 77
+    sentence: "This must be Xina's \u2018important item'"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 78
+    sentence: You pocket the bracelet
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 79
+    sentence: You should probably bring this back to Xina.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 80
+    sentence: As you walk up to Xina she spots you and initiates a conversation.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 81
+    sentence: Did you go for a swim?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 82
+    sentence: You're still dripping water from when you fell into the pool.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 83
+    sentence: You're still dripping water from when you fell into the pool.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 84
+    sentence: '"Hehehe, with your clothes still on?"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 85
+    sentence: Xina seems to be trying to hold in her laughter.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 86
+    sentence: '"Hahaha, that explains your soaked clothes."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 87
+    sentence: You take out the bracelet from your pocket & show it to Xina.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 88
+    sentence: You take out the bracelet from your pocket & show it to Xina.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 89
+    sentence: Xina's eyes widen as soon as she sees the bracelet.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 90
+    sentence: You sense her mood shift significantly.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 91
+    sentence: "My bracelet\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 92
+    sentence: "You found it\u2026?"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 93
+    sentence: You see tears well up in Xina's eyes before she wipes them away
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 94
+    sentence: Xina raises up her left hand and seems to want you to help put her
+      bracelet back on.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 95
+    sentence: You gently take her arm and help Xina fasten the bracelet firmly on
+      her wrist
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 96
+    sentence: Xina's complexion changes to a light shade of pink
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 97
+    sentence: '"Thanks, [Player Name]."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 98
+    sentence: This bracelet means a lot to me.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 99
+    sentence: "It's one of the few things my mother gave me\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 100
+    sentence: Xina's mood seems to have returned to normal
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 101
+    sentence: So thanks a lot!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 102
+    sentence: Xina seems to be fidgeting a bit
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 103
+    sentence: She gestures you to lean down a bit so she can whisper in your ear
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 104
+    sentence: I sure hope you pick me to be your filming partner later~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 105
+    sentence: After whispering in your ear Xina gives you a peck on your cheek.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 106
+    sentence: I'll see you during filming! <3
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 107
+    sentence: You can see her turn bright pink as she turns the corner entering the
+      recording studio.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 108
+    sentence: You see Benia standing by the wall table.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 109
+    sentence: '"She seems to be eating breakfast, you wonder why she''s standing-"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 110
+    sentence: But a glance at the broken chair next to her explains everything.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 111
+    sentence: '"As you approach Benia you notice a root from Benia''s right hand
+      submerged in a pitcher of water,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 112
+    sentence: While her other hand cleans up a meal you assume she just finished.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 113
+    sentence: '"Her facial expression seems to be quite dreary, as if she didn''t
+      get any sleep last night."'
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 114
+    sentence: '"Her facial expression seems to be quite dreary, as if she didn''t
+      get any sleep last night."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 115
+    sentence: '"You see Benia''s facial expression change unnaturally,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 116
+    sentence: Following her abrupt change she smiles before turning to face you
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 117
+    sentence: Her previous dreary expression is completely gone as she addresses
+      you
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 118
+    sentence: '"Good Morning, Honey."'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 119
+    sentence: '"You only think that because you haven''t gotten up next to me yet,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 120
+    sentence: I'm a complete mess when I wake up~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 121
+    sentence: Benia playfully winks at you before continuing
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 122
+    sentence: You hear Benia chuckle but it sounds different somehow compared to
+      yesterday
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 123
+    sentence: Hahaha-
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 124
+    sentence: '"True, they know I''m larger than the other sentient species on board."'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 125
+    sentence: Maybe it just slipped Game Host Joe's mind.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 126
+    sentence: '"Benia turns to face you and while the dreary expression she had is
+      no longer there,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 127
+    sentence: "You feel that her facial expressions and tone of voice are different
+      compared to yesterday\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 128
+    sentence: '"Hey, [Player Name]."'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 129
+    sentence: So what brings you to me?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 130
+    sentence: "You remember the message Game Host Joe sent you in the morning\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 131
+    sentence: "Find out how each person lies\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 132
+    sentence: "Find out how each person lies\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 133
+    sentence: '"Oh my,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 134
+    sentence: What a good boy~
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 135
+    sentence: '"Hmm~ Let me think of a fitting reward for you,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 136
+    sentence: '"Oh, I know!"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 137
+    sentence: Benia grabs your hand and slams you against the wall while bending
+      down to whisper in your ear
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 138
+    sentence: Come to the bar after filming finishes~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 139
+    sentence: The moisture from her breath sends shivers down your spine.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 140
+    sentence: I'll be waiting for you~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 141
+    sentence: She releases your hand and backs away from you slowly while lightly
+      brushing her fingers past your chin.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 142
+    sentence: You feel your heart nearly beating out of your chest.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 143
+    sentence: '"Benia stares at you for a second or two before responding,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 144
+    sentence: Hahaha-
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 145
+    sentence: '"My, you''re honest aren''t you?"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 146
+    sentence: '"Well, you don''t ever need an excuse to talk to me."'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 147
+    sentence: So just come on by whenever you're free alright?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 148
+    sentence: "\"Her tone of voice sounds different, it feels more natural\u2026\""
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 149
+    sentence: '"You notice Benia tremble slightly, she avoids your eyes and turns
+      around."'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 150
+    sentence: Oh.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 151
+    sentence: '"Benia''s tone of voice changes,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 152
+    sentence: '"Sorry for worrying you, I won''t let you see it again."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 153
+    sentence: '"The mood has changed drastically, Benia''s voice is trembling."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 154
+    sentence: She takes a deep breath & it looks almost like she resets her emotions
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 155
+    sentence: I apologise for causing you to worry [Player Name]
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 156
+    sentence: But I'm ok so don't worry about me.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 157
+    sentence: '"I just had a very bad dream last night is all,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 158
+    sentence: Anyway-
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 159
+    sentence: The tone of Benia's voice sounds forced.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 160
+    sentence: "\"\u201CI'll be going to the recording studio now, I don't have much
+      else to do.\""
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 161
+    sentence: See you soon Honey~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 162
+    sentence: You see a cloud of gas just floating in the center of the lobby
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 163
+    sentence: '"The colour of the gas changes to light pink as you approach,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 164
+    sentence: It's Florine!
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 165
+    sentence: H-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 166
+    sentence: Hel-
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 167
+    sentence: '"You don''t know how, but it sounds like she bit her tongue"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 168
+    sentence: Seems she still remembers what happened yesterday.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 169
+    sentence: '"Hello, [Player Name]."'
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 170
+    sentence: Good Morning-
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 171
+    sentence: Florine's gas changes back to its neutral colour after her greeting
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 172
+    sentence: Florine's gas changes back to its neutral colour after her greeting
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 173
+    sentence: "I've just been floating about\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 174
+    sentence: "I don't have much to do\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 175
+    sentence: Florine's gas changes to a bright pink colour and you can see her silhouette
+      fidgeting
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 176
+    sentence: '"Ahaha-,"'
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 177
+    sentence: Ple-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 178
+    sentence: "Please don't tease me\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 179
+    sentence: '"Her voice is meek but it sounds a little playful,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 180
+    sentence: Thankfully it seems she knows you were just teasing her.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 181
+    sentence: After a bit Florine's gas colour reverts to its original state.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 182
+    sentence: "You remember the message Game Host Joe sent you in the morning\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 183
+    sentence: "Find out how each person lies\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 184
+    sentence: "If Florine were to lie it would probably be quite easy to tell thanks
+      to her mannerisms\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 185
+    sentence: You decide that it's a waste of time to try and make her lie here.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 186
+    sentence: '"You see Florine''s silhouette in the gas shuffle a bit,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 187
+    sentence: Almost as if she's a bit uncomfortable with the awkward silence she
+      speaks first.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 188
+    sentence: "Sorry if I creeped you out yesterday\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 189
+    sentence: "If you still want to help me I'll be in the Dining Room during Free
+      Time\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 190
+    sentence: "I'm going to head to the studio now\u2026"
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 191
+    sentence: Bye-
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 192
+    sentence: Florine floats away.
+    voiceClip: {fileID: 0}
+--- !u!4 &1624002146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624002144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1662686595
 GameObject:
   m_ObjectHideFlags: 0
@@ -3874,83 +2877,6 @@ Transform:
   m_Father: {fileID: 1925738356}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1788813220
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1788813221}
-  - component: {fileID: 1788813223}
-  - component: {fileID: 1788813222}
-  m_Layer: 5
-  m_Name: NameBox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1788813221
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788813220}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1161603504}
-  m_Father: {fileID: 1544261706}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.057000004, y: 0.41957888}
-  m_AnchorMax: {x: 0.25929725, y: 0.46024147}
-  m_AnchoredPosition: {x: 1.3699951, y: 1.0789795}
-  m_SizeDelta: {x: -5.325012, y: 0.15899658}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1788813222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788813220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.5642577, g: 0.5845199, b: 0.9433962, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1788813223
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788813220}
-  m_CullTransparentMesh: 1
 --- !u!1 &1840316307
 GameObject:
   m_ObjectHideFlags: 0
