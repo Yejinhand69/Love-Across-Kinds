@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
 
     public int currentScore;
-    public int scorePerNote = 100;
+    public int scorePerNote = 25;
 
     public GameObject resultsScreen;
     public GameObject inGameUI;
