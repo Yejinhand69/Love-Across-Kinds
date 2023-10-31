@@ -72,12 +72,14 @@ public class TransportPoint : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         }
     }
 
-    public void LoadLobby()
+    public void LoadLobby0()
     {
+        
         SceneManager.LoadScene("Lobby0");
     }
-    public void LoadRecording()
+    public void LoadRecording0()
     {
+        
         SceneManager.LoadScene("Recording0");
     }
 
