@@ -54,7 +54,7 @@ public class CutsceneManager : MonoBehaviour
     public void Skip()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        PhaseChanger.instance.currentPhase = "PreProduction";
-        PhaseChanger.instance.currentPhaseIndex = 1;
+        PhaseManager.instance.currentPhase = "PreProduction";
+        PhaseManager.instance.currentEpisode = 1;
     }
 }
