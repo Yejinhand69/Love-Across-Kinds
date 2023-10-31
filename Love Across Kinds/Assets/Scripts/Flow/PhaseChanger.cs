@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class PhaseChanger : MonoBehaviour/*, IPointerDownHandler*/
 {
-    private static PhaseChanger instance;
+    public static PhaseChanger instance;
 
     private string[] phases = { "PreProduction", "Filming", "FreeTime" };
   
@@ -40,7 +40,7 @@ public class PhaseChanger : MonoBehaviour/*, IPointerDownHandler*/
 
     public void Update()
     {
-        Debug.Log(currentPhaseIndex);
+        //Debug.Log(currentPhaseIndex);
     }
 
     private void UpdatePhaseText()

@@ -83,7 +83,15 @@ public class DialogueManager : MonoBehaviour
 
                 AudioManager.instance.PlayVoice(currSentenceId);
 
-                nameText.text = datas[currIndexPos].name;
+                if(datas[currIndexPos].name == "Player")
+                {
+                    nameText.text = UserData.instance.playerName;
+                }
+                else
+                {
+                    nameText.text = datas[currIndexPos].name;
+                }
+                
                 dialogueText.text = datas[currIndexPos].sentence;
 
                 if (datas[currIndexPos].checkIfOption)

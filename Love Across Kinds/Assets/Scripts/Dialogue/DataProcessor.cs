@@ -11,7 +11,7 @@ public class DataProcessor : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Episode 0")
         {
-            AudioManager.instance.currentPhase = "Prologue";
+            PhaseChanger.instance.currentPhase = "Prologue";
         }
 
         AudioManager.instance.PlayBGM();
@@ -22,7 +22,7 @@ public class DataProcessor : MonoBehaviour
     public void ProcessDialogueData()
     {
         //Read/Load dialogue file
-        TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/DialogueDataEpisode" + AudioManager.instance.currentEpisode + AudioManager.instance.currentPhase);
+        TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/DialogueDataEpisode" + PhaseChanger.instance.currentPhaseIndex + PhaseChanger.instance.currentPhase);
 
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
