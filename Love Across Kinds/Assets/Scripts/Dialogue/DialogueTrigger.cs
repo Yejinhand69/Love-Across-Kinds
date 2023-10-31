@@ -8,11 +8,11 @@ public class DialogueTrigger : MonoBehaviour
 
     public void StartDialogue()
     {
-        FindObjectOfType<DialogueManager>().OpenDialogue(name, startingSentenceID);
+        DialogueManager.instance.OpenDialogue(name, startingSentenceID);
     }
 
     public void StartDialogue(string name, int startID)
     {
-        FindObjectOfType<DialogueManager>().OpenDialogue(name, startID);
+        DialogueManager.instance.OpenDialogue(name, startID);
     }
 }

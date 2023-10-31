@@ -7,6 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager instance;
+
+    public float textSpeed;
+
     //UI stuffs
     public GameObject optionBox;
     //public Image actorImage;
@@ -27,8 +31,18 @@ public class DialogueManager : MonoBehaviour
     //Animator
     private Animator anim;
 
-    private void Start()
+    private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         datas = DataProcessor.dataList;
 
         dialogueText.text = string.Empty;
@@ -45,7 +59,15 @@ public class DialogueManager : MonoBehaviour
             {
                 if (Input.anyKeyDown)
                 {
-                    NextSentence();
+                    if(dialogueText.text == datas[currIndexPos].sentence)
+                    {
+                        NextSentence();
+                    }
+                    else
+                    {
+                        StopAllCoroutines();
+                        dialogueText.text = datas[currIndexPos].sentence;
+                    }
                 }
             }
         }
@@ -91,8 +113,35 @@ public class DialogueManager : MonoBehaviour
                 {
                     nameText.text = datas[currIndexPos].name;
                 }
-                
-                dialogueText.text = datas[currIndexPos].sentence;
+
+                //dialogueText.text = datas[currIndexPos].sentence;
+                string[] words = datas[currIndexPos].sentence.Split(new char[] { ' ' });
+
+                for(int j = 0; j < words.Length; j++)
+                {
+                    if(words[j] == "PlayerName")
+                    {
+                        words[j] = UserData.instance.playerName;
+                    }
+                }
+
+                string sentence = "";
+
+                for(int k = 0; k < words.Length; k++)
+                {
+                    if(k == 0)
+                    {
+                        sentence += words[k];
+                    }
+                    else
+                    {
+                        sentence += " " + words[k];
+                    }
+                }
+
+                datas[currIndexPos].sentence = sentence;
+
+                StartCoroutine(TypeSentence(datas[currIndexPos].sentence));
 
                 if (datas[currIndexPos].checkIfOption)
                 {
@@ -170,5 +219,15 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         dialogueActive = true;
+    }
+
+    IEnumerator TypeSentence(string sentenceToDisplay)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentenceToDisplay.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(textSpeed);
+        }
     }
 }
