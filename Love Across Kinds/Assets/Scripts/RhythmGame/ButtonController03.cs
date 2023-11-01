@@ -2,31 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonController : MonoBehaviour
+public class ButtonController03 : MonoBehaviour
 {
     public Material defaultMaterial;
     public Material pressedMaterial;
     public GameManager gameManager; // Reference to your GameManager
     //public bool canBePressed = false; // Boolean to indicate if a note can be pressed
 
-    private static HashSet<ButtonController> pressedButtons = new HashSet<ButtonController>(); // Track pressed buttons
+    private static HashSet<ButtonController03> pressedButtons = new HashSet<ButtonController03>(); // Track pressed buttons
 
-    private GameObject note; // Declare the 'note' variable here
+    private GameObject note03; // Declare the 'note' variable here
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Note"))
+        if (other.CompareTag("Note03"))
         {
-            note = other.gameObject;
+            note03 = other.gameObject;
             //Debug.Log("true");
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Note"))
+        if (other.CompareTag("Note03"))
         {
-            note = null; // Clear the 'note' variable
+            note03 = null; // Clear the 'note' variable
             //Debug.Log("false");
         }
     }
@@ -48,8 +48,8 @@ public class ButtonController : MonoBehaviour
                     {
                         Debug.Log($"Caller: {gameObject} hits {hit.collider.gameObject.name}");
                         // Check if the ray hit a button object
-                        ButtonController button = hit.collider.gameObject.GetComponent<ButtonController>();
-                        
+                        ButtonController03 button = hit.collider.gameObject.GetComponent<ButtonController03>();
+
                         if (button != null)
                         {
                             // Change the material of the button that was touched
@@ -57,14 +57,12 @@ public class ButtonController : MonoBehaviour
                             buttonRenderer.material = button.pressedMaterial;
                             pressedButtons.Add(button); // Mark the button as pressed
 
-                            
-
                             Debug.Log("pressed");
 
-                            if (note != null)
+                            if (note03 != null)
                             {
-                                note.SetActive(false);
-                                note = null;
+                                note03.SetActive(false);
+                                note03 = null;
                                 // Call GameManager's NoteHit function
                                 button.gameManager.NoteHit();
                             }
@@ -80,7 +78,7 @@ public class ButtonController : MonoBehaviour
         // Restore the default material when all currently pressed buttons are released
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Ended)
         {
-            foreach (ButtonController button in pressedButtons)
+            foreach (ButtonController03 button in pressedButtons)
             {
                 Renderer buttonRenderer = button.GetComponent<Renderer>();
                 buttonRenderer.material = button.defaultMaterial;
