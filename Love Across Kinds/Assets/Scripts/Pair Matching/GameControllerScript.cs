@@ -22,8 +22,8 @@ public class GameControllerScript : MonoBehaviour
 
     [SerializeField] private MainImageScript startObject;
     [SerializeField] private Sprite[] images;
+    [SerializeField] private AudioSource cardDis;
 
-    
 
     private int[] Randomiser(int[] locations)
     {
@@ -122,6 +122,7 @@ public class GameControllerScript : MonoBehaviour
             secondOpen.Invoke("Destroy", 0.7f);
             winPoint++;
             Debug.Log(winPoint);
+            cardDis.Play();
             yield return new WaitForSeconds(0.5f);
         }
         else
