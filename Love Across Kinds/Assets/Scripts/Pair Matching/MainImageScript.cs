@@ -6,11 +6,13 @@ public class MainImageScript : MonoBehaviour
 {
     [SerializeField] private GameObject image_unknown;
     [SerializeField] private GameControllerScript gameController;
+    [SerializeField] private AudioSource cardFlip;
 
     public Transform target;
     public float speed = 0.2f;
     public float fadeSpeed = 20f;
 
+    
     //public bool coroutineAllowed;
     //public bool firstPicOpen = false;
     
@@ -25,8 +27,8 @@ public class MainImageScript : MonoBehaviour
         {
             
             image_unknown.SetActive(false);
-              
-            
+
+            cardFlip.Play();
             gameController.imageOpened(this);
             StartCoroutine(RotateCard());
         }

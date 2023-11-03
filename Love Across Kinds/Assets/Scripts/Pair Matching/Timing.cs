@@ -4,11 +4,16 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class Timing : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
+
+    public GameObject lose;
+
+    public GameControllerScript gameControllerScript;
 
     void Update()
     {
@@ -25,9 +30,10 @@ public class Timing : MonoBehaviour
         int second = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = "Timer: " + string.Format("{0:00}:{1:00}", minutes, second);
 
-        if(remainingTime == 0) 
+        if(remainingTime == 0 && gameControllerScript.cannotWin == true) 
         {
-            SceneManager.LoadScene("Matching pair Lose");
+            //SceneManager.LoadScene("Matching pair Lose");
+            lose.SetActive(true);
         }
     }
 }
