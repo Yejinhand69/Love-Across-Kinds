@@ -1,6 +1,6 @@
 name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection								
  	0	Everywhere you turn it is preached to you.	1	FALSE	-	-	-	-	-	-	FALSE	FALSE								
- 	1	"It is a uniquely human experience,"	2	FALSE	-	-	-	-	-	-	FALSE	FALSE								3
+ 	1	"It is a uniquely human experience,"	2	FALSE	-	-	-	-	-	-	FALSE	FALSE
  	2	Or rather WAS a uniquely human experience.	3	FALSE	-	-	-	-	-	-	FALSE	FALSE								
  	3	"Ever since humanity took to the stars all the way back in the year 12100, they've discovered all sorts of sentient life across the Milky Way."	4	FALSE	-	-	-	-	-	-	FALSE	FALSE								
  	4	"And, with the human's assistance, those alien species swiftly ascended to the stars as well."	5	FALSE	-	-	-	-	-	-	FALSE	FALSE								
@@ -24,7 +24,7 @@ name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	op
  	22	However.	23	FALSE	-	-	-	-	-	-	FALSE	FALSE								
  	23	"Maybe,"	24	FALSE	-	-	-	-	-	-	FALSE	FALSE								
  	24	Love has not?	25	FALSE	-	-	-	-	-	-	FALSE	FALSE								
- 	25	"After all, it's as the saying goes."	26	FALSE	-	-	-	-	-	-	FALSE	FALSE								
+ 	25	"After all, it's as the saying goes."	26	FALSE	-	-	-	-	-	-	TRUE	FALSE								
  	26	The sound of a dial tone can be heard	27	FALSE	-	-	-	-	-	-	FALSE	FALSE								
 ???	27	Hello? What is it?	28	FALSE	-	-	-	-	-	-	FALSE	FALSE								
 Player	28	"You won't believe it, remember when you told me to apply to the LAK show since they're accepting humans this season?"	29	FALSE	-	-	-	-	-	-	FALSE	FALSE								
@@ -278,9 +278,10 @@ Glowing Man	274	I don't even want to be here.	275	FALSE	-	-	-	-	-	-	FALSE	FALSE
 Glowing Man	276	My name is Saiph.	277	FALSE	-	-	-	-	-	-	FALSE	FALSE								
 Glowing Man	277	"That's all you need to know, now leave me alone."	278	FALSE	-	-	-	-	-	-	TRUE	FALSE								
   	278	Saiph puts his Virtual Environment glasses back on and proceeds to ignore your presence.	279	FALSE	-	-	-	-	-	-	FALSE	FALSE								
-  	279	"It's Room 01, your room."	279	FALSE	-	-	-	-	-	-	FALSE	FALSE								
+  	279	"It's Room 01, your room."	280	FALSE	-	-	-	-	-	-	FALSE	FALSE								
   	280	You have a feeling you haven't met everybody yet...	281	FALSE	-	-	-	-	-	-	FALSE	FALSE								
-  	281	It'd be best to go and say Hi.	283	FALSE	-	-	-	-	-	-	FALSE	FALSE								
-  	282	You feel like you've spoken to everybody on the ship already.	283	FALSE	-	-	-	-	-	-	FALSE	FALSE								
-  	283	Turn in for the day?	284	FALSE	-	-	-	-	-	-	FALSE	FALSE								
-  	284	Turn in for the day?	-	TRUE	I should get some rest...	I think I'll explore the ship just a little longer.	-	-	280	-	TRUE	FALSE								
+  	281	It'd be best to go and say Hi.	284	FALSE	-	-	-	-	-	-	FALSE	FALSE								
+  	282	"It's Room 01, your room."	283	FALSE	-	-	-	-	-	-	FALSE	FALSE								
+  	283	You feel like you've spoken to everybody on the ship already.	284	FALSE	-	-	-	-	-	-	FALSE	FALSE								
+  	284	Turn in for the day?	285	FALSE	-	-	-	-	-	-	FALSE	FALSE								
+  	285	Turn in for the day?	-	TRUE	I should get some rest...	I think I'll explore the ship just a little longer.	-	285	285	-	TRUE	FALSE								

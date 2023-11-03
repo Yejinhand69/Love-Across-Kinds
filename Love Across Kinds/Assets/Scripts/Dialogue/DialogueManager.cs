@@ -30,8 +30,13 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector] public int currSentenceId = 0;
     public static bool dialogueActive;
 
+    [HideInInspector] public string phaseIndicator;
+    [HideInInspector] public int XinaAttemp;
+    [HideInInspector] public int BeniaAttemp;
+    [HideInInspector] public int FlorineAttemp;
+
     //Animator
-    private Animator anim;
+    public Animator anim;
 
     private void Awake()
     {
@@ -39,6 +44,7 @@ public class DialogueManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            
         }
         else
         {
@@ -49,8 +55,6 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.text = string.Empty;
         dialogueActive = false;
-
-        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -64,6 +68,14 @@ public class DialogueManager : MonoBehaviour
                     NextSentence();
                 }
             }
+        }
+
+        if(phaseIndicator != PhaseManager.instance.currentPhase)
+        {
+            XinaAttemp = 0;
+            BeniaAttemp = 0;
+            FlorineAttemp = 0;
+            phaseIndicator = PhaseManager.instance.currentPhase;
         }
     }
 
@@ -205,7 +217,14 @@ public class DialogueManager : MonoBehaviour
         optionBox2.SetActive(false);
         optionBox3.SetActive(false);
 
-        NextSentence();
+        if (currSentenceId == datas[currIndexPos].sentenceID && datas[currIndexPos].checkIfEnd)
+        {
+            EndDialogue();
+        }
+        else
+        {
+            NextSentence();
+        }
     }
 
     public void ChooseOption2()
@@ -216,7 +235,14 @@ public class DialogueManager : MonoBehaviour
         optionBox2.SetActive(false);
         optionBox3.SetActive(false);
 
-        NextSentence();
+        if (currSentenceId == datas[currIndexPos].sentenceID && datas[currIndexPos].checkIfEnd)
+        {
+            EndDialogue();
+        }
+        else
+        {
+            NextSentence();
+        }
     }
 
     public void ChooseOption3()
@@ -227,7 +253,14 @@ public class DialogueManager : MonoBehaviour
         optionBox2.SetActive(false);
         optionBox3.SetActive(false);
 
-        NextSentence();
+        if (currSentenceId == datas[currIndexPos].sentenceID && datas[currIndexPos].checkIfEnd)
+        {
+            EndDialogue();
+        }
+        else
+        {
+            NextSentence();
+        }
         //SceneManager.LoadScene("Rhythm Game"); // put here first , change later ......... ( for testing purposes )
     }
 

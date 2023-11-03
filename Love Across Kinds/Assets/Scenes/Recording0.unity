@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &167527069
 Transform:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ PrefabInstance:
     - target: {fileID: 2859185882322292723, guid: 6f6a21e953d53b14ba5393e3d3f7e707,
         type: 3}
       propertyPath: m_Name
-      value: GameManager (1)
+      value: GameManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f6a21e953d53b14ba5393e3d3f7e707, type: 3}
@@ -1098,7 +1098,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 0
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &640361865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1140,7 +1141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &658427579
 Transform:
   m_ObjectHideFlags: 0
@@ -1563,7 +1564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 0
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &763284151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1961,7 +1963,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1015615092}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1368703270}
+        m_TargetAssemblyTypeName: TransportPoint, Assembly-CSharp
+        m_MethodName: LoadLivingFloor0
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1015615092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2043,7 +2057,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032415696}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b559d501e8862d44bfb1cc8764a2d74, type: 3}
   m_Name: 
@@ -2058,7 +2072,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032415696}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee84ef5437e614e4184e17a88b99bb62, type: 3}
   m_Name: 
@@ -3109,6 +3123,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4499437054624545240, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3269,7 +3288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 0
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &1860633489
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3311,7 +3331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1879488959
 Transform:
   m_ObjectHideFlags: 0

@@ -594,7 +594,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d3e038828edff43b17af6a3dbecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionBox: {fileID: 4499437056230398982}
   nameText: {fileID: 4499437055593112800}
   dialogueText: {fileID: 4499437054917386383}
   optionBox1: {fileID: 4499437055917772299}
@@ -604,6 +603,7 @@ MonoBehaviour:
   option2Text: {fileID: 4499437055293295573}
   option3Text: {fileID: 4499437056428802402}
   currSentenceId: 0
+  anim: {fileID: 4499437055543699641}
 --- !u!114 &4499437055543699642
 MonoBehaviour:
   m_ObjectHideFlags: 0

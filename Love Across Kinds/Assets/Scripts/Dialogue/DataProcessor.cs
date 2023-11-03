@@ -14,8 +14,6 @@ public class DataProcessor : MonoBehaviour
             PhaseManager.instance.currentPhase = "Prologue";
         }
 
-        AudioManager.instance.PlayBGM();
-
         ProcessDialogueData();
     }
 
