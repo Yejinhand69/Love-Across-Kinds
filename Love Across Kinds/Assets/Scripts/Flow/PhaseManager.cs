@@ -36,7 +36,7 @@ public class PhaseManager : MonoBehaviour
 
         dialogueTrigger = GetComponent<DialogueTrigger>();
 
-        if(SceneManager.GetActiveScene().name == "Lobby1" && !instance.isDone)
+        if(SceneManager.GetActiveScene().name == "Lobby0" && !instance.isDone)
         {
             instance.isDone = true;
             dialogueTrigger.StartDialogue("Player", 62);     

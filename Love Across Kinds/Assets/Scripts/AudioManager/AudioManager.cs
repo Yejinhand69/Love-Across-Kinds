@@ -30,7 +30,7 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }   
+        }
     }
 
     private void Start()
@@ -51,6 +51,18 @@ public class AudioManager : MonoBehaviour
         for(int i = 0; i < bGM_Datas.Length; i++)
         {
             BGMDictionary.Add(bGM_Datas[i].Name, bGM_Datas[i].BGM);
+        }
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name != "MainMenu")
+        {
+            if (DialogueManager.instance.phaseIndicator != PhaseManager.instance.currentPhase)
+            {
+                AudioManager.instance.PlayBGM();
+                DialogueManager.instance.phaseIndicator = PhaseManager.instance.currentPhase;
+            }
         }
     }
 

@@ -16,6 +16,19 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public float swipeThreshold = 0.2f; // Adjust this threshold to your preference for distinguishing a tap from a swipe
     private float pressDuration;
 
+    private DialogueTrigger dialogueTrigger;
+
+    private void Start()
+    {
+        if (TryGetComponent<DialogueTrigger>(out dialogueTrigger))
+        {
+            Debug.Log("Found");
+        }
+        else
+        {
+            Debug.Log("Not Found");
+        }
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -48,6 +61,19 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 {
                     OpenPoolDoorPanel();
                     //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
+                }
+                if (gameObject.CompareTag("Bedroom"))
+                {
+                    if (DialogueManager.instance.XinaAttemp > 0 && DialogueManager.instance.BeniaAttemp > 0) //&&DialogueManager.instance.FlorineAttemp > 0)
+                    {
+                        dialogueTrigger.StartDialogue(" ", 282);
+
+                        // Note: Change Phase here
+                    }
+                    else
+                    {
+                        dialogueTrigger.StartDialogue(" ", 279);
+                    }
                 }
             }
 

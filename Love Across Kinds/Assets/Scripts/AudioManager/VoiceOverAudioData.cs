@@ -11,7 +11,7 @@ public class VoiceOverAudioData : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.instance.voiceOverScript = GetComponent<VoiceOverAudioData>();
+        AudioManager.instance.voiceOverScript = this;
     }
 
     private void Update()
