@@ -9,13 +9,15 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
 
-    public float textSpeed;
-
     //UI stuffs
-    public GameObject optionBox;
     //public Image actorImage;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+
+    //Options stuffs
+    public GameObject optionBox1;
+    public GameObject optionBox2;
+    public GameObject optionBox3;
     public TextMeshProUGUI option1Text;
     public TextMeshProUGUI option2Text;
     public TextMeshProUGUI option3Text;
@@ -74,7 +76,7 @@ public class DialogueManager : MonoBehaviour
 
         for(int i = 0; i <= datas.Count - 1; i++)
         {
-            if(datas[i].name == objName)
+            if(datas[i].name == objName || datas[i].name == " ")
             {
                 currIndexPos = i;
                 currSentenceId = startID;
@@ -95,7 +97,7 @@ public class DialogueManager : MonoBehaviour
             {
                 currIndexPos = i;
 
-                AudioManager.instance.PlayVoice(currSentenceId);
+                //AudioManager.instance.PlayVoice(currSentenceId);
 
                 if(datas[currIndexPos].name == "Player")
                 {
@@ -177,32 +179,56 @@ public class DialogueManager : MonoBehaviour
     //Method to Show options
     public void ShowOptions()
     {
-        option1Text.text = datas[currIndexPos].option1;
-        option2Text.text = datas[currIndexPos].option2;
-        option3Text.text = datas[currIndexPos].option3;
-        optionBox.SetActive(true);
+
+        if (datas[currIndexPos].option1 != "-")
+        {
+            optionBox1.SetActive(true);
+            option1Text.text = datas[currIndexPos].option1;
+        }
+        if (datas[currIndexPos].option2 != "-")
+        {
+            optionBox2.SetActive(true);
+            option2Text.text = datas[currIndexPos].option2;
+        }
+        if (datas[currIndexPos].option3 != "-")
+        {
+            optionBox3.SetActive(true);
+            option3Text.text = datas[currIndexPos].option3;
+        }  
     }
 
     public void ChooseOption1()
     {
         currSentenceId = datas[currIndexPos].option1_sentenceID;
-        optionBox.SetActive(false);
+
+        optionBox1.SetActive(false);
+        optionBox2.SetActive(false);
+        optionBox3.SetActive(false);
+
         NextSentence();
     }
 
     public void ChooseOption2()
     {
         currSentenceId = datas[currIndexPos].option2_sentenceID;
-        optionBox.SetActive(false);
+
+        optionBox1.SetActive(false);
+        optionBox2.SetActive(false);
+        optionBox3.SetActive(false);
+
         NextSentence();
     }
 
     public void ChooseOption3()
     {
         currSentenceId = datas[currIndexPos].option3_sentenceID;
-        optionBox.SetActive(false);
+
+        optionBox1.SetActive(false);
+        optionBox2.SetActive(false);
+        optionBox3.SetActive(false);
+
         NextSentence();
-        SceneManager.LoadScene("Rhythm Game"); // put here first , change later ......... ( for testing purposes )
+        //SceneManager.LoadScene("Rhythm Game"); // put here first , change later ......... ( for testing purposes )
     }
 
     IEnumerator DelayDialogueActive()
