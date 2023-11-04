@@ -119,7 +119,7 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void TransportToDining()
     {
-        Camera.main.transform.position = new Vector3(6.08f, 0.5f, -14.23f);
+        Camera.main.transform.position = new Vector3(0.0f, 4.3f, -7.06f);
     }
 
     public void OpenPoolDoorPanel()
@@ -140,7 +140,7 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void TransportToPool()
     {
-        Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
+        Camera.main.transform.position = new Vector3(0.0f, 8.9f, -7.06f);
     }
 
 }
