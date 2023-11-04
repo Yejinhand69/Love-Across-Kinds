@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -170,7 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 0
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &8662288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -262,7 +263,7 @@ PrefabInstance:
     - target: {fileID: -6419011450340241213, guid: 4ebcaf8cef6ef9d478401af79bcf7638,
         type: 3}
       propertyPath: m_TagString
-      value: phase changer
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4ebcaf8cef6ef9d478401af79bcf7638,
         type: 3}
@@ -440,7 +441,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 0
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &183301809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1559,7 +1561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 5
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &1101813758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1741,7 +1744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dcd054a755561545ad03c8f11023ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Recording1
+  TransportPanel: {fileID: 0}
   animator: {fileID: 687590043}
   delayBeforeLoad: 1
   swipeThreshold: 0.2
@@ -1881,7 +1884,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 5
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &1601415482
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2801,7 +2805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 5
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &1662686597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3165,7 +3170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 0
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &2110663123
 BoxCollider:
   m_ObjectHideFlags: 0
