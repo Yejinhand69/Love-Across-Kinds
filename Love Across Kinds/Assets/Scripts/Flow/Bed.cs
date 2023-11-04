@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Bed : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -51,4 +52,10 @@ public class Bed : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
         }
     }
+
+    public void LoadLobby1()//episode 0 change to episode 1
+    {
+        SceneManager.LoadScene("Lobby1");
+    }
+    
 }

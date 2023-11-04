@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class PhaseChanger : MonoBehaviour
 {
-    private string[] phases = { "PreProduction", "Filming", "FreeTime" };
+    private string[] phases = { "Prologue","PreProduction", "Filming", "FreeTime" };//added prologue phase
 
     //Reference Character
     public GameObject PreProductionCharacter;
