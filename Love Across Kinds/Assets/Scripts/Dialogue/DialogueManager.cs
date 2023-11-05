@@ -111,6 +111,7 @@ public class DialogueManager : MonoBehaviour
 
                 //AudioManager.instance.PlayVoice(currSentenceId);
 
+                //Check and change NameBox for player's name
                 if(datas[currIndexPos].name == "Player")
                 {
                     nameText.text = UserData.instance.playerName;
@@ -120,7 +121,7 @@ public class DialogueManager : MonoBehaviour
                     nameText.text = datas[currIndexPos].name;
                 }
 
-                //dialogueText.text = datas[currIndexPos].sentence;
+                //Check and change DialogueBox for player's name
                 string[] words = datas[currIndexPos].sentence.Split(new char[] { ' ' });
 
                 for(int j = 0; j < words.Length; j++)
@@ -146,6 +147,30 @@ public class DialogueManager : MonoBehaviour
                 }
 
                 dialogueText.text = sentence;
+
+                //Expressions
+                switch(datas[currIndexPos].expression)
+                {
+                    case "Neutral":
+                        //Expression change here...
+                        break;
+                    case "Happy":
+                        //Expression change here...
+                        break;
+                    case "Angry":
+                        //Expression change here...
+                        break;
+                    case "Sad":
+                        //Expression change here...
+                        break;
+                    case "Shy":
+                        //Expression change here...
+                        break;
+                    default:
+                        break;
+                }
+
+
 
                 if (datas[currIndexPos].checkIfOption)
                 {
@@ -224,6 +249,45 @@ public class DialogueManager : MonoBehaviour
         else
         {
             NextSentence();
+        }
+
+        if (datas[currIndexPos].checkIfEvent)
+        {
+            switch (nameText.text)
+            {
+                case "Xina":
+                    if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
+                    {
+                        //Affection Event happens here...
+                    }
+                    else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
+                    {
+                        //Affection Event happens here...
+                    }
+                    break;
+                case "Benia":
+                    if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
+                    {
+                        //Affection Event happens here...
+                    }
+                    else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
+                    {
+                        //Affection Event happens here...
+                    }
+                    break;
+                case "Florine":
+                    if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
+                    {
+                        //Affection Event happens here...
+                    }
+                    else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
+                    {
+                        //Affection Event happens here...
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
 

@@ -47,6 +47,8 @@ public class DataProcessor : MonoBehaviour
             int.TryParse(row[10], out dialogueData.option3_sentenceID);
             bool.TryParse(row[11], out dialogueData.checkIfEnd);
             bool.TryParse(row[12], out dialogueData.checkIfAffection);
+            bool.TryParse(row[13], out dialogueData.checkIfEvent);
+            dialogueData.expression = row[14];
 
             //Add the variables with data into a list
             dataList.Add(dialogueData);
@@ -70,4 +72,6 @@ public class DialogueData
     public int option3_sentenceID;
     public bool checkIfEnd;
     public bool checkIfAffection;
+    public bool checkIfEvent;
+    public string expression;
 }

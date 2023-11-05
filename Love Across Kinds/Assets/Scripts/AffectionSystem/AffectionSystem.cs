@@ -14,12 +14,11 @@ public class AffectionSystem : MonoBehaviour
 
     //UI stuffs
     [SerializeField] private GameObject AffectionUIParent;
-    //[SerializeField] private TextMeshProUGUI Xina;
-    //[SerializeField] private TextMeshProUGUI Benia;
-    //[SerializeField] private TextMeshProUGUI Florine;
 
     //Array of Class
     public CharacterAffection[] characterAffections = new CharacterAffection[3];
+
+    public Dictionary<string, int> affectionDictionary;
 
     private void Awake()
     {
@@ -36,16 +35,19 @@ public class AffectionSystem : MonoBehaviour
 
     private void Start()
     {
-
         characterAffections[0].name = "Xina";
         characterAffections[1].name = "Benia";
         characterAffections[2].name = "Florine";
+
+        affectionDictionary = new Dictionary<string, int>();
     }
 
     //Call this method when need to + affection
     //Note: name for if statement need to change to character that is interacting
     public void GetAffection()
     {
+        
+
         for(int i = 0; i < characterAffections.Length; i++)
         {
             if(EventClick.interactObjectName == characterAffections[i].name && characterAffections[i].affectionPoint < maxAffectionPoint)
@@ -53,6 +55,8 @@ public class AffectionSystem : MonoBehaviour
                 AudioManager.instance.PlaySFX("Affection Gain");
                 int num = characterAffections[i].affectionPoint++;
                 characterAffections[i].hearts[num].SetActive(true);
+
+                affectionDictionary[characterAffections[i].name] = num;
             }
         }
     }
