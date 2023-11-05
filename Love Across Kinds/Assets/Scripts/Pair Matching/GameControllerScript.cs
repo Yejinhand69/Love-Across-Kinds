@@ -13,17 +13,20 @@ public class GameControllerScript : MonoBehaviour
     public const float Yspace = -1.5f;
 
     public Scoring score;
+    public GameObject win;
+    public GameObject timing;
 
     public Vector2 CardPosittion;
 
     public bool MoveCard = false;
+    public bool cannotWin = true;
 
     public int winPoint = 0;
 
     [SerializeField] private MainImageScript startObject;
     [SerializeField] private Sprite[] images;
+    [SerializeField] private AudioSource cardDis;
 
-    
 
     private int[] Randomiser(int[] locations)
     {
@@ -75,10 +78,12 @@ public class GameControllerScript : MonoBehaviour
 
     void Update()
     {
-        if(winPoint == 10)
+        if(winPoint == 10) // if win pair matching minigame
         {
-            SceneManager.LoadScene("Matching pair Win");
-            
+            //SceneManager.LoadScene("Matching pair Win");
+            win.SetActive(true);
+            timing.SetActive(false);
+            cannotWin = false;
         }
     }
 
@@ -122,6 +127,7 @@ public class GameControllerScript : MonoBehaviour
             secondOpen.Invoke("Destroy", 0.7f);
             winPoint++;
             Debug.Log(winPoint);
+            cardDis.Play();
             yield return new WaitForSeconds(0.5f);
         }
         else

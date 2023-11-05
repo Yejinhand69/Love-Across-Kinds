@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class PhaseManager : MonoBehaviour
@@ -16,6 +17,8 @@ public class PhaseManager : MonoBehaviour
     private DialogueTrigger dialogueTrigger;
 
     public bool isDone;
+
+    
 
     private void Awake()
     {
@@ -42,6 +45,10 @@ public class PhaseManager : MonoBehaviour
             dialogueTrigger.StartDialogue("Player", 62);     
         }
     }
+
+    
+
+    
 
     // Update is called once per frame
     void Update()

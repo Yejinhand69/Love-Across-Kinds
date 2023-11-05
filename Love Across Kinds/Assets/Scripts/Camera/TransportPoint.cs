@@ -88,6 +88,22 @@ public class TransportPoint : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         SceneManager.LoadScene("LivingFloor0");
     }
 
+    public void LoadLobby1()
+    {
+
+        SceneManager.LoadScene("Lobby1");
+    }
+    public void LoadRecording1()
+    {
+
+        SceneManager.LoadScene("Recording1");
+    }
+    public void LoadLivingFloor1()
+    {
+
+        SceneManager.LoadScene("LivingFloor1");
+    }
+
     private IEnumerator LoadSceneWithDelay(string sceneName, float delay)
     {
         yield return new WaitForSeconds(delay);
