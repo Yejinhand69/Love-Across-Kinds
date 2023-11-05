@@ -1386,6 +1386,7 @@ GameObject:
   - component: {fileID: 440747417}
   - component: {fileID: 440747421}
   - component: {fileID: 440747420}
+  - component: {fileID: 440747422}
   m_Layer: 0
   m_Name: Room01
   m_TagString: Bedroom
@@ -1503,6 +1504,19 @@ MonoBehaviour:
   LobbyDoorPanel: {fileID: 0}
   DiningRoomDoorPanel: {fileID: 0}
   PoolDoorPanel: {fileID: 0}
+  swipeThreshold: 0.2
+--- !u!114 &440747422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440747415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58902457a49330e478c56b827d5cb896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   swipeThreshold: 0.2
 --- !u!1 &475286619
 GameObject:
@@ -2534,6 +2548,7 @@ Transform:
   m_Children:
   - {fileID: 68119847}
   - {fileID: 1321447106}
+  - {fileID: 1118591316}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3327,6 +3342,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103616863}
   m_CullTransparentMesh: 1
+--- !u!1001 &1118591315
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 805820079}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.13
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.47
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.64
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+        type: 3}
+      propertyPath: m_Name
+      value: Bedroom test
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16ec40edc4338034cb1637f6bbfa8d2e, type: 3}
+--- !u!4 &1118591316 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16ec40edc4338034cb1637f6bbfa8d2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1118591315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1120074200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3764,7 +3854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58902457a49330e478c56b827d5cb896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sleepPanel: {fileID: 1540581415}
   swipeThreshold: 0.2
 --- !u!1 &1440055985
 GameObject:
@@ -4384,7 +4473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1540581416
 RectTransform:
   m_ObjectHideFlags: 0
