@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,15 +15,17 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    private float totalNotes;
-    public float highScore;
-
+    private float noteCount;
+    private float totalCountNote;
+    private float percentageCount;
+   
     public Text scoreText;
 
     public int currentScore;
     public int scorePerNote = 25;
 
-    public GameObject resultsScreen;
+    public GameObject winResultsScreen;
+    public GameObject loseResultsScreen;
     public GameObject inGameUI;
 
     public Text finalScoreText;
@@ -36,6 +39,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        totalCountNote = theBS.totalNotes;
+        Debug.Log("TotalNote: " + totalCountNote);
         startPlaying = true;
         countDown = true;
 
@@ -54,19 +59,32 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (!theMusic.isPlaying && !resultsScreen.activeInHierarchy && !countDown)
+            if (!theMusic.isPlaying && !winResultsScreen.activeInHierarchy && !loseResultsScreen.activeInHierarchy && !countDown)
             {
-                resultsScreen.SetActive(true);
-                inGameUI.SetActive(false);
-                finalScoreText.text = "Score: " + currentScore;
+                if (percentageCount >= 70)
+                {
+                    winResultsScreen.SetActive(true);
+                    inGameUI.SetActive(false);
+                    finalScoreText.text = "Score: " + currentScore;
+                }
+                else if(percentageCount <70)
+                {
+                    loseResultsScreen.SetActive(true);
+                    inGameUI.SetActive(false);
+                    finalScoreText.text = "Score: " + currentScore;
+                }
+                
             }
         }
+        percentageCount = (noteCount / totalCountNote) *100;
     }
 
     public void NoteHit()
     {
         currentScore += scorePerNote;
         scoreText.text = currentScore.ToString();
+        noteCount += 1;
+
     }
 
     IEnumerator CountSequence()
