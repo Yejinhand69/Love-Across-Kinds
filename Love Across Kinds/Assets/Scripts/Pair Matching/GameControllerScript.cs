@@ -146,9 +146,14 @@ public class GameControllerScript : MonoBehaviour
         secondOpen = null;
     }
 
-    
-    //public void Restart()
-    //{
-    //    SceneManager.LoadScene("MainScene");
-    //}
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Jon macthing pair");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Lobby");
+    }
 }
