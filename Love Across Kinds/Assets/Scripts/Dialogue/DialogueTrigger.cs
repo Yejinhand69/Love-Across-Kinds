@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] private int firstAttempSentenceID;
-    [SerializeField] private int repeatAttempSentenceID;
+    public int repeatAttempSentenceID;
     public static int attemp = 0;
 
     public void StartDialogue()
@@ -36,7 +36,7 @@ public class DialogueTrigger : MonoBehaviour
         }
         else
         {
-            DialogueManager.instance.OpenDialogue(name, repeatAttempSentenceID);    
+            DialogueManager.instance.OpenDialogue(name, repeatAttempSentenceID);
             attemp++;
         }
 

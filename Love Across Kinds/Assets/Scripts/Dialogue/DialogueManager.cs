@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour
     public int currIndexPos = 0;
     [HideInInspector] public int currSentenceId = 0;
     public static bool dialogueActive;
+    private string currInteractCharName;
 
     [HideInInspector] public string phaseIndicator;
     [HideInInspector] public int XinaAttemp;
@@ -123,6 +124,20 @@ public class DialogueManager : MonoBehaviour
                 else
                 {
                     nameText.text = datas[currIndexPos].name;
+                    switch (nameText.text)
+                    {
+                        case "Xina":
+                            currInteractCharName = nameText.text;
+                            break;
+                        case "Benia":
+                            currInteractCharName = nameText.text;
+                            break;
+                        case "Florine":
+                            currInteractCharName = nameText.text;
+                            break;
+                        default:
+                            break;
+                    }
                 }
 
                 //Check and change DialogueBox for player's name
@@ -219,39 +234,39 @@ public class DialogueManager : MonoBehaviour
         switch (datas[currIndexPos]._event)
         {
             case "AffectionEvent":
-                switch (nameText.text)
+                switch (currInteractCharName)
                 {
                     case "Xina":
-                        if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
+                        if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 2 happens here...
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
+                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
                         }
                         break;
                     case "Benia":
-                        if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
+                        if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 2 happens here...
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
+                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
                         }
                         break;
                     case "Florine":
-                        if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
+                        if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 2 happens here...
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
+                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
@@ -278,6 +293,30 @@ public class DialogueManager : MonoBehaviour
                 {
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
                 }
+
+                if (PhaseManager.instance.currentPhase == "FreeTime")
+                {
+                    SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
+                }
+                    break;
+                
+
+            case "FilmingConvo":
+                switch (currInteractCharName)
+                {
+                    case "Xina":
+                        Epidose1Filming.XinaRepeatID = 160;
+                        break;
+                    case "Benia":
+                        Epidose1Filming.BeniaRepeatID = 234;
+                        break;
+                    case "Florine":
+                        Epidose1Filming.FlorineRepeatID = 314;
+                        break;
+                    default:
+                        break;
+                }
+
                 break;
 
             default:

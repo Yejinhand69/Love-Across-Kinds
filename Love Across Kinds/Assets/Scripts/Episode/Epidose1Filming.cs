@@ -6,12 +6,28 @@ public class Epidose1Filming : MonoBehaviour
 {
     private DialogueTrigger dialogueTrigger;
 
+    public GameObject Xina;
+    public GameObject Benia;
+    public GameObject Florine;
+
+    public static int XinaRepeatID;
+    public static int BeniaRepeatID;
+    public static int FlorineRepeatID;
+
+    private bool isTalkXina;
+    private bool isTalkBenia;
+    private bool isTalkFlorine;
+
     void Start()
     {
         dialogueTrigger = GetComponent<DialogueTrigger>();
 
         dialogueTrigger.StartDialogue("Game Host Joe", 0);
         //Animation 1
+
+        XinaRepeatID = 0;
+        BeniaRepeatID = 0;
+        FlorineRepeatID = 0;
     }
 
     
@@ -99,6 +115,29 @@ public class Epidose1Filming : MonoBehaviour
             case 84:
                 //SFX - Light off
                 break;
+        }
+
+        if(XinaRepeatID != 0)
+        {
+            Xina.GetComponent<DialogueTrigger>().repeatAttempSentenceID = XinaRepeatID;
+            isTalkXina = true;
+        }
+
+        if (BeniaRepeatID != 0)
+        {
+            Benia.GetComponent<DialogueTrigger>().repeatAttempSentenceID = BeniaRepeatID;
+            isTalkBenia = true;
+        }
+
+        if (FlorineRepeatID != 0)
+        {
+            Florine.GetComponent<DialogueTrigger>().repeatAttempSentenceID = FlorineRepeatID;
+            isTalkFlorine = true;
+        }
+
+        if ((isTalkXina && isTalkBenia) || (isTalkBenia && isTalkFlorine) || (isTalkFlorine && isTalkXina))
+        {
+            dialogueTrigger.StartDialogue("Game Host Joe",317);
         }
     }
 }
