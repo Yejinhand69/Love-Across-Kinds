@@ -334,6 +334,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28792942}
   m_CullTransparentMesh: 1
+--- !u!4 &35305721 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1360685957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &50262784
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +683,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lobby_POC_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4ebcaf8cef6ef9d478401af79bcf7638,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ebcaf8cef6ef9d478401af79bcf7638, type: 3}
@@ -1164,7 +1175,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 787685676}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: TransportToDining
         m_Mode: 1
@@ -1176,7 +1187,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 787685676}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: OpenDiningDoorPanel
         m_Mode: 1
@@ -1387,6 +1398,8 @@ Transform:
   - {fileID: 659189883}
   - {fileID: 1542932603}
   - {fileID: 1871535642}
+  - {fileID: 787685671}
+  - {fileID: 35305721}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2106,7 +2119,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1994110800}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: OpenLobbyDoorPanel
         m_Mode: 1
@@ -2240,7 +2253,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 787685676}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: OpenDiningDoorPanel
         m_Mode: 1
@@ -2549,6 +2562,186 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 731979405}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &787685670
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 414302287}
+    m_Modifications:
+    - target: {fileID: -9011666315060423874, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_Name
+      value: Door007(Bar)
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.727952
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.53164625
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8594598
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6684869618046598140, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_Name
+      value: Door005(Entrance)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_Name
+      value: Lobby for VS Try
+      objectReference: {fileID: 0}
+    - target: {fileID: 3356905140800689432, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_Name
+      value: Door004(Pool)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3356905140800689432, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: PoolDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039024005128057712, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_Name
+      value: Door003(Dining)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039024005128057712, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: DiningRoomDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799751042187313632, guid: 2a17a72e81e241241b662140770adbb0,
+        type: 3}
+      propertyPath: m_Name
+      value: Door006(Arcade)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a17a72e81e241241b662140770adbb0, type: 3}
+--- !u!4 &787685671 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a17a72e81e241241b662140770adbb0,
+    type: 3}
+  m_PrefabInstance: {fileID: 787685670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &787685672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3356905140800689432, guid: 2a17a72e81e241241b662140770adbb0,
+    type: 3}
+  m_PrefabInstance: {fileID: 787685670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &787685673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4039024005128057712, guid: 2a17a72e81e241241b662140770adbb0,
+    type: 3}
+  m_PrefabInstance: {fileID: 787685670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &787685674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787685672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f935aa5c8062a48947622d6dfb74b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LobbyDoorPanel: {fileID: 465938417}
+  DiningRoomDoorPanel: {fileID: 98032807}
+  PoolDoorPanel: {fileID: 1111738928}
+  swipeThreshold: 0.2
+--- !u!65 &787685675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787685672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.3863926, y: 2.7873616, z: 1.6479377}
+  m_Center: {x: 0.025141537, y: 1.3936812, z: 0.7955432}
+--- !u!114 &787685676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787685673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f935aa5c8062a48947622d6dfb74b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LobbyDoorPanel: {fileID: 465938417}
+  DiningRoomDoorPanel: {fileID: 98032807}
+  PoolDoorPanel: {fileID: 1111738928}
+  swipeThreshold: 0.2
+--- !u!65 &787685677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787685673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.842071, y: 2.7124588, z: 1.6479378}
+  m_Center: {x: -0.048011724, y: 1.3562294, z: 0.79554343}
 --- !u!1 &807891200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3087,7 +3280,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1994110800}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: TransportToLobby
         m_Mode: 1
@@ -3099,7 +3292,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1994110800}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: OpenLobbyDoorPanel
         m_Mode: 1
@@ -4000,7 +4193,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 787685674}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: TransportToPool
         m_Mode: 1
@@ -4012,7 +4205,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 787685674}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: OpenPoolDoorPanel
         m_Mode: 1
@@ -4266,6 +4459,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333159173}
   m_CullTransparentMesh: 1
+--- !u!1001 &1360685957
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 414302287}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.42
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.741
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_Name
+      value: Dining room for VS Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 6692207008203549071, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_Name
+      value: Door001(LobbyDoor)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6692207008203549071, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: LobbyDoor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e6400e61709ee649a3a8adad966c8cc, type: 3}
 --- !u!1 &1392830421
 GameObject:
   m_ObjectHideFlags: 0
@@ -4918,6 +5190,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DINING ROOM TEST
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f3c2b73b44e0789469b9972fe7a87cb7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6692207008203549071, guid: f3c2b73b44e0789469b9972fe7a87cb7,
         type: 3}
@@ -6329,7 +6606,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1469527091}
         m_TargetAssemblyTypeName: TransportPoint, Assembly-CSharp
         m_MethodName: OpenTransportPanel
         m_Mode: 1
@@ -6613,9 +6890,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f935aa5c8062a48947622d6dfb74b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LobbyDoorPanel: {fileID: 0}
-  DiningRoomDoorPanel: {fileID: 0}
-  PoolDoorPanel: {fileID: 0}
+  LobbyDoorPanel: {fileID: 465938417}
+  DiningRoomDoorPanel: {fileID: 98032807}
+  PoolDoorPanel: {fileID: 1111738928}
   swipeThreshold: 0.2
 --- !u!65 &1871535645
 BoxCollider:
@@ -6777,7 +7054,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 787685674}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: OpenPoolDoorPanel
         m_Mode: 1
@@ -6949,6 +7226,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979265867}
   m_CullTransparentMesh: 1
+--- !u!1 &1994110798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6692207008203549071, guid: 8e6400e61709ee649a3a8adad966c8cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1360685957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1994110800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994110798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f935aa5c8062a48947622d6dfb74b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LobbyDoorPanel: {fileID: 465938417}
+  DiningRoomDoorPanel: {fileID: 98032807}
+  PoolDoorPanel: {fileID: 1111738928}
+  swipeThreshold: 0.2
+--- !u!65 &1994110801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994110798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.725471, y: 2.8025746, z: 1.6479377}
+  m_Center: {x: 0.05986452, y: 1.4012873, z: 0.79553574}
 --- !u!1 &2037768021
 GameObject:
   m_ObjectHideFlags: 0
