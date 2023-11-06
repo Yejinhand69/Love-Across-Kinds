@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -902,7 +902,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee9d94b09bdaa9c42985c4c2c5bcf980, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0a26098a2479d3f43b91f5b1aefaa9a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1356,7 +1356,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee9d94b09bdaa9c42985c4c2c5bcf980, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0a26098a2479d3f43b91f5b1aefaa9a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1725,7 +1725,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b12cf36b4bd08804e89441b44a3b7f40, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3553dcc075f57f448556d87ab0fcd98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2698,6 +2698,7 @@ MonoBehaviour:
   LobbyDoorPanel: {fileID: 465938417}
   DiningRoomDoorPanel: {fileID: 98032807}
   PoolDoorPanel: {fileID: 1111738928}
+  RecordingDoorPanel: {fileID: 0}
   swipeThreshold: 0.2
 --- !u!65 &787685675
 BoxCollider:
@@ -2727,6 +2728,7 @@ MonoBehaviour:
   LobbyDoorPanel: {fileID: 465938417}
   DiningRoomDoorPanel: {fileID: 98032807}
   PoolDoorPanel: {fileID: 1111738928}
+  RecordingDoorPanel: {fileID: 0}
   swipeThreshold: 0.2
 --- !u!65 &787685677
 BoxCollider:
@@ -5132,6 +5134,7 @@ MonoBehaviour:
   LobbyDoorPanel: {fileID: 0}
   DiningRoomDoorPanel: {fileID: 0}
   PoolDoorPanel: {fileID: 0}
+  RecordingDoorPanel: {fileID: 0}
   swipeThreshold: 0.2
 --- !u!65 &1542932606
 BoxCollider:
@@ -5551,7 +5554,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b12cf36b4bd08804e89441b44a3b7f40, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3553dcc075f57f448556d87ab0fcd98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5933,6 +5936,7 @@ MonoBehaviour:
   LobbyDoorPanel: {fileID: 465938417}
   DiningRoomDoorPanel: {fileID: 98032807}
   PoolDoorPanel: {fileID: 1111738928}
+  RecordingDoorPanel: {fileID: 0}
   swipeThreshold: 0.2
 --- !u!65 &1871535645
 BoxCollider:
@@ -6287,6 +6291,7 @@ MonoBehaviour:
   LobbyDoorPanel: {fileID: 465938417}
   DiningRoomDoorPanel: {fileID: 98032807}
   PoolDoorPanel: {fileID: 1111738928}
+  RecordingDoorPanel: {fileID: 0}
   swipeThreshold: 0.2
 --- !u!65 &1994110801
 BoxCollider:
@@ -6657,7 +6662,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee9d94b09bdaa9c42985c4c2c5bcf980, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0a26098a2479d3f43b91f5b1aefaa9a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
