@@ -10,6 +10,7 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject LobbyDoorPanel;
     public GameObject DiningRoomDoorPanel;
     public GameObject PoolDoorPanel;
+    public GameObject RecordingDoorPanel;
 
     private float pressTime;
     private bool isSwiping = false;
@@ -53,6 +54,11 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 if (gameObject.CompareTag("PoolDoor"))
                 {
                     OpenPoolDoorPanel();
+                    //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
+                }
+                if (gameObject.CompareTag("RecordingDoor"))
+                {
+                    OpenRecordingDoorPanel();
                     //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
                 }
                 if (gameObject.CompareTag("Bedroom"))
@@ -132,6 +138,27 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void TransportToPool()
     {
         Camera.main.transform.position = new Vector3(0.0f, 8.9f, -7.06f);
+    }
+
+    public void OpenRecordingDoorPanel()
+    {
+        if (RecordingDoorPanel != null)
+        {
+            Animator animator = RecordingDoorPanel.GetComponent<Animator>();
+            if (animator != null)
+            {
+
+                bool isOpen = animator.GetBool("openRecordingDoorPanel");
+
+                animator.SetBool("openRecordingDoorPanel", !isOpen);
+            }
+
+        }
+    }
+
+    public void TransportToRecording()
+    {
+        Camera.main.transform.position = new Vector3(0.0f, -4.03f, -10f);
     }
 
 }
