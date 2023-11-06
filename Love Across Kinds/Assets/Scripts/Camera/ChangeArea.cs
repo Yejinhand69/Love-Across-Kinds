@@ -57,14 +57,17 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 }
                 if (gameObject.CompareTag("Bedroom"))
                 {
-                    if (DialogueManager.instance.XinaAttemp > 0 && DialogueManager.instance.BeniaAttemp > 0) //&&DialogueManager.instance.FlorineAttemp > 0)
+                    if(PhaseManager.instance.currentPhase == "FreeTime" || PhaseManager.instance.currentPhase == "Prologue")
                     {
-                        dialogueTrigger.StartDialogue(" ", 282);
-                    }
-                    else
-                    {
-                        dialogueTrigger.StartDialogue(" ", 280);
-                    }
+                        if (DialogueManager.instance.XinaAttemp > 0 && DialogueManager.instance.BeniaAttemp > 0) //&&DialogueManager.instance.FlorineAttemp > 0)
+                        {
+                            dialogueTrigger.StartDialogue(" ", 282);
+                        }
+                        else
+                        {
+                            dialogueTrigger.StartDialogue(" ", 280);
+                        }
+                    }                
                 }
             }
 

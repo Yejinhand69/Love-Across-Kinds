@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour
     private List<DialogueData> datas;
 
     //Indicator
-    private int currIndexPos = 0;
+    public int currIndexPos = 0;
     [HideInInspector] public int currSentenceId = 0;
     public static bool dialogueActive;
 
@@ -51,8 +51,6 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        
 
         dialogueText.text = string.Empty;
         dialogueActive = false;
@@ -92,7 +90,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(DelayDialogueActive());
         currIndexPos = 0;
 
-        for(int i = 0; i <= datas.Count - 1; i++)
+        for(int i = 0; i <= datas.Count - 1; i++)   
         {
             if(datas[i].name == objName || datas[i].name == " ")
             {
@@ -211,6 +209,7 @@ public class DialogueManager : MonoBehaviour
     {
         anim.SetBool("isOpenDialogue", false);
         dialogueActive = false;
+        
 
         if (datas[currIndexPos].checkIfAffection)
         {
@@ -225,31 +224,37 @@ public class DialogueManager : MonoBehaviour
                     case "Xina":
                         if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
                         {
-                            //Affection Event happens here...
+                            //Dialogue Before Mini Game
+                            //Affection Event 2 happens here...
                         }
                         else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
                         {
-                            //Affection Event happens here...
+                            //Dialogue Before Mini Game
+                            //Affection Event 1 happens here...
                         }
                         break;
                     case "Benia":
                         if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
                         {
-                            //Affection Event happens here...
+                            //Dialogue Before Mini Game
+                            //Affection Event 2 happens here...
                         }
                         else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
                         {
-                            //Affection Event happens here...
+                            //Dialogue Before Mini Game
+                            //Affection Event 1 happens here...
                         }
                         break;
                     case "Florine":
                         if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
                         {
-                            //Affection Event happens here...
+                            //Dialogue Before Mini Game
+                            //Affection Event 2 happens here...
                         }
                         else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
                         {
-                            //Affection Event happens here...
+                            //Dialogue Before Mini Game
+                            //Affection Event 1 happens here...
                         }
                         break;
                     default:
@@ -258,6 +263,7 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             case "ScavengerEvent":
+
                 break;
 
             case "Sleep":
@@ -359,5 +365,13 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         dialogueActive = true;
+    }
+
+    public void SkipDialogue()
+    {
+        EndDialogue();
+        optionBox1.SetActive(false);
+        optionBox2.SetActive(false);
+        optionBox3.SetActive(false);
     }
 }

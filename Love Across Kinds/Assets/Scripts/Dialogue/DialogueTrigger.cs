@@ -36,7 +36,8 @@ public class DialogueTrigger : MonoBehaviour
         }
         else
         {
-            DialogueManager.instance.OpenDialogue(name, repeatAttempSentenceID);
+            DialogueManager.instance.OpenDialogue(name, repeatAttempSentenceID);    
+            attemp++;
         }
 
         //Update attemps of each character

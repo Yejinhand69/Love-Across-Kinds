@@ -16,7 +16,8 @@ public class PhaseManager : MonoBehaviour
 
     private DialogueTrigger dialogueTrigger;
 
-    public bool isDone;
+    public bool isDonePrologue;
+    public bool isDonePP1;
 
     private string[] phases = { "Prologue", "PreProduction", "Filming", "FreeTime" };//added prologue phase
 
@@ -39,10 +40,16 @@ public class PhaseManager : MonoBehaviour
 
         dialogueTrigger = GetComponent<DialogueTrigger>();
 
-        if(SceneManager.GetActiveScene().name == "Lobby0" && !instance.isDone)
+        if(SceneManager.GetActiveScene().name == "Lobby0" && !instance.isDonePrologue)
         {
-            instance.isDone = true;
+            instance.isDonePrologue = true;
             dialogueTrigger.StartDialogue("Player", 62);     
+        }
+
+        if (SceneManager.GetActiveScene().name == "LivingFloor1" && !instance.isDonePP1)
+        {
+            instance.isDonePP1 = true;
+            dialogueTrigger.StartDialogue(" ", 0);
         }
     }
 
