@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class GoToBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class GoOutsideBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
 
     //public GameObject sleepPanel;
@@ -12,11 +12,10 @@ public class GoToBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private bool isSwiping = false;
     public float swipeThreshold = 0.2f; // Adjust this threshold to your preference for distinguishing a tap from a swipe
 
-    private DialogueTrigger dialogueTrigger;
 
     private void Start()
     {
-        dialogueTrigger = GetComponent<DialogueTrigger>();
+       
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -36,8 +35,7 @@ public class GoToBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
             if (pressDuration <= swipeThreshold)
             {
-                dialogueTrigger.StartDialogue();
-                StartCoroutine(CheckDialogueActive());
+                Camera.main.transform.position = new Vector3(0f, 0.92f, -7.06f);
                 //OpenSleepPanel();
                 //animator.SetTrigger("FadeOut");
                 //StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
@@ -45,17 +43,7 @@ public class GoToBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
     }
 
-    IEnumerator CheckDialogueActive()
-    {
-        yield return new WaitForSeconds(0.5f);
+  
 
-        while (DialogueManager.dialogueActive)
-        {
-            yield return null;
-        }
 
-        Camera.main.transform.position = new Vector3(0.0f, 4.33f, -7.06f);
-    }
-   
-    
 }
