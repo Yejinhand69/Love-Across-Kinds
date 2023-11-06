@@ -28,7 +28,7 @@ public class ClickToChangePhase : MonoBehaviour
                 if (hit.collider.CompareTag("phase changer"))
                 {
                     // Call the ChangePhase() function in the PhaseChanger script
-                    phaseChanger.ChangePhase();
+                    PhaseManager.instance.ChangePhase();
                 }
             }
         }

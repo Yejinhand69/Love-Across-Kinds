@@ -1,12 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PhoneOpener : MonoBehaviour
 {
+    //UI stuffs
+    [SerializeField] private GameObject AffectionPanel;
+    public GameObject PhoneButton;
     public GameObject PhonePanel;
     public GameObject SettingPanel;
     public CameraRotateScript cameraRotateScript;
+
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Episode 0")
+        {
+            PhoneButton.SetActive(false);
+        }
+        else
+        {
+            PhoneButton.SetActive(true);
+        }
+    }
 
     public void OpenPhone()
     {
@@ -26,8 +42,6 @@ public class PhoneOpener : MonoBehaviour
             }
             
         }
-       
-
     }
    
     public void OpenSettingPanel()
@@ -46,8 +60,21 @@ public class PhoneOpener : MonoBehaviour
 
                 animator.SetBool("openSettingPanel", !isOpen);
             }
-
         }
+    }
+    public void OpenAffectionWindow()
+    {
+        if (AffectionPanel != null)
+        {
+            Animator animator = AffectionPanel.GetComponent<Animator>();
+            if (animator != null)
+            {
+                AudioManager.instance.PlaySFX("Button Press");
 
+                bool isOpen = animator.GetBool("openAffectionPanel");
+
+                animator.SetBool("openAffectionPanel", !isOpen);
+            }
+        }
     }
 }

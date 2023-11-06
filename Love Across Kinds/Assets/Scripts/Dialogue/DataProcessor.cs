@@ -5,13 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class DataProcessor : MonoBehaviour
 {
-    public static List<DialogueData> dataList = new List<DialogueData>();
+    public static DataProcessor instance;
+
+    public List<DialogueData> dataList = new List<DialogueData>();
 
     public void Awake()
     {
-        if (SceneManager.GetActiveScene().name == "Episode 0")
+        if (instance == null)
         {
-            PhaseManager.instance.currentPhase = "Prologue";
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+
+        }
+        else
+        {
+            Destroy(gameObject);
         }
 
         ProcessDialogueData();
@@ -19,9 +27,11 @@ public class DataProcessor : MonoBehaviour
 
     public void ProcessDialogueData()
     {
+        instance.dataList.Clear();
+
         //Read/Load dialogue file
         TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/DialogueDataEpisode" + PhaseManager.instance.currentEpisode + PhaseManager.instance.currentPhase);
-
+        
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
 
@@ -47,11 +57,11 @@ public class DataProcessor : MonoBehaviour
             int.TryParse(row[10], out dialogueData.option3_sentenceID);
             bool.TryParse(row[11], out dialogueData.checkIfEnd);
             bool.TryParse(row[12], out dialogueData.checkIfAffection);
-            bool.TryParse(row[13], out dialogueData.checkIfEvent);
+            dialogueData._event = row[13];
             dialogueData.expression = row[14];
 
             //Add the variables with data into a list
-            dataList.Add(dialogueData);
+            instance.dataList.Add(dialogueData);
         }
     }
 }
@@ -72,6 +82,6 @@ public class DialogueData
     public int option3_sentenceID;
     public bool checkIfEnd;
     public bool checkIfAffection;
-    public bool checkIfEvent;
+    public string _event;
     public string expression;
 }

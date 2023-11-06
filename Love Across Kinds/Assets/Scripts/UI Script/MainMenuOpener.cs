@@ -13,6 +13,11 @@ public class MainMenuOpener : MonoBehaviour
     public string sceneToLoad;
     public float delayBeforeLoad = 1.0f;
 
+    private void Awake()
+    {
+        PhaseManager.instance.currentPhase = "MainMenu";
+    }
+
     public void OpenCreditPanel()
     {
         if (CreditPanel != null)
@@ -94,7 +99,7 @@ public class MainMenuOpener : MonoBehaviour
     private IEnumerator LoadSceneWithDelay(string sceneName, float delay)
     {
         yield return new WaitForSeconds(delay);
-
+        PhaseManager.instance.currentPhase = "Prologue";
         SceneManager.LoadScene(sceneName);
     }
 }

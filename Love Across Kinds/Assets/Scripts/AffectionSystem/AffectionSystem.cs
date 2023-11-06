@@ -12,8 +12,7 @@ public class AffectionSystem : MonoBehaviour
     //Validation
     [SerializeField] private int maxAffectionPoint = 7;
 
-    //UI stuffs
-    [SerializeField] private GameObject AffectionUIParent;
+    
 
     //Array of Class
     public CharacterAffection[] characterAffections = new CharacterAffection[3];
@@ -59,16 +58,6 @@ public class AffectionSystem : MonoBehaviour
                 affectionDictionary[characterAffections[i].name] = num;
             }
         }
-    }
-
-    public void OpenAffectionWindow()
-    {
-        AffectionUIParent.SetActive(true);
-    }
-
-    public void CloseAffectionWindow()
-    {
-        AffectionUIParent.SetActive(false);
     }
 }
 

@@ -23,6 +23,10 @@ public class DialogueTrigger : MonoBehaviour
         {
             attemp = DialogueManager.instance.FlorineAttemp;
         }
+        else if(name == "Game Host Joe")
+        {
+            attemp = DialogueManager.instance.GHJoeAttemp;
+        }
 
         //Call dialogue method
         if (attemp == 0)
@@ -47,6 +51,10 @@ public class DialogueTrigger : MonoBehaviour
         else if (name == "Florine")
         {
             DialogueManager.instance.FlorineAttemp = attemp;
+        }
+        else if (name == "Game Host Joe")
+        {
+            DialogueManager.instance.GHJoeAttemp = attemp;
         }
     }
 

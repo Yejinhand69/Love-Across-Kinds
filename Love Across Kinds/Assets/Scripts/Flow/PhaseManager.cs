@@ -18,7 +18,7 @@ public class PhaseManager : MonoBehaviour
 
     public bool isDone;
 
-    
+    private string[] phases = { "Prologue", "PreProduction", "Filming", "FreeTime" };//added prologue phase
 
     private void Awake()
     {
@@ -32,7 +32,7 @@ public class PhaseManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }
+        }  
 
         // Load the saved currentPhaseIndex from PlayerPrefs
         //currentPhaseIndex = PlayerPrefs.GetInt("CurrentPhaseIndex", 0);
@@ -46,13 +46,23 @@ public class PhaseManager : MonoBehaviour
         }
     }
 
-    
-
-    
-
-    // Update is called once per frame
-    void Update()
+    private void UpdatePhaseText()
     {
-        
+        currentPhase = phases[currentPhaseIndex];
+        //Debug.Log("Current Phase: " + currentPhase);
+        DataProcessor.instance.ProcessDialogueData();
+
+        // Save the currentPhaseIndex to PlayerPrefs
+        //PlayerPrefs.SetInt("CurrentPhaseIndex", currentPhaseIndex);
+        //PlayerPrefs.Save();
+
+        // You can update a UI text field or any other display with the currentPhase value.
+    }
+
+    public void ChangePhase()
+    {
+        currentPhaseIndex = (currentPhaseIndex + 1) % phases.Length;
+        UpdatePhaseText();
+        AudioManager.instance.PlayBGM();
     }
 }

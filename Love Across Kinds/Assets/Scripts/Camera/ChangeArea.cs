@@ -20,14 +20,7 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     private void Start()
     {
-        if (TryGetComponent<DialogueTrigger>(out dialogueTrigger))
-        {
-            Debug.Log("Found");
-        }
-        else
-        {
-            Debug.Log("Not Found");
-        }
+        TryGetComponent<DialogueTrigger>(out dialogueTrigger);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -67,12 +60,10 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                     if (DialogueManager.instance.XinaAttemp > 0 && DialogueManager.instance.BeniaAttemp > 0) //&&DialogueManager.instance.FlorineAttemp > 0)
                     {
                         dialogueTrigger.StartDialogue(" ", 282);
-
-                        // Note: Change Phase here
                     }
                     else
                     {
-                        dialogueTrigger.StartDialogue(" ", 279);
+                        dialogueTrigger.StartDialogue(" ", 280);
                     }
                 }
             }

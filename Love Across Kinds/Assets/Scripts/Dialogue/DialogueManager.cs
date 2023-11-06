@@ -34,6 +34,7 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector] public int XinaAttemp;
     [HideInInspector] public int BeniaAttemp;
     [HideInInspector] public int FlorineAttemp;
+    [HideInInspector] public int GHJoeAttemp;
 
     //Animator
     public Animator anim;
@@ -51,7 +52,7 @@ public class DialogueManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        datas = DataProcessor.dataList;
+        
 
         dialogueText.text = string.Empty;
         dialogueActive = false;
@@ -59,6 +60,18 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
+        datas = DataProcessor.instance.dataList;
+
+        if (phaseIndicator != PhaseManager.instance.currentPhase)
+        {
+            XinaAttemp = 0;
+            BeniaAttemp = 0;
+            FlorineAttemp = 0;
+            GHJoeAttemp = 0;
+
+            phaseIndicator = PhaseManager.instance.currentPhase;
+        }
+
         if (dialogueActive)
         {
             if (!datas[currIndexPos].checkIfOption)
@@ -69,20 +82,13 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
-
-        if(phaseIndicator != PhaseManager.instance.currentPhase)
-        {
-            XinaAttemp = 0;
-            BeniaAttemp = 0;
-            FlorineAttemp = 0;
-            phaseIndicator = PhaseManager.instance.currentPhase;
-        }
     }
 
     //Method to show DialogueBox & Search the upmost data of each character by NAME
     public void OpenDialogue(string objName, int startID)
     {
         anim.SetBool("isOpenDialogue", true);
+        
         StartCoroutine(DelayDialogueActive());
         currIndexPos = 0;
 
@@ -186,7 +192,7 @@ public class DialogueManager : MonoBehaviour
     //Method to Display next sentence/ End the dialogue
     public void NextSentence()
     {
-        if (datas[currIndexPos].checkIfEnd)
+        if (datas[currIndexPos].checkIfEnd && currSentenceId == datas[currIndexPos].sentenceID)
         {
             EndDialogue();
         }
@@ -210,7 +216,67 @@ public class DialogueManager : MonoBehaviour
         {
             AffectionSystem.Instance.GetAffection();
         }
-        
+
+        switch (datas[currIndexPos]._event)
+        {
+            case "AffectionEvent":
+                switch (nameText.text)
+                {
+                    case "Xina":
+                        if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
+                        {
+                            //Affection Event happens here...
+                        }
+                        else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
+                        {
+                            //Affection Event happens here...
+                        }
+                        break;
+                    case "Benia":
+                        if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
+                        {
+                            //Affection Event happens here...
+                        }
+                        else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
+                        {
+                            //Affection Event happens here...
+                        }
+                        break;
+                    case "Florine":
+                        if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
+                        {
+                            //Affection Event happens here...
+                        }
+                        else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
+                        {
+                            //Affection Event happens here...
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                break;
+
+            case "ScavengerEvent":
+                break;
+
+            case "Sleep":
+                PhaseManager.instance.currentEpisode++;
+                PhaseManager.instance.ChangePhase();
+                SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                break;
+
+            case "ChangePhase":
+                PhaseManager.instance.ChangePhase();
+                if(PhaseManager.instance.currentPhase == "Filming")
+                {
+                    SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
+                }
+                break;
+
+            default:
+                break;
+        }
     }
 
     //Method to Show options
@@ -249,45 +315,6 @@ public class DialogueManager : MonoBehaviour
         else
         {
             NextSentence();
-        }
-
-        if (datas[currIndexPos].checkIfEvent)
-        {
-            switch (nameText.text)
-            {
-                case "Xina":
-                    if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
-                    {
-                        //Affection Event happens here...
-                    }
-                    else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
-                    {
-                        //Affection Event happens here...
-                    }
-                    break;
-                case "Benia":
-                    if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
-                    {
-                        //Affection Event happens here...
-                    }
-                    else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
-                    {
-                        //Affection Event happens here...
-                    }
-                    break;
-                case "Florine":
-                    if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 3)
-                    {
-                        //Affection Event happens here...
-                    }
-                    else if (AffectionSystem.Instance.affectionDictionary[nameText.text] >= 1)
-                    {
-                        //Affection Event happens here...
-                    }
-                    break;
-                default:
-                    break;
-            }
         }
     }
 

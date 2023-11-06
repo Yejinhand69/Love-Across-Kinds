@@ -56,13 +56,19 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name != "MainMenu")
+        if (DialogueManager.instance.phaseIndicator != PhaseManager.instance.currentPhase)
         {
-            if (DialogueManager.instance.phaseIndicator != PhaseManager.instance.currentPhase)
-            {
-                AudioManager.instance.PlayBGM();
-                DialogueManager.instance.phaseIndicator = PhaseManager.instance.currentPhase;
-            }
+            PlayBGM();
+            DialogueManager.instance.phaseIndicator = PhaseManager.instance.currentPhase;
+        }
+
+        if (_SFXSource.isPlaying)
+        {
+            _BGMSource.volume = 0.5f;
+        }
+        else
+        {
+            _BGMSource.volume = 1f;
         }
     }
 

@@ -12,6 +12,13 @@ public class GoToBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private bool isSwiping = false;
     public float swipeThreshold = 0.2f; // Adjust this threshold to your preference for distinguishing a tap from a swipe
 
+    private DialogueTrigger dialogueTrigger;
+
+    private void Start()
+    {
+        dialogueTrigger = GetComponent<DialogueTrigger>();
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         if (!isSwiping)
@@ -29,12 +36,25 @@ public class GoToBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
             if (pressDuration <= swipeThreshold)
             {
-                Camera.main.transform.position = new Vector3(0.0f, 4.33f, -7.06f);
+                dialogueTrigger.StartDialogue();
+                StartCoroutine(CheckDialogueActive());
                 //OpenSleepPanel();
                 //animator.SetTrigger("FadeOut");
                 //StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
             }
         }
+    }
+
+    IEnumerator CheckDialogueActive()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        while (DialogueManager.dialogueActive)
+        {
+            yield return null;
+        }
+
+        Camera.main.transform.position = new Vector3(0.0f, 4.33f, -7.06f);
     }
     //public void OpenSleepPanel()
     //{

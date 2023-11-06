@@ -1,5 +1,81 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4314040973580397141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2435686633823358916}
+  - component: {fileID: 9101529961670050585}
+  - component: {fileID: 9119037518335799092}
+  m_Layer: 5
+  m_Name: BG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2435686633823358916
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314040973580397141}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4499437055543699640}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9101529961670050585
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314040973580397141}
+  m_CullTransparentMesh: 1
+--- !u!114 &9119037518335799092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314040973580397141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &4499437054624545240
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fill Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
+  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
+  m_sharedMaterial: {fileID: -6031590698217913058, guid: 75b00bc565b131d4ba2ad33fd5788095,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -206,7 +282,7 @@ RectTransform:
   m_Children:
   - {fileID: 4499437055593112830}
   m_Father: {fileID: 4499437055543699640}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.057000004, y: 0.41968426}
   m_AnchorMax: {x: 0.28713894, y: 0.46024147}
@@ -319,7 +395,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Option 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
   m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
     type: 2}
   m_fontSharedMaterials: []
@@ -384,7 +460,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &4499437055355947642
@@ -509,7 +585,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4499437055543699643}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: ChooseOption3
         m_Mode: 1
@@ -531,8 +607,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4499437055543699640}
   - component: {fileID: 4499437055543699641}
-  - component: {fileID: 4499437055543699643}
-  - component: {fileID: 4499437055543699642}
   m_Layer: 5
   m_Name: DIalogueStuff
   m_TagString: Untagged
@@ -552,6 +626,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2435686633823358916}
   - {fileID: 4499437056310410254}
   - {fileID: 4499437055098898191}
   m_Father: {fileID: 4499437054737769926}
@@ -582,40 +657,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4499437055543699643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4499437055543699644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62d3e038828edff43b17af6a3dbecac7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 4499437055593112800}
-  dialogueText: {fileID: 4499437054917386383}
-  optionBox1: {fileID: 4499437055917772299}
-  optionBox2: {fileID: 4499437056158368400}
-  optionBox3: {fileID: 4499437055355947642}
-  option1Text: {fileID: 4499437055649659004}
-  option2Text: {fileID: 4499437055293295573}
-  option3Text: {fileID: 4499437056428802402}
-  currSentenceId: 0
-  anim: {fileID: 4499437055543699641}
---- !u!114 &4499437055543699642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4499437055543699644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a6b85411705e4408716a742a9951f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4499437055593112801
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,8 +725,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
+  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
+  m_sharedMaterial: {fileID: -6031590698217913058, guid: 75b00bc565b131d4ba2ad33fd5788095,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -820,7 +861,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Option 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
   m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
     type: 2}
   m_fontSharedMaterials: []
@@ -885,7 +926,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &4499437055917772299
@@ -1006,11 +1047,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 4499437055355947641}
+  m_TargetGraphic: {fileID: 4499437055917772296}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4499437055543699643}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: ChooseOption1
         m_Mode: 1
@@ -1140,11 +1181,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 4499437055355947641}
+  m_TargetGraphic: {fileID: 4499437056158368493}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4499437055543699643}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: ChooseOption2
         m_Mode: 1
@@ -1227,7 +1268,7 @@ RectTransform:
   m_Children:
   - {fileID: 4499437054917386381}
   m_Father: {fileID: 4499437055543699640}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.065331176, y: 0.166865}
   m_AnchorMax: {x: 0.93725926, y: 0.41500002}
@@ -1340,7 +1381,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Option 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
   m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
     type: 2}
   m_fontSharedMaterials: []
@@ -1405,6 +1446,6 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}

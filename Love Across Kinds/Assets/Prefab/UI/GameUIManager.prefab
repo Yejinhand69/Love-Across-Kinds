@@ -164,7 +164,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2000057134856868906}
   - {fileID: 2000057134780194095}
   m_Father: {fileID: 2000057134832392071}
   m_RootOrder: 2
@@ -212,10 +211,10 @@ RectTransform:
   m_Father: {fileID: 2000057134832392071}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16, y: -2035.8376}
-  m_SizeDelta: {x: 704.1234, y: 1146.6243}
+  m_AnchorMin: {x: 0.16474074, y: 0.24100001}
+  m_AnchorMax: {x: 0.83429635, y: 0.75563157}
+  m_AnchoredPosition: {x: 0.5199585, y: -2035.8376}
+  m_SizeDelta: {x: -18.876587, y: -27.375732}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057134691170130
 CanvasRenderer:
@@ -362,13 +361,14 @@ GameObject:
   - component: {fileID: 2000057134780194095}
   - component: {fileID: 2000057134780194093}
   - component: {fileID: 2000057134780194094}
+  - component: {fileID: 6806942842902056480}
   m_Layer: 5
-  m_Name: BG
+  m_Name: AffectionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2000057134780194095
 RectTransform:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2000057135554690141}
   - {fileID: 2000057135490618551}
@@ -389,12 +389,12 @@ RectTransform:
   - {fileID: 2000057136070888837}
   - {fileID: 2000057135111411899}
   m_Father: {fileID: 2000057134649581813}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -463.7258, y: -1274.4099}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057134780194093
 CanvasRenderer:
@@ -434,6 +434,26 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &6806942842902056480
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000057134780194080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07efa54f72ce62b47a00411cd36f165b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2000057134784458223
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,10 +639,10 @@ RectTransform:
   m_Father: {fileID: 2000057134780194095}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.162, y: 0.31528687}
-  m_AnchorMax: {x: 0.5, y: 0.358}
-  m_AnchoredPosition: {x: -2, y: 1.5}
-  m_SizeDelta: {x: -1.0310059, y: -1.0079956}
+  m_AnchorMin: {x: 0.162, y: 0.324}
+  m_AnchorMax: {x: 0.6473125, y: 0.358}
+  m_AnchoredPosition: {x: 0.5478821, y: -3.4999237}
+  m_SizeDelta: {x: 4.0647964, y: 8.992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057134794334322
 CanvasRenderer:
@@ -812,6 +832,7 @@ GameObject:
   - component: {fileID: 2000057134832392070}
   - component: {fileID: 9019172559840153644}
   - component: {fileID: 9765431449393207}
+  - component: {fileID: 8433555857194809948}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -926,6 +947,10 @@ MonoBehaviour:
   option2Text: {fileID: 7049675743369350510}
   option3Text: {fileID: 7049675742365370329}
   currSentenceId: 0
+  phaseIndicator: 
+  XinaAttemp: 0
+  BeniaAttemp: 0
+  FlorineAttemp: 0
   anim: {fileID: 7049675743619591682}
 --- !u!114 &9765431449393207
 MonoBehaviour:
@@ -936,40 +961,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 2000057134832392088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a6b85411705e4408716a742a9951f1, type: 3}
+  m_Script: {fileID: 11500000, guid: fd201c60d42af3e44b5213988bfa08c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2000057134856868907
-GameObject:
+--- !u!114 &8433555857194809948
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2000057134856868906}
-  m_Layer: 0
-  m_Name: AffectionSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2000057134856868906
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000057134856868907}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -211.49998, y: -422.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2000057134649581813}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 2000057134832392088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe170fd8a4af944abb88185f2912b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AffectionPanel: {fileID: 2000057134780194080}
+  PhoneButton: {fileID: 2000057136335466954}
+  PhonePanel: {fileID: 2000057134691170133}
+  SettingPanel: {fileID: 2000057136054132725}
+  cameraRotateScript: {fileID: 0}
 --- !u!1 &2000057134967711035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.14473839, y: 0}
   m_AnchorMax: {x: 0.28821522, y: 1}
-  m_AnchoredPosition: {x: 0.14001465, y: -0.1136322}
+  m_AnchoredPosition: {x: 0.13999939, y: -0.1136322}
   m_SizeDelta: {x: 1.7238007, y: -1.5974884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135044112363
@@ -1661,7 +1672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.14473839, y: 1}
-  m_AnchoredPosition: {x: -0.6116333, y: -0.1136322}
+  m_AnchoredPosition: {x: -0.6115341, y: -0.1136322}
   m_SizeDelta: {x: -1.780365, y: -1.5974884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135249924241
@@ -1900,7 +1911,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2000057136335466953}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PhoneOpener, Assembly-CSharp
         m_MethodName: OpenSettingPanel
         m_Mode: 1
@@ -2521,10 +2532,10 @@ RectTransform:
   m_Father: {fileID: 2000057134780194095}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.162, y: 0.5562427}
-  m_AnchorMax: {x: 0.5, y: 0.59800005}
-  m_AnchoredPosition: {x: -2, y: -1}
-  m_SizeDelta: {x: -1.0310059, y: 1.9919968}
+  m_AnchorMin: {x: 0.162, y: 0.5606294}
+  m_AnchorMax: {x: 0.6473125, y: 0.59800005}
+  m_AnchoredPosition: {x: 0.5478821, y: -3.5}
+  m_SizeDelta: {x: 4.0647964, y: 6.992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135490618549
 CanvasRenderer:
@@ -2733,10 +2744,10 @@ RectTransform:
   m_Father: {fileID: 2000057134780194095}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.162, y: 0.8194633}
-  m_AnchorMax: {x: 0.5, y: 0.8604854}
-  m_AnchoredPosition: {x: -2, y: 1.5}
-  m_SizeDelta: {x: -1.0310059, y: 2.9920044}
+  m_AnchorMin: {x: 0.162, y: 0.8177104}
+  m_AnchorMax: {x: 0.6473125, y: 0.8604854}
+  m_AnchoredPosition: {x: 0.5478821, y: 2.5}
+  m_SizeDelta: {x: 4.0647964, y: 0.9920001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135554690139
 CanvasRenderer:
@@ -2871,7 +2882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.14473839, y: 0}
   m_AnchorMax: {x: 0.28821522, y: 1}
-  m_AnchoredPosition: {x: 0.14001465, y: -0.1136322}
+  m_AnchoredPosition: {x: 0.13999939, y: -0.1136322}
   m_SizeDelta: {x: 1.7238007, y: -1.5974884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135668378590
@@ -2947,10 +2958,10 @@ RectTransform:
   m_Father: {fileID: 2000057134691170129}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -138.86287, y: -100.93866}
-  m_SizeDelta: {x: 216.5377, y: 225.8701}
+  m_AnchorMin: {x: 0.14500001, y: 0.31125462}
+  m_AnchorMax: {x: 0.45916057, y: 0.5}
+  m_AnchoredPosition: {x: 0.637146, y: 7.0613403}
+  m_SizeDelta: {x: -4.4622955, y: 9.870102}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135722738096
 CanvasRenderer:
@@ -3034,8 +3045,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2000057136302944008}
-        m_TargetAssemblyTypeName: AffectionSystem, Assembly-CSharp
+      - m_Target: {fileID: 8433555857194809948}
+        m_TargetAssemblyTypeName: PhoneOpener, Assembly-CSharp
         m_MethodName: OpenAffectionWindow
         m_Mode: 1
         m_Arguments:
@@ -3081,10 +3092,10 @@ RectTransform:
   m_Father: {fileID: 2000057134780194095}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.29200003, y: 0.056}
-  m_AnchorMax: {x: 0.7112963, y: 0.09327204}
-  m_AnchoredPosition: {x: -1.5, y: 2.5002441}
-  m_SizeDelta: {x: 11.01001, y: 6.002014}
+  m_AnchorMin: {x: 0.2648493, y: 0.056}
+  m_AnchorMax: {x: 0.72845817, y: 0.12913524}
+  m_AnchoredPosition: {x: 3.4999847, y: 1.7180176}
+  m_SizeDelta: {x: -3.1751003, y: 3.4361}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135919230355
 CanvasRenderer:
@@ -3168,9 +3179,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2000057136302944008}
-        m_TargetAssemblyTypeName: AffectionSystem, Assembly-CSharp
-        m_MethodName: CloseAffectionWindow
+      - m_Target: {fileID: 8433555857194809948}
+        m_TargetAssemblyTypeName: PhoneOpener, Assembly-CSharp
+        m_MethodName: OpenAffectionWindow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3215,10 +3226,10 @@ RectTransform:
   m_Father: {fileID: 2000057134691170129}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 143.3153, y: -101.02347}
-  m_SizeDelta: {x: 216.5377, y: 225.8701}
+  m_AnchorMin: {x: 0.555, y: 0.31125462}
+  m_AnchorMax: {x: 0.86200005, y: 0.5122178}
+  m_AnchoredPosition: {x: -3.6846924, y: -0.023468018}
+  m_SizeDelta: {x: 0.53770447, y: -4.129898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135979360726
 CanvasRenderer:
@@ -3302,7 +3313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2000057136335466953}
+      - m_Target: {fileID: 8433555857194809948}
         m_TargetAssemblyTypeName: PhoneOpener, Assembly-CSharp
         m_MethodName: OpenSettingPanel
         m_Mode: 1
@@ -3616,7 +3627,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.14473839, y: 0}
   m_AnchorMax: {x: 0.28821522, y: 1}
-  m_AnchoredPosition: {x: 0.14001465, y: -0.1136322}
+  m_AnchoredPosition: {x: 0.13999939, y: -0.1136322}
   m_SizeDelta: {x: 1.7238007, y: -1.5974884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057136061275527
@@ -3887,7 +3898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.14473839, y: 1}
-  m_AnchoredPosition: {x: -0.6116333, y: -0.1136322}
+  m_AnchoredPosition: {x: -0.6115341, y: -0.1136322}
   m_SizeDelta: {x: -1.780365, y: -1.5974884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057136213713629
@@ -4223,7 +4234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAffectionPoint: 7
-  AffectionUIParent: {fileID: 2000057134780194080}
   characterAffections:
   - name: 
     affectionPoint: 0
@@ -4267,7 +4277,6 @@ GameObject:
   - component: {fileID: 2000057136335466934}
   - component: {fileID: 2000057136335466935}
   - component: {fileID: 2000057136335466952}
-  - component: {fileID: 2000057136335466953}
   m_Layer: 5
   m_Name: PhoneButton
   m_TagString: Untagged
@@ -4378,7 +4387,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2000057136335466953}
+      - m_Target: {fileID: 8433555857194809948}
         m_TargetAssemblyTypeName: PhoneOpener, Assembly-CSharp
         m_MethodName: OpenPhone
         m_Mode: 1
@@ -4390,21 +4399,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2000057136335466953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000057136335466954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fe170fd8a4af944abb88185f2912b41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PhonePanel: {fileID: 2000057134691170133}
-  SettingPanel: {fileID: 2000057136054132725}
-  cameraRotateScript: {fileID: 0}
 --- !u!1 &2000057136484794862
 GameObject:
   m_ObjectHideFlags: 0
@@ -4578,7 +4572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.14473839, y: 1}
-  m_AnchoredPosition: {x: -0.6116333, y: -0.1136322}
+  m_AnchoredPosition: {x: -0.6115341, y: -0.1136322}
   m_SizeDelta: {x: -1.780365, y: -1.5974884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057136533541150
@@ -4654,10 +4648,10 @@ RectTransform:
   m_Father: {fileID: 2000057134691170129}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 180.0235}
-  m_SizeDelta: {x: 216.5377, y: 225.8701}
+  m_AnchorMin: {x: 0.33600003, y: 0.55658144}
+  m_AnchorMax: {x: 0.6643211, y: 0.76000005}
+  m_AnchoredPosition: {x: -1, y: -1.4765015}
+  m_SizeDelta: {x: -15.462296, y: -7.129898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057136552282931
 CanvasRenderer:
@@ -5008,6 +5002,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4499437054624545240, guid: 04f53118add5f664cbba9df9348b4d05,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4499437054737769926, guid: 04f53118add5f664cbba9df9348b4d05,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5118,44 +5117,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9019172559840153644}
-    - target: {fileID: 4499437055355947640, guid: 04f53118add5f664cbba9df9348b4d05,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChooseOption3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4499437055917772297, guid: 04f53118add5f664cbba9df9348b4d05,
-        type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 7049675741872392371}
     - target: {fileID: 4499437055917772297, guid: 04f53118add5f664cbba9df9348b4d05,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9019172559840153644}
-    - target: {fileID: 4499437055917772297, guid: 04f53118add5f664cbba9df9348b4d05,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChooseOption1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4499437056158368494, guid: 04f53118add5f664cbba9df9348b4d05,
-        type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 7049675742095328342}
     - target: {fileID: 4499437056158368494, guid: 04f53118add5f664cbba9df9348b4d05,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9019172559840153644}
-    - target: {fileID: 4499437056158368494, guid: 04f53118add5f664cbba9df9348b4d05,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChooseOption2
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4499437055543699643, guid: 04f53118add5f664cbba9df9348b4d05, type: 3}
-    - {fileID: 4499437055543699642, guid: 04f53118add5f664cbba9df9348b4d05, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f53118add5f664cbba9df9348b4d05, type: 3}
 --- !u!1 &7049675741872392368 stripped
 GameObject:
@@ -5163,36 +5135,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6891717533838821051}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7049675741872392371 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4499437055917772296, guid: 04f53118add5f664cbba9df9348b4d05,
-    type: 3}
-  m_PrefabInstance: {fileID: 6891717533838821051}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7049675741872392368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7049675742095328299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4499437056158368400, guid: 04f53118add5f664cbba9df9348b4d05,
     type: 3}
   m_PrefabInstance: {fileID: 6891717533838821051}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7049675742095328342 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4499437056158368493, guid: 04f53118add5f664cbba9df9348b4d05,
-    type: 3}
-  m_PrefabInstance: {fileID: 6891717533838821051}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7049675742095328299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7049675742365370329 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4499437056428802402, guid: 04f53118add5f664cbba9df9348b4d05,
