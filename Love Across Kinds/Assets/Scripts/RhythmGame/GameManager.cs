@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public AudioSource theMusic;
 
     public bool startPlaying;
+    public bool countDown;
 
     public BeatScroller theBS;
 
@@ -26,27 +27,34 @@ public class GameManager : MonoBehaviour
 
     public Text finalScoreText;
 
+    public GameObject countDown3;
+    public GameObject countDown2;
+    public GameObject countDown1;
+
+    public AudioSource readyFX;
+
     // Start is called before the first frame update
     void Start()
     {
+        startPlaying = true;
+        countDown = true;
+
         scoreText.text = "0";
+        StartCoroutine(CountSequence());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!startPlaying)
+        if (!startPlaying && !countDown)
         {
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                startPlaying = true;
-                theBS.hasStarted = true;
-                theMusic.Play();
-            }
+            startPlaying = true;
+            theBS.hasStarted = true;
+            theMusic.Play();
         }
         else
         {
-            if (!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
+            if (!theMusic.isPlaying && !resultsScreen.activeInHierarchy && !countDown)
             {
                 resultsScreen.SetActive(true);
                 inGameUI.SetActive(false);
@@ -59,5 +67,24 @@ public class GameManager : MonoBehaviour
     {
         currentScore += scorePerNote;
         scoreText.text = currentScore.ToString();
+    }
+
+    IEnumerator CountSequence()
+    {
+        yield return new WaitForSeconds(1.5f);
+        countDown3.SetActive(true);
+        readyFX.Play();
+        yield return new WaitForSeconds(1);
+        countDown3.SetActive(false);
+        countDown2.SetActive(true);
+        readyFX.Play();
+        yield return new WaitForSeconds(1);
+        countDown2.SetActive(false);
+        countDown1.SetActive(true);
+        readyFX.Play();
+        yield return new WaitForSeconds(1);
+        countDown1.SetActive(false);
+        startPlaying = false;
+        countDown = false;
     }
 }
