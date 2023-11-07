@@ -12,12 +12,12 @@ public class LevelUI : MonoBehaviour
     public int episode;
     private DialogueTrigger dialogueTrigger;
     public GameObject dlgTrgr;
-    public GameObject phaseMngr;
+    //public GameObject phaseMngr;
     private PhaseManager instance;
 
     void Start()
     {
-        instance = phaseMngr.GetComponent<PhaseManager>();
+        instance = PhaseManager.instance;
 
         if (dlgTrgr != null)
         {
