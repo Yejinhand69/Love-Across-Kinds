@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI option3Text;
 
     //Stroing data of Dialogues from .csv
-    private List<DialogueData> datas;
+    public List<DialogueData> datas;
 
     //Indicator
     public int currIndexPos = 0;
