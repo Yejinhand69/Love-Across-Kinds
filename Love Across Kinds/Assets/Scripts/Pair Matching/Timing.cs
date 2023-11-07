@@ -34,6 +34,7 @@ public class Timing : MonoBehaviour
         {
             //SceneManager.LoadScene("Matching pair Lose");
             lose.SetActive(true);
+            GameControllerScript.situation = false;
         }
     }
 }

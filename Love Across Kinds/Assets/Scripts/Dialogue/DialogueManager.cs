@@ -224,12 +224,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    //Add reference to mini game script here 
-    private string rhythmGameSceneName = "Rhythm Game";
-    private Scene previousScene; // Store the previous scene
-    private string pairMatchingGameSceneName = "Jon macthing pair";
-    private Scene previousScene2; // Store the previous scene
-
     public void EndDialogue()
     {
         anim.SetBool("isOpenDialogue", false);
@@ -244,17 +238,17 @@ public class DialogueManager : MonoBehaviour
                         //FreeTime
                         if(PhaseManager.instance.currentPhase == "FreeTime")
                         {
-                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                            //    //Affection Event 2 happens here...
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
                             {
                                 //Dialogue Before Mini Game
-                                //Affection Event 2 happens here...
-                            }
-                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
-                            {
-                                //Dialogue Before Mini Game
-                                //Affection Event 1 happens here...
                                 OpenDialogue(" ", 5);
-                                StartCoroutine(LoadRhythmGameAsync());
+                                //Affection Event 1 happens here...
+                                StartCoroutine(RhythmGameFTAE1());
                             }
                             else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
                             {
@@ -268,14 +262,16 @@ public class DialogueManager : MonoBehaviour
                             if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
                             {
                                 //Dialogue Before Mini Game
+                                OpenDialogue(" ", 389);
                                 //Affection Event 2 happens here...
+                                StartCoroutine(RhythmGameSAE2());
                             }
                             else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
                             {
                                 //Dialogue Before Mini Game
-                                //Affection Event 1 happens here...
                                 OpenDialogue(" ", 8);
-                                StartCoroutine(LoadRhythmGameAsync());
+                                //Affection Event 1 happens here...
+                                StartCoroutine(RhythmGameSAE1());
                             }
                             else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
                             {
@@ -289,81 +285,95 @@ public class DialogueManager : MonoBehaviour
                         //FreeTime
                         if (PhaseManager.instance.currentPhase == "FreeTime")
                         {
-                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                            //    //Affection Event 2 happens here...
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
                             {
                                 //Dialogue Before Mini Game
-                                //Affection Event 2 happens here...
-                            }
-                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
-                            {
-                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 113);
                                 //Affection Event 1 happens here...
+                                StartCoroutine(TriviaGameFTAE1());
                             }
                             else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
                             {
                                 //Spend time
+                                OpenDialogue(" ", 384);
                             }
                         }
                         //Special
                         else if (PhaseManager.instance.currentPhase == "Special")
                         {
-                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                            //    //Affection Event 2 happens here...
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
                             {
                                 //Dialogue Before Mini Game
-                                //Affection Event 2 happens here...
-                            }
-                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
-                            {
-                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 116);
                                 //Affection Event 1 happens here...
+                                StartCoroutine(TriviaGameSAE1());
                             }
                             else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
                             {
                                 //Spend time
+                                OpenDialogue(" ", 589);
                             }
                         }
                         
                         break;
 
                     case "Florine":
+
                         //FreeTime
                         if (PhaseManager.instance.currentPhase == "FreeTime")
                         {
-                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                            //    //Affection Event 2 happens here...
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
                             {
                                 //Dialogue Before Mini Game
-                                //Affection Event 2 happens here...
-                            }
-                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
-                            {
-                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 279);
                                 //Affection Event 1 happens here...
-                                StartCoroutine(LoadPairMatchingGameAsync());
+                                StartCoroutine(PairMatchingGameFTAE1());
                             }
                             else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
                             {
                                 //Spend time
+                                OpenDialogue(" ", 386);
                             }
                         }
                         //Special
                         else if (PhaseManager.instance.currentPhase == "Special")
                         {
-                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
-                        {
-                            //Dialogue Before Mini Game
-                            //Affection Event 2 happens here...
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                                
+                            //    //Affection Event 2 happens here...
+                                
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 282);
+                                //Affection Event 1 happens here...
+                                StartCoroutine(PairMatchingGameSAE1());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                                OpenDialogue(" ", 591);
+                            }
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
-                        {
-                            //Dialogue Before Mini Game
-                            //Affection Event 1 happens here...
-                            StartCoroutine(LoadPairMatchingGameAsync());
-                        }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
-                        {
-                            //Spend time
-                        }
-                        }
+
                         break;
 
                     default:
@@ -513,7 +523,12 @@ public class DialogueManager : MonoBehaviour
         optionBox3.SetActive(false);
     }
 
-    IEnumerator LoadRhythmGameAsync()
+    //Add reference to mini game script here 
+    private string rhythmGameSceneName = "Rhythm Game";
+    private string pairMatchingGameSceneName = "Jon macthing pair";
+    private string trivaSceneName = "Jon Benia minigame";
+
+    IEnumerator RhythmGameFTAE1()
     {
         while (dialogueActive)
         {
@@ -521,14 +536,7 @@ public class DialogueManager : MonoBehaviour
         }
         
         // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
-        
-        // Wait for the scene to finish loading.
-        while (!asyncLoad.isDone)
-        {
-            // You can add loading animations or progress updates here if needed.
-            yield return null;
-        }
+        SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
 
@@ -550,20 +558,183 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    IEnumerator LoadPairMatchingGameAsync()
+    IEnumerator RhythmGameSAE1()
     {
-        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(pairMatchingGameSceneName);
-
-        // Wait for the scene to finish loading.
-        while (!asyncLoad.isDone)
+        while (dialogueActive)
         {
-            // You can add loading animations or progress updates here if needed.
             yield return null;
         }
 
-        // The 'Rhythm Game' scene has finished loading; unload it and return to the previous scene.
-        SceneManager.UnloadSceneAsync(pairMatchingGameSceneName);
-        SceneManager.SetActiveScene(previousScene2);
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+
+        while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
+        {
+            checkWinLose = GameManager.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 34); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 37); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator RhythmGameSAE2()
+    {
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+
+        while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
+        {
+            checkWinLose = GameManager.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 400); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 404); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator PairMatchingGameFTAE1()
+    {
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(pairMatchingGameSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+
+        while (SceneManager.GetSceneByName(pairMatchingGameSceneName).isLoaded)
+        {
+            checkWinLose = GameControllerScript.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 305); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 311); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator PairMatchingGameSAE1()
+    {
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(pairMatchingGameSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+
+        while (SceneManager.GetSceneByName(pairMatchingGameSceneName).isLoaded)
+        {
+            checkWinLose = GameControllerScript.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 308); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 314); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator TriviaGameFTAE1()
+    {
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(trivaSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+
+        while (SceneManager.GetSceneByName(trivaSceneName).isLoaded)
+        {
+            checkWinLose = Dialogue2.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 216); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 263); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator TriviaGameSAE1()
+    {
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(trivaSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+
+        while (SceneManager.GetSceneByName(trivaSceneName).isLoaded)
+        {
+            checkWinLose = Dialogue2.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 219); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 266); // Call StartDialogue without arguments
+        }
     }
 }
