@@ -3358,7 +3358,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2f9321afc127a364bb84af1cec8833df,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.64
+      value: 9.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9321afc127a364bb84af1cec8833df,
         type: 3}
@@ -3455,10 +3455,23 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.9881568
+  m_Radius: 0.7798524
   m_Height: 3.9733105
   m_Direction: 1
-  m_Center: {x: -5.1790066, y: 1.0036316, z: -3.308392}
+  m_Center: {x: -5.4281163, y: 1.0036316, z: -2.850978}
+--- !u!114 &1368703274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368703269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6591192fe1b95242ad0bd0102c4c8f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportPoint: {fileID: 1368703269}
 --- !u!1 &1371274685
 GameObject:
   m_ObjectHideFlags: 0
