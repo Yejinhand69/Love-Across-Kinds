@@ -220,6 +220,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    //Add reference to mini game script here 
+    public string rhythmGameSceneName = "Rhythm Game";
+    private Scene previousScene; // Store the previous scene
+    public string pairMatchingGameSceneName = "Jon macthing pair";
+    private Scene previousScene2; // Store the previous scene
+
     public void EndDialogue()
     {
         anim.SetBool("isOpenDialogue", false);
@@ -246,6 +252,7 @@ public class DialogueManager : MonoBehaviour
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
+                            StartCoroutine(LoadRhythmGameAsync());
                         }
                         else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
                         {
@@ -280,6 +287,7 @@ public class DialogueManager : MonoBehaviour
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
+                            StartCoroutine(LoadPairMatchingGameAsync());
                         }
                         else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
                         {
@@ -432,5 +440,39 @@ public class DialogueManager : MonoBehaviour
         optionBox1.SetActive(false);
         optionBox2.SetActive(false);
         optionBox3.SetActive(false);
+    }
+
+    IEnumerator LoadRhythmGameAsync()
+    {
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(rhythmGameSceneName);
+
+        // Wait for the scene to finish loading.
+        while (!asyncLoad.isDone)
+        {
+            // You can add loading animations or progress updates here if needed.
+            yield return null;
+        }
+
+        // The 'Rhythm Game' scene has finished loading; unload it and return to the previous scene.
+        SceneManager.UnloadSceneAsync(rhythmGameSceneName);
+        SceneManager.SetActiveScene(previousScene);
+    }
+
+    IEnumerator LoadPairMatchingGameAsync()
+    {
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(pairMatchingGameSceneName);
+
+        // Wait for the scene to finish loading.
+        while (!asyncLoad.isDone)
+        {
+            // You can add loading animations or progress updates here if needed.
+            yield return null;
+        }
+
+        // The 'Rhythm Game' scene has finished loading; unload it and return to the previous scene.
+        SceneManager.UnloadSceneAsync(pairMatchingGameSceneName);
+        SceneManager.SetActiveScene(previousScene2);
     }
 }
