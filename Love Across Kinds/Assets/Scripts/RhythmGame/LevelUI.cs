@@ -4,19 +4,46 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class LevelUI : MonoBehaviour
 {
     public GameManager gmMngr;
     public bool wLSituation;
-    private DialogueTrigger dialogueTrigger; // Declare dialogueTrigger at the class level
+    public string phases;
+    public int episode;
+    private DialogueTrigger dialogueTrigger;
     public GameObject dlgTrgr;
+    public GameObject phaseMngr;
+    private PhaseManager instance;
 
     void Start()
     {
-        dialogueTrigger = dlgTrgr.GetComponent<DialogueTrigger>(); // Initialize dialogueTrigger
+        instance = phaseMngr.GetComponent<PhaseManager>();
+
+        if (dlgTrgr != null)
+        {
+            dialogueTrigger = dlgTrgr.GetComponent<DialogueTrigger>();
+        }
+        else
+        {
+            Debug.LogWarning("dlgTrgr is not assigned. Make sure to assign it in the Inspector.");
+        }
+
+        if (instance != null)
+        {
+            phases = instance.currentPhase;
+            episode = instance.currentEpisode;
+        }
+        else
+        {
+            Debug.LogWarning("phaseMngr is not assigned or does not contain a PhaseManager component.");
+        }
+    }
+
+    void Update()
+    {
         wLSituation = gmMngr.situation;
     }
+
     public void BackToMain()
     {
         SceneManager.LoadScene("Lobby1");
@@ -29,15 +56,48 @@ public class LevelUI : MonoBehaviour
 
     public void Continue()
     {
-        if (wLSituation)
+        if (phases == "FreeTime" && episode == 1)
         {
-            SceneManager.LoadScene("MainMenu");
-            dialogueTrigger.StartDialogue(); // Call StartDialogue without arguments
+            if (wLSituation)
+            {
+                SceneManager.LoadScene("Lobby1");
+                dialogueTrigger.StartDialogue(" ", 31); // Call StartDialogue without arguments
+            }
+            else if (!wLSituation)
+            {
+                SceneManager.LoadScene("Lobby1");
+                dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
+            }
         }
-        else if (!wLSituation)
+        else if (phases == "Special" && episode == 1)
         {
-            SceneManager.LoadScene("MainMenu");
-            dialogueTrigger.StartDialogue(); // Call StartDialogue without arguments
+            if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 3)
+            {
+                if (wLSituation)
+                {
+                    SceneManager.LoadScene("Lobby1");
+                    dialogueTrigger.StartDialogue(" ", 400); // Call StartDialogue without arguments
+                }
+                else if (!wLSituation)
+                {
+                    SceneManager.LoadScene("Lobby1");
+                    dialogueTrigger.StartDialogue(" ", 404); // Call StartDialogue without arguments
+                }
+            }
+            else if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 1)
+            {
+                if (wLSituation)
+                {
+                    SceneManager.LoadScene("Lobby1");
+                    dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
+                }
+                else if (!wLSituation)
+                {
+                    SceneManager.LoadScene("Lobby1");
+                    dialogueTrigger.StartDialogue(" ", 37); // Call StartDialogue without arguments
+                }
+            }
+            
         }
     }
 }
