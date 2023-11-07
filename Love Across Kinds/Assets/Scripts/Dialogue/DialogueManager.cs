@@ -222,9 +222,9 @@ public class DialogueManager : MonoBehaviour
     }
 
     //Add reference to mini game script here 
-    public string rhythmGameSceneName = "Rhythm Game";
+    private string rhythmGameSceneName = "Rhythm Game";
     private Scene previousScene; // Store the previous scene
-    public string pairMatchingGameSceneName = "Jon macthing pair";
+    private string pairMatchingGameSceneName = "Jon macthing pair";
     private Scene previousScene2; // Store the previous scene
 
     public void EndDialogue()
@@ -457,7 +457,7 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
 
-        while (!GameManager.instance.resultsScreen.activeInHierarchy)
+        while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
         {
             yield return null;
         }

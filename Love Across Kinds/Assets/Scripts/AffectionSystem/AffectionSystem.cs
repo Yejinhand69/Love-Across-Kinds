@@ -39,6 +39,8 @@ public class AffectionSystem : MonoBehaviour
         characterAffections[2].name = "Florine";
 
         affectionDictionary = new Dictionary<string, int>();
+
+        affectionDictionary["Xina"] = 1;
     }
 
     //Call this method when need to + affection
