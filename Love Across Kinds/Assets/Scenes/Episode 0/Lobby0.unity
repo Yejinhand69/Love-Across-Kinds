@@ -1969,11 +1969,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2000057134794334324, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -3.499939
-      objectReference: {fileID: 0}
     - target: {fileID: 2000057135034884959, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1998,11 +1993,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameUIManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 2000057136302944009, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2000057136302944247, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
@@ -2063,11 +2053,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.61154175
-      objectReference: {fileID: 0}
-    - target: {fileID: 7049675742995251043, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
@@ -2664,7 +2649,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &907681760
 RectTransform:
@@ -6603,8 +6588,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
