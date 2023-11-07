@@ -13,6 +13,7 @@ public class GoToBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public float swipeThreshold = 0.2f; // Adjust this threshold to your preference for distinguishing a tap from a swipe
 
     private DialogueTrigger dialogueTrigger;
+    public GameObject transportPoint;
 
     private void Start()
     {
@@ -55,6 +56,7 @@ public class GoToBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
 
         Camera.main.transform.position = new Vector3(0.0f, 4.33f, -7.06f);
+        transportPoint.SetActive(false);
     }
    
     
