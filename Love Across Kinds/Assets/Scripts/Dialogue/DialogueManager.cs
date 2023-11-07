@@ -190,7 +190,10 @@ public class DialogueManager : MonoBehaviour
                         break;
                 }
 
-
+                if (datas[currIndexPos].checkIfAffection)
+                {
+                    AffectionSystem.Instance.GetAffection();
+                }
 
                 if (datas[currIndexPos].checkIfOption)
                 {
@@ -230,13 +233,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         anim.SetBool("isOpenDialogue", false);
-        dialogueActive = false;
-
-
-        if (datas[currIndexPos].checkIfAffection)
-        {
-            AffectionSystem.Instance.GetAffection();
-        }
+        dialogueActive = false; 
 
         switch (datas[currIndexPos]._event)
         {
@@ -244,42 +241,114 @@ public class DialogueManager : MonoBehaviour
                 switch (currInteractCharName)
                 {
                     case "Xina":
-                        if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                        //FreeTime
+                        if(PhaseManager.instance.currentPhase == "FreeTime")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 2 happens here...
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 2 happens here...
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 1 happens here...
+                                OpenDialogue(" ", 5);
+                                StartCoroutine(LoadRhythmGameAsync());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                                OpenDialogue(" ", 385);
+                            }
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                        //Special
+                        else if(PhaseManager.instance.currentPhase == "Special")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 1 happens here...
-                            StartCoroutine(LoadRhythmGameAsync());
-                        }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
-                        {
-                            //Spend time
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 2 happens here...
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 1 happens here...
+                                OpenDialogue(" ", 8);
+                                StartCoroutine(LoadRhythmGameAsync());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                                OpenDialogue(" ", 590);
+                            }
                         }
                         break;
 
                     case "Benia":
-                        if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                        //FreeTime
+                        if (PhaseManager.instance.currentPhase == "FreeTime")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 2 happens here...
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 2 happens here...
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 1 happens here...
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                            }
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                        //Special
+                        else if (PhaseManager.instance.currentPhase == "Special")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 1 happens here...
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 2 happens here...
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 1 happens here...
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                            }
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
-                        {
-                            //Spend time
-                        }
+                        
                         break;
 
                     case "Florine":
-                        if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                        //FreeTime
+                        if (PhaseManager.instance.currentPhase == "FreeTime")
+                        {
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 2 happens here...
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                //Affection Event 1 happens here...
+                                StartCoroutine(LoadPairMatchingGameAsync());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                            }
+                        }
+                        //Special
+                        else if (PhaseManager.instance.currentPhase == "Special")
+                        {
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 2 happens here...
@@ -293,6 +362,7 @@ public class DialogueManager : MonoBehaviour
                         else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
                         {
                             //Spend time
+                        }
                         }
                         break;
 
@@ -445,6 +515,11 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator LoadRhythmGameAsync()
     {
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+        
         // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
         

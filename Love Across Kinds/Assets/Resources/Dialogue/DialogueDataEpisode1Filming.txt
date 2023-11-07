@@ -183,7 +183,7 @@ Benia	179	On a much~ deeper~ level.	180	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Player	181	*Gulp*	182	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Benia	182	So Honey~	183	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Benia	183	Tell me which is the truth-	-	TRUE	I want to ask more about the statements	I want to guess which statement is the truth.	-	184	217	-	FALSE	FALSE	-	Happy
-Player	184	I want to ask more about the statements	-	FALSE	What was the name of the Award you won?	Who was the one that set you on fire?	May I know who this human is?	185	199	211	FALSE	FALSE	-	Happy
+Player	184	I want to ask more about the statements	-	TRUE	What was the name of the Award you won?	Who was the one that set you on fire?	May I know who this human is?	185	199	211	FALSE	FALSE	-	Happy
 Benia	185	Best Actor	186	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Benia	186	I got it for playing an obsessed stalker who knew every little thing about the person they liked.	187	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	187	"Benia's aura suddenly changes to something sinister,"	188	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -234,7 +234,7 @@ Benia	225	Good job dearie~	226	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Player	232	Wa-	233	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	233	"Benia leans down and whispers into your ear,"	234	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Benia	234	I'll be at the bar later-	235	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
-Benia	235	Come talk to me when filming's over alright sweetie?	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
+Benia	235	Come talk to me when filming's over alright sweetie?	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	FilmingConvo	Happy
  	236	With those final words Benia walks off set.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
  	237	As you approach Florine you can feel her nervous glances at you.	238	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	238	Choose Florine as your partner?	239	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -245,7 +245,7 @@ Florine	242	Are you sure?	243	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	243	"Before you can respond, two of the studio cameras focus on the both of you and the game begins."	244	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	244	"Florine's silhouette trembles uncontrollably,"	245	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	245	You should probably say something to her to calm her nerves. . . 	246	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	246	You should probably say something to her to calm her nerves. . . 	247	TRUE	Focus on me alright? Calm down.	"It’s ok, I’m here alright? Let’s do this-"	-	248	248	-	FALSE	FALSE	-	Happy
+ 	246	You should probably say something to her to calm her nerves. . . 	247	TRUE	Focus on me alright? Calm down.	"It's ok, I'm here alright? Let's do this-"	-	248	248	-	FALSE	FALSE	-	Happy
 Florine	247	O-Ok.	248	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	248	Florine seems to have calmed down thanks to what you said and you hear her take a deep breath(?).	249	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Florine	249	S-Statement 1-	250	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -266,7 +266,7 @@ Florine	263	S-So. . . 	264	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Florine	264	O-Of the three 'truths' I stated-	265	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Florine	265	Two a-are actually lies. . . 	266	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Player	266	Two a-are actually lies. . . 	-	TRUE	I want to ask more about the statements	I want to guess which statement is the truth.	-	267	286	-	FALSE	FALSE	-	Happy
- 	267	I want to ask more about the statements	-	TRUE	Why would starships still use 'FTL Juice’ if it’s so dangerous?	I’m pretty sure I learned about the first human expeditions in history class. . . 	The Original Pioneers?	268	270	275	FALSE	FALSE	-	Happy
+ 	267	I want to ask more about the statements	-	TRUE	Why would starships still use 'FTL Juice' if it's so dangerous?	I'm pretty sure I learned about the first human expeditions in history class. . . 	The Original Pioneers?	268	270	275	FALSE	FALSE	-	Happy
 Florine	268	Uh- Um- Because it's cheaper?	269	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	269	That's very obviously a lie.	266	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	270	"Florine's gas changes colours,"	271	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -315,7 +315,7 @@ Florine	311	It's been a long time since I've laughed that hard. . . 	312	FALSE	-
 Florine	313	That was very sweet of you to do. . . 	314	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Florine	314	It was really nice for u to pick me . . . 	315	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Florine	315	I will be in the dining room later if-	316	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	316	Florine seems to want to say something else but decides to not say it. 	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
+ 	316	Florine seems to want to say something else but decides to not say it. 	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	FilmingConvo	Happy
 Game Host Joe	317	"WELL, WELL, WELL."	318	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	318	"I was expecting only a little bit of spice from this game since it's only the introductory phase,"	319	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	319	But HOT DAMN were some of those moments personal!	320	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
