@@ -154,6 +154,6 @@ public class GameControllerScript : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene("Lobby1");
     }
 }
