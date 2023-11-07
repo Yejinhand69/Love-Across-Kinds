@@ -46,7 +46,7 @@ public class DialogueManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            
+
         }
         else
         {
@@ -87,17 +87,17 @@ public class DialogueManager : MonoBehaviour
     public void OpenDialogue(string objName, int startID)
     {
         anim.SetBool("isOpenDialogue", true);
-        
+
         StartCoroutine(DelayDialogueActive());
         currIndexPos = 0;
 
-        for(int i = 0; i <= datas.Count - 1; i++)   
+        for (int i = 0; i <= datas.Count - 1; i++)
         {
-            if(datas[i].name == objName || datas[i].name == " ")
+            if (datas[i].name == objName || datas[i].name == " ")
             {
                 currIndexPos = i;
                 currSentenceId = startID;
-                
+
                 break;
             }
         }
@@ -108,16 +108,16 @@ public class DialogueManager : MonoBehaviour
     //Method to display specific sentence by using datas.id in data
     public void DisplaySentence()
     {
-        for(int i = currIndexPos; i <= datas.Count - 1; i++)
+        for (int i = 0; i <= datas.Count - 1; i++)
         {
-            if(datas[i].sentenceID == currSentenceId)
+            if (datas[i].sentenceID == currSentenceId)
             {
                 currIndexPos = i;
 
                 //AudioManager.instance.PlayVoice(currSentenceId);
 
                 //Check and change NameBox for player's name
-                if(datas[currIndexPos].name == "Player")
+                if (datas[currIndexPos].name == "Player")
                 {
                     nameText.text = UserData.instance.playerName;
                 }
@@ -136,6 +136,7 @@ public class DialogueManager : MonoBehaviour
                             currInteractCharName = nameText.text;
                             break;
                         default:
+                            currInteractCharName = EventClick.interactObjectName;
                             break;
                     }
                 }
@@ -143,9 +144,9 @@ public class DialogueManager : MonoBehaviour
                 //Check and change DialogueBox for player's name
                 string[] words = datas[currIndexPos].sentence.Split(new char[] { ' ' });
 
-                for(int j = 0; j < words.Length; j++)
+                for (int j = 0; j < words.Length; j++)
                 {
-                    if(words[j] == "PlayerName")
+                    if (words[j] == "PlayerName")
                     {
                         words[j] = UserData.instance.playerName;
                     }
@@ -153,9 +154,9 @@ public class DialogueManager : MonoBehaviour
 
                 string sentence = "";
 
-                for(int k = 0; k < words.Length; k++)
+                for (int k = 0; k < words.Length; k++)
                 {
-                    if(k == 0)
+                    if (k == 0)
                     {
                         sentence += words[k];
                     }
@@ -168,7 +169,7 @@ public class DialogueManager : MonoBehaviour
                 dialogueText.text = sentence;
 
                 //Expressions
-                switch(datas[currIndexPos].expression)
+                switch (datas[currIndexPos].expression)
                 {
                     case "Neutral":
                         //Expression change here...
@@ -230,7 +231,7 @@ public class DialogueManager : MonoBehaviour
     {
         anim.SetBool("isOpenDialogue", false);
         dialogueActive = false;
-        
+
 
         if (datas[currIndexPos].checkIfAffection)
         {
@@ -252,13 +253,15 @@ public class DialogueManager : MonoBehaviour
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
+                            previousScene = SceneManager.GetActiveScene();
+                            Debug.Log("AE1 Xina");
                             StartCoroutine(LoadRhythmGameAsync());
                         }
                         else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
                         {
                             //Spend time
                         }
-                            break;
+                        break;
 
                     case "Benia":
                         if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
@@ -312,7 +315,7 @@ public class DialogueManager : MonoBehaviour
 
             case "ChangePhase":
                 PhaseManager.instance.ChangePhase();
-                if(PhaseManager.instance.currentPhase == "Filming")
+                if (PhaseManager.instance.currentPhase == "Filming")
                 {
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
                 }
@@ -322,12 +325,12 @@ public class DialogueManager : MonoBehaviour
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
                 }
 
-                if(PhaseManager.instance.currentPhase == "Special")
+                if (PhaseManager.instance.currentPhase == "Special")
                 {
                     SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
-                    break;
-                
+                break;
+
 
             case "FilmingConvo":
                 switch (currInteractCharName)
@@ -370,7 +373,7 @@ public class DialogueManager : MonoBehaviour
         {
             optionBox3.SetActive(true);
             option3Text.text = datas[currIndexPos].option3;
-        }  
+        }
     }
 
     public void ChooseOption1()
@@ -445,12 +448,17 @@ public class DialogueManager : MonoBehaviour
     IEnumerator LoadRhythmGameAsync()
     {
         // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(rhythmGameSceneName);
-
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync(previousScene, UnloadSceneOptions.None);
         // Wait for the scene to finish loading.
         while (!asyncLoad.isDone)
         {
             // You can add loading animations or progress updates here if needed.
+            yield return null;
+        }
+
+        while (!GameManager.instance.resultsScreen.activeInHierarchy)
+        {
             yield return null;
         }
 

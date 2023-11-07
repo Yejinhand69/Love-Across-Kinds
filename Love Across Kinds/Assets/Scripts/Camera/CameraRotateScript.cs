@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraRotateScript : MonoBehaviour
 {
@@ -45,7 +46,16 @@ public class CameraRotateScript : MonoBehaviour
                 // Update the starting touch position for the next frame
                 touchStart = touch.position;
             }
-       
+
+        }
+
+        if (SceneManager.sceneCount > 1)
+        {
+            Camera.main.GetComponent<AudioListener>().enabled = false;
+        }
+        else
+        {
+            Camera.main.GetComponent<AudioListener>().enabled = true;
         }
     }
 }
