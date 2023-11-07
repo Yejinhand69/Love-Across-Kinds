@@ -1509,6 +1509,19 @@ MonoBehaviour:
   RecordingDoorPanel: {fileID: 0}
   ArcadeDoorPanel: {fileID: 368520247}
   swipeThreshold: 0.2
+--- !u!65 &297345994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297345990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.6915627, y: 3.2344782, z: 1.6559627}
+  m_Center: {x: 0.0000005960465, y: 2.752857e-21, z: -0.0000015199184}
 --- !u!1 &321514429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,6 +2449,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8799728371641852097, guid: 9c0d5dc6c433bff42a3809fbabc3abeb,
         type: 3}
+    - target: {fileID: 5352280136320288771, guid: 9c0d5dc6c433bff42a3809fbabc3abeb,
+        type: 3}
+      propertyPath: m_TagString
+      value: LobbyDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c0d5dc6c433bff42a3809fbabc3abeb, type: 3}
 --- !u!4 &645801232 stripped
