@@ -8,14 +8,14 @@ public class LoadRhythmSync : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 {
     private float pressTime;
     private bool isSwiping = false;
-    public float swipeThreshold = 0.2f; // Adjust this threshold to your preference for distinguishing a tap from a swipe
-    public string rhythmGameSceneName = "Rhythm Game"; // Name of the scene you want to load
-    private string previousSceneName; // Store the name of the previous scene
+    public float swipeThreshold = 0.2f;
+    public string rhythmGameSceneName = "Rhythm Game";
+    private Scene previousScene; // Store the previous scene
 
     private void Start()
     {
-        // Record the name of the current scene as the previous scene
-        previousSceneName = SceneManager.GetActiveScene().name;
+        // Record the current scene as the previous scene
+        previousScene = SceneManager.GetActiveScene();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -40,6 +40,7 @@ public class LoadRhythmSync : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             }
         }
     }
+
     IEnumerator LoadRhythmGameAsync()
     {
         // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
@@ -51,7 +52,9 @@ public class LoadRhythmSync : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             // You can add loading animations or progress updates here if needed.
             yield return null;
         }
-        // The 'Rhythm Game' scene has finished loading; now, return to the previous scene.
-        SceneManager.LoadScene(previousSceneName);
+
+        // The 'Rhythm Game' scene has finished loading; unload it and return to the previous scene.
+        SceneManager.UnloadSceneAsync(rhythmGameSceneName);
+        SceneManager.SetActiveScene(previousScene);
     }
 }
