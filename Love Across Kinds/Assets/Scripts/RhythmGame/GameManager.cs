@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     public bool startPlaying;
     public bool countDown;
-    public bool situation;
+    public static bool situation;
 
     public BeatScroller theBS;
 
