@@ -77,7 +77,6 @@ public class GameManager : MonoBehaviour
                     inGameUI.SetActive(false);
                     finalScoreText.text = "Score: " + currentScore;
                 }
-                
             }
         }
         percentageCount = (noteCount / totalCountNote) *100;

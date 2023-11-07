@@ -22,7 +22,7 @@ public class PhaseManager : MonoBehaviour
     public bool isDonePP1;
     public bool isDoneS1;
 
-    private string[] phases = { "Special", "PreProduction", "Filming", "FreeTime" };//added prologue phase
+    private string[] phases = { "Prologue", "PreProduction", "Filming", "FreeTime" , "Special" };//added prologue phase
 
     private void Awake()
     {
@@ -102,7 +102,6 @@ public class PhaseManager : MonoBehaviour
     private void UpdatePhaseText()
     {
         currentPhase = phases[currentPhaseIndex];
-        //Debug.Log("Current Phase: " + currentPhase);
         DataProcessor.instance.ProcessDialogueData();
 
         // Save the currentPhaseIndex to PlayerPrefs
