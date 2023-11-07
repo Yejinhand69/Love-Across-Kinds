@@ -6,10 +6,13 @@ public class BeatScroller : MonoBehaviour
 {
     public float beatTempo;
     public bool hasStarted;
+    public float totalNotes;
 
     // Start is called before the first frame update
     void Start()
     {
+        totalNotes = transform.childCount;
+        Debug.Log("Child Count: " + transform.childCount);
         beatTempo = beatTempo / 60f;
     }
 
@@ -17,16 +20,8 @@ public class BeatScroller : MonoBehaviour
     void Update()
     {
         // Check if the screen is touched
-        if (!hasStarted)
+        if (hasStarted)
         {
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                hasStarted = true;
-            }
-        }
-        else
-        {
-            // Move the object downward
             transform.position -= new Vector3(0f, 0f, beatTempo * Time.deltaTime);
         }
     }
