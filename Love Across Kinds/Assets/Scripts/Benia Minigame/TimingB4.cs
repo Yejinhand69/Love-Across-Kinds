@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class TimingB : MonoBehaviour
+public class TimingB4 : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] public float remainingTime;
