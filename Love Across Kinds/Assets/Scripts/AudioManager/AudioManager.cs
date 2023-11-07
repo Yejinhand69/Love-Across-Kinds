@@ -64,11 +64,11 @@ public class AudioManager : MonoBehaviour
 
         if (_SFXSource.isPlaying)
         {
-            _BGMSource.volume /= 2;
+            //_BGMSource.volume = 0.5f;
         }
         else
         {
-            _BGMSource.volume *= 2;
+            //_BGMSource.volume *= 2;
         }
     }
 
