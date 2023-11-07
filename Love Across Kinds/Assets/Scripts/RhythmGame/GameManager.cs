@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public bool startPlaying;
     public bool countDown;
+    public bool situation;
 
     public BeatScroller theBS;
 
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         totalCountNote = theBS.totalNotes;
         Debug.Log("TotalNote: " + totalCountNote);
         startPlaying = true;
@@ -63,12 +65,14 @@ public class GameManager : MonoBehaviour
             {
                 if (percentageCount >= 70)
                 {
+                    situation = true;
                     winResultsScreen.SetActive(true);
                     inGameUI.SetActive(false);
                     finalScoreText.text = "Score: " + currentScore;
                 }
                 else if(percentageCount <70)
                 {
+                    situation = false;
                     loseResultsScreen.SetActive(true);
                     inGameUI.SetActive(false);
                     finalScoreText.text = "Score: " + currentScore;
