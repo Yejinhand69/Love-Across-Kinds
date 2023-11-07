@@ -19,7 +19,7 @@ public class LevelUI : MonoBehaviour
     }
     public void BackToMain()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Lobby1");
     }
 
     public void Retry()

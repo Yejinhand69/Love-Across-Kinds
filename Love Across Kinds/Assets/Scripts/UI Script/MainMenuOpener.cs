@@ -1,12 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuOpener : MonoBehaviour
 {
     public GameObject CreditPanel;
     public GameObject SettingsPanel;
+    public GameObject NamingBox;
+    public Animator animator;
 
+    public string sceneToLoad;
+    public float delayBeforeLoad = 1.0f;
+
+    private void Awake()
+    {
+        PhaseManager.instance.currentPhase = "MainMenu";
+    }
 
     public void OpenCreditPanel()
     {
@@ -16,6 +26,8 @@ public class MainMenuOpener : MonoBehaviour
             Animator animator = CreditPanel.GetComponent<Animator>();
             if (animator != null)
             {
+                AudioManager.instance.PlaySFX("Button Press");
+
                 bool isOpen = animator.GetBool("openCredit");
 
                 animator.SetBool("openCredit", !isOpen);
@@ -32,6 +44,8 @@ public class MainMenuOpener : MonoBehaviour
             Animator animator = SettingsPanel.GetComponent<Animator>();
             if (animator != null)
             {
+                AudioManager.instance.PlaySFX("Button Press");
+
                 bool isOpen = animator.GetBool("openSettings");
 
                 animator.SetBool("openSettings", !isOpen);
@@ -39,5 +53,53 @@ public class MainMenuOpener : MonoBehaviour
 
         }
 
+    }
+
+    public void StartGame()
+    {
+        AudioManager.instance.PlaySFX("Button Press");
+
+        OpenNamingBox();
+    }
+
+    public void OpenNamingBox()
+    {
+        if (NamingBox != null)
+        {
+
+            Animator animator = NamingBox.GetComponent<Animator>();
+            if (animator != null)
+            {
+                AudioManager.instance.PlaySFX("Button Press");
+
+                bool isOpen = animator.GetBool("isOnNaming");
+
+                animator.SetBool("isOnNaming", !isOpen);
+            }
+
+        }
+    }
+
+    public void OkToStart()
+    {
+        if(UserData.instance.playerName != "Player")
+        {
+            NamingBox.GetComponent<Animator>().SetBool("isOnNaming", false);
+
+            animator.SetTrigger("FadeOut");
+
+            StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
+        }
+        else
+        {
+            Debug.Log("Please Enter Your Name");
+        }
+    }
+
+    private IEnumerator LoadSceneWithDelay(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        PhaseManager.instance.currentPhase = "Prologue";
+        SceneManager.LoadScene(sceneName);
     }
 }

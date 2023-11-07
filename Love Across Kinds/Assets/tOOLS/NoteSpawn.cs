@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 public class NoteSpawn : EditorWindow
 {
     public float zPosition;
@@ -175,3 +176,4 @@ public class NoteSpawn : EditorWindow
     }
 }
 
+#endif

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class AffectionSystem : MonoBehaviour
 {
@@ -11,64 +12,52 @@ public class AffectionSystem : MonoBehaviour
     //Validation
     [SerializeField] private int maxAffectionPoint = 7;
 
-    //UI stuffs
-    [SerializeField] private GameObject AffectionUIParent;
-    [SerializeField] private TextMeshProUGUI Xina;
-    [SerializeField] private TextMeshProUGUI Bernia;
-    [SerializeField] private TextMeshProUGUI Florine;
-    [SerializeField] private TextMeshProUGUI XinaAffectionPoint;
-    [SerializeField]private TextMeshProUGUI BerniaAffectionPoint;
-    [SerializeField] private TextMeshProUGUI FlorineAffectionPoint;
+    
 
     //Array of Class
     public CharacterAffection[] characterAffections = new CharacterAffection[3];
 
-    //Storage for dialogue data list
-    private List<DialogueData> dialogueDatas;
+    public Dictionary<string, int> affectionDictionary;
 
-    private void Start()
+    private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (Instance == null)
         {
-            Destroy(this);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Instance = this;
+            Destroy(gameObject);
         }
+    }
 
+    private void Start()
+    {
         characterAffections[0].name = "Xina";
-        characterAffections[1].name = "Bernia";
+        characterAffections[1].name = "Benia";
         characterAffections[2].name = "Florine";
 
-        dialogueDatas = DataProcessor.dataList;
+        affectionDictionary = new Dictionary<string, int>();
     }
 
     //Call this method when need to + affection
     //Note: name for if statement need to change to character that is interacting
     public void GetAffection()
     {
+        
+
         for(int i = 0; i < characterAffections.Length; i++)
         {
-            if(dialogueDatas[DialogueManager.currIndexPos].name == characterAffections[i].name && characterAffections[i].affectionPoint < maxAffectionPoint)
+            if(EventClick.interactObjectName == characterAffections[i].name && characterAffections[i].affectionPoint < maxAffectionPoint)
             {
-                characterAffections[i].affectionPoint++;
+                AudioManager.instance.PlaySFX("Affection Gain");
+                int num = characterAffections[i].affectionPoint++;
+                characterAffections[i].hearts[num].SetActive(true);
+
+                affectionDictionary[characterAffections[i].name] = num;
             }
         }
-
-        XinaAffectionPoint.text = characterAffections[0].affectionPoint.ToString();
-        BerniaAffectionPoint.text = characterAffections[1].affectionPoint.ToString();
-        FlorineAffectionPoint.text = characterAffections[2].affectionPoint.ToString();
-    }
-
-    public void OpenAffectionWindow()
-    {
-        AffectionUIParent.SetActive(true);
-    }
-
-    public void CloseAffectionWindow()
-    {
-        AffectionUIParent.SetActive(false);
     }
 }
 
@@ -77,4 +66,5 @@ public class CharacterAffection
 {
     public string name;
     public int affectionPoint;
+    public GameObject[] hearts;
 }
