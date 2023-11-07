@@ -253,8 +253,6 @@ public class DialogueManager : MonoBehaviour
                         {
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
-                            previousScene = SceneManager.GetActiveScene();
-                            Debug.Log("AE1 Xina");
                             StartCoroutine(LoadRhythmGameAsync());
                         }
                         else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
@@ -449,7 +447,7 @@ public class DialogueManager : MonoBehaviour
     {
         // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
-        SceneManager.UnloadSceneAsync(previousScene, UnloadSceneOptions.None);
+        
         // Wait for the scene to finish loading.
         while (!asyncLoad.isDone)
         {
@@ -457,14 +455,24 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
 
+        bool checkWinLose = true;
+
         while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
         {
+            checkWinLose = GameManager.situation;
             yield return null;
         }
 
-        // The 'Rhythm Game' scene has finished loading; unload it and return to the previous scene.
-        SceneManager.UnloadSceneAsync(rhythmGameSceneName);
-        SceneManager.SetActiveScene(previousScene);
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 31); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 34); // Call StartDialogue without arguments
+        }
     }
 
     IEnumerator LoadPairMatchingGameAsync()

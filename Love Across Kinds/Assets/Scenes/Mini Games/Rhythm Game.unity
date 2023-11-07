@@ -3373,7 +3373,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1245781408}
         m_TargetAssemblyTypeName: LevelUI, Assembly-CSharp
-        m_MethodName: BackToMain
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7207,7 +7207,6 @@ MonoBehaviour:
   phases: 
   episode: 0
   dlgTrgr: {fileID: 0}
-  phaseMngr: {fileID: 0}
 --- !u!114 &1245781409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9374,7 +9373,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1245781408}
         m_TargetAssemblyTypeName: LevelUI, Assembly-CSharp
-        m_MethodName: BackToMain
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
