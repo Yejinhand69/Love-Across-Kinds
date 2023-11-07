@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -265,6 +265,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 985474161}
     m_Modifications:
+    - target: {fileID: 459471713028560348, guid: 46ff0c280440f4f4f8f88244935f6357,
+        type: 3}
+      propertyPath: m_Text
+      value: Continue
+      objectReference: {fileID: 0}
     - target: {fileID: 775230329190979927, guid: 46ff0c280440f4f4f8f88244935f6357,
         type: 3}
       propertyPath: m_Layer
@@ -304,6 +309,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 775230330213990130, guid: 46ff0c280440f4f4f8f88244935f6357,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 775230330233513803, guid: 46ff0c280440f4f4f8f88244935f6357,
         type: 3}
@@ -459,6 +469,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 775230331206111307, guid: 46ff0c280440f4f4f8f88244935f6357,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46ff0c280440f4f4f8f88244935f6357, type: 3}
@@ -1015,6 +1030,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 985474161}
     m_Modifications:
+    - target: {fileID: 459471713028560348, guid: 46ff0c280440f4f4f8f88244935f6357,
+        type: 3}
+      propertyPath: m_Text
+      value: Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 617767031249698708, guid: 46ff0c280440f4f4f8f88244935f6357,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1785401406}
+    - target: {fileID: 617767031249698708, guid: 46ff0c280440f4f4f8f88244935f6357,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Continue
+      objectReference: {fileID: 0}
     - target: {fileID: 775230329190979927, guid: 46ff0c280440f4f4f8f88244935f6357,
         type: 3}
       propertyPath: m_Layer
@@ -1054,6 +1084,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 775230330213990130, guid: 46ff0c280440f4f4f8f88244935f6357,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 775230330233513803, guid: 46ff0c280440f4f4f8f88244935f6357,
         type: 3}
@@ -1215,6 +1250,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 775230331206111307, guid: 46ff0c280440f4f4f8f88244935f6357,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46ff0c280440f4f4f8f88244935f6357, type: 3}
 --- !u!1 &1774421646
@@ -1347,7 +1387,7 @@ SpriteRenderer:
   m_Size: {x: 1.875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!82 &1774421651
@@ -1486,16 +1526,16 @@ MonoBehaviour:
   winPoint: 0
   startObject: {fileID: 1774421647}
   images:
-  - {fileID: 21300000, guid: 8a8bdd898b1dfa7419f74cdab7ca64d5, type: 3}
-  - {fileID: 21300000, guid: 0b362a093f575714ab6771e5b3de9e6c, type: 3}
-  - {fileID: 21300000, guid: f894e71ff28017d4296533d1324ca53a, type: 3}
-  - {fileID: 21300000, guid: 0ef89d821eaa7bf49b0f3e92d83862be, type: 3}
-  - {fileID: 21300000, guid: 0159bffa16ff5c44da9827a35f35328c, type: 3}
-  - {fileID: 21300000, guid: e3e05c9893c505340b3038a840a07628, type: 3}
-  - {fileID: 21300000, guid: c1aa14806ba112142bd825f7e5942a40, type: 3}
-  - {fileID: 21300000, guid: 20710c866f901c74f8649137f12c9059, type: 3}
-  - {fileID: 21300000, guid: f7452840e426dc54d8039e9efc602848, type: 3}
-  - {fileID: 21300000, guid: 76bc68d8cdddef34b856a244b3670489, type: 3}
+  - {fileID: 21300000, guid: 7ff092bc80365454a939a67b1a682a8c, type: 3}
+  - {fileID: 21300000, guid: 613b7379c62bff742ab9cfadef01c292, type: 3}
+  - {fileID: 21300000, guid: de1657844ea34ac42a4033bb036502c2, type: 3}
+  - {fileID: 21300000, guid: 1a71babdb7dbbf546b42a9b31d7234cf, type: 3}
+  - {fileID: 21300000, guid: 80f4ae2c8b41ab44c829ef24226c3581, type: 3}
+  - {fileID: 21300000, guid: 39cd3c2b23ce9e347aa16cdb51a046db, type: 3}
+  - {fileID: 21300000, guid: bd060e88fb3e78c448850c9465676d49, type: 3}
+  - {fileID: 21300000, guid: 728672a143d39f245b300faaa5e83b42, type: 3}
+  - {fileID: 21300000, guid: 29e9ebacafa4e8546a120dbfb501237c, type: 3}
+  - {fileID: 21300000, guid: 8d1d3f11f5077ad44a7d70619fb8adf7, type: 3}
   cardDis: {fileID: 1785401409}
   firstOpen: {fileID: 0}
   secondOpen: {fileID: 0}
@@ -1764,12 +1804,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d619d46848787624ababb4fee089222d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97cb4069aa1a32a44b2bcd972a8e6aab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.01, y: 2.01}
+  m_Size: {x: 14.766666, y: 14.758333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1947,6 +1987,6 @@ SpriteRenderer:
   m_Size: {x: 2.01, y: 2.01}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

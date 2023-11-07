@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.TerrainUtils;
+using UnityEngine.SceneManagement;
 
 public class Dialogue2 : MonoBehaviour
 {
@@ -45,6 +46,8 @@ public class Dialogue2 : MonoBehaviour
     private int index;
     private int index2;
     private int index3;
+
+    public static bool situation;
 
     // Start is called before the first frame update
     void Start()
@@ -349,5 +352,16 @@ public class Dialogue2 : MonoBehaviour
 
     }
 
+    public void SuccessButton()
+    {
+        situation = true;
+        SceneManager.UnloadScene("Jon Benia minigame");
+    }
+
+    public void FailButton()
+    {
+        situation = false;
+        SceneManager.UnloadScene("Jon Benia minigame");
+    }
 }
 
