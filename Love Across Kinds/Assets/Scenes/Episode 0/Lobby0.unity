@@ -261,7 +261,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa4c5d0422c20604aad80a4c2505aa87,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa4c5d0422c20604aad80a4c2505aa87,
         type: 3}
@@ -797,7 +797,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e6400e61709ee649a3a8adad966c8cc,
         type: 3}
@@ -1128,7 +1128,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 464b02b5480457f4ea1a50a1c03090b3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 464b02b5480457f4ea1a50a1c03090b3,
         type: 3}
@@ -1811,7 +1811,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 659189883}
-  - {fileID: 2053151686}
   - {fileID: 286667046}
   - {fileID: 121811113}
   - {fileID: 390601223}
@@ -3809,7 +3808,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1460866883}
+      - m_Target: {fileID: 121811115}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: TransportToLobby
         m_Mode: 1
@@ -3821,7 +3820,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1460866883}
+      - m_Target: {fileID: 121811115}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: OpenLobbyDoorPanel
         m_Mode: 1
@@ -4690,43 +4689,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450973131}
   m_CullTransparentMesh: 1
---- !u!1 &1460866878 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6692207008203549071, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1604272649}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1460866882
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460866878}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.6915607, y: 3.2344785, z: 1.6479377}
-  m_Center: {x: 0.0000008352059, y: 1.6172392, z: 0.79552805}
---- !u!114 &1460866883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460866878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f935aa5c8062a48947622d6dfb74b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LobbyDoorPanel: {fileID: 1329351973}
-  DiningRoomDoorPanel: {fileID: 0}
-  PoolDoorPanel: {fileID: 0}
-  RecordingDoorPanel: {fileID: 0}
-  ArcadeDoorPanel: {fileID: 0}
-  swipeThreshold: 0.2
 --- !u!1 &1465446320
 GameObject:
   m_ObjectHideFlags: 0
@@ -5372,85 +5334,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.6915627, y: 3.2344782, z: 1.6559627}
   m_Center: {x: -0.0000001192093, y: 1.6172391, z: 0.7915231}
---- !u!1001 &1604272649
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 414302287}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.83
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.55
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -20.41
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_Name
-      value: DINING ROOM TEST
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6692207008203549071, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-        type: 3}
-      propertyPath: m_TagString
-      value: LobbyDoor
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f3c2b73b44e0789469b9972fe7a87cb7, type: 3}
 --- !u!1 &1737861595
 GameObject:
   m_ObjectHideFlags: 0
@@ -5535,7 +5418,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1460866883}
+      - m_Target: {fileID: 121811115}
         m_TargetAssemblyTypeName: ChangeArea, Assembly-CSharp
         m_MethodName: OpenLobbyDoorPanel
         m_Mode: 1
@@ -5894,12 +5777,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955819831}
   m_CullTransparentMesh: 1
---- !u!4 &2053151686 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f3c2b73b44e0789469b9972fe7a87cb7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1604272649}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2137653696
 GameObject:
   m_ObjectHideFlags: 0
