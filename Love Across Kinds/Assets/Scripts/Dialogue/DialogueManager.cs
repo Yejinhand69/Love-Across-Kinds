@@ -387,8 +387,18 @@ public class DialogueManager : MonoBehaviour
 
             case "Sleep":
                 PhaseManager.instance.currentEpisode++;
+
+                if (PhaseManager.instance.currentPhase == "Special")
+                {
+                    SceneManager.LoadScene("Episode2");
+                }
+
                 PhaseManager.instance.ChangePhase();
-                SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                if(PhaseManager.instance.currentPhase == "Prologue")
+                {
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                }
+                
                 break;
 
             case "ChangePhase":

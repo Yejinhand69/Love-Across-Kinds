@@ -20,6 +20,7 @@ public class PhaseManager : MonoBehaviour
 
     public bool isDonePrologue;
     public bool isDonePP1;
+    public bool isDoneS1;
 
     private string[] phases = { "Special", "PreProduction", "Filming", "FreeTime" };//added prologue phase
 
@@ -58,8 +59,18 @@ public class PhaseManager : MonoBehaviour
             AudioManager.instance.PlaySFX("Notification 2");
 
             dialogueTrigger.StartDialogue(" ", 0);
-            Debug.Log("Dialogue Start 0");
-            
+            Debug.Log("Dialogue Start PP");
+        }
+
+        if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
+        {
+            GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
+            GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
+
+            AudioManager.instance.PlaySFX("Notification 2");
+
+            dialogueTrigger.StartDialogue(" ", 0);
+            Debug.Log("Dialogue Start S");
         }
     }
 
@@ -74,6 +85,17 @@ public class PhaseManager : MonoBehaviour
             
             StartCoroutine(ShowPhoneMessage());
             instance.isDonePP1 = true;
+        }
+
+        if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
+        {
+            while (DialogueManager.dialogueActive)
+            {
+                continue;
+            }
+
+            StartCoroutine(ShowPhoneMessage());
+            instance.isDoneS1 =true;
         }
     }
 
