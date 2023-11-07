@@ -1,5 +1,5 @@
 name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	event	expression
- 	0	A loud notification from your phone drags you out of bed	1	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
+ 	0	A loud notification from your phone drags you out of bed	1	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Joe Hand	1	"Goooooodddd Morning Human Contestant! I hope you're ready for the day ahead cause we will be filming the first episode of season 86 in just a few hours. Here's some advice free of charge! Get to know your fellow contestants a little better. Get to know how they lie, it could prove useful during the episode's challenge. Too da loo~ I wish you success during filming later!"	2	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Player	2	I should probably go get some breakfast before doing anything.	3	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Player	3	Find out how each person lies. . . 	4	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -61,11 +61,11 @@ Xina	58	"But this is my own problem so you don't have to help,  PlayerName !"	59
 Xina	59	"Well, see you in a bit then!"	60	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Xina	60	"I'll figure something out, this door will open eventually!"	61	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	61	"You could help Xina by finding her thing,"	62	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	62	She said she hadn't checked the pool & entertainment room yet so you should go look around there if you want to help.	60	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
+ 	62	She said she hadn't checked the pool & entertainment room yet so you should go look around there if you want to help.	60	FALSE	-	-	-	-	-	-	TRUE	FALSE	ScavengerEvent	Happy
  	63	You notice something shining in the pool. . . 	64	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	64	Crouching down you see a sparkly bracelet that seems to be made of shiny seashells.	65	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	65	It's at the bottom of the pool and you doubt your arm could reach far enough to get it.	66	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	66	It's at the bottom of the pool and you doubt your arm could reach far enough to get it.	-	TRUE	Try anyway! Maybe the water makes it look further than it actually is.	"Forget it, I'm not getting wet for another person's belongings"	-	67			FALSE	FALSE	-	Happy
+ 	66	It's at the bottom of the pool and you doubt your arm could reach far enough to get it.	-	TRUE	Try anyway! Maybe the water makes it look further than it actually is.	"Forget it, I'm not getting wet for another person's belongings"	-	67	66	-	TRUE	FALSE	-	Happy
  	67	"You get down on your belly and reach for the bracelet,"	68	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	68	But as you reach down it seems that it is actually further than you expect!	69	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	69	You tip yourself too far into the pool and fall right in.	73	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -78,7 +78,7 @@ Xina	60	"I'll figure something out, this door will open eventually!"	61	FALSE	-	
  	76	"The bracelet is quite beautiful, various shiny alien seashells joined together by a metallic blue stainless steel chain."	77	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	77	This must be Xina's 'important item'	78	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	78	You pocket the bracelet	79	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	79	You should probably bring this back to Xina.	80	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+ 	79	You should probably bring this back to Xina.	80	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
  	80	As you walk up to Xina she spots you and initiates a conversation.	81	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Xina	81	Did you go for a swim?	82	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	82	You're still dripping water from when you fell into the pool.	83	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy

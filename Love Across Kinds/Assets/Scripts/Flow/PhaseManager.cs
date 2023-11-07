@@ -15,13 +15,13 @@ public class PhaseManager : MonoBehaviour
 
     public static PhaseManager instance;
 
-    public DialogueTrigger dialogueTrigger;
-    public PhoneOpener phoneOpener;
+    private DialogueTrigger dialogueTrigger;
+    private PhoneOpener phoneOpener;
 
     public bool isDonePrologue;
     public bool isDonePP1;
 
-    private string[] phases = { "Prologue", "PreProduction", "Filming", "FreeTime" };//added prologue phase
+    private string[] phases = { "Special", "PreProduction", "Filming", "FreeTime" };//added prologue phase
 
     private void Awake()
     {

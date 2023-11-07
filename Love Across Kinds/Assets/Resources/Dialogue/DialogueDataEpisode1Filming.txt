@@ -69,7 +69,7 @@ Game Host Joe	66	So remember to continue tuning in to figure out what those twis
  	67	Game Host Joe flashes a mischievous holographic grin to the cameras	68	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	68	"Anyway, to start off Episode 1 we will be doing some icebreaking so that our contestants can get to know each other on a more. . . "	69	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	69	Personal Level.	70	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	70	A sound effect is played off set.	71	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+ 	70	Oooooo	71	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	71	Our challenge for this episode will involve a bit of lies & deception.	72	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	72	"That's right, it's the good old game of truth & lies!"	73	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	73	Spotlights turn on focusing on all the contestants.	74	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -119,7 +119,7 @@ Xina	116	Whoops~	117	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Xina	117	To rephrase my last statement:	118	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Xina	118	I found Joe's hidden stash.	119	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	119	Game Host Joe disappears once again as if approving of her wording.	120	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
-Xina	120	"So, which statement of mine is the truth?~"	-	TRUE	I want to ask more about the statements	I want to guess which statement is the truth.	-	121		-	FALSE	FALSE	-	Happy
+Xina	120	"So, which statement of mine is the truth?~"	-	TRUE	I want to ask more about the statements	I want to guess which statement is the truth.	-	121	134	-	FALSE	FALSE	-	Happy
 Player	121	I want to ask more about the statements	122	TRUE	What kind of inappropriate thing did you get scolded for?	What did your tentacle taste like?	"I have to ask this, what's in Game Host Joe's Hidden stash?"	122	126	129	FALSE	FALSE	-	Happy
 Xina	122	"Uhhhh, well this is embarrassing so um."	123	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Xina	123	It was because I held my guy friend's hand?	124	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -159,7 +159,7 @@ Xina	155	"Hehe~, sorry but that's not the truth."	156	FALSE	-	-	-	-	-	-	FALSE	FA
 Xina	157	And I'm not gonna tell you the truth either~	158	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Xina	158	Good try though!	159	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	159	Xina whispers one last thing to you before she leaves	160	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
-Xina	160	I'll be in the entertainment area after filming if you wanna hang out later~	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
+Xina	160	I'll be in the entertainment area after filming if you wanna hang out later~	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	FilmingConvo	Happy
  	161	As you look towards Benia she locks eyes with you and gives you a playful wink.	162	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	162	Choose Benia as your partner?	163	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	163	Choose Benia as your partner?	-	TRUE	Yes	Not yet	-	164	163	-	TRUE	FALSE	-	Happy
@@ -234,7 +234,7 @@ Benia	225	Good job dearie~	226	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Player	232	Wa-	233	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	233	"Benia leans down and whispers into your ear,"	234	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Benia	234	I'll be at the bar later-	235	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
-Benia	235	Come talk to me when filming's over alright sweetie?	236	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
+Benia	235	Come talk to me when filming's over alright sweetie?	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
  	236	With those final words Benia walks off set.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
  	237	As you approach Florine you can feel her nervous glances at you.	238	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	238	Choose Florine as your partner?	239	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -269,10 +269,10 @@ Player	266	Two a-are actually lies. . . 	-	TRUE	I want to ask more about the sta
  	267	I want to ask more about the statements	-	TRUE	Why would starships still use 'FTL Juice’ if it’s so dangerous?	I’m pretty sure I learned about the first human expeditions in history class. . . 	The Original Pioneers?	268	270	275	FALSE	FALSE	-	Happy
 Florine	268	Uh- Um- Because it's cheaper?	269	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	269	That's very obviously a lie.	266	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	270	"Florine's gas changes colours,"	270	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	271	"Her gas is so opaque that she's nearly transparent,"	271	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	272	Looks like she's embarrassed that she didn't take into account you being a human. . . 	272	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	273	This is very clearly the right answer.	273	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+ 	270	"Florine's gas changes colours,"	271	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+ 	271	"Her gas is so opaque that she's nearly transparent,"	272	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+ 	272	Looks like she's embarrassed that she didn't take into account you being a human. . . 	273	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+ 	273	This is very clearly the right answer.	274	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	274	But perhaps choosing one of the lies will get her to cheer up?	266	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Florine	275	The Original Pioneers are very interesting!	276	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	276	"Her voice surprisingly gets louder,"	277	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -313,16 +313,16 @@ Florine	310	"Thank you,  PlayerName ."	311	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Florine	311	It's been a long time since I've laughed that hard. . . 	312	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
  	312	Florine's gas changes colour to a shade of pink.	313	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Florine	313	That was very sweet of you to do. . . 	314	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
-Florine	314	I-I'll be going now. . . 	315	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
-Florine	315	But I will be in the dining room later if-	316	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	316	Florine seems to want to say something else but decides to not say it before leaving the set.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
+Florine	314	It was really nice for u to pick me . . . 	315	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+Florine	315	I will be in the dining room later if-	316	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+ 	316	Florine seems to want to say something else but decides to not say it. 	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
 Game Host Joe	317	"WELL, WELL, WELL."	318	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	318	"I was expecting only a little bit of spice from this game since it's only the introductory phase,"	319	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	319	But HOT DAMN were some of those moments personal!	320	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	320	"Anyway, That concludes the first episode folks!"	321	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	321	Tune in next time for more drama on Love Across Kinds!	322	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	322	Too da loo~	323	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
-Game Host Joe	323	The cameras shut down and Game Host Joe turns and faces all the contestants.	324	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+Game Host Joe	322	Too da loo~	323	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
+	323	The cameras shut down and Game Host Joe turns and faces all the contestants.	324	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	324	Anddddd that's a wrap everybody!	325	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	325	"Thank you all so much for sharing such dirty little secrets with us, don't worry only the whole universe will know about them!"	326	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	326	"Anyway, now you are all free to enjoy our ship's amenities and get to know each other better."	327	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
@@ -330,7 +330,7 @@ Game Host Joe	327	Tomorrow is an Episode Interlude so take the time to get to kn
  	328	Game Host Joe speaks as if his voice is fast-forwarded	329	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	329	"Also remember, as per your contract everything you do on board is being recorded."	330	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
 Game Host Joe	330	Until then~!	331	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	Happy
- 	331	Game Host Joe's hologram disappears just like that and you realise you're the only one who stayed behind to listen to him. . . 	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	Happy
+ 	331	Game Host Joe's hologram disappears just like that and you realise you're the only one who stayed behind to listen to him. . . 	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	ChangePhase	Happy
  														
  														
  														

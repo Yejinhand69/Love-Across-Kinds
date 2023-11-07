@@ -247,7 +247,12 @@ public class DialogueManager : MonoBehaviour
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
                         }
-                        break;
+                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                        {
+                            //Spend time
+                        }
+                            break;
+
                     case "Benia":
                         if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
                         {
@@ -259,7 +264,12 @@ public class DialogueManager : MonoBehaviour
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
                         }
+                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                        {
+                            //Spend time
+                        }
                         break;
+
                     case "Florine":
                         if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
                         {
@@ -271,7 +281,12 @@ public class DialogueManager : MonoBehaviour
                             //Dialogue Before Mini Game
                             //Affection Event 1 happens here...
                         }
+                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                        {
+                            //Spend time
+                        }
                         break;
+
                     default:
                         break;
                 }
@@ -297,6 +312,11 @@ public class DialogueManager : MonoBehaviour
                 if (PhaseManager.instance.currentPhase == "FreeTime")
                 {
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
+                }
+
+                if(PhaseManager.instance.currentPhase == "Special")
+                {
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
                     break;
                 
