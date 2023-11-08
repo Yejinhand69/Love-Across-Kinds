@@ -18,6 +18,8 @@ public class Epidose1Filming : MonoBehaviour
     private bool isTalkBenia;
     private bool isTalkFlorine;
 
+    private bool isEndFilm;
+
     void Start()
     {
         if(PhaseManager.instance.currentPhase == "Filming" && PhaseManager.instance.currentEpisode == 1)
@@ -140,8 +142,9 @@ public class Epidose1Filming : MonoBehaviour
                 isTalkFlorine = true;
             }
 
-            if ((isTalkXina && isTalkBenia) || (isTalkBenia && isTalkFlorine) || (isTalkFlorine && isTalkXina))
+            if ( ( (isTalkXina && isTalkBenia) || (isTalkBenia && isTalkFlorine) || (isTalkFlorine && isTalkXina) ) && !isEndFilm)
             {
+                isEndFilm = true;
                 dialogueTrigger.StartDialogue("Game Host Joe", 317);
             }
         }

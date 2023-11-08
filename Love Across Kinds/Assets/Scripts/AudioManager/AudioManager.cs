@@ -70,6 +70,17 @@ public class AudioManager : MonoBehaviour
         {
             //_BGMSource.volume *= 2;
         }
+
+        if(SceneManager.sceneCount> 1)
+        {
+            _BGMSource.Pause();
+            _SFXSource.Pause();
+        }
+        else
+        {
+            _BGMSource.UnPause();
+            _SFXSource.UnPause();
+        }
     }
 
     public void UpdateSFX()

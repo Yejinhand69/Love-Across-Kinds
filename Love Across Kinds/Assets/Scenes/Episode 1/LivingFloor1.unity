@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2294,6 +2294,7 @@ Transform:
   m_Children:
   - {fileID: 68119847}
   - {fileID: 1118591316}
+  - {fileID: 1859227103}
   - {fileID: 1373053955}
   - {fileID: 1036423393}
   m_Father: {fileID: 0}
@@ -2384,7 +2385,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7261f3bd92e18fd439d7c875d076c6fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7261f3bd92e18fd439d7c875d076c6fb,
         type: 3}
@@ -2440,6 +2441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BEDROOM ASSET FINAL WT
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7261f3bd92e18fd439d7c875d076c6fb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6479137908180158667, guid: 7261f3bd92e18fd439d7c875d076c6fb,
         type: 3}
@@ -2555,7 +2561,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3aa35f821523e4b46bf4b2ce836e28c4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3aa35f821523e4b46bf4b2ce836e28c4,
         type: 3}
@@ -4562,37 +4568,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824763248}
   m_CullTransparentMesh: 1
---- !u!1 &1844262599
-GameObject:
+--- !u!1001 &1859227102
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1844262600}
-  m_Layer: 0
-  m_Name: SpecialCharacter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1844262600
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 805820079}
+    m_Modifications:
+    - target: {fileID: 6338800858834907346, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_Name
+      value: BEDROOM ASSET FINAL WT (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572607944341975628, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: transportPoint
+      value: 
+      objectReference: {fileID: 1576009316}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6572607943911837068, guid: 33cab429233a3344aa22d7b7ecd57c7f, type: 3}
+    - {fileID: 6572607943911837070, guid: 33cab429233a3344aa22d7b7ecd57c7f, type: 3}
+    - {fileID: 6572607943911837071, guid: 33cab429233a3344aa22d7b7ecd57c7f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 33cab429233a3344aa22d7b7ecd57c7f, type: 3}
+--- !u!4 &1859227103 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6682252675229936232, guid: 33cab429233a3344aa22d7b7ecd57c7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1859227102}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844262599}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2115228656}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1886034304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5130,7 +5188,6 @@ MonoBehaviour:
   PreProductionCharacter: {fileID: 1478986713}
   FilmingCharacter: {fileID: 123816394}
   FreeTimeCharacter: {fileID: 385117079}
-  SpecialCharacter: {fileID: 1844262599}
 --- !u!4 &2115228656
 Transform:
   m_ObjectHideFlags: 0
@@ -5146,7 +5203,6 @@ Transform:
   - {fileID: 1478986714}
   - {fileID: 123816395}
   - {fileID: 385117080}
-  - {fileID: 1844262600}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -12,6 +12,7 @@ using Cinemachine;
 using TMPro;
 using UnityEngine.UI;
 
+#if UNITY_EDITOR
 public class LevelGenerator : EditorWindow
 {
     GameObject _GameManager;
@@ -385,3 +386,4 @@ public class LevelGenerator : EditorWindow
         AudioLength = resetVal;
     }
 }
+#endif

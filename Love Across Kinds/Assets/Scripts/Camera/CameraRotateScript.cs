@@ -48,14 +48,5 @@ public class CameraRotateScript : MonoBehaviour
             }
 
         }
-
-        if (SceneManager.sceneCount > 1)
-        {
-            Camera.main.GetComponent<AudioListener>().enabled = false;
-        }
-        else
-        {
-            Camera.main.GetComponent<AudioListener>().enabled = true;
-        }
     }
 }

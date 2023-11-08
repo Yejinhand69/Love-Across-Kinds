@@ -40,15 +40,15 @@ public class AffectionSystem : MonoBehaviour
 
         affectionDictionary = new Dictionary<string, int>();
 
-        affectionDictionary["Xina"] = 1;
+        affectionDictionary["Xina"] = 0;
+        affectionDictionary["Benia"] = 0;
+        affectionDictionary["Florine"] = 0;
     }
 
     //Call this method when need to + affection
     //Note: name for if statement need to change to character that is interacting
     public void GetAffection()
     {
-        
-
         for(int i = 0; i < characterAffections.Length; i++)
         {
             if(EventClick.interactObjectName == characterAffections[i].name && characterAffections[i].affectionPoint < maxAffectionPoint)
@@ -57,7 +57,7 @@ public class AffectionSystem : MonoBehaviour
                 int num = characterAffections[i].affectionPoint++;
                 characterAffections[i].hearts[num].SetActive(true);
 
-                affectionDictionary[characterAffections[i].name] = num;
+                affectionDictionary[characterAffections[i].name] = characterAffections[i].affectionPoint;
             }
         }
     }

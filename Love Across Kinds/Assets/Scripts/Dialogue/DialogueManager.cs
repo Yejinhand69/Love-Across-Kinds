@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
     public static bool dialogueActive;
     private string currInteractCharName;
 
-    [HideInInspector] public string phaseIndicator;
+    public string phaseIndicator;
     [HideInInspector] public int XinaAttemp;
     [HideInInspector] public int BeniaAttemp;
     [HideInInspector] public int FlorineAttemp;
@@ -393,16 +393,24 @@ public class DialogueManager : MonoBehaviour
                     SceneManager.LoadScene("Episode2");
                 }
 
-                PhaseManager.instance.ChangePhase();
-                if(PhaseManager.instance.currentPhase == "Prologue")
+                if (PhaseManager.instance.currentPhase == "Prologue")
                 {
                     SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
-                
+
+                PhaseManager.instance.ChangePhase();
+
                 break;
 
             case "ChangePhase":
+                
                 PhaseManager.instance.ChangePhase();
+                
+                if (PhaseManager.instance.currentPhase == "Special")
+                {
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                }
+
                 if (PhaseManager.instance.currentPhase == "Filming")
                 {
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
@@ -412,11 +420,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
                 }
-
-                if (PhaseManager.instance.currentPhase == "Special")
-                {
-                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
-                }
+               
                 break;
 
 
@@ -540,15 +544,18 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator RhythmGameFTAE1()
     {
+        yield return new WaitForSeconds(0.5f);
+
         while (dialogueActive)
         {
             yield return null;
         }
-        
+
         // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
         SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
 
         while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
         {
@@ -570,6 +577,8 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator RhythmGameSAE1()
     {
+        yield return new WaitForSeconds(0.5f);
+
         while (dialogueActive)
         {
             yield return null;
@@ -579,13 +588,15 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
 
         while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
         {
+            Debug.Log("Loop");
             checkWinLose = GameManager.situation;
             yield return null;
         }
-
+        
         if (checkWinLose)
         {
             Debug.Log("Success");
@@ -600,6 +611,8 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator RhythmGameSAE2()
     {
+        yield return new WaitForSeconds(0.5f);
+
         while (dialogueActive)
         {
             yield return null;
@@ -609,6 +622,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
 
         while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
         {
@@ -630,6 +644,8 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator PairMatchingGameFTAE1()
     {
+        yield return new WaitForSeconds(0.5f);
+
         while (dialogueActive)
         {
             yield return null;
@@ -639,6 +655,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(pairMatchingGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
 
         while (SceneManager.GetSceneByName(pairMatchingGameSceneName).isLoaded)
         {
@@ -660,15 +677,19 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator PairMatchingGameSAE1()
     {
+        yield return new WaitForSeconds(0.5f);
+
         while (dialogueActive)
         {
             yield return null;
         }
 
+
         // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
         SceneManager.LoadSceneAsync(pairMatchingGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
 
         while (SceneManager.GetSceneByName(pairMatchingGameSceneName).isLoaded)
         {
@@ -690,15 +711,19 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TriviaGameFTAE1()
     {
+        yield return new WaitForSeconds(0.5f);
+
         while (dialogueActive)
         {
             yield return null;
         }
 
+
         // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
         SceneManager.LoadSceneAsync(trivaSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
 
         while (SceneManager.GetSceneByName(trivaSceneName).isLoaded)
         {
@@ -720,6 +745,8 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TriviaGameSAE1()
     {
+        yield return new WaitForSeconds(0.5f);
+
         while (dialogueActive)
         {
             yield return null;
@@ -729,6 +756,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(trivaSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
 
         while (SceneManager.GetSceneByName(trivaSceneName).isLoaded)
         {
