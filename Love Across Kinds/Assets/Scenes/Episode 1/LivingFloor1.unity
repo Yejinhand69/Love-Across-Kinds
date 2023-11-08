@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2613,11 +2613,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6764816361702295813, guid: 3aa35f821523e4b46bf4b2ce836e28c4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 562dd2bb58f74ce4bb7fb82df4c94d59, type: 2}
     - target: {fileID: 919132149155446097, guid: 3aa35f821523e4b46bf4b2ce836e28c4,
         type: 3}
       propertyPath: m_Name
       value: Bedroom_Environ
       objectReference: {fileID: 0}
+    - target: {fileID: 5802368577188365647, guid: 3aa35f821523e4b46bf4b2ce836e28c4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 562dd2bb58f74ce4bb7fb82df4c94d59, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3aa35f821523e4b46bf4b2ce836e28c4, type: 3}
 --- !u!4 &1036423393 stripped
@@ -5188,6 +5198,7 @@ MonoBehaviour:
   PreProductionCharacter: {fileID: 1478986713}
   FilmingCharacter: {fileID: 123816394}
   FreeTimeCharacter: {fileID: 385117079}
+  SpecialCharacter: {fileID: 0}
 --- !u!4 &2115228656
 Transform:
   m_ObjectHideFlags: 0
