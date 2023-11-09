@@ -1,25 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DataProcessor : MonoBehaviour
 {
-    public static List<DialogueData> dataList = new List<DialogueData>();
+    public static DataProcessor instance;
+
+    public List<DialogueData> dataList = new List<DialogueData>();
 
     public void Awake()
     {
-        //Read/Load .csv file
-        TextAsset dialogue = Resources.Load<TextAsset>("TabFile");
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
 
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        ProcessDialogueData();
+    }
+
+    public void ProcessDialogueData()
+    {
+        instance.dataList.Clear();
+
+        //Read/Load dialogue file
+        TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/DialogueDataEpisode" + PhaseManager.instance.currentEpisode + PhaseManager.instance.currentPhase);
+ 
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
 
         //Data Processing
-        for(int i = 1; i < data.Length - 1; i++)
+        for (int i = 1; i < data.Length - 1; i++)
         {
             //Spilt data into each columm by comma
             string[] row = data[i].Split(new char[] { '\t' });
-            
+
             DialogueData dialogueData = new DialogueData();
 
             //Inseting each data into variable respectively
@@ -36,9 +57,11 @@ public class DataProcessor : MonoBehaviour
             int.TryParse(row[10], out dialogueData.option3_sentenceID);
             bool.TryParse(row[11], out dialogueData.checkIfEnd);
             bool.TryParse(row[12], out dialogueData.checkIfAffection);
+            dialogueData._event = row[13];
+            dialogueData.expression = row[14];
 
             //Add the variables with data into a list
-            dataList.Add(dialogueData);
+            instance.dataList.Add(dialogueData);
         }
     }
 }
@@ -59,4 +82,6 @@ public class DialogueData
     public int option3_sentenceID;
     public bool checkIfEnd;
     public bool checkIfAffection;
+    public string _event;
+    public string expression;
 }

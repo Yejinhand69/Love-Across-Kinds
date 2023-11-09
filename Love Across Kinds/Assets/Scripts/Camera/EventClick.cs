@@ -7,14 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    public string sceneToLoad;
-    public Animator animator;
-
     public static string interactObjectName;
-
-    public float delayBeforeLoad = 1.0f;
-
     private DialogueTrigger DialogueTrigger;
+
+    private float pressTime;
+    public float swipeThreshold = 0.2f; // Adjust this threshold to your preference for distinguishing a tap from a swipe
+    private bool isSwiping = false;
 
     private void Awake()
     {
@@ -23,19 +21,29 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        //animator.SetTrigger("FadeOut");
-
-        //StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
-        if (!DialogueManager.dialogueActive)
+        if (!isSwiping)
         {
-            interactObjectName = name;
-
-            DialogueTrigger.StartDialogue();
+            pressTime = Time.time;
         }
+       
     }
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (!isSwiping)
+        {
+            float releaseTime = Time.time;
+            float pressDuration = releaseTime - pressTime;
 
+            if (pressDuration <= swipeThreshold)
+            {
+                if (!DialogueManager.dialogueActive)
+                {
+                    interactObjectName = name;
+
+                    DialogueTrigger.StartDialogue();
+                }
+            }
+        }
     }
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -50,11 +58,6 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
         //empty
     }
 
-    private IEnumerator LoadSceneWithDelay(string sceneName, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-
-        SceneManager.LoadScene(sceneName);
-    }
+   
 
 }

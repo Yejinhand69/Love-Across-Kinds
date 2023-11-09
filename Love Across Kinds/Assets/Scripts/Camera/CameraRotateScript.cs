@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraRotateScript : MonoBehaviour
 {
-    public float sensitivity = -0.2f;
+    public float sensitivity = -0.05f;
     private Vector3 touchStart;
+    private TransportPoint transportPoint;
+
+    private void Start()
+    {
+        transportPoint = FindObjectOfType<TransportPoint>();
+    }
 
     void Update()
     {
@@ -24,20 +31,22 @@ public class CameraRotateScript : MonoBehaviour
             {
                 // Record the starting touch position
                 touchStart = touch.position;
+                //transportPoint.StartSwiping();
             }
             else if (touch.phase == TouchPhase.Moved)
             {
-                
-                    // Calculate the difference between the current and starting touch positions
-                    Vector3 touchEnd = touch.position;
-                    Vector3 delta = touchEnd - touchStart;
 
-                    // Rotate the camera based on touch delta (left and right)
-                    transform.Rotate(Vector3.up * delta.x * sensitivity);
+                // Calculate the difference between the current and starting touch positions
+                Vector3 touchEnd = touch.position;
+                Vector3 delta = touchEnd - touchStart;
 
-                    // Update the starting touch position for the next frame
-                    touchStart = touch.position;                
+                // Rotate the camera based on touch delta (left and right)
+                transform.Rotate(Vector3.up * delta.x * sensitivity);
+
+                // Update the starting touch position for the next frame
+                touchStart = touch.position;
             }
+
         }
     }
 }

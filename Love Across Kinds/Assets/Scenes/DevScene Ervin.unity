@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -557,7 +557,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAffectionPoint: 7
-  AffectionUIParent: {fileID: 356974902}
   characterAffections:
   - name: 
     affectionPoint: 0
@@ -801,7 +800,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 13
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!114 &171428920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e752da85b4771eb47b6f48b26e90e394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: -0.1
+  sensitivity: -0.05
 --- !u!114 &254183429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2985,9 +2985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1c7838762933f468e1d2065f329902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MainMenu
-  animator: {fileID: 1901620007}
-  delayBeforeLoad: 1
+  swipeThreshold: 0.2
 --- !u!65 &678810132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3013,7 +3011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 0
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!1 &691159968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,12 +3504,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d3e038828edff43b17af6a3dbecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionBox: {fileID: 1999573690}
   nameText: {fileID: 639177657}
   dialogueText: {fileID: 1157908343}
+  optionBox1: {fileID: 0}
+  optionBox2: {fileID: 0}
+  optionBox3: {fileID: 0}
   option1Text: {fileID: 66951621}
   option2Text: {fileID: 1893602105}
   option3Text: {fileID: 1991643454}
+  currIndexPos: 0
+  currSentenceId: 0
+  phaseIndicator: 
+  XinaAttemp: 0
+  BeniaAttemp: 0
+  FlorineAttemp: 0
+  GHJoeAttemp: 0
+  anim: {fileID: 0}
 --- !u!114 &773676209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3994,10 +4003,10 @@ RectTransform:
   m_Father: {fileID: 272780028}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12, y: -1938.2041}
-  m_SizeDelta: {x: -262.238, y: -1328.6428}
+  m_AnchorMin: {x: 0.126, y: 0.2983686}
+  m_AnchorMax: {x: 0.87670374, y: 0.71377194}
+  m_AnchoredPosition: {x: -1.5, y: -1638}
+  m_SizeDelta: {x: 6.761963, y: 3.3571777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &833031162
 Animator:
@@ -4636,10 +4645,10 @@ RectTransform:
   m_Father: {fileID: 272780028}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 297, y: 711}
-  m_SizeDelta: {x: 223.4314, y: 299.6668}
+  m_AnchorMin: {x: 0.67037034, y: 0.74642104}
+  m_AnchorMax: {x: 0.87670374, y: 0.87824565}
+  m_AnchoredPosition: {x: 1.5, y: -0.5}
+  m_SizeDelta: {x: 0.43139648, y: -1.3331909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033616451
 MonoBehaviour:
@@ -4653,6 +4662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe170fd8a4af944abb88185f2912b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AffectionPanel: {fileID: 0}
+  PhoneButton: {fileID: 0}
   PhonePanel: {fileID: 833031160}
   SettingPanel: {fileID: 1375993857}
   cameraRotateScript: {fileID: 254183428}
@@ -6508,7 +6519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 20
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!114 &1639965529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6634,7 +6646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 0
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!65 &1656099032
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6660,9 +6673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1c7838762933f468e1d2065f329902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MainMenu
-  animator: {fileID: 1901620007}
-  delayBeforeLoad: 1
+  swipeThreshold: 0.2
 --- !u!4 &1656099034
 Transform:
   m_ObjectHideFlags: 0
@@ -8461,7 +8472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSentenceID: 0
+  firstAttempSentenceID: 0
+  repeatAttempSentenceID: 0
 --- !u!114 &2108808230
 MonoBehaviour:
   m_ObjectHideFlags: 0

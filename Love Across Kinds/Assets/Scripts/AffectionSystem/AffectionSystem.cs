@@ -12,29 +12,37 @@ public class AffectionSystem : MonoBehaviour
     //Validation
     [SerializeField] private int maxAffectionPoint = 7;
 
-    //UI stuffs
-    [SerializeField] private GameObject AffectionUIParent;
-    //[SerializeField] private TextMeshProUGUI Xina;
-    //[SerializeField] private TextMeshProUGUI Benia;
-    //[SerializeField] private TextMeshProUGUI Florine;
+    
 
     //Array of Class
     public CharacterAffection[] characterAffections = new CharacterAffection[3];
 
-    private void Start()
+    public Dictionary<string, int> affectionDictionary;
+
+    private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (Instance == null)
         {
-            Destroy(this);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Instance = this;
+            Destroy(gameObject);
         }
+    }
 
+    private void Start()
+    {
         characterAffections[0].name = "Xina";
         characterAffections[1].name = "Benia";
         characterAffections[2].name = "Florine";
+
+        affectionDictionary = new Dictionary<string, int>();
+
+        affectionDictionary["Xina"] = 0;
+        affectionDictionary["Benia"] = 0;
+        affectionDictionary["Florine"] = 0;
     }
 
     //Call this method when need to + affection
@@ -45,20 +53,13 @@ public class AffectionSystem : MonoBehaviour
         {
             if(EventClick.interactObjectName == characterAffections[i].name && characterAffections[i].affectionPoint < maxAffectionPoint)
             {
+                AudioManager.instance.PlaySFX("Affection Gain");
                 int num = characterAffections[i].affectionPoint++;
                 characterAffections[i].hearts[num].SetActive(true);
+
+                affectionDictionary[characterAffections[i].name] = characterAffections[i].affectionPoint;
             }
         }
-    }
-
-    public void OpenAffectionWindow()
-    {
-        AffectionUIParent.SetActive(true);
-    }
-
-    public void CloseAffectionWindow()
-    {
-        AffectionUIParent.SetActive(false);
     }
 }
 
