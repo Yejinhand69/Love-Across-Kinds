@@ -89,6 +89,7 @@ public class Dialogue2 : MonoBehaviour
     private int Rindex3;
     private int Rindex4;
 
+    public static bool situation;
     void Start()
     {
         
@@ -830,10 +831,12 @@ public class Dialogue2 : MonoBehaviour
     {
         if (scorePoint.score < 4)
         {
+            situation = false;
             lose.SetActive(true);
         }
         else
         {
+            situation = true;
             win.SetActive(true);
         }
     }
