@@ -2167,6 +2167,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1073507556, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.9999695
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141993677, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.9999695
+      objectReference: {fileID: 0}
     - target: {fileID: 2000057135034884959, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -5113,6 +5121,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 805820079}
     m_Modifications:
+    - target: {fileID: 1715621039116448789, guid: 6f6f16068115baf438fad6f9d0cdbf96,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 562dd2bb58f74ce4bb7fb82df4c94d59, type: 2}
     - target: {fileID: 3628544639734015237, guid: 6f6f16068115baf438fad6f9d0cdbf96,
         type: 3}
       propertyPath: m_RootOrder
@@ -5173,6 +5186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bedroom_Environ
       objectReference: {fileID: 0}
+    - target: {fileID: 7302498938122176417, guid: 6f6f16068115baf438fad6f9d0cdbf96,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 562dd2bb58f74ce4bb7fb82df4c94d59, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f6f16068115baf438fad6f9d0cdbf96, type: 3}
 --- !u!33 &3982804265745668293
