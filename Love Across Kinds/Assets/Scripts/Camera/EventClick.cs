@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public static string interactObjectName;
+    public static Animator interactObjAnim;
     private DialogueTrigger DialogueTrigger;
 
     private float pressTime;
@@ -17,6 +18,7 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     private void Awake()
     {
         DialogueTrigger = GetComponent<DialogueTrigger>();
+        TryGetComponent<Animator>(out interactObjAnim);
     }
 
     public void OnPointerDown(PointerEventData eventData)

@@ -27,6 +27,7 @@ public class CutsceneManager : MonoBehaviour
 
         if (DialogueManager.instance.currSentenceId == 25 && !(DialogueManager.dialogueActive))
         {
+            anim.SetTrigger("1to2");
             anim.SetTrigger("2to3");
             StartCoroutine(PlayPhoneRinging());
         }

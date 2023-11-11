@@ -38,7 +38,8 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector] public int GHJoeAttemp;
 
     //Animator
-    public Animator anim;
+    public Animator dialogueAnim;
+    private Animator characterAnim;
 
     private void Awake()
     {
@@ -86,7 +87,10 @@ public class DialogueManager : MonoBehaviour
     //Method to show DialogueBox & Search the upmost data of each character by NAME
     public void OpenDialogue(string objName, int startID)
     {
-        anim.SetBool("isOpenDialogue", true);
+        dialogueAnim.SetBool("isOpenDialogue", true);
+
+        //Get animator from current interact object
+        characterAnim = EventClick.interactObjAnim;
 
         StartCoroutine(DelayDialogueActive());
         currIndexPos = 0;
@@ -173,18 +177,38 @@ public class DialogueManager : MonoBehaviour
                 {
                     case "Neutral":
                         //Expression change here...
+                        characterAnim.SetBool("isSmile", false);
+                        characterAnim.SetBool("isAngry", false);
+                        characterAnim.SetBool("isSad", false);
+                        characterAnim.SetBool("isShy", false);
                         break;
                     case "Happy":
                         //Expression change here...
+                        characterAnim.SetBool("isSmile", true);
+                        characterAnim.SetBool("isAngry", false);
+                        characterAnim.SetBool("isSad", false);
+                        characterAnim.SetBool("isShy", false);
                         break;
                     case "Angry":
                         //Expression change here...
+                        characterAnim.SetBool("isSmile", false);
+                        characterAnim.SetBool("isAngry", true);
+                        characterAnim.SetBool("isSad", false);
+                        characterAnim.SetBool("isShy", false);
                         break;
                     case "Sad":
                         //Expression change here...
+                        characterAnim.SetBool("isSmile", false);
+                        characterAnim.SetBool("isAngry", false);
+                        characterAnim.SetBool("isSad", true);
+                        characterAnim.SetBool("isShy", false);
                         break;
                     case "Shy":
                         //Expression change here...
+                        characterAnim.SetBool("isSmile", false);
+                        characterAnim.SetBool("isAngry", false);
+                        characterAnim.SetBool("isSad", false);
+                        characterAnim.SetBool("isShy", true);
                         break;
                     default:
                         break;
@@ -226,7 +250,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        anim.SetBool("isOpenDialogue", false);
+        dialogueAnim.SetBool("isOpenDialogue", false);
         dialogueActive = false; 
 
         switch (datas[currIndexPos]._event)
@@ -531,10 +555,24 @@ public class DialogueManager : MonoBehaviour
 
     public void SkipDialogue()
     {
-        EndDialogue();
-        optionBox1.SetActive(false);
-        optionBox2.SetActive(false);
-        optionBox3.SetActive(false);
+        for(int i = currIndexPos; i < datas.Count; i++)
+        {
+            if (datas[i].checkIfOption)
+            {
+                currSentenceId = i;
+                currIndexPos = i;
+                DisplaySentence();
+                break;
+            }
+            else if (datas[i].checkIfEnd)
+            {
+                EndDialogue();
+                currSentenceId = i;
+                currIndexPos = i;
+                Debug.Log(currSentenceId);
+                break;
+            }
+        }
     }
 
     //Add reference to mini game script here 
