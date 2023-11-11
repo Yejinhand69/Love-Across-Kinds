@@ -798,7 +798,7 @@ PrefabInstance:
     - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.411
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
         type: 3}
@@ -850,6 +850,16 @@ PrefabInstance:
       propertyPath: DiningRoomDoorPanel
       value: 
       objectReference: {fileID: 98032807}
+    - target: {fileID: 2568798342287357132, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.335
+      objectReference: {fileID: 0}
+    - target: {fileID: 2568798342287357132, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.364
+      objectReference: {fileID: 0}
     - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -965,6 +975,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 85.491
       objectReference: {fileID: 0}
+    - target: {fileID: 3808504729212715473, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4183845088930966758, guid: 50df4421b6c0a5544b01de382cdbc9f2,
         type: 3}
       propertyPath: m_RootOrder
@@ -1070,7 +1085,62 @@ PrefabInstance:
       propertyPath: DiningRoomDoorPanel
       value: 
       objectReference: {fileID: 98032807}
+    - target: {fileID: 4502264317315068683, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.041
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502264317315068683, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502264317315068683, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.75
+      objectReference: {fileID: 0}
     - target: {fileID: 4569632683771762739, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594066936127905520, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594066936127905520, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7034204
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594066936127905520, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7034204
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594066936127905520, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.072109245
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594066936127905520, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.072109245
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594066936127905520, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594066936127905520, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 11.706
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680200468928292207, guid: 50df4421b6c0a5544b01de382cdbc9f2,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6488,10 +6558,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6334522115669559555, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8e6400e61709ee649a3a8adad966c8cc,
         type: 3}
       propertyPath: m_Name
       value: Dining room for VS Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6692207008203549071, guid: 8e6400e61709ee649a3a8adad966c8cc,
         type: 3}
