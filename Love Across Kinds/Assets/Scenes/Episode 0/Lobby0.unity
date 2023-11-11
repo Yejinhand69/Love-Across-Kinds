@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -902,6 +902,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6692207008203549071, guid: 8e6400e61709ee649a3a8adad966c8cc,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6692207008203549071, guid: 8e6400e61709ee649a3a8adad966c8cc,
+        type: 3}
       propertyPath: m_TagString
       value: LobbyDoor
       objectReference: {fileID: 0}
@@ -1623,6 +1628,89 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &330620120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 330620121}
+  - component: {fileID: 330620123}
+  - component: {fileID: 330620122}
+  m_Layer: 0
+  m_Name: Door Knob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &330620121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330620120}
+  m_LocalRotation: {x: -0.000000043711534, y: 1, z: -0.0000004013393, w: -0.00000037227576}
+  m_LocalPosition: {x: 0.0000038146973, y: -0.39465356, z: 0.7446213}
+  m_LocalScale: {x: 1.471, y: 0.927875, z: 5.814551}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1940872755}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &330620122
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330620120}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d843a0cb4ed4d944db8e1a4f62ae2237, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &330620123
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330620120}
+  m_Mesh: {fileID: 5764389604867576749, guid: 9c0d5dc6c433bff42a3809fbabc3abeb, type: 3}
 --- !u!1001 &347344026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3156,7 +3244,7 @@ PrefabInstance:
     - target: {fileID: 2000057135249924243, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.61151123
+      value: -0.6114807
       objectReference: {fileID: 0}
     - target: {fileID: 2000057136198175106, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
@@ -3166,7 +3254,7 @@ PrefabInstance:
     - target: {fileID: 2000057136213713631, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.61151123
+      value: -0.6114807
       objectReference: {fileID: 0}
     - target: {fileID: 2000057136302944009, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
@@ -3231,7 +3319,7 @@ PrefabInstance:
     - target: {fileID: 2000057136533541136, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.61151123
+      value: -0.6114807
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
@@ -5128,6 +5216,123 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1311697754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311697755}
+  - component: {fileID: 1311697759}
+  - component: {fileID: 1311697758}
+  - component: {fileID: 1311697757}
+  - component: {fileID: 1311697756}
+  m_Layer: 0
+  m_Name: 'Arcade Door new '
+  m_TagString: LobbyDoor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1311697755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311697754}
+  m_LocalRotation: {x: -0, y: 0.6448017, z: -0, w: 0.76435}
+  m_LocalPosition: {x: -1.12, y: 1.134, z: -3.760541}
+  m_LocalScale: {x: 0.46055993, y: 0.70252997, z: 0.14523996}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2051773389}
+  m_Father: {fileID: 992071859}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 80.302, z: 0}
+--- !u!114 &1311697756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311697754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f935aa5c8062a48947622d6dfb74b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LobbyDoorPanel: {fileID: 1329351973}
+  DiningRoomDoorPanel: {fileID: 1311392174}
+  PoolDoorPanel: {fileID: 1341993728}
+  RecordingDoorPanel: {fileID: 0}
+  ArcadeDoorPanel: {fileID: 368520247}
+  swipeThreshold: 0.2
+--- !u!65 &1311697757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311697754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.281747, y: 3.1035604, z: 1.655963}
+  m_Center: {x: 0.027102891, y: -0.06546013, z: -0.0000015485508}
+--- !u!23 &1311697758
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311697754}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d843a0cb4ed4d944db8e1a4f62ae2237, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1311697759
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311697754}
+  m_Mesh: {fileID: -2763165878154245879, guid: 9c0d5dc6c433bff42a3809fbabc3abeb, type: 3}
 --- !u!1 &1329351973
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,6 +6783,123 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee84ef5437e614e4184e17a88b99bb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1940872754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1940872755}
+  - component: {fileID: 1940872759}
+  - component: {fileID: 1940872758}
+  - component: {fileID: 1940872757}
+  - component: {fileID: 1940872756}
+  m_Layer: 0
+  m_Name: Lobby Door new
+  m_TagString: LobbyDoor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1940872755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940872754}
+  m_LocalRotation: {x: -0, y: -0.00052921247, z: -0, w: 0.9999999}
+  m_LocalPosition: {x: -5.985, y: 1.116, z: 10.58}
+  m_LocalScale: {x: 0.36902076, y: 0.5628978, z: 0.11637262}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 330620121}
+  m_Father: {fileID: 1332465065}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0.061, z: 0}
+--- !u!114 &1940872756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940872754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f935aa5c8062a48947622d6dfb74b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LobbyDoorPanel: {fileID: 1329351973}
+  DiningRoomDoorPanel: {fileID: 1311392174}
+  PoolDoorPanel: {fileID: 1341993728}
+  RecordingDoorPanel: {fileID: 0}
+  ArcadeDoorPanel: {fileID: 368520247}
+  swipeThreshold: 0.2
+--- !u!65 &1940872757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940872754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.281747, y: 3.1035604, z: 1.655963}
+  m_Center: {x: 0.027102891, y: -0.06546013, z: -0.0000015485508}
+--- !u!23 &1940872758
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940872754}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d843a0cb4ed4d944db8e1a4f62ae2237, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1940872759
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940872754}
+  m_Mesh: {fileID: -2763165878154245879, guid: 9c0d5dc6c433bff42a3809fbabc3abeb, type: 3}
 --- !u!1 &1955819831
 GameObject:
   m_ObjectHideFlags: 0
@@ -6714,6 +7036,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955819831}
   m_CullTransparentMesh: 1
+--- !u!1 &2051773388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2051773389}
+  - component: {fileID: 2051773391}
+  - component: {fileID: 2051773390}
+  m_Layer: 0
+  m_Name: Door Knob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2051773389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051773388}
+  m_LocalRotation: {x: -0.000000043711534, y: 1, z: -0.0000004013393, w: -0.00000037227576}
+  m_LocalPosition: {x: 0.0000038146973, y: -0.39465356, z: 0.7446213}
+  m_LocalScale: {x: 1.471, y: 0.927875, z: 5.814551}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1311697755}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2051773390
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051773388}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d843a0cb4ed4d944db8e1a4f62ae2237, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2051773391
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051773388}
+  m_Mesh: {fileID: 5764389604867576749, guid: 9c0d5dc6c433bff42a3809fbabc3abeb, type: 3}
 --- !u!1 &2137653696
 GameObject:
   m_ObjectHideFlags: 0
@@ -8263,10 +8668,200 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 659189883}
     m_Modifications:
+    - target: {fileID: 117577194099922499, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.108
+      objectReference: {fileID: 0}
+    - target: {fileID: 403009918190073981, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 602133155293309194, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: ArcadeDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.46055922
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.70253146
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1452431
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.67759126
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.73543876
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171710684399067823, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -94.689
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372655591467048469, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2206811149709299465, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255353408475237661, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: PoolDoorPanel
+      value: 
+      objectReference: {fileID: 1341993728}
+    - target: {fileID: 2255353408475237661, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: LobbyDoorPanel
+      value: 
+      objectReference: {fileID: 1329351973}
+    - target: {fileID: 2255353408475237661, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: ArcadeDoorPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255353408475237661, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: DiningRoomDoorPanel
+      value: 
+      objectReference: {fileID: 1311392174}
+    - target: {fileID: 2499109691959341820, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5452341
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8316935
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.17194636
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4094
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.092
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.11646605
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9931947
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474201590278969480, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 166.624
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539604805359054210, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: PoolDoorPanel
+      value: 
+      objectReference: {fileID: 1341993728}
+    - target: {fileID: 3539604805359054210, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: LobbyDoorPanel
+      value: 
+      objectReference: {fileID: 1329351973}
+    - target: {fileID: 3539604805359054210, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: DiningRoomDoorPanel
+      value: 
+      objectReference: {fileID: 1311392174}
     - target: {fileID: 3556665431178507868, guid: 50df4421b6c0a5544b01de382cdbc9f2,
         type: 3}
       propertyPath: m_Name
       value: Lobby for VS Try
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667898298364184743, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667898298364184743, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667898298364184743, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.73437697
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667898298364184743, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.67874193
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667898298364184743, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 85.491
       objectReference: {fileID: 0}
     - target: {fileID: 4183845088930966758, guid: 50df4421b6c0a5544b01de382cdbc9f2,
         type: 3}
@@ -8358,6 +8953,126 @@ PrefabInstance:
       propertyPath: DiningRoomDoorPanel
       value: 
       objectReference: {fileID: 1311392174}
+    - target: {fileID: 4569632683771762739, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084492155843226390, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.308
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084492155843226390, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.702
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084492155843226390, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.75827974
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084492155843226390, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6519294
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084492155843226390, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 81.374
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651062177507562737, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: PoolDoorPanel
+      value: 
+      objectReference: {fileID: 1341993728}
+    - target: {fileID: 6651062177507562737, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: LobbyDoorPanel
+      value: 
+      objectReference: {fileID: 1329351973}
+    - target: {fileID: 6651062177507562737, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: ArcadeDoorPanel
+      value: 
+      objectReference: {fileID: 368520247}
+    - target: {fileID: 6651062177507562737, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: DiningRoomDoorPanel
+      value: 
+      objectReference: {fileID: 1311392174}
+    - target: {fileID: 7337665253380738861, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: PoolDoorPanel
+      value: 
+      objectReference: {fileID: 1341993728}
+    - target: {fileID: 7337665253380738861, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: LobbyDoorPanel
+      value: 
+      objectReference: {fileID: 1329351973}
+    - target: {fileID: 7337665253380738861, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: DiningRoomDoorPanel
+      value: 
+      objectReference: {fileID: 1311392174}
+    - target: {fileID: 7456539388212670603, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 6.281747
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456539388212670603, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.1035604
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456539388212670603, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.655963
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456539388212670603, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.027102891
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456539388212670603, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.06546013
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456539388212670603, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.0000015485508
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118376374307168244, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.666
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259114134490507087, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8483975254433912471, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: PoolDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153176641745292013, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178248245803595190, guid: 50df4421b6c0a5544b01de382cdbc9f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: PoolDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50df4421b6c0a5544b01de382cdbc9f2, type: 3}
 --- !u!224 &5697486793973668244
