@@ -16,7 +16,7 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     private bool isSwiping = false;
 
     public GameObject mainCamera;
-    public GameObject zoomXinaCamera0;
+   
 
     private void Awake()
     {

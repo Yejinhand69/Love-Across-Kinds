@@ -9,6 +9,7 @@ public class CameraRotateScript : MonoBehaviour
     private Vector3 touchStart;
     private TransportPoint transportPoint;
     public GameObject zoomXinaCamera0;
+    public GameObject zoomBeniaCamera0;
 
     private void Start()
     {
@@ -47,6 +48,7 @@ public class CameraRotateScript : MonoBehaviour
                 transform.Rotate(Vector3.up * delta.x * sensitivity);
                 Debug.Log("Touch screen sensor");
                 zoomXinaCamera0.SetActive(false);
+                zoomBeniaCamera0.SetActive(false);
 
                 // Update the starting touch position for the next frame
                 touchStart = touch.position;
