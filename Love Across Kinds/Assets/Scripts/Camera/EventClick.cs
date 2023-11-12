@@ -15,6 +15,9 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     public float swipeThreshold = 0.2f; // Adjust this threshold to your preference for distinguishing a tap from a swipe
     private bool isSwiping = false;
 
+    public GameObject mainCamera;
+    public GameObject zoomXinaCamera0;
+
     private void Awake()
     {
         DialogueTrigger = GetComponent<DialogueTrigger>();
@@ -23,6 +26,21 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
             interactObjAnim = anim;
         }
         
+    }
+
+    private void Update()
+    {
+        if(DialogueManager.dialogueActive == false)
+        {
+            
+            mainCamera.SetActive(true);
+            
+        }
+        if (DialogueManager.dialogueActive == true)
+        {
+            
+            mainCamera.SetActive(false);
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)

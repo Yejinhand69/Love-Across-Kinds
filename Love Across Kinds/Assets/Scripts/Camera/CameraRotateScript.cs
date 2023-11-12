@@ -8,6 +8,7 @@ public class CameraRotateScript : MonoBehaviour
     public float sensitivity = -0.05f;
     private Vector3 touchStart;
     private TransportPoint transportPoint;
+    public GameObject zoomXinaCamera0;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class CameraRotateScript : MonoBehaviour
 
     void Update()
     {
+        
         // Check if the dialogue is active; if so, don't allow camera rotation
         if (DialogueManager.dialogueActive)
         {
@@ -25,6 +27,7 @@ public class CameraRotateScript : MonoBehaviour
         // Check for touch input
         if (Input.touchCount > 0)
         {
+            
             Touch touch = Input.GetTouch(0);
 
             if (touch.phase == TouchPhase.Began)
@@ -42,6 +45,8 @@ public class CameraRotateScript : MonoBehaviour
 
                 // Rotate the camera based on touch delta (left and right)
                 transform.Rotate(Vector3.up * delta.x * sensitivity);
+                Debug.Log("Touch screen sensor");
+                zoomXinaCamera0.SetActive(false);
 
                 // Update the starting touch position for the next frame
                 touchStart = touch.position;
