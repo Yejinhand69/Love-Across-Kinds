@@ -233,12 +233,13 @@ public class DialogueManager : MonoBehaviour
                 break;
             }
         }
-
+        Debug.Log(currSentenceId);
     }
 
     //Method to Display next sentence/ End the dialogue
     public void NextSentence()
     {
+        
         if (datas[currIndexPos].checkIfEnd && currSentenceId == datas[currIndexPos].sentenceID)
         {
             EndDialogue();

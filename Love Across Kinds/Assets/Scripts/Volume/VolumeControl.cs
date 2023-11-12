@@ -10,6 +10,13 @@ public class VolumeControl : MonoBehaviour
     public Slider sfxVolumeSlider; // Reference to the UI Slider
     public AudioSource sfxAudioSource; // Reference to the AudioSource component
 
+    private void Awake()
+    {
+        bgmVolumeSlider = FindObjectOfType<Slider>();
+        bgmVolumeSlider.value = PlayerPrefs.GetFloat("BGMVolume", bgmVolumeSlider.value);    
+        sfxAudioSource.volume = PlayerPrefs.GetFloat("SFXVolume", sfxVolumeSlider.value);
+    }
+
     private void Start()
     {
         // Initialize the slider value to the saved audio source volume or set it to the default volume (e.g., 0.5f)
@@ -23,6 +30,18 @@ public class VolumeControl : MonoBehaviour
         // Apply the saved volume settings
         bgmAudioSource.volume = bgmVolumeSlider.value;
         sfxAudioSource.volume = sfxVolumeSlider.value;
+    }
+
+    private void Update()
+    {
+        if (AudioManager.instance._SFXSource.isPlaying)
+        {
+            AudioManager.instance._BGMSource.volume = AudioManager.instance._SFXSource.volume / 2;
+        }
+        else
+        {
+            AudioManager.instance._BGMSource.volume = PlayerPrefs.GetFloat("BGMVolume", bgmVolumeSlider.value);
+        }
     }
 
     private void ChangeVolume(float volume)

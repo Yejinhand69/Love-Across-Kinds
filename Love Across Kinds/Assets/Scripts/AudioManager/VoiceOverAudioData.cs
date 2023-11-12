@@ -20,7 +20,10 @@ public class VoiceOverAudioData : MonoBehaviour
 
         for (int i = 0; i < voiceOver.Length; i++)
         {
-            _VoiceClips[i].voiceClip = voiceOver[i];
+            if(voiceOver[i].name == i.ToString())
+            {
+                _VoiceClips[i].voiceClip = voiceOver[i];
+            }  
         }
     }
 }

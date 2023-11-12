@@ -46,9 +46,9 @@ public class CutsceneManager : MonoBehaviour
 
     IEnumerator PlayPhoneRinging()
     {
+        yield return new WaitForSeconds(1f);
+        AudioManager.instance.PlaySFX("Phone Ring");
         yield return new WaitForSeconds(4f);
-        AudioManager.instance.PlaySFX("Together Succesfully");
-        yield return new WaitForSeconds(2f);
         trigger.StartDialogue(" ", 26);
     }
 

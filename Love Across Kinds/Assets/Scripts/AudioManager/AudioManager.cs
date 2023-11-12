@@ -62,15 +62,6 @@ public class AudioManager : MonoBehaviour
             DialogueManager.instance.phaseIndicator = PhaseManager.instance.currentPhase;
         }
 
-        if (_SFXSource.isPlaying)
-        {
-            //_BGMSource.volume = 0.5f;
-        }
-        else
-        {
-            //_BGMSource.volume *= 2;
-        }
-
         if(SceneManager.sceneCount> 1)
         {
             _BGMSource.Pause();
@@ -114,12 +105,14 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlaySFX(string clipName)
-    {
+    { 
         AudioClip audioClip;
         
         if(SFXDictionary.TryGetValue(clipName, out audioClip))
         {
-            _SFXSource.PlayOneShot(audioClip);
+            _SFXSource.Stop();
+            _SFXSource.clip = audioClip;
+            _SFXSource.Play();
         }
     }
 
@@ -131,7 +124,15 @@ public class AudioManager : MonoBehaviour
     public void PlayVoice(int dialogueID)
     {
         _VoiceOverSource.Stop();
-        _VoiceOverSource.PlayOneShot(voiceOverScript._VoiceClips[dialogueID].voiceClip);
+        if(voiceOverScript._VoiceClips[dialogueID].voiceClip != null)
+        {
+            //Case 1
+            _VoiceOverSource.PlayOneShot(voiceOverScript._VoiceClips[dialogueID].voiceClip);
+
+            //Case 2
+            //_VoiceOverSource.clip = voiceOverScript._VoiceClips[dialogueID].voiceClip;
+            //_VoiceOverSource.Play();
+        }
     }
 }
 

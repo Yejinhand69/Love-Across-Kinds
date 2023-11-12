@@ -42,85 +42,111 @@ public class Epidose1Filming : MonoBehaviour
         {
             switch (DialogueManager.instance.currSentenceId)
             {
-                case 2:
+                case 1:
                     //SFX - Light
+                    AudioManager.instance.PlaySFX("Spotlight On");
                     //Animation - Lights on
                     break;
-                case 4:
-                    //SFX
+                case 3:
+                    //SFX - Light turn on at once
+                    AudioManager.instance.PlaySFX("Spotlight On");
                     break;
-                case 5:
+                case 4:
                     //Animation - Light focus on GHJ
                     break;
-                case 9:
+                case 8:
                     //SFX - Crowd cheer and clap
+                    AudioManager.instance.PlaySFX("Crowd Ooooo");
+                    AudioManager.instance.PlaySFX("Clap");
                     break;
-                case 14:
+                case 13:
                     //SFX - Light
+                    AudioManager.instance.PlaySFX("Spotlight On");
                     //Animation - Light on Xina
                     break;
-                case 17:
-                    //SFX - Crowd
-                    break;
-                case 18:
-                    //SFX - Light off
-                    break;
-                case 25:
-                    //SFX - Light
-                    break;
-                case 28:
+                case 16:
                     //SFX - Crowd cheer and clap
+                    AudioManager.instance.PlaySFX("short-crowd-cheer-6713");
                     break;
-                case 32:
+                case 17:
                     //SFX - Light off
+                    AudioManager.instance.PlaySFX("Spotlight Off");
                     break;
-                case 38:
+                case 24:
+                    //SFX - Light
+                    AudioManager.instance.PlaySFX("Spotlight On");
+                    break;
+                case 27:
+                    //SFX - Crowd cheer and clap
+                    AudioManager.instance.PlaySFX("short-crowd-cheer-6713");
+                    break;
+                case 31:
+                    //SFX - Light off
+                    AudioManager.instance.PlaySFX("Spotlight Off");
+                    break;
+                case 37:
                     //SFX - Light on
+                    AudioManager.instance.PlaySFX("Spotlight On");
+                    break;
+                case 41:
+                    //SFX - Clap
+                    AudioManager.instance.PlaySFX("Clap");
                     break;
                 case 42:
-                    //SFX - Clap
-                    break;
-                case 43:
                     //SFX - Light off
+                    AudioManager.instance.PlaySFX("Spotlight Off");
+                    break;
+                case 47:
+                    //SFX - Light on
+                    AudioManager.instance.PlaySFX("Spotlight On");
                     break;
                 case 48:
-                    //SFX - Light on
-                    break;
-                case 49:
                     //SFX - Cheer and Clap
+                    AudioManager.instance.PlaySFX("short-crowd-cheer-6713");
                     break;
-                case 51:
+                case 50:
                     //SFX - Light off
+                    AudioManager.instance.PlaySFX("Spotlight Off");
+                    break;
+                case 54:
+                    //SFX - Light on
+                    AudioManager.instance.PlaySFX("Spotlight On");
                     break;
                 case 55:
-                    //SFX - Light on
-                    break;
-                case 56:
                     //SFX - Cheer and Clap
+                    AudioManager.instance.PlaySFX("short-crowd-cheer-6713");
+                    break;
+                case 57:
+                    //SFX - Cheer and Clap
+                    AudioManager.instance.PlaySFX("short-crowd-cheer-6713");
                     break;
                 case 58:
-                    //SFX - Cheer and Clap
-                    break;
-                case 59:
                     //SFX - Light off
+                    AudioManager.instance.PlaySFX("Spotlight Off");
                     break;
-                case 62:
+                case 61:
                     //SFX - Light on
+                    AudioManager.instance.PlaySFX("Spotlight On");
                     break;
-                case 70:
+                case 69:
                     //SFX - Crowd oooooo
+                    AudioManager.instance.PlaySFX("Crowd Ooooo");
                     break;
-                case 73:
+                case 72:
                     //SFX - Light on
+                    AudioManager.instance.PlaySFX("Spotlight On");
                     break;
-                case 75:
+                case 74:
                     //SFX - Light on
+                    AudioManager.instance.PlaySFX("Spotlight On");
                     break;
-                case 77:
+                case 76:
                     //SFX - Light off
+                    AudioManager.instance.PlaySFX("Spotlight Off");
                     break;
-                case 84:
+                case 83:
                     //SFX - Light off
+                    AudioManager.instance.PlaySFX("Spotlight Off");
                     break;
             }
 

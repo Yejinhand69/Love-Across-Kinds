@@ -992,7 +992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13070735, y: 0.36382815}
   m_AnchorMax: {x: 0.86570734, y: 0.6264268}
-  m_AnchoredPosition: {x: 1.5000305, y: 2.999977}
+  m_AnchoredPosition: {x: 1.5, y: 2.9999695}
   m_SizeDelta: {x: -1.4749756, y: -0.9694977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &440023830
@@ -1858,7 +1858,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.54821956, y: 0.06561979}
   m_AnchorMax: {x: 0.92821956, y: 0.2775521}
-  m_AnchoredPosition: {x: 0, y: 1.4999695}
+  m_AnchoredPosition: {x: 0, y: 1.5}
   m_SizeDelta: {x: -1.677002, y: 2.8638916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &677794406
@@ -3366,7 +3366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.0000916, y: 0}
+  m_AnchoredPosition: {x: -5.000122, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1087171268
@@ -3922,7 +3922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07251225, y: 0.06561979}
   m_AnchorMax: {x: 0.44948778, y: 0.2775521}
-  m_AnchoredPosition: {x: 1, y: 1.4999695}
+  m_AnchoredPosition: {x: 1, y: 1.5}
   m_SizeDelta: {x: 0.32299805, y: 2.8638916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1279650299
@@ -4053,7 +4053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.0000916, y: 0}
+  m_AnchoredPosition: {x: -5.000122, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1348633498
@@ -4770,6 +4770,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 268491498955286633, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.0801392
+      objectReference: {fileID: 0}
+    - target: {fileID: 268491498955286633, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.8399658
       objectReference: {fileID: 0}
@@ -4787,6 +4792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AffectionPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000057134794334324, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.54785156
       objectReference: {fileID: 0}
     - target: {fileID: 2000057134794334324, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
@@ -4823,10 +4833,25 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenSettingPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 2000057135490618551, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.54785156
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000057135554690141, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.54785156
+      objectReference: {fileID: 0}
     - target: {fileID: 2000057135668378576, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.14001465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000057135919230358, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2000057135919230358, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
@@ -4928,15 +4953,45 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.61157227
       objectReference: {fileID: 0}
+    - target: {fileID: 5104200807676869324, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6355164071953270855, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_Name
       value: Message
       objectReference: {fileID: 0}
+    - target: {fileID: 6457066437562465144, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.0317383
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457066437562465144, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.35168457
+      objectReference: {fileID: 0}
     - target: {fileID: 7049675742995251043, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163677509686608601, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.8027344
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824968142356150166, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.7800293
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824968142356150166, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.5004883
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
@@ -5699,6 +5754,2428 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &2121494357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121494359}
+  - component: {fileID: 2121494358}
+  m_Layer: 0
+  m_Name: VoiceOver_Clips_DialogueDataEpisode0Prologue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2121494358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121494357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa917ef805801ed4887e280582446c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  folderName: VoiceOver
+  _VoiceClips:
+  - actorName: ' '
+    dialogueID: 0
+    sentence: Everywhere you turn it is preached to you.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 1
+    sentence: '"It is a uniquely human experience,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 2
+    sentence: Or rather WAS a uniquely human experience.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 3
+    sentence: '"Ever since humanity took to the stars all the way back in the year
+      12100, they''ve discovered all sorts of sentient life across the Milky Way."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 4
+    sentence: '"And, with the human''s assistance, those alien species swiftly ascended
+      to the stars as well."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 5
+    sentence: '"And humans soon realised that what they thought made them special,
+      is actually what makes all sentient life special."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 6
+    sentence: Love.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 7
+    sentence: '"Love, it turns out, is a universal concept."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 8
+    sentence: '"Whatever is considered a sentient-species, is capable of Love."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 9
+    sentence: And that is such a beautiful fact of the world.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 10
+    sentence: 'But. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 11
+    sentence: '"Despite your world being so full of Love and possibilities,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 12
+    sentence: You're not so fortunate are you?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 13
+    sentence: Brain numbing work
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 14
+    sentence: Annoying Co-workers
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 15
+    sentence: Drab Offices
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 16
+    sentence: Not to mention that you've never had a relationship in your life.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 17
+    sentence: You've lived your life just as others envisioned it and look at you
+      now.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 18
+    sentence: You live your life day by day
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 19
+    sentence: Never seeing a future where you're happy.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 20
+    sentence: What a truly bad hand fate has dealt you.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 21
+    sentence: Perhaps fate has turned her back on you. . . .
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 22
+    sentence: However.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 23
+    sentence: '"Maybe,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 24
+    sentence: Love has not?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 25
+    sentence: '"After all, it''s as the saying goes."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 26
+    sentence: The sound of a dial tone can be heard
+    voiceClip: {fileID: 0}
+  - actorName: ???
+    dialogueID: 27
+    sentence: Hello? What is it?
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 28
+    sentence: '"You won''t believe it, remember when you told me to apply to the
+      LAK show since they''re accepting humans this season?"'
+    voiceClip: {fileID: 0}
+  - actorName: ???
+    dialogueID: 29
+    sentence: NO WAY.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 30
+    sentence: YES WAY.
+    voiceClip: {fileID: 0}
+  - actorName: ???
+    dialogueID: 31
+    sentence: Holy crap.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 32
+    sentence: My brother.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 33
+    sentence: On my favourite Intergalactic Dating show in this part of the Milky
+      Way?
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 34
+    sentence: Unbelievable.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 35
+    sentence: '"I just hope you know, I''ll be making fun of you when you''re on
+      holo."'
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 36
+    sentence: I'm still in shock that out of the nearly 1 billion humans in this
+      quadrant I was chosen.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 37
+    sentence: '"Look, that doesn''t matter anymore, just go and get packing already."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 38
+    sentence: Love Across Kinds is very finicky with its contestants.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 39
+    sentence: '"If you''re not ready to leave the second they step off the teleporter,
+      they''ll just choose someone else."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 40
+    sentence: '"If you''re not ready to leave the second they step off the teleporter,
+      they''ll just choose someone else."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 41
+    sentence: '"Good, be sure to bring me back a souvenir."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 42
+    sentence: Are you kidding me?
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 43
+    sentence: I'm gonna whoop your ass next time you visit.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 44
+    sentence: I thought I told you to quit that soul sucking job ages ago.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 45
+    sentence: Look.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 46
+    sentence: Listen to me.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 47
+    sentence: '"This is a once in a lifetime opportunity, try to relax and most importantly"'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 48
+    sentence: BE YOURSELF.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 49
+    sentence: '"You''re a good person, I''m sure there''ll be someone on there who
+      sees that."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 50
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 51
+    sentence: Thank you?
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 52
+    sentence: I'll update you if I can on the starcruiser.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 53
+    sentence: You better.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 54
+    sentence: '"Also one last word of advice,"'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 55
+    sentence: I don't know what sentient-species are going to be on The Matchmaker
+      this season
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 56
+    sentence: '"But it can''t be as bad as what happened on The Pleasure Cruiser,
+      5 seasons ago."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 57
+    sentence: I don't even want to know what happened.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 58
+    sentence: A chill goes down your spine imagining what could've happened
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 59
+    sentence: '"I''ve gotta go now, bye."'
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 60
+    sentence: '"Yeah, get lost, get going, GOOO."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 61
+    sentence: The call ends.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 62
+    sentence: 'I forget how fast Interstellar travel is now. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 63
+    sentence: They said all my luggage would be teleported to Room 01 so that should
+      be my room.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 64
+    sentence: A holographic man pops up suddenly from out of nowhere!
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 65
+    sentence: Heeeelllloooo Human Contestant!
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 66
+    sentence: '"While you may have a legally binding name that you''ve used for the
+      application of this show,"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 67
+    sentence: '"Here, you may change your name to whatever you want."'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 68
+    sentence: '"So, what name should we refer to you whilst aboard the ship?"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 69
+    sentence: '"Welcomeeeee human contestant, PlayerName !"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 70
+    sentence: '"Wel&$%^ ab@&#^ the M>/,*3^$#"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 71
+    sentence: '"Wel&$%^ ab@&#^ the M>/,*3^$#"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 72
+    sentence: '"My apologies, it seemed my translator malfunctioned."'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 73
+    sentence: '"My apologies, it seemed my translator malfunctioned."'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 74
+    sentence: '"Oh! So sorry for my unprofessionalism, dear contestant."'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 75
+    sentence: My translator seems to be on the fritz.
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 76
+    sentence: '"Either way, welcome aboard the U.L.A.K.S Matchmaker!"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 77
+    sentence: '"I will be your host this season, my name is Joe Hand."'
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 78
+    sentence: But you can just call me Game Host Joe.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 79
+    sentence: But you can just call me Game Host Joe.
+    voiceClip: {fileID: 0}
+  - actorName: Game
+    dialogueID: 80
+    sentence: GAME
+    voiceClip: {fileID: 0}
+  - actorName: Host
+    dialogueID: 81
+    sentence: HOST
+    voiceClip: {fileID: 0}
+  - actorName: Joe
+    dialogueID: 82
+    sentence: JOE
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 83
+    sentence: Game Host Joe speaks in an almost sinister tone
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 84
+    sentence: The hairs on the back of your neck stand up as he speaks.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 85
+    sentence: '"Please, address me as Game Host Joe."'
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 86
+    sentence: Yes Game Host Joe.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 87
+    sentence: You reply almost automatically out of fear
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 88
+    sentence: '"Anyway, you must be wondering where your room is!"'
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 89
+    sentence: Ah certainly!
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 90
+    sentence: Your room is located on the floor above.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 91
+    sentence: Room 01.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 92
+    sentence: Filming of the first episode starts tomorrow.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 93
+    sentence: '"Until then, get to know the ship and your fellow contestants if you
+      want!"'
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 94
+    sentence: And remember to sleep well tonight
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 95
+    sentence: We're soon going to be very very busy!
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 96
+    sentence: Too da loo~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 97
+    sentence: Upon first entering the lobby you notice someone
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 98
+    sentence: She's undoubtedly another one of the contestants
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 99
+    sentence: If you had to describe her sentient-species's characteristics it would
+      probably be if a human & a jellyfish were combined together.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 100
+    sentence: '"Hoping to make a good impression, you approach her."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 101
+    sentence: 'But as you approach the jellyfish-like girl in the lobby. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Jellyfish Girl
+    dialogueID: 102
+    sentence: Oh?
+    voiceClip: {fileID: 0}
+  - actorName: Jellyfish Girl
+    dialogueID: 103
+    sentence: Oh!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 104
+    sentence: It seems she notices you approaching and runs up to meet you first!
+    voiceClip: {fileID: 0}
+  - actorName: Jellyfish Girl
+    dialogueID: 105
+    sentence: Hello!
+    voiceClip: {fileID: 0}
+  - actorName: Jellyfish Girl
+    dialogueID: 106
+    sentence: My name is Xina!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 107
+    sentence: I'm a. . . Scyzoa I believe? That's what my sentient-species is named
+      anyway.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 108
+    sentence: What Species are you?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 109
+    sentence: The way she speaks is quick and all over the place
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 110
+    sentence: It's a wonder how the translator picks up her words
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 111
+    sentence: It's a wonder how the translator picks up her words
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 112
+    sentence: '"Hehe, sorry if I startled you."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 113
+    sentence: I'm just so excited to meet so many different species
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 114
+    sentence: You must be a human right?
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 115
+    sentence: Nice to meet you too!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 116
+    sentence: Everything on board this starcruiser is sooo fancy!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 117
+    sentence: I want to explore every nook and cranny of it!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 118
+    sentence: You must be a human right?
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 119
+    sentence: A human! I knew it!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 120
+    sentence: I thought you tasted familiar!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 121
+    sentence: I thought you tasted familiar!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 122
+    sentence: '"Oh! Sorry, I should probably explain myself."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 123
+    sentence: '"Oh! Sorry, I should probably explain myself."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 124
+    sentence: Xina blushes almost as if she knew you were thinking of impure thoughts.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 125
+    sentence: Pervert.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 126
+    sentence: Not like that!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 127
+    sentence: It's something that's unique to my sentient-species.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 128
+    sentence: '"I''m a Scyzoa, my species can taste the brainwaves of other sentient-species."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 129
+    sentence: So we can more or less read minds to a certain extent.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 130
+    sentence: So we can more or less read minds to a certain extent.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 131
+    sentence: Thank you!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 132
+    sentence: I find you fascinating too!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 133
+    sentence: '"Well, your taste is. . . quite unique."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 134
+    sentence: I can't really tell what it tastes like.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 135
+    sentence: Xina turns bright pink
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 136
+    sentence: It seems she really can read your mind
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 137
+    sentence: '"That''s um, a pretty active imagination you have huh?"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 138
+    sentence: Xina's turns an even brighter shade of pink before slowly returning
+      to normal
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 139
+    sentence: '"Xina goes quiet for a bit, almost as if she is recomposing herself."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 140
+    sentence: '"It was nice talking with you,"'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 141
+    sentence: I'm gonna hang around here a bit before going exploring!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 142
+    sentence: See you!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 143
+    sentence: '"You see someone standing at the bar,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 144
+    sentence: '"They don''t seem to be drinking anything, instead they''re just staring
+      at the bottles on the shelves."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 145
+    sentence: From a distance you wouldn't be blamed if you'd mistaken them for a
+      potted plant.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 146
+    sentence: '"But as you get closer, you start to see a plant-like woman whose
+      alluring figure makes your palms sweaty."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 147
+    sentence: '"Her figure, while humanoid, looks almost too perfect, as if it was
+      painstakingly moulded to look as alluring as possible."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 148
+    sentence: '"As you stand there dumbfounded by her beauty, she takes notice of
+      you staring and gestures to you to take a seat next to her."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 149
+    sentence: You quickly take her up on her offer and sit down at the bar.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 150
+    sentence: She towers over the bar counter and as you sit down it makes sense
+      to you why she doesn't want to sit down
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 151
+    sentence: Her eyes continue to stare at the bottles on the shelves as she speaks.
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 152
+    sentence: It's awfully rude to stare without a 'hello' don't you think?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 153
+    sentence: The way she speaks sounds as if she's teasing you.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 154
+    sentence: The way she speaks sounds as if she's teasing you.
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 155
+    sentence: 'Hmm. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 156
+    sentence: What a lacking response.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 157
+    sentence: You notice a slight smirk in the corner of her fanged mouth.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 158
+    sentence: Before a soft giggle escapes her
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 159
+    sentence: You've got quite the sense of humour don't you?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 160
+    sentence: She seems a bit surprised by your response
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 161
+    sentence: Seems you caught her off guard.
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 162
+    sentence: '"Well then, I hope you like how I look from the front as well~"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 163
+    sentence: '"The plant woman''s eyes finally stop staring at the bottles on the
+      shelves, she looks down and meets your eyes before continuing."'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 164
+    sentence: My name's Benia.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 165
+    sentence: '"It''s nice to meet you, fellow contestant."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 166
+    sentence: Her eyes break eye contact with you and darts across your features
+      & body as if she's sizing you up.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 167
+    sentence: A human?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 168
+    sentence: '"Benia''s eyes light up as she realises your species, before narrowing
+      and licking her ''lips?"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 169
+    sentence: Your eyes lock together once again
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 170
+    sentence: And as you look up into her enchanting eyes you nearly forget your
+      own name before stammering it out.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 171
+    sentence: M-my name's PlayerName
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 172
+    sentence: Nice to meet you too.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 173
+    sentence: '"PlayerName , the human huh?"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 174
+    sentence: Mmm~ I see.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 175
+    sentence: .
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 176
+    sentence: '"Same reason as you I believe,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 177
+    sentence: For a brief moment you notice a hint of sadness in her eyes before
+      she breaks eye contact with you.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 178
+    sentence: It's a long story.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 179
+    sentence: 'It takes less than a second before she reestablishes eye contact with
+      you and you''re lost in her eyes again. '
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 180
+    sentence: '"But I''m here for the same reason as you,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 181
+    sentence: To find a partner.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 182
+    sentence: Hopefully someone who doesn't mind a little physical 'bonding'.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 183
+    sentence: Benia winks and you feel an electric thrill go down your spine.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 184
+    sentence: .
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 185
+    sentence: Benia places a finger on your lips teasingly
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 186
+    sentence: Don't worry I'll be sure to take the lead~
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 187
+    sentence: Let's get to know each other over the course of the season alright?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 188
+    sentence: Benia places a finger on your lips teasingly
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 189
+    sentence: Will you now?~
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 190
+    sentence: '"But for the time being I think it''s best we slow things down,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 191
+    sentence: To make things more interesting~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 192
+    sentence: Benia removes her finger from your lips and bends down to whisper into
+      your ear
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 193
+    sentence: So be sure to come talk with me whenever you can alright?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 194
+    sentence: After whispering into your ear she returns to her previous posture
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 195
+    sentence: You see Benia's eyes glimmer as though they've found their next target.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 196
+    sentence: I'll be looking forward to our next meeting~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 197
+    sentence: '"You spot a plume of mist just floating above the floor,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 198
+    sentence: The mist seems to be just drifting around aimlessly.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 199
+    sentence: Curiosity gets the better of you and you approach it
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 200
+    sentence: '"Getting closer, the air becomes more humid and you can see a vague
+      humanoid shape in the mist."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 201
+    sentence: '"Getting closer, the air becomes more humid and you can see a vague
+      humanoid shape in the mist."'
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 202
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 203
+    sentence: 'Hello. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 204
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 205
+    sentence: . . . Yes
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 206
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 207
+    sentence: They don't seem very talkative.
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 208
+    sentence: I-
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 209
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 210
+    sentence: . . . My name is-
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 211
+    sentence: . . . Florine
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 212
+    sentence: '"Her voice sounds almost ethereal,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 213
+    sentence: You can see the silhouette of Florine fidgeting.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 214
+    sentence: She seems to be having trouble finding something to say
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 215
+    sentence: She seems to be having trouble finding something to say
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 216
+    sentence: 'That''s a nice name. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 217
+    sentence: Florine stops talking and starts fidgeting again.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 218
+    sentence: Nice to..
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 219
+    sentence: 'Meet you too. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 220
+    sentence: Florine stops talking and starts fidgeting again.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 221
+    sentence: '"I uh, am not hiding in anything. . . "'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 222
+    sentence: Florine stops talking and starts fidgeting again.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 223
+    sentence: Florine stops fidgeting and seems to have built up the courage to speak
+      about something with you.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 224
+    sentence: My form is-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 225
+    sentence: 'It''s just a trait of this body of mine. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 226
+    sentence: 'I''m not sure why or how I became like this either. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 227
+    sentence: '"I have no memory of my past, only vague feelings of recollec-"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 228
+    sentence: It seems Florine noticed she was going off on a rant.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 229
+    sentence: '"Her gas changes colour slightly, almost as if she''s embarrassed,
+      before changing back to normal."'
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 230
+    sentence: Anyway-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 231
+    sentence: I found a box of papers that might-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 232
+    sentence: 'Help me figure out my past. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 233
+    sentence: 'I can''t touch any of it since it might fall apart if I do. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 234
+    sentence: Could you. . . Please help me?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 235
+    sentence: '"While you can''t see Florine''s face, her voice sounds desperate."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 236
+    sentence: '"While you can''t see Florine''s face, her voice sounds desperate."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 237
+    sentence: Florine's gas cloud changes to a bright vibrant yellow
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 238
+    sentence: Really?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 239
+    sentence: The tone of her voice sounds happy.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 240
+    sentence: I-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 241
+    sentence: I cannot thank you enough.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 242
+    sentence: But also-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 243
+    sentence: Oh.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 244
+    sentence: 'Of course. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 245
+    sentence: Her voice hesitates for a moment
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 246
+    sentence: But um-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 247
+    sentence: 'Oh- Um. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 248
+    sentence: Florine's gas cloud turns bright pink
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 249
+    sentence: Well-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 250
+    sentence: 'You see. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 251
+    sentence: Love is one of the only feelings that I faintly recall from my past
+      life.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 252
+    sentence: 'If you agree to help me with this. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 253
+    sentence: I-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 254
+    sentence: I will-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 255
+    sentence: I will pursue a romantic relationship with you!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 256
+    sentence: As Florine finishes her sentence her gas cloud turns the brightest
+      shade of pink you've ever seen
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 257
+    sentence: And also starts glowing.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 258
+    sentence: .
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 259
+    sentence: '"Florine stops responding, she seems to have stopped functioning."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 260
+    sentence: She continues to glow brightly as you back away slowly.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 261
+    sentence: 'It seems best if you leave her be for now. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 262
+    sentence: A glowing humanoid person is sitting on the entertainment area's only
+      sofa.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 263
+    sentence: '"They have a masculine appearance, broad shoulders and seems to have
+      Virtual Environment glasses on."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 264
+    sentence: '"They have a masculine appearance, broad shoulders and seems to have
+      Virtual Environment glasses on."'
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 265
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 266
+    sentence: Because I'm not made of fire.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 267
+    sentence: The man doesn't seem to appreciate being disturbed.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 268
+    sentence: He reluctantly takes off the Virtual Environment glasses and you see
+      his face.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 269
+    sentence: At least you think that's a face.
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 270
+    sentence: Can I help you?
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 271
+    sentence: .
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 272
+    sentence: How cordial.
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 273
+    sentence: '"Well, you won''t have to worry about me then."'
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 274
+    sentence: I don't even want to be here.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 275
+    sentence: The glowing man seems to loathe speaking in general and wants you to
+      leave as soon as possible.
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 276
+    sentence: My name is Saiph.
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 277
+    sentence: '"That''s all you need to know, now leave me alone."'
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 278
+    sentence: Saiph puts his Virtual Environment glasses back on and proceeds to
+      ignore your presence.
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 279
+    sentence: '"It''s Room 01, your room."'
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 280
+    sentence: 'You have a feeling you haven''t met everybody yet. . . '
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 281
+    sentence: It'd be best to go and say Hi.
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 282
+    sentence: You feel like you've spoken to everybody on the ship already.
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 283
+    sentence: Turn in for the day?
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 284
+    sentence: Turn in for the day?
+    voiceClip: {fileID: 0}
+  - actorName: 
+    dialogueID: 285
+    sentence: Zzzzz
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 0
+    sentence: Everywhere you turn it is preached to you.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 1
+    sentence: '"It is a uniquely human experience,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 2
+    sentence: Or rather WAS a uniquely human experience.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 3
+    sentence: '"Ever since humanity took to the stars all the way back in the year
+      12100, they''ve discovered all sorts of sentient life across the Milky Way."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 4
+    sentence: '"And, with the human''s assistance, those alien species swiftly ascended
+      to the stars as well."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 5
+    sentence: '"And humans soon realised that what they thought made them special,
+      is actually what makes all sentient life special."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 6
+    sentence: Love.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 7
+    sentence: '"Love, it turns out, is a universal concept."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 8
+    sentence: '"Whatever is considered a sentient-species, is capable of Love."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 9
+    sentence: And that is such a beautiful fact of the world.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 10
+    sentence: 'But. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 11
+    sentence: '"Despite your world being so full of Love and possibilities,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 12
+    sentence: You're not so fortunate are you?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 13
+    sentence: Brain numbing work
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 14
+    sentence: Annoying Co-workers
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 15
+    sentence: Drab Offices
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 16
+    sentence: Not to mention that you've never had a relationship in your life.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 17
+    sentence: You've lived your life just as others envisioned it and look at you
+      now.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 18
+    sentence: You live your life day by day
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 19
+    sentence: Never seeing a future where you're happy.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 20
+    sentence: What a truly bad hand fate has dealt you.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 21
+    sentence: Perhaps fate has turned her back on you. . . .
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 22
+    sentence: However.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 23
+    sentence: '"Maybe,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 24
+    sentence: Love has not?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 25
+    sentence: '"After all, it''s as the saying goes."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 26
+    sentence: The sound of a dial tone can be heard
+    voiceClip: {fileID: 0}
+  - actorName: ???
+    dialogueID: 27
+    sentence: Hello? What is it?
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 28
+    sentence: '"You won''t believe it, remember when you told me to apply to the
+      LAK show since they''re accepting humans this season?"'
+    voiceClip: {fileID: 0}
+  - actorName: ???
+    dialogueID: 29
+    sentence: NO WAY.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 30
+    sentence: YES WAY.
+    voiceClip: {fileID: 0}
+  - actorName: ???
+    dialogueID: 31
+    sentence: Holy crap.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 32
+    sentence: My brother.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 33
+    sentence: On my favourite Intergalactic Dating show in this part of the Milky
+      Way?
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 34
+    sentence: Unbelievable.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 35
+    sentence: '"I just hope you know, I''ll be making fun of you when you''re on
+      holo."'
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 36
+    sentence: I'm still in shock that out of the nearly 1 billion humans in this
+      quadrant I was chosen.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 37
+    sentence: '"Look, that doesn''t matter anymore, just go and get packing already."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 38
+    sentence: Love Across Kinds is very finicky with its contestants.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 39
+    sentence: '"If you''re not ready to leave the second they step off the teleporter,
+      they''ll just choose someone else."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 40
+    sentence: '"If you''re not ready to leave the second they step off the teleporter,
+      they''ll just choose someone else."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 41
+    sentence: '"Good, be sure to bring me back a souvenir."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 42
+    sentence: Are you kidding me?
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 43
+    sentence: I'm gonna whoop your ass next time you visit.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 44
+    sentence: I thought I told you to quit that soul sucking job ages ago.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 45
+    sentence: Look.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 46
+    sentence: Listen to me.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 47
+    sentence: '"This is a once in a lifetime opportunity, try to relax and most importantly"'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 48
+    sentence: BE YOURSELF.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 49
+    sentence: '"You''re a good person, I''m sure there''ll be someone on there who
+      sees that."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 50
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 51
+    sentence: Thank you?
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 52
+    sentence: I'll update you if I can on the starcruiser.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 53
+    sentence: You better.
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 54
+    sentence: '"Also one last word of advice,"'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 55
+    sentence: I don't know what sentient-species are going to be on The Matchmaker
+      this season
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 56
+    sentence: '"But it can''t be as bad as what happened on The Pleasure Cruiser,
+      5 seasons ago."'
+    voiceClip: {fileID: 0}
+  - actorName: Sister
+    dialogueID: 57
+    sentence: I don't even want to know what happened.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 58
+    sentence: A chill goes down your spine imagining what could've happened
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 59
+    sentence: '"I''ve gotta go now, bye."'
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 60
+    sentence: '"Yeah, get lost, get going, GOOO."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 61
+    sentence: The call ends.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 62
+    sentence: 'I forget how fast Interstellar travel is now. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 63
+    sentence: They said all my luggage would be teleported to Room 01 so that should
+      be my room.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 64
+    sentence: A holographic man pops up suddenly from out of nowhere!
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 65
+    sentence: Heeeelllloooo Human Contestant!
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 66
+    sentence: '"While you may have a legally binding name that you''ve used for the
+      application of this show,"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 67
+    sentence: '"Here, you may change your name to whatever you want."'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 68
+    sentence: '"So, what name should we refer to you whilst aboard the ship?"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 69
+    sentence: '"Welcomeeeee human contestant, PlayerName !"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 70
+    sentence: '"Wel&$%^ ab@&#^ the M>/,*3^$#"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 71
+    sentence: '"Wel&$%^ ab@&#^ the M>/,*3^$#"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 72
+    sentence: '"My apologies, it seemed my translator malfunctioned."'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 73
+    sentence: '"My apologies, it seemed my translator malfunctioned."'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 74
+    sentence: '"Oh! So sorry for my unprofessionalism, dear contestant."'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 75
+    sentence: My translator seems to be on the fritz.
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 76
+    sentence: '"Either way, welcome aboard the U.L.A.K.S Matchmaker!"'
+    voiceClip: {fileID: 0}
+  - actorName: Host?
+    dialogueID: 77
+    sentence: '"I will be your host this season, my name is Joe Hand."'
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 78
+    sentence: But you can just call me Game Host Joe.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 79
+    sentence: But you can just call me Game Host Joe.
+    voiceClip: {fileID: 0}
+  - actorName: Game
+    dialogueID: 80
+    sentence: GAME
+    voiceClip: {fileID: 0}
+  - actorName: Host
+    dialogueID: 81
+    sentence: HOST
+    voiceClip: {fileID: 0}
+  - actorName: Joe
+    dialogueID: 82
+    sentence: JOE
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 83
+    sentence: Game Host Joe speaks in an almost sinister tone
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 84
+    sentence: The hairs on the back of your neck stand up as he speaks.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 85
+    sentence: '"Please, address me as Game Host Joe."'
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 86
+    sentence: Yes Game Host Joe.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 87
+    sentence: You reply almost automatically out of fear
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 88
+    sentence: '"Anyway, you must be wondering where your room is!"'
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 89
+    sentence: Ah certainly!
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 90
+    sentence: Your room is located on the floor above.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 91
+    sentence: Room 01.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 92
+    sentence: Filming of the first episode starts tomorrow.
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 93
+    sentence: '"Until then, get to know the ship and your fellow contestants if you
+      want!"'
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 94
+    sentence: And remember to sleep well tonight
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 95
+    sentence: We're soon going to be very very busy!
+    voiceClip: {fileID: 0}
+  - actorName: Game Host Joe
+    dialogueID: 96
+    sentence: Too da loo~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 97
+    sentence: Upon first entering the lobby you notice someone
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 98
+    sentence: She's undoubtedly another one of the contestants
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 99
+    sentence: If you had to describe her sentient-species's characteristics it would
+      probably be if a human & a jellyfish were combined together.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 100
+    sentence: '"Hoping to make a good impression, you approach her."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 101
+    sentence: 'But as you approach the jellyfish-like girl in the lobby. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Jellyfish Girl
+    dialogueID: 102
+    sentence: Oh?
+    voiceClip: {fileID: 0}
+  - actorName: Jellyfish Girl
+    dialogueID: 103
+    sentence: Oh!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 104
+    sentence: It seems she notices you approaching and runs up to meet you first!
+    voiceClip: {fileID: 0}
+  - actorName: Jellyfish Girl
+    dialogueID: 105
+    sentence: Hello!
+    voiceClip: {fileID: 0}
+  - actorName: Jellyfish Girl
+    dialogueID: 106
+    sentence: My name is Xina!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 107
+    sentence: I'm a. . . Scyzoa I believe? That's what my sentient-species is named
+      anyway.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 108
+    sentence: What Species are you?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 109
+    sentence: The way she speaks is quick and all over the place
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 110
+    sentence: It's a wonder how the translator picks up her words
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 111
+    sentence: It's a wonder how the translator picks up her words
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 112
+    sentence: '"Hehe, sorry if I startled you."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 113
+    sentence: I'm just so excited to meet so many different species
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 114
+    sentence: You must be a human right?
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 115
+    sentence: Nice to meet you too!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 116
+    sentence: Everything on board this starcruiser is sooo fancy!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 117
+    sentence: I want to explore every nook and cranny of it!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 118
+    sentence: You must be a human right?
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 119
+    sentence: A human! I knew it!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 120
+    sentence: I thought you tasted familiar!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 121
+    sentence: I thought you tasted familiar!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 122
+    sentence: '"Oh! Sorry, I should probably explain myself."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 123
+    sentence: '"Oh! Sorry, I should probably explain myself."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 124
+    sentence: Xina blushes almost as if she knew you were thinking of impure thoughts.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 125
+    sentence: Pervert.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 126
+    sentence: Not like that!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 127
+    sentence: It's something that's unique to my sentient-species.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 128
+    sentence: '"I''m a Scyzoa, my species can taste the brainwaves of other sentient-species."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 129
+    sentence: So we can more or less read minds to a certain extent.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 130
+    sentence: So we can more or less read minds to a certain extent.
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 131
+    sentence: Thank you!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 132
+    sentence: I find you fascinating too!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 133
+    sentence: '"Well, your taste is. . . quite unique."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 134
+    sentence: I can't really tell what it tastes like.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 135
+    sentence: Xina turns bright pink
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 136
+    sentence: It seems she really can read your mind
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 137
+    sentence: '"That''s um, a pretty active imagination you have huh?"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 138
+    sentence: Xina's turns an even brighter shade of pink before slowly returning
+      to normal
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 139
+    sentence: '"Xina goes quiet for a bit, almost as if she is recomposing herself."'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 140
+    sentence: '"It was nice talking with you,"'
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 141
+    sentence: I'm gonna hang around here a bit before going exploring!
+    voiceClip: {fileID: 0}
+  - actorName: Xina
+    dialogueID: 142
+    sentence: See you!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 143
+    sentence: '"You see someone standing at the bar,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 144
+    sentence: '"They don''t seem to be drinking anything, instead they''re just staring
+      at the bottles on the shelves."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 145
+    sentence: From a distance you wouldn't be blamed if you'd mistaken them for a
+      potted plant.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 146
+    sentence: '"But as you get closer, you start to see a plant-like woman whose
+      alluring figure makes your palms sweaty."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 147
+    sentence: '"Her figure, while humanoid, looks almost too perfect, as if it was
+      painstakingly moulded to look as alluring as possible."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 148
+    sentence: '"As you stand there dumbfounded by her beauty, she takes notice of
+      you staring and gestures to you to take a seat next to her."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 149
+    sentence: You quickly take her up on her offer and sit down at the bar.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 150
+    sentence: She towers over the bar counter and as you sit down it makes sense
+      to you why she doesn't want to sit down
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 151
+    sentence: Her eyes continue to stare at the bottles on the shelves as she speaks.
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 152
+    sentence: It's awfully rude to stare without a 'hello' don't you think?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 153
+    sentence: The way she speaks sounds as if she's teasing you.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 154
+    sentence: The way she speaks sounds as if she's teasing you.
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 155
+    sentence: 'Hmm. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 156
+    sentence: What a lacking response.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 157
+    sentence: You notice a slight smirk in the corner of her fanged mouth.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 158
+    sentence: Before a soft giggle escapes her
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 159
+    sentence: You've got quite the sense of humour don't you?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 160
+    sentence: She seems a bit surprised by your response
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 161
+    sentence: Seems you caught her off guard.
+    voiceClip: {fileID: 0}
+  - actorName: Plant-Woman
+    dialogueID: 162
+    sentence: '"Well then, I hope you like how I look from the front as well~"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 163
+    sentence: '"The plant woman''s eyes finally stop staring at the bottles on the
+      shelves, she looks down and meets your eyes before continuing."'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 164
+    sentence: My name's Benia.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 165
+    sentence: '"It''s nice to meet you, fellow contestant."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 166
+    sentence: Her eyes break eye contact with you and darts across your features
+      & body as if she's sizing you up.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 167
+    sentence: A human?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 168
+    sentence: '"Benia''s eyes light up as she realises your species, before narrowing
+      and licking her ''lips?"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 169
+    sentence: Your eyes lock together once again
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 170
+    sentence: And as you look up into her enchanting eyes you nearly forget your
+      own name before stammering it out.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 171
+    sentence: M-my name's PlayerName
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 172
+    sentence: Nice to meet you too.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 173
+    sentence: '"PlayerName , the human huh?"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 174
+    sentence: Mmm~ I see.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 175
+    sentence: .
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 176
+    sentence: '"Same reason as you I believe,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 177
+    sentence: For a brief moment you notice a hint of sadness in her eyes before
+      she breaks eye contact with you.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 178
+    sentence: It's a long story.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 179
+    sentence: 'It takes less than a second before she reestablishes eye contact with
+      you and you''re lost in her eyes again. '
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 180
+    sentence: '"But I''m here for the same reason as you,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 181
+    sentence: To find a partner.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 182
+    sentence: Hopefully someone who doesn't mind a little physical 'bonding'.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 183
+    sentence: Benia winks and you feel an electric thrill go down your spine.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 184
+    sentence: .
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 185
+    sentence: Benia places a finger on your lips teasingly
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 186
+    sentence: Don't worry I'll be sure to take the lead~
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 187
+    sentence: Let's get to know each other over the course of the season alright?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 188
+    sentence: Benia places a finger on your lips teasingly
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 189
+    sentence: Will you now?~
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 190
+    sentence: '"But for the time being I think it''s best we slow things down,"'
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 191
+    sentence: To make things more interesting~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 192
+    sentence: Benia removes her finger from your lips and bends down to whisper into
+      your ear
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 193
+    sentence: So be sure to come talk with me whenever you can alright?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 194
+    sentence: After whispering into your ear she returns to her previous posture
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 195
+    sentence: You see Benia's eyes glimmer as though they've found their next target.
+    voiceClip: {fileID: 0}
+  - actorName: Benia
+    dialogueID: 196
+    sentence: I'll be looking forward to our next meeting~
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 197
+    sentence: '"You spot a plume of mist just floating above the floor,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 198
+    sentence: The mist seems to be just drifting around aimlessly.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 199
+    sentence: Curiosity gets the better of you and you approach it
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 200
+    sentence: '"Getting closer, the air becomes more humid and you can see a vague
+      humanoid shape in the mist."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 201
+    sentence: '"Getting closer, the air becomes more humid and you can see a vague
+      humanoid shape in the mist."'
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 202
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 203
+    sentence: 'Hello. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 204
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 205
+    sentence: . . . Yes
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 206
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 207
+    sentence: They don't seem very talkative.
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 208
+    sentence: I-
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 209
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 210
+    sentence: . . . My name is-
+    voiceClip: {fileID: 0}
+  - actorName: Misty Silhouette
+    dialogueID: 211
+    sentence: . . . Florine
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 212
+    sentence: '"Her voice sounds almost ethereal,"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 213
+    sentence: You can see the silhouette of Florine fidgeting.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 214
+    sentence: She seems to be having trouble finding something to say
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 215
+    sentence: She seems to be having trouble finding something to say
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 216
+    sentence: 'That''s a nice name. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 217
+    sentence: Florine stops talking and starts fidgeting again.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 218
+    sentence: Nice to..
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 219
+    sentence: 'Meet you too. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 220
+    sentence: Florine stops talking and starts fidgeting again.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 221
+    sentence: '"I uh, am not hiding in anything. . . "'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 222
+    sentence: Florine stops talking and starts fidgeting again.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 223
+    sentence: Florine stops fidgeting and seems to have built up the courage to speak
+      about something with you.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 224
+    sentence: My form is-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 225
+    sentence: 'It''s just a trait of this body of mine. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 226
+    sentence: 'I''m not sure why or how I became like this either. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 227
+    sentence: '"I have no memory of my past, only vague feelings of recollec-"'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 228
+    sentence: It seems Florine noticed she was going off on a rant.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 229
+    sentence: '"Her gas changes colour slightly, almost as if she''s embarrassed,
+      before changing back to normal."'
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 230
+    sentence: Anyway-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 231
+    sentence: I found a box of papers that might-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 232
+    sentence: 'Help me figure out my past. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 233
+    sentence: 'I can''t touch any of it since it might fall apart if I do. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 234
+    sentence: Could you. . . Please help me?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 235
+    sentence: '"While you can''t see Florine''s face, her voice sounds desperate."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 236
+    sentence: '"While you can''t see Florine''s face, her voice sounds desperate."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 237
+    sentence: Florine's gas cloud changes to a bright vibrant yellow
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 238
+    sentence: Really?
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 239
+    sentence: The tone of her voice sounds happy.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 240
+    sentence: I-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 241
+    sentence: I cannot thank you enough.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 242
+    sentence: But also-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 243
+    sentence: Oh.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 244
+    sentence: 'Of course. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 245
+    sentence: Her voice hesitates for a moment
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 246
+    sentence: But um-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 247
+    sentence: 'Oh- Um. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 248
+    sentence: Florine's gas cloud turns bright pink
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 249
+    sentence: Well-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 250
+    sentence: 'You see. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 251
+    sentence: Love is one of the only feelings that I faintly recall from my past
+      life.
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 252
+    sentence: 'If you agree to help me with this. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 253
+    sentence: I-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 254
+    sentence: I will-
+    voiceClip: {fileID: 0}
+  - actorName: Florine
+    dialogueID: 255
+    sentence: I will pursue a romantic relationship with you!
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 256
+    sentence: As Florine finishes her sentence her gas cloud turns the brightest
+      shade of pink you've ever seen
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 257
+    sentence: And also starts glowing.
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 258
+    sentence: .
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 259
+    sentence: '"Florine stops responding, she seems to have stopped functioning."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 260
+    sentence: She continues to glow brightly as you back away slowly.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 261
+    sentence: 'It seems best if you leave her be for now. . . '
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 262
+    sentence: A glowing humanoid person is sitting on the entertainment area's only
+      sofa.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 263
+    sentence: '"They have a masculine appearance, broad shoulders and seems to have
+      Virtual Environment glasses on."'
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 264
+    sentence: '"They have a masculine appearance, broad shoulders and seems to have
+      Virtual Environment glasses on."'
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 265
+    sentence: '. . . '
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 266
+    sentence: Because I'm not made of fire.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 267
+    sentence: The man doesn't seem to appreciate being disturbed.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 268
+    sentence: He reluctantly takes off the Virtual Environment glasses and you see
+      his face.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 269
+    sentence: At least you think that's a face.
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 270
+    sentence: Can I help you?
+    voiceClip: {fileID: 0}
+  - actorName: Player
+    dialogueID: 271
+    sentence: .
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 272
+    sentence: How cordial.
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 273
+    sentence: '"Well, you won''t have to worry about me then."'
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 274
+    sentence: I don't even want to be here.
+    voiceClip: {fileID: 0}
+  - actorName: ' '
+    dialogueID: 275
+    sentence: The glowing man seems to loathe speaking in general and wants you to
+      leave as soon as possible.
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 276
+    sentence: My name is Saiph.
+    voiceClip: {fileID: 0}
+  - actorName: Glowing Man
+    dialogueID: 277
+    sentence: '"That''s all you need to know, now leave me alone."'
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 278
+    sentence: Saiph puts his Virtual Environment glasses back on and proceeds to
+      ignore your presence.
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 279
+    sentence: '"It''s Room 01, your room."'
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 280
+    sentence: 'You have a feeling you haven''t met everybody yet. . . '
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 281
+    sentence: It'd be best to go and say Hi.
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 282
+    sentence: You feel like you've spoken to everybody on the ship already.
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 283
+    sentence: Turn in for the day?
+    voiceClip: {fileID: 0}
+  - actorName: '  '
+    dialogueID: 284
+    sentence: Turn in for the day?
+    voiceClip: {fileID: 0}
+  - actorName: 
+    dialogueID: 285
+    sentence: Zzzzz
+    voiceClip: {fileID: 0}
+--- !u!4 &2121494359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121494357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132810661
 GameObject:
   m_ObjectHideFlags: 0
