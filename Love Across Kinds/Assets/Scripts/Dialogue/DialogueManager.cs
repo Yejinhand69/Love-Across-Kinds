@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
 
     //Animator
     public Animator dialogueAnim;
-    private Animator characterAnim;
+    public Animator characterAnim;
 
     private void Awake()
     {
@@ -171,47 +171,53 @@ public class DialogueManager : MonoBehaviour
                 }
 
                 dialogueText.text = sentence;
-
+                
                 //Expressions
-                switch (datas[currIndexPos].expression)
+                if(characterAnim != null)
                 {
-                    case "Neutral":
-                        //Expression change here...
-                        characterAnim.SetBool("isSmile", false);
-                        characterAnim.SetBool("isAngry", false);
-                        characterAnim.SetBool("isSad", false);
-                        characterAnim.SetBool("isShy", false);
-                        break;
-                    case "Happy":
-                        //Expression change here...
-                        characterAnim.SetBool("isSmile", true);
-                        characterAnim.SetBool("isAngry", false);
-                        characterAnim.SetBool("isSad", false);
-                        characterAnim.SetBool("isShy", false);
-                        break;
-                    case "Angry":
-                        //Expression change here...
-                        characterAnim.SetBool("isSmile", false);
-                        characterAnim.SetBool("isAngry", true);
-                        characterAnim.SetBool("isSad", false);
-                        characterAnim.SetBool("isShy", false);
-                        break;
-                    case "Sad":
-                        //Expression change here...
-                        characterAnim.SetBool("isSmile", false);
-                        characterAnim.SetBool("isAngry", false);
-                        characterAnim.SetBool("isSad", true);
-                        characterAnim.SetBool("isShy", false);
-                        break;
-                    case "Shy":
-                        //Expression change here...
-                        characterAnim.SetBool("isSmile", false);
-                        characterAnim.SetBool("isAngry", false);
-                        characterAnim.SetBool("isSad", false);
-                        characterAnim.SetBool("isShy", true);
-                        break;
-                    default:
-                        break;
+                    switch (datas[currIndexPos].expression)
+                    {
+                        case 1:
+                            Debug.Log("Happy");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", true);
+                            characterAnim.SetBool("isAngry", false);
+                            characterAnim.SetBool("isSad", false);
+                            characterAnim.SetBool("isShy", false);
+                            break;
+                        case 2:
+                            Debug.Log("Angry");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", false);
+                            characterAnim.SetBool("isAngry", true);
+                            characterAnim.SetBool("isSad", false);
+                            characterAnim.SetBool("isShy", false);
+                            break;
+                        case 3:
+                            Debug.Log("Sad");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", false);
+                            characterAnim.SetBool("isAngry", false);
+                            characterAnim.SetBool("isSad", true);
+                            characterAnim.SetBool("isShy", false);
+                            break;
+                        case 4:
+                            Debug.Log("Shy");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", false);
+                            characterAnim.SetBool("isAngry", false);
+                            characterAnim.SetBool("isSad", false);
+                            characterAnim.SetBool("isShy", true);
+                            break;
+                        default:
+                            Debug.Log("Neutral");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", false);
+                            characterAnim.SetBool("isAngry", false);
+                            characterAnim.SetBool("isSad", false);
+                            characterAnim.SetBool("isShy", false);
+                            break;
+                    }
                 }
 
                 if (datas[currIndexPos].checkIfAffection)

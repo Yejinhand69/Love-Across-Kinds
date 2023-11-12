@@ -58,7 +58,7 @@ public class DataProcessor : MonoBehaviour
             bool.TryParse(row[11], out dialogueData.checkIfEnd);
             bool.TryParse(row[12], out dialogueData.checkIfAffection);
             dialogueData._event = row[13];
-            dialogueData.expression = row[14];
+            int.TryParse(row[14], out dialogueData.expression);
 
             //Add the variables with data into a list
             instance.dataList.Add(dialogueData);
@@ -83,5 +83,5 @@ public class DialogueData
     public bool checkIfEnd;
     public bool checkIfAffection;
     public string _event;
-    public string expression;
+    public int expression;
 }

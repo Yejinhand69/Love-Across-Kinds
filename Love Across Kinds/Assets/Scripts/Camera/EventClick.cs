@@ -18,7 +18,11 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     private void Awake()
     {
         DialogueTrigger = GetComponent<DialogueTrigger>();
-        TryGetComponent<Animator>(out interactObjAnim);
+        if(TryGetComponent(out Animator anim))
+        {
+            interactObjAnim = anim;
+        }
+        
     }
 
     public void OnPointerDown(PointerEventData eventData)
