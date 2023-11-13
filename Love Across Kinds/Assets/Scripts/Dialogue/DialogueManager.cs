@@ -255,10 +255,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    
     public void EndDialogue()
     {
         dialogueAnim.SetBool("isOpenDialogue", false);
-        dialogueActive = false; 
+        dialogueActive = false;
+        
 
         switch (datas[currIndexPos]._event)
         {
