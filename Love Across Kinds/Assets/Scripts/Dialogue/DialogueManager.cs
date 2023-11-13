@@ -415,7 +415,7 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             case "ScavengerEvent":
-
+                ScavengerEvent.isScavengerEvent = true;
                 break;
 
             case "Sleep":

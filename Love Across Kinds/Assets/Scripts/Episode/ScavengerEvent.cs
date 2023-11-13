@@ -5,14 +5,16 @@ using UnityEngine;
 public class ScavengerEvent : MonoBehaviour
 {
     public GameObject bracelet;
+    public static bool isScavengerEvent;
 
     private void Update()
     {
         if(PhaseManager.instance.currentPhase == "PreProduction" && PhaseManager.instance.currentEpisode == 1)
         {
             //Check if ScavengerEvent is started or not
-            if (DialogueManager.instance.datas[DialogueManager.instance.currIndexPos]._event == "ScavengerEvent")
+            if (isScavengerEvent)
             {
+                Debug.Log("setActive");
                 bracelet.SetActive(true);
             }
 
