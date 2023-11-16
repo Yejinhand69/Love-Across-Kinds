@@ -27,14 +27,13 @@ public class CutsceneManager : MonoBehaviour
 
         if (DialogueManager.instance.currSentenceId == 25 && !(DialogueManager.dialogueActive))
         {
-            anim.SetTrigger("1to2");
             anim.SetTrigger("2to3");
             StartCoroutine(PlayPhoneRinging());
         }
 
-        if(DialogueManager.instance.currSentenceId == 61 && !(DialogueManager.dialogueActive))
+        if (DialogueManager.instance.currSentenceId == 61 && !(DialogueManager.dialogueActive))
         {
-            Skip();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -50,12 +49,5 @@ public class CutsceneManager : MonoBehaviour
         AudioManager.instance.PlaySFX("Phone Ring");
         yield return new WaitForSeconds(4f);
         trigger.StartDialogue(" ", 26);
-    }
-
-    public void Skip()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //PhaseManager.instance.currentPhase = "PreProduction";
-        //PhaseManager.instance.currentEpisode = 1;
     }
 }
