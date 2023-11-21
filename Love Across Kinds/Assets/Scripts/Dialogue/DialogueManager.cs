@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI option1Text;
     public TextMeshProUGUI option2Text;
     public TextMeshProUGUI option3Text;
+    public GameObject skipButton;
 
     //Stroing data of Dialogues from .csv
     public List<DialogueData> datas;
@@ -82,6 +83,19 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
+
+        if(SceneManager.GetActiveScene().name == "Episode 0")
+        {
+            if (AudioManager.instance._SFXSource.isPlaying)
+            {
+                skipButton.SetActive(false);
+            }
+            else
+            {
+                skipButton.SetActive(true);
+            }
+        }
+        
     }
 
     //Method to show DialogueBox & Search the upmost data of each character by NAME
