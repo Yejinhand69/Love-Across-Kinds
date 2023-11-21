@@ -238,7 +238,6 @@ public class DialogueManager : MonoBehaviour
                 break;
             }
         }
-        Debug.Log(currSentenceId);
     }
 
     //Method to Display next sentence/ End the dialogue
@@ -275,7 +274,7 @@ public class DialogueManager : MonoBehaviour
 
         switch (datas[currIndexPos]._event)
         {
-            case "AffectionEvent":
+            case 1:
                 switch (currInteractCharName)
                 {
                     case "Xina":
@@ -425,11 +424,12 @@ public class DialogueManager : MonoBehaviour
                 }
                 break;
 
-            case "ScavengerEvent":
+            case 2:
                 ScavengerEvent.isScavengerEvent = true;
+                Debug.Log(ScavengerEvent.isScavengerEvent);
                 break;
 
-            case "Sleep":
+            case 3:
                 PhaseManager.instance.currentEpisode++;
 
                 if (PhaseManager.instance.currentPhase == "Special")
@@ -446,7 +446,7 @@ public class DialogueManager : MonoBehaviour
 
                 break;
 
-            case "ChangePhase":
+            case 4:
                 
                 PhaseManager.instance.ChangePhase();
                 
@@ -468,7 +468,7 @@ public class DialogueManager : MonoBehaviour
                 break;
 
 
-            case "FilmingConvo":
+            case 5:
                 switch (currInteractCharName)
                 {
                     case "Xina":
@@ -586,10 +586,9 @@ public class DialogueManager : MonoBehaviour
             }
             else if (datas[i].checkIfEnd)
             {
-                EndDialogue();
                 currSentenceId = i;
                 currIndexPos = i;
-                Debug.Log(currSentenceId);
+                EndDialogue();
                 break;
             }
         }

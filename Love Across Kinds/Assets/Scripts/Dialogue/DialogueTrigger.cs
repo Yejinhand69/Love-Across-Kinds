@@ -14,6 +14,12 @@ public class DialogueTrigger : MonoBehaviour
         if (name == "Xina")
         {
             attemp = DialogueManager.instance.XinaAttemp;
+
+            if(ScavengerEvent.isScavengerEvent && ScavengerEvent.isFoundBracelet && PhaseManager.instance.currentPhase == "PreProduction" && PhaseManager.instance.currentEpisode == 0)
+            {
+                attemp = 0;
+                firstAttempSentenceID = 81;
+            }
         }
         else if (name == "Benia")
         {
@@ -44,6 +50,11 @@ public class DialogueTrigger : MonoBehaviour
         if (name == "Xina")
         {
             DialogueManager.instance.XinaAttemp = attemp;
+
+            if (ScavengerEvent.isScavengerEvent && ScavengerEvent.isFoundBracelet && PhaseManager.instance.currentPhase == "PreProduction" && PhaseManager.instance.currentEpisode == 0)
+            {
+                repeatAttempSentenceID = 107;
+            }
         }
         else if (name == "Benia")
         {

@@ -1,4 +1,4 @@
-name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	event	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
+name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	"event (1 - AffectionEvent, 2 - ScavengerEvent, 3 - Sleep, 4 - ChangePhase, 5 - FilmingConvo)"	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
  	0	Everywhere you turn it is preached to you.	1	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	1	"It is a uniquely human experience,"	2	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	2	Or rather WAS a uniquely human experience.	3	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
@@ -284,4 +284,4 @@ Glowing Man	277	"That's all you need to know, now leave me alone."	278	FALSE	-	-
   	282	You feel like you've spoken to everybody on the ship already.	283	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
   	283	Turn in for the day?	284	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
   	284	Turn in for the day?	-	TRUE	I should get some rest. . . 	I think I'll explore the ship just a little longer.	-	285	284	-	TRUE	FALSE	-	1
-	285	Zzzzz	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	Sleep	1
+	285	Zzzzz	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	3	1

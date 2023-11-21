@@ -6,6 +6,8 @@ public class ScavengerEvent : MonoBehaviour
 {
     public GameObject bracelet;
     public static bool isScavengerEvent;
+    public GameObject BraceletUI;
+    public static bool isFoundBracelet;
 
     private void Update()
     {
@@ -14,7 +16,6 @@ public class ScavengerEvent : MonoBehaviour
             //Check if ScavengerEvent is started or not
             if (isScavengerEvent)
             {
-                Debug.Log("setActive");
                 bracelet.SetActive(true);
             }
 
@@ -22,17 +23,22 @@ public class ScavengerEvent : MonoBehaviour
             if (DialogueManager.instance.currSentenceId == 75)
             {
                 //UI of bracelet active
+                BraceletUI.SetActive(true);
             }
             else if (DialogueManager.instance.currSentenceId == 78)
             {
                 //UI of bracelet deactive
+                BraceletUI.SetActive(false);
+                isFoundBracelet = true;
             }
 
             //Check if player pressed on the Event Object
             if (EventClick.interactObjectName == bracelet.name)
             {
-                bracelet.SetActive(false);
-                Destroy(bracelet);
+                if(DialogueManager.instance.currSentenceId == 67)
+                {
+                    bracelet.SetActive(false);
+                } 
             }
         }
     }
