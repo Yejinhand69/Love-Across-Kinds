@@ -46,8 +46,7 @@ public class PhaseManager : MonoBehaviour
 
         if(SceneManager.GetActiveScene().name == "Lobby0" && !instance.isDonePrologue)
         {
-            instance.isDonePrologue = true;
-            dialogueTrigger.StartDialogue("Player", 62);     
+            dialogueTrigger.StartDialogue("Player", 62);
         }
 
         if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
@@ -76,6 +75,18 @@ public class PhaseManager : MonoBehaviour
 
     private void Update()
     {
+        if(currentPhase == "Prologue" && currentEpisode == 0 && !instance.isDonePrologue && SceneManager.GetActiveScene().name == "Lobby0")
+        {
+            while (DialogueManager.dialogueActive)
+            {
+                continue;
+            }
+
+            StartCoroutine(PlayerNaming());
+
+            instance.isDonePrologue = true;
+        }
+
         if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
         {
             while (DialogueManager.dialogueActive)
@@ -116,6 +127,25 @@ public class PhaseManager : MonoBehaviour
         currentPhaseIndex = (currentPhaseIndex + 1) % phases.Length;
         UpdatePhaseText();
         AudioManager.instance.PlayBGM();
+    }
+
+    IEnumerator PlayerNaming()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        while (DialogueManager.dialogueActive)
+        {
+            yield return null;
+        }
+
+        UserData.instance.OpenNamingBox();
+
+        while (UserData.instance.isOnNaming)
+        {
+            yield return null;
+        }
+
+        dialogueTrigger.StartDialogue(" ", 69);
     }
 
     IEnumerator ShowPhoneMessage()

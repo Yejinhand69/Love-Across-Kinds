@@ -7,27 +7,6 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private int firstAttempSentenceID;
     public int repeatAttempSentenceID;
     public static int attemp = 0;
-    private Animator anim;
-
-    private void Start()
-    {
-        TryGetComponent<Animator>(out anim);
-    }
-
-    private void Update()
-    {
-        if(anim != null)
-        {
-            if (DialogueManager.dialogueActive)
-            {
-                anim.SetBool("DialogueActive", true);
-            }
-            else
-            {
-                anim.SetBool("DialogueActive", false);
-            }
-        }
-    }
 
     public void StartDialogue()
     {

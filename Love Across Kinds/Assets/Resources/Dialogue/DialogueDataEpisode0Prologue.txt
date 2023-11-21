@@ -52,7 +52,7 @@ Sister	49	"You're a good person, I'm sure there'll be someone on there who sees 
 Sister	50	. . . 	51	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Player	51	Thank you?	52	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Player	52	I'll update you if I can on the starcruiser.	53	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
-Player	53	You better.	54	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+Sister	53	You better.	54	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Sister	54	"Also one last word of advice,"	55	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Sister	55	I don't know what sentient-species are going to be on The Matchmaker this season	56	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Sister	56	"But it can't be as bad as what happened on The Pleasure Cruiser, 5 seasons ago."	57	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
@@ -67,7 +67,7 @@ Player	63	They said all my luggage would be teleported to Room 01 so that should
 Host?	65	Heeeelllloooo Human Contestant!	66	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Host?	66	"While you may have a legally binding name that you've used for the application of this show,"	67	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Host?	67	"Here, you may change your name to whatever you want."	68	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
-Host?	68	"So, what name should we refer to you whilst aboard the ship?"	69	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+Host?	68	"So, what name should we refer to you whilst aboard the ship?"	69	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	1
 Host?	69	"Welcomeeeee human contestant, PlayerName !"	70	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Host?	70	"Wel&$%^ ab@&#^ the M>/,*3^$#"	71	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Host?	71	"Wel&$%^ ab@&#^ the M>/,*3^$#"	-	TRUE	Ok?	Excuse me?	I think your translator malfunctioned	72	73	74	FALSE	FALSE	-	1
@@ -144,11 +144,11 @@ Xina	141	I'm gonna hang around here a bit before going exploring!	142	FALSE	-	-	
 Xina	142	See you!	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	1
  	143	"You see someone standing at the bar,"	144	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	144	"They don't seem to be drinking anything, instead they're just staring at the bottles on the shelves."	145	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	145	From a distance you wouldn't be blamed if you'd mistaken them for a potted plant.	146	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	145	From a distance you wouldn't be blamed if you'd mistaken them for a potted plant.	146	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	146	"But as you get closer, you start to see a plant-like woman whose alluring figure makes your palms sweaty."	147	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	147	"Her figure, while humanoid, looks almost too perfect, as if it was painstakingly moulded to look as alluring as possible."	148	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	2
- 	148	"As you stand there dumbfounded by her beauty, she takes notice of you staring and gestures to you to take a seat next to her."	149	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	3
- 	149	You quickly take her up on her offer and sit down at the bar.	150	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	4
+ 	147	"Her figure, while humanoid, looks almost too perfect, as if it was painstakingly moulded to look as alluring as possible."	148	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+ 	148	"As you stand there dumbfounded by her beauty, she takes notice of you staring and gestures to you to take a seat next to her."	149	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+ 	149	You quickly take her up on her offer and sit down at the bar.	150	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	150	She towers over the bar counter and as you sit down it makes sense to you why she doesn't want to sit down	151	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	151	Her eyes continue to stare at the bottles on the shelves as she speaks.	152	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Plant-Woman	152	It's awfully rude to stare without a 'hello' don't you think?	153	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
@@ -202,9 +202,9 @@ Benia	196	I'll be looking forward to our next meeting~	195	FALSE	-	-	-	-	-	-	TRU
  	200	"Getting closer, the air becomes more humid and you can see a vague humanoid shape in the mist."	201	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	201	"Getting closer, the air becomes more humid and you can see a vague humanoid shape in the mist."	-	TRUE	Hello?	Is someone there?	-	202	206	-	FALSE	FALSE	-	1
 Misty Silhouette	202	. . . 	203	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
-Misty Silhouette	203	Hello. . . 	206	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+Misty Silhouette	203	Hello. . . ?	206	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Misty Silhouette	204	. . . 	205	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
-Misty Silhouette	205	. . . Yes	206	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+Misty Silhouette	205	. . . Yes?	206	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	206	. . . 	207	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	207	They don't seem very talkative.	208	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Misty Silhouette	208	I-	209	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1

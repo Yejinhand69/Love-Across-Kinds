@@ -92,6 +92,11 @@ public class DialogueManager : MonoBehaviour
         //Get animator from current interact object
         characterAnim = EventClick.interactObjAnim;
 
+        if(characterAnim != null)
+        {
+            characterAnim.SetBool("DialogueActive", true);
+        }
+        
         StartCoroutine(DelayDialogueActive());
         currIndexPos = 0;
 
@@ -259,6 +264,12 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         dialogueAnim.SetBool("isOpenDialogue", false);
+
+        if (characterAnim != null)
+        {
+            characterAnim.SetBool("DialogueActive", false);
+        }
+
         dialogueActive = false;
         
 
