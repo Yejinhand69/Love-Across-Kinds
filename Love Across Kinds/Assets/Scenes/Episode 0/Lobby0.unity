@@ -3430,6 +3430,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameUIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2000057136302944009, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2000057136302944247, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_RootOrder
@@ -4416,7 +4421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: -0.05
   zoomXinaCamera0: {fileID: 988859391}
-  zoomBeniaCamera0: {fileID: 1400015860}
+  zoomBeniaCamera0: {fileID: 0}
   zoomFlorineCamera0: {fileID: 0}
   zoomBeniaCamera1pp: {fileID: 0}
   zoomFlorineCamera1pp: {fileID: 0}
@@ -5134,6 +5139,20 @@ MonoBehaviour:
   mainCamera: {fileID: 1013514251}
   zoomXinaCamera0: {fileID: 988859391}
   animator: {fileID: 988859392}
+--- !u!114 &1094293471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094293464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad1c7838762933f468e1d2065f329902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swipeThreshold: 0.2
+  mainCamera: {fileID: 1013514251}
 --- !u!1 &1171386023
 GameObject:
   m_ObjectHideFlags: 0
@@ -7528,20 +7547,6 @@ MonoBehaviour:
   mainCamera: {fileID: 1013514251}
   zoomBeniaCamera0: {fileID: 1400015860}
   animator: {fileID: 1400015861}
---- !u!114 &1777736881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777736875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstAttempSentenceID: 143
-  repeatAttempSentenceID: 196
 --- !u!1 &1781284832 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4878498122401541581, guid: 4ebcaf8cef6ef9d478401af79bcf7638,
