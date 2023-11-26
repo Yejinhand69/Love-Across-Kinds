@@ -123,156 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &66139703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 66139704}
-  - component: {fileID: 66139706}
-  - component: {fileID: 66139705}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &66139704
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66139703}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1631307563}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 10.9999695}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &66139705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66139703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Credits
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294769663
-  m_fontColor: {r: 1, g: 0.98490566, b: 0.98929644, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 93.2
-  m_fontSizeBase: 93.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &66139706
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66139703}
-  m_CullTransparentMesh: 1
---- !u!114 &93451164 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4998457175854310747, guid: 6f6a21e953d53b14ba5393e3d3f7e707,
-    type: 3}
-  m_PrefabInstance: {fileID: 875596598}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fb1916639ad92344a3b4af5afb577da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &159314441
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,8 +185,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
+  m_fontAsset: {fileID: 11400000, guid: 0164c809776b0bc4fbff129d0309bc98, type: 2}
+  m_sharedMaterial: {fileID: -712134963989762839, guid: 0164c809776b0bc4fbff129d0309bc98,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -367,7 +217,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -442,7 +292,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1348633499}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -563,144 +413,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248404258}
   m_CullTransparentMesh: 1
---- !u!1 &316451310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 316451311}
-  - component: {fileID: 316451313}
-  - component: {fileID: 316451312}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &316451311
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316451310}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1279650298}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 11}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &316451312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316451310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Back
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
-  m_sharedMaterial: {fileID: -6031590698217913058, guid: 75b00bc565b131d4ba2ad33fd5788095,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294769663
-  m_fontColor: {r: 1, g: 0.98490566, b: 0.98929644, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 93.2
-  m_fontSizeBase: 93.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &316451313
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316451310}
-  m_CullTransparentMesh: 1
 --- !u!1 &350690853
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,142 +481,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &368945243
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 368945244}
-  - component: {fileID: 368945246}
-  - component: {fileID: 368945245}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &368945244
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368945243}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1366789722}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &368945245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368945243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Quit
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &368945246
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368945243}
-  m_CullTransparentMesh: 1
 --- !u!1 &432341147
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +512,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreditPanel: {fileID: 1348633498}
   SettingsPanel: {fileID: 2132810661}
-  NamingBox: {fileID: 1984694252}
   animator: {fileID: 778555427}
   sceneToLoad: Episode 0
   delayBeforeLoad: 1.5
@@ -955,206 +530,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &440023828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 440023829}
-  - component: {fileID: 440023832}
-  - component: {fileID: 440023831}
-  - component: {fileID: 440023830}
-  m_Layer: 5
-  m_Name: UserInputNameField
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &440023829
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440023828}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1087171269}
-  m_Father: {fileID: 1984694253}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.13070735, y: 0.36382815}
-  m_AnchorMax: {x: 0.86570734, y: 0.6264268}
-  m_AnchoredPosition: {x: 1.5, y: 2.9999695}
-  m_SizeDelta: {x: -1.4749756, y: -0.9694977}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &440023830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440023828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 440023831}
-  m_TextViewport: {fileID: 1087171269}
-  m_TextComponent: {fileID: 1012833722}
-  m_Placeholder: {fileID: 700700079}
-  m_VerticalScrollbar: {fileID: 0}
-  m_VerticalScrollbarEventHandler: {fileID: 0}
-  m_LayoutGroup: {fileID: 0}
-  m_ScrollSensitivity: 1
-  m_ContentType: 0
-  m_InputType: 0
-  m_AsteriskChar: 42
-  m_KeyboardType: 0
-  m_LineType: 0
-  m_HideMobileInput: 0
-  m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
-  m_RegexValue: 
-  m_GlobalPointSize: 14
-  m_CharacterLimit: 0
-  m_OnEndEdit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 93451164}
-        m_TargetAssemblyTypeName: UserData, Assembly-CSharp
-        m_MethodName: UserInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 93451164}
-        m_TargetAssemblyTypeName: UserData, Assembly-CSharp
-        m_MethodName: FieldSelected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_OnDeselect:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnTextSelection:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnEndTextSelection:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnTouchScreenKeyboardStatusChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
-  m_CaretBlinkRate: 0.85
-  m_CaretWidth: 1
-  m_ReadOnly: 0
-  m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
-  m_OnFocusSelectAll: 1
-  m_ResetOnDeActivation: 1
-  m_RestoreOriginalTextOnEscape: 1
-  m_isRichTextEditingAllowed: 0
-  m_LineLimit: 0
-  m_InputValidator: {fileID: 0}
---- !u!114 &440023831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440023828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 0.7058824, b: 0.9254902, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &440023832
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440023828}
-  m_CullTransparentMesh: 1
 --- !u!1 &444219741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,15 +560,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 633851993}
+  m_Children: []
   m_Father: {fileID: 671152800}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.21944444, y: 0.51438975}
-  m_AnchorMax: {x: 0.7813704, y: 0.6074633}
-  m_AnchoredPosition: {x: -0.8651123, y: 0.5}
-  m_SizeDelta: {x: 2.375, y: -1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -5.0899963, y: 0.19100189}
+  m_SizeDelta: {x: 610, y: 211}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &444219743
 MonoBehaviour:
@@ -1271,7 +645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1747908017, guid: 40b304cc5a9dc7e4faefd38c267c2b8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6202461dcafc7414284aed65ca157ab5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1324,8 +698,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5.0861816, y: 0}
+  m_SizeDelta: {x: 0.54296875, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498915572
 MonoBehaviour:
@@ -1347,7 +721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3f367c0c318d6da448890b10d9d1a58f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 22edfef15b98d8244baf8fdd617b5db3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1395,15 +769,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1044449620}
+  m_Children: []
   m_Father: {fileID: 2132810665}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7756495, y: 0.906}
-  m_AnchorMax: {x: 0.9352269, y: 0.96740043}
-  m_AnchoredPosition: {x: 1.7399902, y: -4}
-  m_SizeDelta: {x: -0.75097656, y: -2.3261719}
+  m_AnchorMin: {x: 0.72838664, y: 0.8844014}
+  m_AnchorMax: {x: 0.93326294, y: 0.94000006}
+  m_AnchoredPosition: {x: -339, y: -1873}
+  m_SizeDelta: {x: -1, y: -1}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &610544297
 MonoBehaviour:
@@ -1426,7 +799,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.735849, g: 0.22491989, b: 0.22491989, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1481,8 +854,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8eca32c842ef42641ad85432d36105cf, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1498,142 +871,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610544295}
-  m_CullTransparentMesh: 1
---- !u!1 &633851992
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 633851993}
-  - component: {fileID: 633851995}
-  - component: {fileID: 633851994}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &633851993
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633851992}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 444219742}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 11}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &633851994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633851992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Start Game
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294769663
-  m_fontColor: {r: 1, g: 0.98490566, b: 0.98929644, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 93.2
-  m_fontSizeBase: 93.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &633851995
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633851992}
   m_CullTransparentMesh: 1
 --- !u!1 &638145904
 GameObject:
@@ -1710,6 +947,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638145904}
+  m_CullTransparentMesh: 1
+--- !u!1 &638410759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 638410760}
+  - component: {fileID: 638410762}
+  - component: {fileID: 638410761}
+  m_Layer: 5
+  m_Name: background (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &638410760
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638410759}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 671152800}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.27148438, y: 0}
+  m_SizeDelta: {x: 0.54296875, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &638410761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638410759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6eb18f5889bf4aa4e8de7c2202ae57fa, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &638410762
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638410759}
   m_CullTransparentMesh: 1
 --- !u!1 &671152796
 GameObject:
@@ -1804,15 +1117,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 498915571}
+  - {fileID: 638410760}
   - {fileID: 444219742}
   - {fileID: 789383937}
   - {fileID: 1631307563}
-  - {fileID: 1377702962}
-  - {fileID: 682934062}
   - {fileID: 1348633499}
   - {fileID: 2132810665}
   - {fileID: 778555430}
-  - {fileID: 1984694253}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1821,216 +1132,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &677794404
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 677794405}
-  - component: {fileID: 677794408}
-  - component: {fileID: 677794407}
-  - component: {fileID: 677794406}
-  m_Layer: 5
-  m_Name: OKButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &677794405
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677794404}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1368332479}
-  m_Father: {fileID: 1984694253}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.54821956, y: 0.06561979}
-  m_AnchorMax: {x: 0.92821956, y: 0.2775521}
-  m_AnchoredPosition: {x: 0, y: 1.5}
-  m_SizeDelta: {x: -1.677002, y: 2.8638916}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &677794406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677794404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 677794407}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 432341148}
-        m_TargetAssemblyTypeName: MainMenuOpener, Assembly-CSharp
-        m_MethodName: OkToStart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &677794407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677794404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1747908017, guid: 40b304cc5a9dc7e4faefd38c267c2b8b, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &677794408
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677794404}
-  m_CullTransparentMesh: 1
---- !u!1 &682934061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 682934062}
-  - component: {fileID: 682934064}
-  - component: {fileID: 682934063}
-  m_Layer: 5
-  m_Name: GameTitle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &682934062
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682934061}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 671152800}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.026851855, y: 0.60045606}
-  m_AnchorMax: {x: 0.97314817, y: 0.83347785}
-  m_AnchoredPosition: {x: -3.3222656, y: -1.2642822}
-  m_SizeDelta: {x: 8.035278, y: -5.194092}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &682934063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682934061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e918808396fb5b84694de87ff35eb386, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &682934064
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682934061}
-  m_CullTransparentMesh: 1
 --- !u!1 &684563155
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,163 +1323,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
---- !u!1 &700700076
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 700700077}
-  - component: {fileID: 700700080}
-  - component: {fileID: 700700079}
-  - component: {fileID: 700700078}
-  m_Layer: 5
-  m_Name: Placeholder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &700700077
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700700076}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1087171269}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &700700078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700700076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 1
-  m_MinWidth: -1
-  m_MinHeight: -1
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
---- !u!114 &700700079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700700076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Your Name...
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
-  m_sharedMaterial: {fileID: -6031590698217913058, guid: 75b00bc565b131d4ba2ad33fd5788095,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 2150773298
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 14
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 2
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 1
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &700700080
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700700076}
-  m_CullTransparentMesh: 1
 --- !u!1 &714224247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,7 +1505,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 671152800}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2598,15 +1542,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1123455196}
+  m_Children: []
   m_Father: {fileID: 671152800}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.21944444, y: 0.35948533}
-  m_AnchorMax: {x: 0.7813704, y: 0.45200002}
-  m_AnchoredPosition: {x: -0.8651123, y: -0.7670288}
-  m_SizeDelta: {x: 2.375, y: 0}
+  m_AnchorMin: {x: 0.06381481, y: 0.35500002}
+  m_AnchorMax: {x: 0.5, y: 0.42475438}
+  m_AnchoredPosition: {x: -4.5, y: 2.0029907}
+  m_SizeDelta: {x: -4, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &789383938
 MonoBehaviour:
@@ -2684,7 +1627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1747908017, guid: 40b304cc5a9dc7e4faefd38c267c2b8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4778f796755ca4b4ca55155ab3f4240e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2811,7 +1754,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 86, y: 95}
+  m_AnchoredPosition: {x: -0.000015259, y: 98.039}
   m_SizeDelta: {x: 556.0723, y: 139.0181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &898885098
@@ -2838,8 +1781,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
+  m_fontAsset: {fileID: 11400000, guid: 0164c809776b0bc4fbff129d0309bc98, type: 2}
+  m_sharedMaterial: {fileID: -712134963989762839, guid: 0164c809776b0bc4fbff129d0309bc98,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2870,8 +1813,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_fontStyle: 2
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2914,18 +1857,155 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898885096}
   m_CullTransparentMesh: 1
---- !u!114 &911177344 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8433555857194809948, guid: 2084e439f2fa3d444a9fe7792140c80c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1794273907}
+--- !u!1 &914409756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 914409757}
+  - component: {fileID: 914409759}
+  - component: {fileID: 914409758}
+  m_Layer: 5
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &914409757
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914409756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1348633499}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.7767, y: 162}
+  m_SizeDelta: {x: 1060.6653, y: 2228.3599}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &914409758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914409756}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fe170fd8a4af944abb88185f2912b41, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Designers
+
+
+
+
+    Artists
+
+
+
+
+
+    Programmers
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 0164c809776b0bc4fbff129d0309bc98, type: 2}
+  m_sharedMaterial: {fileID: -712134963989762839, guid: 0164c809776b0bc4fbff129d0309bc98,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 70
+  m_fontSizeBase: 70
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 7
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &914409759
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914409756}
+  m_CullTransparentMesh: 1
 --- !u!1 &983564994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2956,15 +2036,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1902943341}
+  m_Children: []
   m_Father: {fileID: 1348633499}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7756495, y: 0.906}
-  m_AnchorMax: {x: 0.9352269, y: 0.96740043}
-  m_AnchoredPosition: {x: 1.7399902, y: -4}
-  m_SizeDelta: {x: -0.75097656, y: -2.3261719}
+  m_AnchorMin: {x: 0.42800003, y: 0.082841165}
+  m_AnchorMax: {x: 0.61947423, y: 0.13440135}
+  m_AnchoredPosition: {x: 10, y: 2}
+  m_SizeDelta: {x: 14, y: 9}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &983564996
 MonoBehaviour:
@@ -2987,7 +2066,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.735849, g: 0.22491989, b: 0.22491989, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3042,8 +2121,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8eca32c842ef42641ad85432d36105cf, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3060,278 +2139,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983564994}
   m_CullTransparentMesh: 1
---- !u!1 &1012833720
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1012833721}
-  - component: {fileID: 1012833723}
-  - component: {fileID: 1012833722}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1012833721
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012833720}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1087171269}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1012833722
+--- !u!114 &993064968 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 9019172559840153644, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794273907}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012833720}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 62d3e038828edff43b17af6a3dbecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "\u200B"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
-  m_sharedMaterial: {fileID: -6031590698217913058, guid: 75b00bc565b131d4ba2ad33fd5788095,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 14
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 1
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1012833723
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012833720}
-  m_CullTransparentMesh: 1
---- !u!1 &1044449619
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1044449620}
-  - component: {fileID: 1044449622}
-  - component: {fileID: 1044449621}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1044449620
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044449619}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 610544296}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1044449621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044449619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Back
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 61.82
-  m_fontSizeBase: 61.82
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1044449622
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044449619}
-  m_CullTransparentMesh: 1
 --- !u!1 &1061921735
 GameObject:
   m_ObjectHideFlags: 0
@@ -3369,197 +2188,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.000122, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1087171268
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1087171269}
-  - component: {fileID: 1087171270}
-  m_Layer: 5
-  m_Name: Text Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1087171269
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087171268}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 700700077}
-  - {fileID: 1012833721}
-  m_Father: {fileID: 440023829}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: -20, y: -13}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1087171270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087171268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding: {x: -8, y: -5, z: -8, w: -5}
-  m_Softness: {x: 0, y: 0}
---- !u!1 &1123455195
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1123455196}
-  - component: {fileID: 1123455198}
-  - component: {fileID: 1123455197}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1123455196
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123455195}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 789383937}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 10.9999695}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1123455197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123455195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Settings
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294769663
-  m_fontColor: {r: 1, g: 0.98490566, b: 0.98929644, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 93.2
-  m_fontSizeBase: 93.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1123455198
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123455195}
-  m_CullTransparentMesh: 1
 --- !u!1 &1127283269
 GameObject:
   m_ObjectHideFlags: 0
@@ -3635,142 +2263,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127283269}
-  m_CullTransparentMesh: 1
---- !u!1 &1139622111
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1139622112}
-  - component: {fileID: 1139622114}
-  - component: {fileID: 1139622113}
-  m_Layer: 5
-  m_Name: NamingTitle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1139622112
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139622111}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1984694253}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.027512245, y: 0.6712396}
-  m_AnchorMax: {x: 0.970366, y: 0.89017195}
-  m_AnchoredPosition: {x: 1.5, y: -2.5}
-  m_SizeDelta: {x: -0.5081177, y: 0.66999817}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1139622113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139622111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: What's Your Name
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
-  m_sharedMaterial: {fileID: -6031590698217913058, guid: 75b00bc565b131d4ba2ad33fd5788095,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 98
-  m_fontSizeBase: 98
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1139622114
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139622111}
   m_CullTransparentMesh: 1
 --- !u!1 &1180454169
 GameObject:
@@ -3885,140 +2377,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1279650297
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1279650298}
-  - component: {fileID: 1279650301}
-  - component: {fileID: 1279650300}
-  - component: {fileID: 1279650299}
-  m_Layer: 5
-  m_Name: BackButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1279650298
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1279650297}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 316451311}
-  m_Father: {fileID: 1984694253}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.07251225, y: 0.06561979}
-  m_AnchorMax: {x: 0.44948778, y: 0.2775521}
-  m_AnchoredPosition: {x: 1, y: 1.5}
-  m_SizeDelta: {x: 0.32299805, y: 2.8638916}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1279650299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1279650297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1279650300}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 432341148}
-        m_TargetAssemblyTypeName: MainMenuOpener, Assembly-CSharp
-        m_MethodName: OpenNamingBox
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1279650300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1279650297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1747908017, guid: 40b304cc5a9dc7e4faefd38c267c2b8b, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1279650301
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1279650297}
-  m_CullTransparentMesh: 1
 --- !u!1 &1303206898
 GameObject:
   m_ObjectHideFlags: 0
@@ -4088,10 +2446,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2067337460}
+  - {fileID: 914409757}
   - {fileID: 983564995}
   - {fileID: 207572126}
   m_Father: {fileID: 671152800}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4131,14 +2490,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6117647, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3fb50fedb6065754fbe5274d8b4c3f39, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 22edfef15b98d8244baf8fdd617b5db3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4155,352 +2514,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348633498}
-  m_CullTransparentMesh: 1
---- !u!1 &1366789721
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1366789722}
-  - component: {fileID: 1366789725}
-  - component: {fileID: 1366789724}
-  - component: {fileID: 1366789723}
-  m_Layer: 5
-  m_Name: QuitButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1366789722
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366789721}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 368945244}
-  m_Father: {fileID: 2132810665}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.35300002, y: 0.22447161}
-  m_AnchorMax: {x: 0.64947426, y: 0.2984014}
-  m_AnchoredPosition: {x: -1.5, y: 1.5}
-  m_SizeDelta: {x: -2.6740112, y: -0.7802124}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1366789723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366789721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1366789724}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1707952474}
-        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
-        m_MethodName: QuitApplication
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1366789724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366789721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d816b5091edf24a4c8265fc4dc2cb141, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1366789725
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366789721}
-  m_CullTransparentMesh: 1
---- !u!1 &1368332478
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1368332479}
-  - component: {fileID: 1368332481}
-  - component: {fileID: 1368332480}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1368332479
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368332478}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 677794405}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 11}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1368332480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368332478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: OK
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095, type: 2}
-  m_sharedMaterial: {fileID: -6031590698217913058, guid: 75b00bc565b131d4ba2ad33fd5788095,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294769663
-  m_fontColor: {r: 1, g: 0.98490566, b: 0.98929644, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 93.2
-  m_fontSizeBase: 93.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1368332481
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368332478}
-  m_CullTransparentMesh: 1
---- !u!1 &1377702961
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1377702962}
-  - component: {fileID: 1377702964}
-  - component: {fileID: 1377702963}
-  m_Layer: 5
-  m_Name: NewGameTitle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1377702962
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377702961}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 671152800}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.015740745, y: 0.65768427}
-  m_AnchorMax: {x: 0.98700005, y: 0.93168426}
-  m_AnchoredPosition: {x: -1.5, y: 1}
-  m_SizeDelta: {x: -2, y: 4}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1377702963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377702961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4e66dca8b9da72a45b025c26810e9232, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1377702964
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377702961}
   m_CullTransparentMesh: 1
 --- !u!1 &1457374395
 GameObject:
@@ -4569,15 +2582,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 66139704}
+  m_Children: []
   m_Father: {fileID: 671152800}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.21944444, y: 0.19600001}
-  m_AnchorMax: {x: 0.7813704, y: 0.2873162}
-  m_AnchoredPosition: {x: -0.8651123, y: 0.21008301}
-  m_SizeDelta: {x: 2.375, y: 4}
+  m_AnchorMin: {x: 0.5, y: 0.35149124}
+  m_AnchorMax: {x: 0.92770374, y: 0.42475438}
+  m_AnchoredPosition: {x: -4, y: 5.75}
+  m_SizeDelta: {x: 5, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631307564
 MonoBehaviour:
@@ -4655,7 +2667,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1747908017, guid: 40b304cc5a9dc7e4faefd38c267c2b8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d4f4bff030e6e749a8ea63cf2170412, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4749,18 +2761,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1707952474 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1979958820, guid: 2084e439f2fa3d444a9fe7792140c80c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1794273907}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d6783f88580b6c4ea316c3dc244267d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1794273907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4768,6 +2768,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 99058915425883017, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.7287441
+      objectReference: {fileID: 0}
+    - target: {fileID: 99058915425883017, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.35300002
+      objectReference: {fileID: 0}
+    - target: {fileID: 99058915425883017, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.27218172
+      objectReference: {fileID: 0}
+    - target: {fileID: 99058915425883017, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.09946683
+      objectReference: {fileID: 0}
+    - target: {fileID: 99058915425883017, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 99058915425883017, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 99058915425883017, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 99058915425883017, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199691171465632603, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199691171465632603, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 268491498955286633, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4827,7 +2877,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911177344}
+      objectReference: {fileID: 0}
     - target: {fileID: 2000057135276011947, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -4953,11 +3003,66 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.61157227
       objectReference: {fileID: 0}
+    - target: {fileID: 3218895873778745607, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3218895873778745607, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UserInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934527676364602882, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.934
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934527676364602882, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.619386
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934527676364602882, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.067555554
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934527676364602882, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.38150883
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934527676364602882, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934527676364602882, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934527676364602882, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934527676364602882, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5104200807676869324, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6154440755676070506, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 993064968}
     - target: {fileID: 6355164071953270855, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_Name
@@ -4973,15 +3078,125 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.35168457
       objectReference: {fileID: 0}
+    - target: {fileID: 7049675741872392368, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675742095328299, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675742365370328, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675742515772084, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675742515772085, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -30.99997
+      objectReference: {fileID: 0}
     - target: {fileID: 7049675742995251043, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7049675743192482187, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675743271314996, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 25.408646
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675743271314996, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 11.85733
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675743271314996, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 20.326996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675743271314996, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 13.551331
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675743369350509, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675743440391361, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049675743750618821, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068342481175008365, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068342481175008365, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068342481175008365, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068342481175008365, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068342481175008365, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 228
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068342481175008365, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 121.06847
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068342481175008365, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -168.30005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068342481175008365, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -99
+      objectReference: {fileID: 0}
     - target: {fileID: 8163677509686608601, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 2.8027344
+      objectReference: {fileID: 0}
+    - target: {fileID: 8772964817884638545, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8824968142356150166, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
@@ -4993,245 +3208,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3.5004883
       objectReference: {fileID: 0}
+    - target: {fileID: 9107275561141684596, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.2802734
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107275561141684596, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1767.9995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
---- !u!1 &1902943340
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1902943341}
-  - component: {fileID: 1902943343}
-  - component: {fileID: 1902943342}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1902943341
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902943340}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 983564995}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1902943342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902943340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Back
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 61.82
-  m_fontSizeBase: 61.82
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1902943343
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902943340}
-  m_CullTransparentMesh: 1
---- !u!1 &1984694252
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1984694253}
-  - component: {fileID: 1984694255}
-  - component: {fileID: 1984694254}
-  - component: {fileID: 1984694256}
-  m_Layer: 5
-  m_Name: NamingBox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1984694253
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984694252}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1139622112}
-  - {fileID: 440023829}
-  - {fileID: 1279650298}
-  - {fileID: 677794405}
-  m_Father: {fileID: 671152800}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.07700001, y: 0.372}
-  m_AnchorMax: {x: 0.92300004, y: 0.628}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -2.56073, y: -3.6193237}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1984694254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984694252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.47547168, g: 0.50250906, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1747908017, guid: 40b304cc5a9dc7e4faefd38c267c2b8b, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1984694255
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984694252}
-  m_CullTransparentMesh: 1
---- !u!95 &1984694256
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984694252}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb25194e918701458807d1eef32a955, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1987853744
 GameObject:
   m_ObjectHideFlags: 0
@@ -5267,7 +3255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 86, y: 95}
+  m_AnchoredPosition: {x: -0.000015259, y: 98.039}
   m_SizeDelta: {x: 556.0723, y: 139.0181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1987853746
@@ -5294,8 +3282,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
+  m_fontAsset: {fileID: 11400000, guid: 0164c809776b0bc4fbff129d0309bc98, type: 2}
+  m_sharedMaterial: {fileID: -712134963989762839, guid: 0164c809776b0bc4fbff129d0309bc98,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5326,8 +3314,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_fontStyle: 2
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5523,7 +3511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.7767, y: -190}
+  m_AnchoredPosition: {x: 3.7767, y: -73}
   m_SizeDelta: {x: 1060.6653, y: 2228.3599}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067337461
@@ -5546,48 +3534,33 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lead Designer
-
-    Chan Jay Sern
-
-
-    Designer
+  m_text: 'Chan Jay Sern
 
     Khoo Teng Cheng
 
 
-    Lead
-    Artist
 
     Chong Wei Lin
 
-
-    Artist
-
     Vanthea Wong
 
-    Lim Qiu Wen
+    Lim
+    Qiu Wen
 
 
-    Lead
-    Programmer
 
     Ervin Chew Wei Juan
 
-
-    Programmer
-
     Lai Zhi Jian
 
-    Kon
-    Kok Wei
+    Kon Kok Wei
 
     Jonathan
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce7bbfd1eccc9043971e80067c3ffdd, type: 2}
-  m_sharedMaterial: {fileID: 9035542389990957874, guid: 3ce7bbfd1eccc9043971e80067c3ffdd,
+  m_fontAsset: {fileID: 11400000, guid: 0164c809776b0bc4fbff129d0309bc98, type: 2}
+  m_sharedMaterial: {fileID: -712134963989762839, guid: 0164c809776b0bc4fbff129d0309bc98,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5618,7 +3591,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5754,2428 +3727,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &2121494357
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2121494359}
-  - component: {fileID: 2121494358}
-  m_Layer: 0
-  m_Name: VoiceOver_Clips_DialogueDataEpisode0Prologue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2121494358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121494357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa917ef805801ed4887e280582446c44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  folderName: VoiceOver
-  _VoiceClips:
-  - actorName: ' '
-    dialogueID: 0
-    sentence: Everywhere you turn it is preached to you.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 1
-    sentence: '"It is a uniquely human experience,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 2
-    sentence: Or rather WAS a uniquely human experience.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 3
-    sentence: '"Ever since humanity took to the stars all the way back in the year
-      12100, they''ve discovered all sorts of sentient life across the Milky Way."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 4
-    sentence: '"And, with the human''s assistance, those alien species swiftly ascended
-      to the stars as well."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 5
-    sentence: '"And humans soon realised that what they thought made them special,
-      is actually what makes all sentient life special."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 6
-    sentence: Love.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 7
-    sentence: '"Love, it turns out, is a universal concept."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 8
-    sentence: '"Whatever is considered a sentient-species, is capable of Love."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 9
-    sentence: And that is such a beautiful fact of the world.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 10
-    sentence: 'But. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 11
-    sentence: '"Despite your world being so full of Love and possibilities,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 12
-    sentence: You're not so fortunate are you?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 13
-    sentence: Brain numbing work
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 14
-    sentence: Annoying Co-workers
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 15
-    sentence: Drab Offices
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 16
-    sentence: Not to mention that you've never had a relationship in your life.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 17
-    sentence: You've lived your life just as others envisioned it and look at you
-      now.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 18
-    sentence: You live your life day by day
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 19
-    sentence: Never seeing a future where you're happy.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 20
-    sentence: What a truly bad hand fate has dealt you.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 21
-    sentence: Perhaps fate has turned her back on you. . . .
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 22
-    sentence: However.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 23
-    sentence: '"Maybe,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 24
-    sentence: Love has not?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 25
-    sentence: '"After all, it''s as the saying goes."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 26
-    sentence: The sound of a dial tone can be heard
-    voiceClip: {fileID: 0}
-  - actorName: ???
-    dialogueID: 27
-    sentence: Hello? What is it?
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 28
-    sentence: '"You won''t believe it, remember when you told me to apply to the
-      LAK show since they''re accepting humans this season?"'
-    voiceClip: {fileID: 0}
-  - actorName: ???
-    dialogueID: 29
-    sentence: NO WAY.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 30
-    sentence: YES WAY.
-    voiceClip: {fileID: 0}
-  - actorName: ???
-    dialogueID: 31
-    sentence: Holy crap.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 32
-    sentence: My brother.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 33
-    sentence: On my favourite Intergalactic Dating show in this part of the Milky
-      Way?
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 34
-    sentence: Unbelievable.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 35
-    sentence: '"I just hope you know, I''ll be making fun of you when you''re on
-      holo."'
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 36
-    sentence: I'm still in shock that out of the nearly 1 billion humans in this
-      quadrant I was chosen.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 37
-    sentence: '"Look, that doesn''t matter anymore, just go and get packing already."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 38
-    sentence: Love Across Kinds is very finicky with its contestants.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 39
-    sentence: '"If you''re not ready to leave the second they step off the teleporter,
-      they''ll just choose someone else."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 40
-    sentence: '"If you''re not ready to leave the second they step off the teleporter,
-      they''ll just choose someone else."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 41
-    sentence: '"Good, be sure to bring me back a souvenir."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 42
-    sentence: Are you kidding me?
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 43
-    sentence: I'm gonna whoop your ass next time you visit.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 44
-    sentence: I thought I told you to quit that soul sucking job ages ago.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 45
-    sentence: Look.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 46
-    sentence: Listen to me.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 47
-    sentence: '"This is a once in a lifetime opportunity, try to relax and most importantly"'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 48
-    sentence: BE YOURSELF.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 49
-    sentence: '"You''re a good person, I''m sure there''ll be someone on there who
-      sees that."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 50
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 51
-    sentence: Thank you?
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 52
-    sentence: I'll update you if I can on the starcruiser.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 53
-    sentence: You better.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 54
-    sentence: '"Also one last word of advice,"'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 55
-    sentence: I don't know what sentient-species are going to be on The Matchmaker
-      this season
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 56
-    sentence: '"But it can''t be as bad as what happened on The Pleasure Cruiser,
-      5 seasons ago."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 57
-    sentence: I don't even want to know what happened.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 58
-    sentence: A chill goes down your spine imagining what could've happened
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 59
-    sentence: '"I''ve gotta go now, bye."'
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 60
-    sentence: '"Yeah, get lost, get going, GOOO."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 61
-    sentence: The call ends.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 62
-    sentence: 'I forget how fast Interstellar travel is now. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 63
-    sentence: They said all my luggage would be teleported to Room 01 so that should
-      be my room.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 64
-    sentence: A holographic man pops up suddenly from out of nowhere!
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 65
-    sentence: Heeeelllloooo Human Contestant!
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 66
-    sentence: '"While you may have a legally binding name that you''ve used for the
-      application of this show,"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 67
-    sentence: '"Here, you may change your name to whatever you want."'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 68
-    sentence: '"So, what name should we refer to you whilst aboard the ship?"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 69
-    sentence: '"Welcomeeeee human contestant, PlayerName !"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 70
-    sentence: '"Wel&$%^ ab@&#^ the M>/,*3^$#"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 71
-    sentence: '"Wel&$%^ ab@&#^ the M>/,*3^$#"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 72
-    sentence: '"My apologies, it seemed my translator malfunctioned."'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 73
-    sentence: '"My apologies, it seemed my translator malfunctioned."'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 74
-    sentence: '"Oh! So sorry for my unprofessionalism, dear contestant."'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 75
-    sentence: My translator seems to be on the fritz.
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 76
-    sentence: '"Either way, welcome aboard the U.L.A.K.S Matchmaker!"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 77
-    sentence: '"I will be your host this season, my name is Joe Hand."'
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 78
-    sentence: But you can just call me Game Host Joe.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 79
-    sentence: But you can just call me Game Host Joe.
-    voiceClip: {fileID: 0}
-  - actorName: Game
-    dialogueID: 80
-    sentence: GAME
-    voiceClip: {fileID: 0}
-  - actorName: Host
-    dialogueID: 81
-    sentence: HOST
-    voiceClip: {fileID: 0}
-  - actorName: Joe
-    dialogueID: 82
-    sentence: JOE
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 83
-    sentence: Game Host Joe speaks in an almost sinister tone
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 84
-    sentence: The hairs on the back of your neck stand up as he speaks.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 85
-    sentence: '"Please, address me as Game Host Joe."'
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 86
-    sentence: Yes Game Host Joe.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 87
-    sentence: You reply almost automatically out of fear
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 88
-    sentence: '"Anyway, you must be wondering where your room is!"'
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 89
-    sentence: Ah certainly!
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 90
-    sentence: Your room is located on the floor above.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 91
-    sentence: Room 01.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 92
-    sentence: Filming of the first episode starts tomorrow.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 93
-    sentence: '"Until then, get to know the ship and your fellow contestants if you
-      want!"'
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 94
-    sentence: And remember to sleep well tonight
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 95
-    sentence: We're soon going to be very very busy!
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 96
-    sentence: Too da loo~
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 97
-    sentence: Upon first entering the lobby you notice someone
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 98
-    sentence: She's undoubtedly another one of the contestants
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 99
-    sentence: If you had to describe her sentient-species's characteristics it would
-      probably be if a human & a jellyfish were combined together.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 100
-    sentence: '"Hoping to make a good impression, you approach her."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 101
-    sentence: 'But as you approach the jellyfish-like girl in the lobby. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Jellyfish Girl
-    dialogueID: 102
-    sentence: Oh?
-    voiceClip: {fileID: 0}
-  - actorName: Jellyfish Girl
-    dialogueID: 103
-    sentence: Oh!
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 104
-    sentence: It seems she notices you approaching and runs up to meet you first!
-    voiceClip: {fileID: 0}
-  - actorName: Jellyfish Girl
-    dialogueID: 105
-    sentence: Hello!
-    voiceClip: {fileID: 0}
-  - actorName: Jellyfish Girl
-    dialogueID: 106
-    sentence: My name is Xina!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 107
-    sentence: I'm a. . . Scyzoa I believe? That's what my sentient-species is named
-      anyway.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 108
-    sentence: What Species are you?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 109
-    sentence: The way she speaks is quick and all over the place
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 110
-    sentence: It's a wonder how the translator picks up her words
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 111
-    sentence: It's a wonder how the translator picks up her words
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 112
-    sentence: '"Hehe, sorry if I startled you."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 113
-    sentence: I'm just so excited to meet so many different species
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 114
-    sentence: You must be a human right?
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 115
-    sentence: Nice to meet you too!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 116
-    sentence: Everything on board this starcruiser is sooo fancy!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 117
-    sentence: I want to explore every nook and cranny of it!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 118
-    sentence: You must be a human right?
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 119
-    sentence: A human! I knew it!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 120
-    sentence: I thought you tasted familiar!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 121
-    sentence: I thought you tasted familiar!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 122
-    sentence: '"Oh! Sorry, I should probably explain myself."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 123
-    sentence: '"Oh! Sorry, I should probably explain myself."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 124
-    sentence: Xina blushes almost as if she knew you were thinking of impure thoughts.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 125
-    sentence: Pervert.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 126
-    sentence: Not like that!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 127
-    sentence: It's something that's unique to my sentient-species.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 128
-    sentence: '"I''m a Scyzoa, my species can taste the brainwaves of other sentient-species."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 129
-    sentence: So we can more or less read minds to a certain extent.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 130
-    sentence: So we can more or less read minds to a certain extent.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 131
-    sentence: Thank you!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 132
-    sentence: I find you fascinating too!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 133
-    sentence: '"Well, your taste is. . . quite unique."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 134
-    sentence: I can't really tell what it tastes like.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 135
-    sentence: Xina turns bright pink
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 136
-    sentence: It seems she really can read your mind
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 137
-    sentence: '"That''s um, a pretty active imagination you have huh?"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 138
-    sentence: Xina's turns an even brighter shade of pink before slowly returning
-      to normal
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 139
-    sentence: '"Xina goes quiet for a bit, almost as if she is recomposing herself."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 140
-    sentence: '"It was nice talking with you,"'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 141
-    sentence: I'm gonna hang around here a bit before going exploring!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 142
-    sentence: See you!
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 143
-    sentence: '"You see someone standing at the bar,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 144
-    sentence: '"They don''t seem to be drinking anything, instead they''re just staring
-      at the bottles on the shelves."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 145
-    sentence: From a distance you wouldn't be blamed if you'd mistaken them for a
-      potted plant.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 146
-    sentence: '"But as you get closer, you start to see a plant-like woman whose
-      alluring figure makes your palms sweaty."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 147
-    sentence: '"Her figure, while humanoid, looks almost too perfect, as if it was
-      painstakingly moulded to look as alluring as possible."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 148
-    sentence: '"As you stand there dumbfounded by her beauty, she takes notice of
-      you staring and gestures to you to take a seat next to her."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 149
-    sentence: You quickly take her up on her offer and sit down at the bar.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 150
-    sentence: She towers over the bar counter and as you sit down it makes sense
-      to you why she doesn't want to sit down
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 151
-    sentence: Her eyes continue to stare at the bottles on the shelves as she speaks.
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 152
-    sentence: It's awfully rude to stare without a 'hello' don't you think?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 153
-    sentence: The way she speaks sounds as if she's teasing you.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 154
-    sentence: The way she speaks sounds as if she's teasing you.
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 155
-    sentence: 'Hmm. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 156
-    sentence: What a lacking response.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 157
-    sentence: You notice a slight smirk in the corner of her fanged mouth.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 158
-    sentence: Before a soft giggle escapes her
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 159
-    sentence: You've got quite the sense of humour don't you?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 160
-    sentence: She seems a bit surprised by your response
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 161
-    sentence: Seems you caught her off guard.
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 162
-    sentence: '"Well then, I hope you like how I look from the front as well~"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 163
-    sentence: '"The plant woman''s eyes finally stop staring at the bottles on the
-      shelves, she looks down and meets your eyes before continuing."'
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 164
-    sentence: My name's Benia.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 165
-    sentence: '"It''s nice to meet you, fellow contestant."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 166
-    sentence: Her eyes break eye contact with you and darts across your features
-      & body as if she's sizing you up.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 167
-    sentence: A human?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 168
-    sentence: '"Benia''s eyes light up as she realises your species, before narrowing
-      and licking her ''lips?"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 169
-    sentence: Your eyes lock together once again
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 170
-    sentence: And as you look up into her enchanting eyes you nearly forget your
-      own name before stammering it out.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 171
-    sentence: M-my name's PlayerName
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 172
-    sentence: Nice to meet you too.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 173
-    sentence: '"PlayerName , the human huh?"'
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 174
-    sentence: Mmm~ I see.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 175
-    sentence: .
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 176
-    sentence: '"Same reason as you I believe,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 177
-    sentence: For a brief moment you notice a hint of sadness in her eyes before
-      she breaks eye contact with you.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 178
-    sentence: It's a long story.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 179
-    sentence: 'It takes less than a second before she reestablishes eye contact with
-      you and you''re lost in her eyes again. '
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 180
-    sentence: '"But I''m here for the same reason as you,"'
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 181
-    sentence: To find a partner.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 182
-    sentence: Hopefully someone who doesn't mind a little physical 'bonding'.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 183
-    sentence: Benia winks and you feel an electric thrill go down your spine.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 184
-    sentence: .
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 185
-    sentence: Benia places a finger on your lips teasingly
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 186
-    sentence: Don't worry I'll be sure to take the lead~
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 187
-    sentence: Let's get to know each other over the course of the season alright?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 188
-    sentence: Benia places a finger on your lips teasingly
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 189
-    sentence: Will you now?~
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 190
-    sentence: '"But for the time being I think it''s best we slow things down,"'
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 191
-    sentence: To make things more interesting~
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 192
-    sentence: Benia removes her finger from your lips and bends down to whisper into
-      your ear
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 193
-    sentence: So be sure to come talk with me whenever you can alright?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 194
-    sentence: After whispering into your ear she returns to her previous posture
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 195
-    sentence: You see Benia's eyes glimmer as though they've found their next target.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 196
-    sentence: I'll be looking forward to our next meeting~
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 197
-    sentence: '"You spot a plume of mist just floating above the floor,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 198
-    sentence: The mist seems to be just drifting around aimlessly.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 199
-    sentence: Curiosity gets the better of you and you approach it
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 200
-    sentence: '"Getting closer, the air becomes more humid and you can see a vague
-      humanoid shape in the mist."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 201
-    sentence: '"Getting closer, the air becomes more humid and you can see a vague
-      humanoid shape in the mist."'
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 202
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 203
-    sentence: 'Hello. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 204
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 205
-    sentence: . . . Yes
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 206
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 207
-    sentence: They don't seem very talkative.
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 208
-    sentence: I-
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 209
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 210
-    sentence: . . . My name is-
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 211
-    sentence: . . . Florine
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 212
-    sentence: '"Her voice sounds almost ethereal,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 213
-    sentence: You can see the silhouette of Florine fidgeting.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 214
-    sentence: She seems to be having trouble finding something to say
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 215
-    sentence: She seems to be having trouble finding something to say
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 216
-    sentence: 'That''s a nice name. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 217
-    sentence: Florine stops talking and starts fidgeting again.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 218
-    sentence: Nice to..
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 219
-    sentence: 'Meet you too. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 220
-    sentence: Florine stops talking and starts fidgeting again.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 221
-    sentence: '"I uh, am not hiding in anything. . . "'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 222
-    sentence: Florine stops talking and starts fidgeting again.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 223
-    sentence: Florine stops fidgeting and seems to have built up the courage to speak
-      about something with you.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 224
-    sentence: My form is-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 225
-    sentence: 'It''s just a trait of this body of mine. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 226
-    sentence: 'I''m not sure why or how I became like this either. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 227
-    sentence: '"I have no memory of my past, only vague feelings of recollec-"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 228
-    sentence: It seems Florine noticed she was going off on a rant.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 229
-    sentence: '"Her gas changes colour slightly, almost as if she''s embarrassed,
-      before changing back to normal."'
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 230
-    sentence: Anyway-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 231
-    sentence: I found a box of papers that might-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 232
-    sentence: 'Help me figure out my past. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 233
-    sentence: 'I can''t touch any of it since it might fall apart if I do. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 234
-    sentence: Could you. . . Please help me?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 235
-    sentence: '"While you can''t see Florine''s face, her voice sounds desperate."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 236
-    sentence: '"While you can''t see Florine''s face, her voice sounds desperate."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 237
-    sentence: Florine's gas cloud changes to a bright vibrant yellow
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 238
-    sentence: Really?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 239
-    sentence: The tone of her voice sounds happy.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 240
-    sentence: I-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 241
-    sentence: I cannot thank you enough.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 242
-    sentence: But also-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 243
-    sentence: Oh.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 244
-    sentence: 'Of course. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 245
-    sentence: Her voice hesitates for a moment
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 246
-    sentence: But um-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 247
-    sentence: 'Oh- Um. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 248
-    sentence: Florine's gas cloud turns bright pink
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 249
-    sentence: Well-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 250
-    sentence: 'You see. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 251
-    sentence: Love is one of the only feelings that I faintly recall from my past
-      life.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 252
-    sentence: 'If you agree to help me with this. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 253
-    sentence: I-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 254
-    sentence: I will-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 255
-    sentence: I will pursue a romantic relationship with you!
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 256
-    sentence: As Florine finishes her sentence her gas cloud turns the brightest
-      shade of pink you've ever seen
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 257
-    sentence: And also starts glowing.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 258
-    sentence: .
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 259
-    sentence: '"Florine stops responding, she seems to have stopped functioning."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 260
-    sentence: She continues to glow brightly as you back away slowly.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 261
-    sentence: 'It seems best if you leave her be for now. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 262
-    sentence: A glowing humanoid person is sitting on the entertainment area's only
-      sofa.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 263
-    sentence: '"They have a masculine appearance, broad shoulders and seems to have
-      Virtual Environment glasses on."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 264
-    sentence: '"They have a masculine appearance, broad shoulders and seems to have
-      Virtual Environment glasses on."'
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 265
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 266
-    sentence: Because I'm not made of fire.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 267
-    sentence: The man doesn't seem to appreciate being disturbed.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 268
-    sentence: He reluctantly takes off the Virtual Environment glasses and you see
-      his face.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 269
-    sentence: At least you think that's a face.
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 270
-    sentence: Can I help you?
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 271
-    sentence: .
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 272
-    sentence: How cordial.
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 273
-    sentence: '"Well, you won''t have to worry about me then."'
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 274
-    sentence: I don't even want to be here.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 275
-    sentence: The glowing man seems to loathe speaking in general and wants you to
-      leave as soon as possible.
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 276
-    sentence: My name is Saiph.
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 277
-    sentence: '"That''s all you need to know, now leave me alone."'
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 278
-    sentence: Saiph puts his Virtual Environment glasses back on and proceeds to
-      ignore your presence.
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 279
-    sentence: '"It''s Room 01, your room."'
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 280
-    sentence: 'You have a feeling you haven''t met everybody yet. . . '
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 281
-    sentence: It'd be best to go and say Hi.
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 282
-    sentence: You feel like you've spoken to everybody on the ship already.
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 283
-    sentence: Turn in for the day?
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 284
-    sentence: Turn in for the day?
-    voiceClip: {fileID: 0}
-  - actorName: 
-    dialogueID: 285
-    sentence: Zzzzz
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 0
-    sentence: Everywhere you turn it is preached to you.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 1
-    sentence: '"It is a uniquely human experience,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 2
-    sentence: Or rather WAS a uniquely human experience.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 3
-    sentence: '"Ever since humanity took to the stars all the way back in the year
-      12100, they''ve discovered all sorts of sentient life across the Milky Way."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 4
-    sentence: '"And, with the human''s assistance, those alien species swiftly ascended
-      to the stars as well."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 5
-    sentence: '"And humans soon realised that what they thought made them special,
-      is actually what makes all sentient life special."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 6
-    sentence: Love.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 7
-    sentence: '"Love, it turns out, is a universal concept."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 8
-    sentence: '"Whatever is considered a sentient-species, is capable of Love."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 9
-    sentence: And that is such a beautiful fact of the world.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 10
-    sentence: 'But. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 11
-    sentence: '"Despite your world being so full of Love and possibilities,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 12
-    sentence: You're not so fortunate are you?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 13
-    sentence: Brain numbing work
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 14
-    sentence: Annoying Co-workers
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 15
-    sentence: Drab Offices
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 16
-    sentence: Not to mention that you've never had a relationship in your life.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 17
-    sentence: You've lived your life just as others envisioned it and look at you
-      now.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 18
-    sentence: You live your life day by day
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 19
-    sentence: Never seeing a future where you're happy.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 20
-    sentence: What a truly bad hand fate has dealt you.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 21
-    sentence: Perhaps fate has turned her back on you. . . .
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 22
-    sentence: However.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 23
-    sentence: '"Maybe,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 24
-    sentence: Love has not?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 25
-    sentence: '"After all, it''s as the saying goes."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 26
-    sentence: The sound of a dial tone can be heard
-    voiceClip: {fileID: 0}
-  - actorName: ???
-    dialogueID: 27
-    sentence: Hello? What is it?
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 28
-    sentence: '"You won''t believe it, remember when you told me to apply to the
-      LAK show since they''re accepting humans this season?"'
-    voiceClip: {fileID: 0}
-  - actorName: ???
-    dialogueID: 29
-    sentence: NO WAY.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 30
-    sentence: YES WAY.
-    voiceClip: {fileID: 0}
-  - actorName: ???
-    dialogueID: 31
-    sentence: Holy crap.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 32
-    sentence: My brother.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 33
-    sentence: On my favourite Intergalactic Dating show in this part of the Milky
-      Way?
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 34
-    sentence: Unbelievable.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 35
-    sentence: '"I just hope you know, I''ll be making fun of you when you''re on
-      holo."'
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 36
-    sentence: I'm still in shock that out of the nearly 1 billion humans in this
-      quadrant I was chosen.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 37
-    sentence: '"Look, that doesn''t matter anymore, just go and get packing already."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 38
-    sentence: Love Across Kinds is very finicky with its contestants.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 39
-    sentence: '"If you''re not ready to leave the second they step off the teleporter,
-      they''ll just choose someone else."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 40
-    sentence: '"If you''re not ready to leave the second they step off the teleporter,
-      they''ll just choose someone else."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 41
-    sentence: '"Good, be sure to bring me back a souvenir."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 42
-    sentence: Are you kidding me?
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 43
-    sentence: I'm gonna whoop your ass next time you visit.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 44
-    sentence: I thought I told you to quit that soul sucking job ages ago.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 45
-    sentence: Look.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 46
-    sentence: Listen to me.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 47
-    sentence: '"This is a once in a lifetime opportunity, try to relax and most importantly"'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 48
-    sentence: BE YOURSELF.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 49
-    sentence: '"You''re a good person, I''m sure there''ll be someone on there who
-      sees that."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 50
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 51
-    sentence: Thank you?
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 52
-    sentence: I'll update you if I can on the starcruiser.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 53
-    sentence: You better.
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 54
-    sentence: '"Also one last word of advice,"'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 55
-    sentence: I don't know what sentient-species are going to be on The Matchmaker
-      this season
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 56
-    sentence: '"But it can''t be as bad as what happened on The Pleasure Cruiser,
-      5 seasons ago."'
-    voiceClip: {fileID: 0}
-  - actorName: Sister
-    dialogueID: 57
-    sentence: I don't even want to know what happened.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 58
-    sentence: A chill goes down your spine imagining what could've happened
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 59
-    sentence: '"I''ve gotta go now, bye."'
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 60
-    sentence: '"Yeah, get lost, get going, GOOO."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 61
-    sentence: The call ends.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 62
-    sentence: 'I forget how fast Interstellar travel is now. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 63
-    sentence: They said all my luggage would be teleported to Room 01 so that should
-      be my room.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 64
-    sentence: A holographic man pops up suddenly from out of nowhere!
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 65
-    sentence: Heeeelllloooo Human Contestant!
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 66
-    sentence: '"While you may have a legally binding name that you''ve used for the
-      application of this show,"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 67
-    sentence: '"Here, you may change your name to whatever you want."'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 68
-    sentence: '"So, what name should we refer to you whilst aboard the ship?"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 69
-    sentence: '"Welcomeeeee human contestant, PlayerName !"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 70
-    sentence: '"Wel&$%^ ab@&#^ the M>/,*3^$#"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 71
-    sentence: '"Wel&$%^ ab@&#^ the M>/,*3^$#"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 72
-    sentence: '"My apologies, it seemed my translator malfunctioned."'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 73
-    sentence: '"My apologies, it seemed my translator malfunctioned."'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 74
-    sentence: '"Oh! So sorry for my unprofessionalism, dear contestant."'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 75
-    sentence: My translator seems to be on the fritz.
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 76
-    sentence: '"Either way, welcome aboard the U.L.A.K.S Matchmaker!"'
-    voiceClip: {fileID: 0}
-  - actorName: Host?
-    dialogueID: 77
-    sentence: '"I will be your host this season, my name is Joe Hand."'
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 78
-    sentence: But you can just call me Game Host Joe.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 79
-    sentence: But you can just call me Game Host Joe.
-    voiceClip: {fileID: 0}
-  - actorName: Game
-    dialogueID: 80
-    sentence: GAME
-    voiceClip: {fileID: 0}
-  - actorName: Host
-    dialogueID: 81
-    sentence: HOST
-    voiceClip: {fileID: 0}
-  - actorName: Joe
-    dialogueID: 82
-    sentence: JOE
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 83
-    sentence: Game Host Joe speaks in an almost sinister tone
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 84
-    sentence: The hairs on the back of your neck stand up as he speaks.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 85
-    sentence: '"Please, address me as Game Host Joe."'
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 86
-    sentence: Yes Game Host Joe.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 87
-    sentence: You reply almost automatically out of fear
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 88
-    sentence: '"Anyway, you must be wondering where your room is!"'
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 89
-    sentence: Ah certainly!
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 90
-    sentence: Your room is located on the floor above.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 91
-    sentence: Room 01.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 92
-    sentence: Filming of the first episode starts tomorrow.
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 93
-    sentence: '"Until then, get to know the ship and your fellow contestants if you
-      want!"'
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 94
-    sentence: And remember to sleep well tonight
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 95
-    sentence: We're soon going to be very very busy!
-    voiceClip: {fileID: 0}
-  - actorName: Game Host Joe
-    dialogueID: 96
-    sentence: Too da loo~
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 97
-    sentence: Upon first entering the lobby you notice someone
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 98
-    sentence: She's undoubtedly another one of the contestants
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 99
-    sentence: If you had to describe her sentient-species's characteristics it would
-      probably be if a human & a jellyfish were combined together.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 100
-    sentence: '"Hoping to make a good impression, you approach her."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 101
-    sentence: 'But as you approach the jellyfish-like girl in the lobby. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Jellyfish Girl
-    dialogueID: 102
-    sentence: Oh?
-    voiceClip: {fileID: 0}
-  - actorName: Jellyfish Girl
-    dialogueID: 103
-    sentence: Oh!
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 104
-    sentence: It seems she notices you approaching and runs up to meet you first!
-    voiceClip: {fileID: 0}
-  - actorName: Jellyfish Girl
-    dialogueID: 105
-    sentence: Hello!
-    voiceClip: {fileID: 0}
-  - actorName: Jellyfish Girl
-    dialogueID: 106
-    sentence: My name is Xina!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 107
-    sentence: I'm a. . . Scyzoa I believe? That's what my sentient-species is named
-      anyway.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 108
-    sentence: What Species are you?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 109
-    sentence: The way she speaks is quick and all over the place
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 110
-    sentence: It's a wonder how the translator picks up her words
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 111
-    sentence: It's a wonder how the translator picks up her words
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 112
-    sentence: '"Hehe, sorry if I startled you."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 113
-    sentence: I'm just so excited to meet so many different species
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 114
-    sentence: You must be a human right?
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 115
-    sentence: Nice to meet you too!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 116
-    sentence: Everything on board this starcruiser is sooo fancy!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 117
-    sentence: I want to explore every nook and cranny of it!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 118
-    sentence: You must be a human right?
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 119
-    sentence: A human! I knew it!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 120
-    sentence: I thought you tasted familiar!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 121
-    sentence: I thought you tasted familiar!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 122
-    sentence: '"Oh! Sorry, I should probably explain myself."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 123
-    sentence: '"Oh! Sorry, I should probably explain myself."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 124
-    sentence: Xina blushes almost as if she knew you were thinking of impure thoughts.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 125
-    sentence: Pervert.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 126
-    sentence: Not like that!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 127
-    sentence: It's something that's unique to my sentient-species.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 128
-    sentence: '"I''m a Scyzoa, my species can taste the brainwaves of other sentient-species."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 129
-    sentence: So we can more or less read minds to a certain extent.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 130
-    sentence: So we can more or less read minds to a certain extent.
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 131
-    sentence: Thank you!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 132
-    sentence: I find you fascinating too!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 133
-    sentence: '"Well, your taste is. . . quite unique."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 134
-    sentence: I can't really tell what it tastes like.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 135
-    sentence: Xina turns bright pink
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 136
-    sentence: It seems she really can read your mind
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 137
-    sentence: '"That''s um, a pretty active imagination you have huh?"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 138
-    sentence: Xina's turns an even brighter shade of pink before slowly returning
-      to normal
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 139
-    sentence: '"Xina goes quiet for a bit, almost as if she is recomposing herself."'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 140
-    sentence: '"It was nice talking with you,"'
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 141
-    sentence: I'm gonna hang around here a bit before going exploring!
-    voiceClip: {fileID: 0}
-  - actorName: Xina
-    dialogueID: 142
-    sentence: See you!
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 143
-    sentence: '"You see someone standing at the bar,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 144
-    sentence: '"They don''t seem to be drinking anything, instead they''re just staring
-      at the bottles on the shelves."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 145
-    sentence: From a distance you wouldn't be blamed if you'd mistaken them for a
-      potted plant.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 146
-    sentence: '"But as you get closer, you start to see a plant-like woman whose
-      alluring figure makes your palms sweaty."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 147
-    sentence: '"Her figure, while humanoid, looks almost too perfect, as if it was
-      painstakingly moulded to look as alluring as possible."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 148
-    sentence: '"As you stand there dumbfounded by her beauty, she takes notice of
-      you staring and gestures to you to take a seat next to her."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 149
-    sentence: You quickly take her up on her offer and sit down at the bar.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 150
-    sentence: She towers over the bar counter and as you sit down it makes sense
-      to you why she doesn't want to sit down
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 151
-    sentence: Her eyes continue to stare at the bottles on the shelves as she speaks.
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 152
-    sentence: It's awfully rude to stare without a 'hello' don't you think?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 153
-    sentence: The way she speaks sounds as if she's teasing you.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 154
-    sentence: The way she speaks sounds as if she's teasing you.
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 155
-    sentence: 'Hmm. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 156
-    sentence: What a lacking response.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 157
-    sentence: You notice a slight smirk in the corner of her fanged mouth.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 158
-    sentence: Before a soft giggle escapes her
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 159
-    sentence: You've got quite the sense of humour don't you?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 160
-    sentence: She seems a bit surprised by your response
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 161
-    sentence: Seems you caught her off guard.
-    voiceClip: {fileID: 0}
-  - actorName: Plant-Woman
-    dialogueID: 162
-    sentence: '"Well then, I hope you like how I look from the front as well~"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 163
-    sentence: '"The plant woman''s eyes finally stop staring at the bottles on the
-      shelves, she looks down and meets your eyes before continuing."'
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 164
-    sentence: My name's Benia.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 165
-    sentence: '"It''s nice to meet you, fellow contestant."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 166
-    sentence: Her eyes break eye contact with you and darts across your features
-      & body as if she's sizing you up.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 167
-    sentence: A human?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 168
-    sentence: '"Benia''s eyes light up as she realises your species, before narrowing
-      and licking her ''lips?"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 169
-    sentence: Your eyes lock together once again
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 170
-    sentence: And as you look up into her enchanting eyes you nearly forget your
-      own name before stammering it out.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 171
-    sentence: M-my name's PlayerName
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 172
-    sentence: Nice to meet you too.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 173
-    sentence: '"PlayerName , the human huh?"'
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 174
-    sentence: Mmm~ I see.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 175
-    sentence: .
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 176
-    sentence: '"Same reason as you I believe,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 177
-    sentence: For a brief moment you notice a hint of sadness in her eyes before
-      she breaks eye contact with you.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 178
-    sentence: It's a long story.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 179
-    sentence: 'It takes less than a second before she reestablishes eye contact with
-      you and you''re lost in her eyes again. '
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 180
-    sentence: '"But I''m here for the same reason as you,"'
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 181
-    sentence: To find a partner.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 182
-    sentence: Hopefully someone who doesn't mind a little physical 'bonding'.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 183
-    sentence: Benia winks and you feel an electric thrill go down your spine.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 184
-    sentence: .
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 185
-    sentence: Benia places a finger on your lips teasingly
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 186
-    sentence: Don't worry I'll be sure to take the lead~
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 187
-    sentence: Let's get to know each other over the course of the season alright?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 188
-    sentence: Benia places a finger on your lips teasingly
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 189
-    sentence: Will you now?~
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 190
-    sentence: '"But for the time being I think it''s best we slow things down,"'
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 191
-    sentence: To make things more interesting~
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 192
-    sentence: Benia removes her finger from your lips and bends down to whisper into
-      your ear
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 193
-    sentence: So be sure to come talk with me whenever you can alright?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 194
-    sentence: After whispering into your ear she returns to her previous posture
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 195
-    sentence: You see Benia's eyes glimmer as though they've found their next target.
-    voiceClip: {fileID: 0}
-  - actorName: Benia
-    dialogueID: 196
-    sentence: I'll be looking forward to our next meeting~
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 197
-    sentence: '"You spot a plume of mist just floating above the floor,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 198
-    sentence: The mist seems to be just drifting around aimlessly.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 199
-    sentence: Curiosity gets the better of you and you approach it
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 200
-    sentence: '"Getting closer, the air becomes more humid and you can see a vague
-      humanoid shape in the mist."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 201
-    sentence: '"Getting closer, the air becomes more humid and you can see a vague
-      humanoid shape in the mist."'
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 202
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 203
-    sentence: 'Hello. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 204
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 205
-    sentence: . . . Yes
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 206
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 207
-    sentence: They don't seem very talkative.
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 208
-    sentence: I-
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 209
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 210
-    sentence: . . . My name is-
-    voiceClip: {fileID: 0}
-  - actorName: Misty Silhouette
-    dialogueID: 211
-    sentence: . . . Florine
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 212
-    sentence: '"Her voice sounds almost ethereal,"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 213
-    sentence: You can see the silhouette of Florine fidgeting.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 214
-    sentence: She seems to be having trouble finding something to say
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 215
-    sentence: She seems to be having trouble finding something to say
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 216
-    sentence: 'That''s a nice name. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 217
-    sentence: Florine stops talking and starts fidgeting again.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 218
-    sentence: Nice to..
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 219
-    sentence: 'Meet you too. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 220
-    sentence: Florine stops talking and starts fidgeting again.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 221
-    sentence: '"I uh, am not hiding in anything. . . "'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 222
-    sentence: Florine stops talking and starts fidgeting again.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 223
-    sentence: Florine stops fidgeting and seems to have built up the courage to speak
-      about something with you.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 224
-    sentence: My form is-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 225
-    sentence: 'It''s just a trait of this body of mine. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 226
-    sentence: 'I''m not sure why or how I became like this either. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 227
-    sentence: '"I have no memory of my past, only vague feelings of recollec-"'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 228
-    sentence: It seems Florine noticed she was going off on a rant.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 229
-    sentence: '"Her gas changes colour slightly, almost as if she''s embarrassed,
-      before changing back to normal."'
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 230
-    sentence: Anyway-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 231
-    sentence: I found a box of papers that might-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 232
-    sentence: 'Help me figure out my past. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 233
-    sentence: 'I can''t touch any of it since it might fall apart if I do. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 234
-    sentence: Could you. . . Please help me?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 235
-    sentence: '"While you can''t see Florine''s face, her voice sounds desperate."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 236
-    sentence: '"While you can''t see Florine''s face, her voice sounds desperate."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 237
-    sentence: Florine's gas cloud changes to a bright vibrant yellow
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 238
-    sentence: Really?
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 239
-    sentence: The tone of her voice sounds happy.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 240
-    sentence: I-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 241
-    sentence: I cannot thank you enough.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 242
-    sentence: But also-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 243
-    sentence: Oh.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 244
-    sentence: 'Of course. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 245
-    sentence: Her voice hesitates for a moment
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 246
-    sentence: But um-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 247
-    sentence: 'Oh- Um. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 248
-    sentence: Florine's gas cloud turns bright pink
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 249
-    sentence: Well-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 250
-    sentence: 'You see. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 251
-    sentence: Love is one of the only feelings that I faintly recall from my past
-      life.
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 252
-    sentence: 'If you agree to help me with this. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 253
-    sentence: I-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 254
-    sentence: I will-
-    voiceClip: {fileID: 0}
-  - actorName: Florine
-    dialogueID: 255
-    sentence: I will pursue a romantic relationship with you!
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 256
-    sentence: As Florine finishes her sentence her gas cloud turns the brightest
-      shade of pink you've ever seen
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 257
-    sentence: And also starts glowing.
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 258
-    sentence: .
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 259
-    sentence: '"Florine stops responding, she seems to have stopped functioning."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 260
-    sentence: She continues to glow brightly as you back away slowly.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 261
-    sentence: 'It seems best if you leave her be for now. . . '
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 262
-    sentence: A glowing humanoid person is sitting on the entertainment area's only
-      sofa.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 263
-    sentence: '"They have a masculine appearance, broad shoulders and seems to have
-      Virtual Environment glasses on."'
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 264
-    sentence: '"They have a masculine appearance, broad shoulders and seems to have
-      Virtual Environment glasses on."'
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 265
-    sentence: '. . . '
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 266
-    sentence: Because I'm not made of fire.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 267
-    sentence: The man doesn't seem to appreciate being disturbed.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 268
-    sentence: He reluctantly takes off the Virtual Environment glasses and you see
-      his face.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 269
-    sentence: At least you think that's a face.
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 270
-    sentence: Can I help you?
-    voiceClip: {fileID: 0}
-  - actorName: Player
-    dialogueID: 271
-    sentence: .
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 272
-    sentence: How cordial.
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 273
-    sentence: '"Well, you won''t have to worry about me then."'
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 274
-    sentence: I don't even want to be here.
-    voiceClip: {fileID: 0}
-  - actorName: ' '
-    dialogueID: 275
-    sentence: The glowing man seems to loathe speaking in general and wants you to
-      leave as soon as possible.
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 276
-    sentence: My name is Saiph.
-    voiceClip: {fileID: 0}
-  - actorName: Glowing Man
-    dialogueID: 277
-    sentence: '"That''s all you need to know, now leave me alone."'
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 278
-    sentence: Saiph puts his Virtual Environment glasses back on and proceeds to
-      ignore your presence.
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 279
-    sentence: '"It''s Room 01, your room."'
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 280
-    sentence: 'You have a feeling you haven''t met everybody yet. . . '
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 281
-    sentence: It'd be best to go and say Hi.
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 282
-    sentence: You feel like you've spoken to everybody on the ship already.
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 283
-    sentence: Turn in for the day?
-    voiceClip: {fileID: 0}
-  - actorName: '  '
-    dialogueID: 284
-    sentence: Turn in for the day?
-    voiceClip: {fileID: 0}
-  - actorName: 
-    dialogueID: 285
-    sentence: Zzzzz
-    voiceClip: {fileID: 0}
---- !u!4 &2121494359
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121494357}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132810661
 GameObject:
   m_ObjectHideFlags: 0
@@ -8228,14 +3779,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6132076, g: 0.5287469, b: 0.5287469, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3fb50fedb6065754fbe5274d8b4c3f39, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 22edfef15b98d8244baf8fdd617b5db3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8269,9 +3820,8 @@ RectTransform:
   - {fileID: 714224249}
   - {fileID: 159314442}
   - {fileID: 610544296}
-  - {fileID: 1366789722}
   m_Father: {fileID: 671152800}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

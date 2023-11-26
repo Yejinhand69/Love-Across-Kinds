@@ -21,10 +21,7 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     private void Awake()
     {
         DialogueTrigger = GetComponent<DialogueTrigger>();
-        if(TryGetComponent(out Animator anim))
-        {
-            interactObjAnim = anim;
-        }
+        
         
     }
 
@@ -63,6 +60,11 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
                 if (!DialogueManager.dialogueActive)
                 {
                     interactObjectName = name;
+
+                    if (TryGetComponent(out Animator anim))
+                    {
+                        interactObjAnim = anim;
+                    }
 
                     DialogueTrigger.StartDialogue();
                 }

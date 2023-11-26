@@ -159,6 +159,7 @@ public class GameControllerScript : MonoBehaviour
         SceneManager.LoadScene("Lobby1");
     }
 
+    [System.Obsolete]
     public void Continue()
     {
         SceneManager.UnloadScene("Jon macthing pair");

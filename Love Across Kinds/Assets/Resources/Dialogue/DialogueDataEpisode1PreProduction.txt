@@ -1,5 +1,5 @@
-name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	event	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
- 	0	A loud notification from your phone drags you out of bed	1	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	"event (1 - AffectionEvent, 2 - ScavengerEvent, 3 - Sleep, 4 - ChangePhase, 5 - FilmingConvo)"	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
+ 	0	A loud notification from your phone drags you out of bed	1	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Joe Hand	1	"Goooooodddd Morning Human Contestant! I hope you're ready for the day ahead cause we will be filming the first episode of season 86 in just a few hours. Here's some advice free of charge! Get to know your fellow contestants a little better. Get to know how they lie, it could prove useful during the episode's challenge. Too da loo~ I wish you success during filming later!"	2	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Player	2	I should probably go get some breakfast before doing anything.	3	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Player	3	Find out how each person lies. . . 	4	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -61,7 +61,7 @@ Xina	58	"But this is my own problem so you don't have to help,  PlayerName !"	59
 Xina	59	"Well, see you in a bit then!"	60	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Xina	60	"I'll figure something out, this door will open eventually!"	61	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	61	"You could help Xina by finding her thing,"	62	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
- 	62	She said she hadn't checked the pool & entertainment room yet so you should go look around there if you want to help.	60	FALSE	-	-	-	-	-	-	TRUE	FALSE	ScavengerEvent	0
+ 	62	She said she hadn't checked the pool & entertainment room yet so you should go look around there if you want to help.	60	FALSE	-	-	-	-	-	-	TRUE	FALSE	2	0
  	63	You notice something shining in the pool. . . 	64	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	64	Crouching down you see a sparkly bracelet that seems to be made of shiny seashells.	65	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	65	It's at the bottom of the pool and you doubt your arm could reach far enough to get it.	66	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -192,4 +192,4 @@ Florine	189	If you still want to help me I'll be in the Dining Room during Free 
 Florine	190	I'm going to head to the studio now. . . 	191	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Florine	191	Bye-	192	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	192	Florine floats away.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
-Game Host Joe	193	Here We GO	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	ChangePhase	0
+Game Host Joe	193	Here We GO	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	4	0

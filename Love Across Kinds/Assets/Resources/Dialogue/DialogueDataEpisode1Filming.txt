@@ -1,4 +1,4 @@
-name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	event	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
+name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	"event (1 - AffectionEvent, 2 - ScavengerEvent, 3 - Sleep, 4 - ChangePhase, 5 - FilmingConvo)"	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
 Game Host Joe	0	Let's get this show ROLLING!	1	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	1	"LIGHTS,"	2	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	2	The lights in the studio all turn on at once.	3	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -30,7 +30,7 @@ Game Host Joe	25	We have BENIA!	26	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	28	The audience(?) goes wild and the sounds of clapping and cheering are deafeningly loud.	29	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	29	The sounds seem to be coming from the cameras	30	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	30	The sounds take awhile to calm down after Benia's introduction.	31	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
- 	31	"Hahaha- It seems our live viewers really like Benia,"	32	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Game Host Joe	31	"Hahaha- It seems our live viewers really like Benia,"	32	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	32	The spotlight switches off.	33	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	33	Now then-	34	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	34	"Our next contestant is shrouded in mystery,"	35	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -63,7 +63,7 @@ Game Host Joe	54	"Please welcome, the human  PlayerName !"	55	FALSE	-	-	-	-	-	-	
 Game Host Joe	61	"Well, well, it looks like this season's human has made quite the impression on our viewers!"	62	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	62	The spotlight turns on once again and is focused on Game Host Joe.	63	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	63	"With that concludes our introductions, I hope that each of our contestants made an impression on you wonderful viewers."	64	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
-Game Host Joe	64	"Some of you astute & loyal viewers may have notice that we have fewer contestants than usual,"	65	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Game Host Joe	64	"Some of you astute & loyal viewers may have noticed that we have fewer contestants than usual,"	65	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	65	"But don't worry, we've arranged for a few twists as the season progresses."	66	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	66	So remember to continue tuning in to figure out what those twists are~	67	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	67	Game Host Joe flashes a mischievous holographic grin to the cameras	68	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -71,7 +71,7 @@ Game Host Joe	68	"Anyway, to start off Episode 1 we will be doing some icebreaki
 Game Host Joe	69	Personal Level.	70	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	70	Oooooo	71	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	71	Our challenge for this episode will involve a bit of lies & deception.	72	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
-Game Host Joe	72	"That's right, it's the good old game of truth & lies!"	73	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Game Host Joe	72	"That's right, it's a game of truth & lies!"	73	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	73	Spotlights turn on focusing on all the contestants.	74	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	74	"This is usually a paired game but due to our numbers issue, one of the boys will have to pull some extra weight!"	75	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	75	An extra pair of spotlights focus on you.	76	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -84,7 +84,7 @@ Game Host Joe	80	Your jobs-	81	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	82	Is to find out which is the truth obviously~	83	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	83	Game Host Joe disappears again and appears in the center	84	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	84	All the spotlights turn off and the studio's lighting is returned to normal	85	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
-Game Host Joe	85	"Now then, both our guys already know a little~ bit about the girls here."	86	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Game Host Joe	85	"Now then, both our guys already know a little~ bit about the girls."	86	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	86	But can they use that limited knowledge to impress them?	87	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	87	Let's see~	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
  	88	Xina is looking at you with puppy dog eyes. . . 	89	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -159,7 +159,7 @@ Xina	155	"Hehe~, sorry but that's not the truth."	156	FALSE	-	-	-	-	-	-	FALSE	FA
 Xina	157	And I'm not gonna tell you the truth either~	158	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Xina	158	Good try though!	159	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	159	Xina whispers one last thing to you before she leaves	160	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
-Xina	160	I'll be in the entertainment area after filming if you wanna hang out later~	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	FilmingConvo	0
+Xina	160	I'll be in the entertainment area after filming if you wanna hang out later~	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	5	0
  	161	As you look towards Benia she locks eyes with you and gives you a playful wink.	162	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	162	Choose Benia as your partner?	163	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	163	Choose Benia as your partner?	-	TRUE	Yes	Not yet	-	164	163	-	TRUE	FALSE	-	0
@@ -234,7 +234,7 @@ Benia	225	Good job dearie~	226	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Player	232	Wa-	233	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	233	"Benia leans down and whispers into your ear,"	234	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Benia	234	I'll be at the bar later-	235	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
-Benia	235	Come talk to me when filming's over alright sweetie?	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	FilmingConvo	0
+Benia	235	Come talk to me when filming's over alright sweetie?	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	5	0
  	236	With those final words Benia walks off set.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
  	237	As you approach Florine you can feel her nervous glances at you.	238	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	238	Choose Florine as your partner?	239	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -315,13 +315,13 @@ Florine	311	It's been a long time since I've laughed that hard. . . 	312	FALSE	-
 Florine	313	That was very sweet of you to do. . . 	314	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Florine	314	It was really nice for u to pick me . . . 	315	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Florine	315	I will be in the dining room later if-	316	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
- 	316	Florine seems to want to say something else but decides to not say it. 	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	FilmingConvo	0
+ 	316	Florine seems to want to say something else but decides to not say it. 	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	5	0
 Game Host Joe	317	"WELL, WELL, WELL."	318	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	318	"I was expecting only a little bit of spice from this game since it's only the introductory phase,"	319	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	319	But HOT DAMN were some of those moments personal!	320	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	320	"Anyway, That concludes the first episode folks!"	321	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	321	Tune in next time for more drama on Love Across Kinds!	322	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
-Game Host Joe	322	Too da loo~	323	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Game Host Joe	322	Thank you all for tuning in~	323	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 	323	The cameras shut down and Game Host Joe turns and faces all the contestants.	324	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	324	Anddddd that's a wrap everybody!	325	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	325	"Thank you all so much for sharing such dirty little secrets with us, don't worry only the whole universe will know about them!"	326	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -330,7 +330,7 @@ Game Host Joe	327	Tomorrow is an Episode Interlude so take the time to get to kn
  	328	Game Host Joe speaks as if his voice is fast-forwarded	329	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	329	"Also remember, as per your contract everything you do on board is being recorded."	330	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Game Host Joe	330	Until then~!	331	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
- 	331	Game Host Joe's hologram disappears just like that and you realise you're the only one who stayed behind to listen to him. . . 	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	ChangePhase	0
+ 	331	Game Host Joe's hologram disappears just like that and you realise you're the only one who stayed behind to listen to him. . . 	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	4	0
  														
  														
  														
