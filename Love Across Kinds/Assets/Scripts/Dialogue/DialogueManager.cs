@@ -10,9 +10,11 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance;
 
     //UI stuffs
-    //public Image actorImage;
+    public GameObject dialogueBox;
+    public GameObject storyBox;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI storyText;
 
     //Options stuffs
     public GameObject optionBox1;
@@ -21,7 +23,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI option1Text;
     public TextMeshProUGUI option2Text;
     public TextMeshProUGUI option3Text;
-    public GameObject skipButton;
+    public GameObject skipButtonDialogue;
+    public GameObject skipButtonStory;
 
     //Stroing data of Dialogues from .csv
     public List<DialogueData> datas;
@@ -88,11 +91,13 @@ public class DialogueManager : MonoBehaviour
         {
             if (AudioManager.instance._SFXSource.isPlaying)
             {
-                skipButton.SetActive(false);
+                skipButtonDialogue.SetActive(false);
+                skipButtonStory.SetActive(false);
             }
             else
             {
-                skipButton.SetActive(true);
+                skipButtonDialogue.SetActive(true);
+                skipButtonStory.SetActive(true);
             }
         }
         
@@ -190,6 +195,18 @@ public class DialogueManager : MonoBehaviour
                 }
 
                 dialogueText.text = sentence;
+                storyText.text = sentence;
+                
+                if(nameText.text == " ")
+                {
+                    storyBox.SetActive(true);
+                    dialogueBox.SetActive(false);
+                }
+                else
+                {
+                    storyBox.SetActive(false);
+                    dialogueBox.SetActive(true);
+                }
                 
                 //Expressions
                 if(characterAnim != null)
