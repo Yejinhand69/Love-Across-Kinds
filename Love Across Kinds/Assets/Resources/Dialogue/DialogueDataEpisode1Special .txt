@@ -1,4 +1,4 @@
-name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	event	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
+name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	"event (1 - AffectionEvent, 2 - ScavengerEvent, 3 - Sleep, 4 - ChangePhase, 5 - FilmingConvo)"	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
  	0	A loud notification from your phone drags you out of bed	1	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
 Game Host Joe	1	"Goooooodddd Morning Human Contestant! Kick back & relax for today, filming of episode 2 will only take place tomorrow so take time today to rest & get to know your fellow contestants better!"	2	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Player	2	"Oh, today is Free Time huh?"	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
@@ -133,7 +133,7 @@ Benia	128	How considerate of you  PlayerName ~”	129	FALSE	-	-	-	-	-	-	FALSE	FA
  	131	You have a set amount of time to respond to her assaults.	132	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	132	Each of the options you are given might or might not impress Benia.	133	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	133	Correctly identify the correct options Benia would like.	134	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
- 	134	Good luck~	-	FALSE	-	-	-	-	-	-	FALSE	FALSE	AffectionEvent	0
+ 	134	Good luck~	-	FALSE	-	-	-	-	-	-	FALSE	FALSE	1	0
 Benia	135	"So dearie, tell me more about yourself-"	136	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Benia	136	What led you aboard the matchmaker?	137	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Benia	137	What led you aboard the matchmaker?	-	TRUE	Someone made me sign up actually-	"Oh, nothing too interesting-"	"Something boring, but because of it I met you-"	138	145	148	FALSE	FALSE	-	0
@@ -306,7 +306,7 @@ Florine	302	She said she has the same problem since she's semi-aquatic. . .	303	
 Florine	304	W-we should get started. . .	305	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Florine	305	Let's start-	306	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Florine	306	This mini game is very simple . . . 	307	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
-Florine	307	"You just have to match the cards, clear the board and win "	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+Florine	307	"You just have to match the cards, clear the board and win "	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	1	0
  	308	"You manage to finish sorting out all your documents before Florine,"	309	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	309	But it doesn't take that much longer before she finishes as well	310	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Florine	310	Oh-	311	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -587,11 +587,11 @@ Xina	582	I'll message you when I've made my decision.”	583	FALSE	-	-	-	-	-	-	F
  	585	"Having nothing else to do, you get up and return to your room."	586	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	586	"Ahhhh your room at last,"	587	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	587	Today was a busy day wasn't it?	588	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
- 	588	But for now it's time to rest.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	Sleep	0
+ 	588	But for now it's time to rest.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	3	0
  	589	You spent a very enjoyable moment with Benia	586	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
  	590	You spent a very enjoyable moment with Xina	586	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
  	591	You spent a very enjoyable moment with Florine	586	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
- 	592	. . .	- 	FALSE	-	-	-	-	-	-	TRUE	FALSE	AffectionEvent	0
+ 	592	. . .	- 	FALSE	-	-	-	-	-	-	TRUE	FALSE	1	0
  														
  														
  														

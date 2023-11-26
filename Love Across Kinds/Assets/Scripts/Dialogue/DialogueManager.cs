@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI option1Text;
     public TextMeshProUGUI option2Text;
     public TextMeshProUGUI option3Text;
+    public GameObject skipButton;
 
     //Stroing data of Dialogues from .csv
     public List<DialogueData> datas;
@@ -82,6 +83,19 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
+
+        if(SceneManager.GetActiveScene().name == "Episode 0")
+        {
+            if (AudioManager.instance._SFXSource.isPlaying)
+            {
+                skipButton.SetActive(false);
+            }
+            else
+            {
+                skipButton.SetActive(true);
+            }
+        }
+        
     }
 
     //Method to show DialogueBox & Search the upmost data of each character by NAME
@@ -92,6 +106,11 @@ public class DialogueManager : MonoBehaviour
         //Get animator from current interact object
         characterAnim = EventClick.interactObjAnim;
 
+        if(characterAnim != null)
+        {
+            characterAnim.SetBool("DialogueActive", true);
+        }
+        
         StartCoroutine(DelayDialogueActive());
         currIndexPos = 0;
 
@@ -233,7 +252,6 @@ public class DialogueManager : MonoBehaviour
                 break;
             }
         }
-        Debug.Log(currSentenceId);
     }
 
     //Method to Display next sentence/ End the dialogue
@@ -259,12 +277,18 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         dialogueAnim.SetBool("isOpenDialogue", false);
+
+        if (characterAnim != null)
+        {
+            characterAnim.SetBool("DialogueActive", false);
+        }
+
         dialogueActive = false;
         
 
         switch (datas[currIndexPos]._event)
         {
-            case "AffectionEvent":
+            case 1:
                 switch (currInteractCharName)
                 {
                     case "Xina":
@@ -414,11 +438,12 @@ public class DialogueManager : MonoBehaviour
                 }
                 break;
 
-            case "ScavengerEvent":
+            case 2:
                 ScavengerEvent.isScavengerEvent = true;
+                Debug.Log(ScavengerEvent.isScavengerEvent);
                 break;
 
-            case "Sleep":
+            case 3:
                 PhaseManager.instance.currentEpisode++;
 
                 if (PhaseManager.instance.currentPhase == "Special")
@@ -435,7 +460,7 @@ public class DialogueManager : MonoBehaviour
 
                 break;
 
-            case "ChangePhase":
+            case 4:
                 
                 PhaseManager.instance.ChangePhase();
                 
@@ -457,7 +482,7 @@ public class DialogueManager : MonoBehaviour
                 break;
 
 
-            case "FilmingConvo":
+            case 5:
                 switch (currInteractCharName)
                 {
                     case "Xina":
@@ -575,10 +600,9 @@ public class DialogueManager : MonoBehaviour
             }
             else if (datas[i].checkIfEnd)
             {
-                EndDialogue();
                 currSentenceId = i;
                 currIndexPos = i;
-                Debug.Log(currSentenceId);
+                EndDialogue();
                 break;
             }
         }

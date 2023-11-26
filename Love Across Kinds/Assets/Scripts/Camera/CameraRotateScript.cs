@@ -78,7 +78,7 @@ public class CameraRotateScript : MonoBehaviour
 
                 // Rotate the camera based on touch delta (left and right)
                 transform.Rotate(Vector3.up * delta.x * sensitivity);
-                Debug.Log("Touch screen sensor");
+                //Debug.Log("Touch screen sensor");
 
                 //zoomXinaCamera0.SetActive(false);
                 //zoomBeniaCamera0.SetActive(false);

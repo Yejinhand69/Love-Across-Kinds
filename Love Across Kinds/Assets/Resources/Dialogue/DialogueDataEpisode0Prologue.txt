@@ -1,4 +1,4 @@
-name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	event	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
+name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	"event (1 - AffectionEvent, 2 - ScavengerEvent, 3 - Sleep, 4 - ChangePhase, 5 - FilmingConvo)"	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
  	0	Everywhere you turn it is preached to you.	1	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	1	"It is a uniquely human experience,"	2	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	2	Or rather WAS a uniquely human experience.	3	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
@@ -52,7 +52,7 @@ Sister	49	"You're a good person, I'm sure there'll be someone on there who sees 
 Sister	50	. . . 	51	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Player	51	Thank you?	52	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Player	52	I'll update you if I can on the starcruiser.	53	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
-Player	53	You better.	54	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+Sister	53	You better.	54	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Sister	54	"Also one last word of advice,"	55	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Sister	55	I don't know what sentient-species are going to be on The Matchmaker this season	56	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Sister	56	"But it can't be as bad as what happened on The Pleasure Cruiser, 5 seasons ago."	57	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
@@ -67,7 +67,7 @@ Player	63	They said all my luggage would be teleported to Room 01 so that should
 Host?	65	Heeeelllloooo Human Contestant!	66	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Host?	66	"While you may have a legally binding name that you've used for the application of this show,"	67	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Host?	67	"Here, you may change your name to whatever you want."	68	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
-Host?	68	"So, what name should we refer to you whilst aboard the ship?"	69	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+Host?	68	"So, what name should we refer to you whilst aboard the ship?"	69	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	1
 Host?	69	"Welcomeeeee human contestant, PlayerName !"	70	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Host?	70	"Wel&$%^ ab@&#^ the M>/,*3^$#"	71	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Host?	71	"Wel&$%^ ab@&#^ the M>/,*3^$#"	-	TRUE	Ok?	Excuse me?	I think your translator malfunctioned	72	73	74	FALSE	FALSE	-	1
@@ -97,9 +97,9 @@ Game Host Joe	94	And remember to sleep well tonight	95	FALSE	-	-	-	-	-	-	FALSE	F
 Game Host Joe	95	We're soon going to be very very busy!	96	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Game Host Joe	96	Too da loo~	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	1
  	97	Upon first entering the lobby you notice someone	98	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	98	She's undoubtedly another one of the contestants	99	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	99	If you had to describe her sentient-species's characteristics it would probably be if a human & a jellyfish were combined together.	100	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	100	"Hoping to make a good impression, you approach her."	101	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+ 	98	She's undoubtedly another one of the contestants	99	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	2
+ 	99	If you had to describe her sentient-species's characteristics it would probably be if a human & a jellyfish were combined together.	100	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	3
+ 	100	"Hoping to make a good impression, you approach her."	101	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	4
  	101	But as you approach the jellyfish-like girl in the lobby. . . 	102	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Jellyfish Girl	102	Oh?	103	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Jellyfish Girl	103	Oh!	104	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
@@ -144,11 +144,11 @@ Xina	141	I'm gonna hang around here a bit before going exploring!	142	FALSE	-	-	
 Xina	142	See you!	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	1
  	143	"You see someone standing at the bar,"	144	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	144	"They don't seem to be drinking anything, instead they're just staring at the bottles on the shelves."	145	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	145	From a distance you wouldn't be blamed if you'd mistaken them for a potted plant.	146	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
- 	146	"But as you get closer, you start to see a plant-like woman whose alluring figure makes your palms sweaty."	147	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	147	"Her figure, while humanoid, looks almost too perfect, as if it was painstakingly moulded to look as alluring as possible."	148	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	2
- 	148	"As you stand there dumbfounded by her beauty, she takes notice of you staring and gestures to you to take a seat next to her."	149	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	3
- 	149	You quickly take her up on her offer and sit down at the bar.	150	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	4
+ 	145	From a distance you wouldn't be blamed if you'd mistaken them for a potted plant.	146	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	2
+ 	146	"But as you get closer, you start to see a plant-like woman whose alluring figure makes your palms sweaty."	147	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	3
+ 	147	"Her figure, while humanoid, looks almost too perfect, as if it was painstakingly moulded to look as alluring as possible."	148	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	4
+ 	148	"As you stand there dumbfounded by her beauty, she takes notice of you staring and gestures to you to take a seat next to her."	149	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+ 	149	You quickly take her up on her offer and sit down at the bar.	150	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	150	She towers over the bar counter and as you sit down it makes sense to you why she doesn't want to sit down	151	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	151	Her eyes continue to stare at the bottles on the shelves as she speaks.	152	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Plant-Woman	152	It's awfully rude to stare without a 'hello' don't you think?	153	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
@@ -197,14 +197,14 @@ Benia	193	So be sure to come talk with me whenever you can alright?	194	FALSE	-	
  	195	You see Benia's eyes glimmer as though they've found their next target.	196	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	1
 Benia	196	I'll be looking forward to our next meeting~	195	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	1
  	197	"You spot a plume of mist just floating above the floor,"	198	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	198	The mist seems to be just drifting around aimlessly.	199	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	199	Curiosity gets the better of you and you approach it	200	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
- 	200	"Getting closer, the air becomes more humid and you can see a vague humanoid shape in the mist."	201	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+ 	198	The mist seems to be just drifting around aimlessly.	199	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	2
+ 	199	Curiosity gets the better of you and you approach it	200	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	3
+ 	200	"Getting closer, the air becomes more humid and you can see a vague humanoid shape in the mist."	201	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	4
  	201	"Getting closer, the air becomes more humid and you can see a vague humanoid shape in the mist."	-	TRUE	Hello?	Is someone there?	-	202	206	-	FALSE	FALSE	-	1
 Misty Silhouette	202	. . . 	203	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
-Misty Silhouette	203	Hello. . . 	206	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+Misty Silhouette	203	Hello. . . ?	206	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Misty Silhouette	204	. . . 	205	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
-Misty Silhouette	205	. . . Yes	206	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
+Misty Silhouette	205	. . . Yes?	206	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	206	. . . 	207	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
  	207	They don't seem very talkative.	208	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
 Misty Silhouette	208	I-	209	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
@@ -284,4 +284,4 @@ Glowing Man	277	"That's all you need to know, now leave me alone."	278	FALSE	-	-
   	282	You feel like you've spoken to everybody on the ship already.	283	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
   	283	Turn in for the day?	284	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	1
   	284	Turn in for the day?	-	TRUE	I should get some rest. . . 	I think I'll explore the ship just a little longer.	-	285	284	-	TRUE	FALSE	-	1
-	285	Zzzzz	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	Sleep	1
+	285	Zzzzz	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	3	1

@@ -54,6 +54,7 @@ public class LevelUI : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    [System.Obsolete]
     public void Continue()
     {
         SceneManager.UnloadScene("Rhythm Game");

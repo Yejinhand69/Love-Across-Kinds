@@ -1,4 +1,4 @@
-name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	event	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
+name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	"event (1 - AffectionEvent, 2 - ScavengerEvent, 3 - Sleep, 4 - ChangePhase, 5 - FilmingConvo)"	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
  	0	"You see Xina in the arcade zone,"	1	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	1	She hasn't noticed you yet but if you get any closer she probably will.	2	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	2	"Knowing Xina, once she's got you it's gonna be a longggg time before you can leave."	3	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
@@ -130,7 +130,7 @@ Benia	125	How considerate of you  PlayerName ~”	126	FALSE	-	-	-	-	-	-	FALSE	FA
  	128	You have a set amount of time to respond to her assaults.	129	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	129	Each of the options you are given might or might not impress Benia.	130	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	130	Correctly identify the correct options Benia would like.	131	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
- 	131	Good luck~	-	FALSE	-	-	-	-	-	-	FALSE	FALSE	AffectionEvent	0
+ 	131	Good luck~	-	FALSE	-	-	-	-	-	-	FALSE	FALSE	1	0
 Benia	132	"So dearie, tell me more about yourself-"	132	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Benia	133	What led you aboard the matchmaker?	133	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
 Benia	134	What led you aboard the matchmaker?	-	TRUE	Someone made me sign up actually-	"Oh, nothing too interesting-"	"Something boring, but because of it I met you-"	135	142	145	FALSE	FALSE	-	0
@@ -382,11 +382,11 @@ Florine	377	I-I've told the staff and host that it's mine. . .	378	FALSE	-	-	-	-
  	380	"Having nothing else to do and drained from your time with Florine, you return to your room."	381	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	381	"Ahhhh your room at last,"	382	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
  	382	Today was a busy day wasn't it?	383	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
- 	383	But for now it's time to rest.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	ChangePhase	0
+ 	383	But for now it's time to rest.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	4	0
  	384	You spent a very enjoyable moment with Benia	382	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
  	385	You spent a very enjoyable moment with Xina	382	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
  	386	You spent a very enjoyable moment with Florine	382	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
- 	387	. . . 	- 	FALSE	-	-	-	-	-	-	TRUE	FALSE	AffectionEvent	0
+ 	387	. . . 	- 	FALSE	-	-	-	-	-	-	TRUE	FALSE	1	0
  														
  														
  														
