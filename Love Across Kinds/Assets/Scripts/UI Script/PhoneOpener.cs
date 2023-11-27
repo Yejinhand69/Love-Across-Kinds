@@ -99,6 +99,7 @@ public class PhoneOpener : MonoBehaviour
 
     public void OpenObjectiveWindow()
     {
+        Debug.Log("openObjectivePanel");
         if (ObjectivePanel != null)
         {
             Animator animator = ObjectivePanel.GetComponent<Animator>();
