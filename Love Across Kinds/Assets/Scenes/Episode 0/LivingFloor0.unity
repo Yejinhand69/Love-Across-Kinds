@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -272,6 +272,8 @@ MonoBehaviour:
   - Name: FreeTime
     BGM: {fileID: 8300000, guid: e720ff77fd2aba54496d258d4ede350e, type: 3}
   voiceOverScript: {fileID: 0}
+  Episode_0_VA: {fileID: 0}
+  Episode_1_VA: []
 --- !u!4 &129673219
 Transform:
   m_ObjectHideFlags: 0
