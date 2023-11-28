@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class MainMenuOpener : MonoBehaviour
@@ -11,6 +12,7 @@ public class MainMenuOpener : MonoBehaviour
 
     public string sceneToLoad;
     public float delayBeforeLoad = 1.0f;
+
 
     private void Awake()
     {
@@ -39,7 +41,7 @@ public class MainMenuOpener : MonoBehaviour
     {
         if (SettingsPanel != null)
         {
-
+            
             Animator animator = SettingsPanel.GetComponent<Animator>();
             if (animator != null)
             {
@@ -51,7 +53,7 @@ public class MainMenuOpener : MonoBehaviour
             }
 
         }
-
+     
     }
 
     public void StartGame()

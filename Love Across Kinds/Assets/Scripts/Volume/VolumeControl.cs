@@ -10,49 +10,63 @@ public class VolumeControl : MonoBehaviour
     public Slider sfxVolumeSlider; // Reference to the UI Slider
     public AudioSource sfxAudioSource; // Reference to the AudioSource component
 
+    private float targetBGMVolume;
+    private float targetSFXVolume;
+
     private void Awake()
     {
-        bgmVolumeSlider = FindObjectOfType<Slider>();
-        bgmVolumeSlider.value = PlayerPrefs.GetFloat("BGMVolume", bgmVolumeSlider.value);    
-        sfxAudioSource.volume = PlayerPrefs.GetFloat("SFXVolume", sfxVolumeSlider.value);
+        // Find the sliders using their respective names or tags
+        bgmVolumeSlider = GameObject.Find("BGMVolumeSlider").GetComponent<Slider>();
+        sfxVolumeSlider = GameObject.Find("SFXVolumeSlider").GetComponent<Slider>();
+
+        // Set initial volumes based on PlayerPrefs
+        bgmAudioSource.volume = PlayerPrefs.GetFloat("BGMVolume", 0.1f);
+        sfxAudioSource.volume = PlayerPrefs.GetFloat("SFXVolume", 0.5f);
     }
 
     private void Start()
     {
-        // Initialize the slider value to the saved audio source volume or set it to the default volume (e.g., 0.5f)
+        bgmVolumeSlider.onValueChanged.AddListener(ChangeBGMVolume);
         bgmVolumeSlider.value = PlayerPrefs.GetFloat("BGMVolume", 0.1f);
-        sfxVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.5f);
-
-        // Attach an event listener to the slider to handle volume changes
-        bgmVolumeSlider.onValueChanged.AddListener(ChangeVolume);
-        sfxVolumeSlider.onValueChanged.AddListener(ChangeVolume);
-
-        // Apply the saved volume settings
         bgmAudioSource.volume = bgmVolumeSlider.value;
+        targetBGMVolume = bgmVolumeSlider.value;
+
+        sfxVolumeSlider.onValueChanged.AddListener(ChangeSFXVolume);
+        sfxVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.5f);
         sfxAudioSource.volume = sfxVolumeSlider.value;
+        targetSFXVolume = sfxVolumeSlider.value;
     }
 
     private void Update()
     {
-        if (AudioManager.instance._SFXSource.isPlaying)
+        if (bgmAudioSource.isPlaying)
         {
-            AudioManager.instance._BGMSource.volume = AudioManager.instance._SFXSource.volume / 2;
+            bgmAudioSource.volume = Mathf.Lerp(bgmAudioSource.volume, targetBGMVolume, Time.deltaTime * 1.5f);
         }
-        else
+        if (sfxAudioSource.isPlaying)
         {
-            AudioManager.instance._BGMSource.volume = PlayerPrefs.GetFloat("BGMVolume", bgmVolumeSlider.value);
+            sfxAudioSource.volume = Mathf.Lerp(sfxAudioSource.volume, targetSFXVolume, Time.deltaTime * 1.5f);
         }
     }
 
-    private void ChangeVolume(float volume)
+    private void ChangeBGMVolume(float volume)
     {
-        // Update the audio source volume when the slider value changes
-        bgmAudioSource.volume = bgmVolumeSlider.value;
-        sfxAudioSource.volume = sfxVolumeSlider.value;
+        targetBGMVolume = volume;
 
-        // Save the volume settings to PlayerPrefs
-        PlayerPrefs.SetFloat("BGMVolume", bgmVolumeSlider.value);
-        PlayerPrefs.SetFloat("SFXVolume", sfxVolumeSlider.value);
+        // Save the BGM volume setting to PlayerPrefs
+        PlayerPrefs.SetFloat("BGMVolume", volume);
         PlayerPrefs.Save();
     }
+
+    private void ChangeSFXVolume(float volume)
+    {
+        targetSFXVolume = volume;
+
+        // Save the SFX volume setting to PlayerPrefs
+        PlayerPrefs.SetFloat("SFXVolume", volume);
+        PlayerPrefs.Save();
+    }
+
+  
+
 }
