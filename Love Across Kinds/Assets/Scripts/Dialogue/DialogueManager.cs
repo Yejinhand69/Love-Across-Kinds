@@ -61,6 +61,8 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.text = string.Empty;
         dialogueActive = false;
+        dialogueActive = false;
+        StopAllCoroutines();
     }
 
     private void Update()
@@ -76,7 +78,7 @@ public class DialogueManager : MonoBehaviour
 
             phaseIndicator = PhaseManager.instance.currentPhase;
         }
-
+        
         if (dialogueActive)
         {
             if (!datas[currIndexPos].checkIfOption)
@@ -509,24 +511,16 @@ public class DialogueManager : MonoBehaviour
             case 4:
                 
                 PhaseManager.instance.ChangePhase();
-                
-                if (PhaseManager.instance.currentPhase == "Special")
-                {
-                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
-                }
 
                 if (PhaseManager.instance.currentPhase == "Filming")
                 {
+                    Debug.Log("Change FScene");
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
                 }
 
-                if (PhaseManager.instance.currentPhase == "FreeTime")
+                else if (PhaseManager.instance.currentPhase == "FreeTime" || PhaseManager.instance.currentPhase == "Special")
                 {
-                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
-                }
-
-                if (PhaseManager.instance.currentPhase == "Special")
-                {
+                    Debug.Log("Change FTScene");
                     SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
 
@@ -642,8 +636,9 @@ public class DialogueManager : MonoBehaviour
     {
         for(int i = currIndexPos; i < datas.Count; i++)
         {
-            if (datas[i].checkIfOption)
+            if (datas[i].checkIfOption || datas[i].checkIfAffection)
             {
+                Debug.Log("Options");
                 currSentenceId = i;
                 currIndexPos = i;
                 DisplaySentence();
@@ -651,8 +646,10 @@ public class DialogueManager : MonoBehaviour
             }
             else if (datas[i].checkIfEnd)
             {
+                Debug.Log("End");
                 currSentenceId = i;
                 currIndexPos = i;
+                dialogueActive = false;
                 EndDialogue();
                 break;
             }

@@ -76,9 +76,9 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 }
                 if (gameObject.CompareTag("Bedroom"))
                 {
-                    if(PhaseManager.instance.currentPhase == "FreeTime" || PhaseManager.instance.currentPhase == "Prologue")
+                    if(/*PhaseManager.instance.currentPhase == "FreeTime" ||*/   PhaseManager.instance.currentPhase == "Prologue")
                     {
-                        if (DialogueManager.instance.XinaAttemp > 0 && DialogueManager.instance.BeniaAttemp > 0) //&&DialogueManager.instance.FlorineAttemp > 0)
+                        if (DialogueManager.instance.XinaAttemp > 0 && DialogueManager.instance.BeniaAttemp > 0 &&DialogueManager.instance.FlorineAttemp > 0)
                         {
                             dialogueTrigger.StartDialogue(" ", 282);
                         }
