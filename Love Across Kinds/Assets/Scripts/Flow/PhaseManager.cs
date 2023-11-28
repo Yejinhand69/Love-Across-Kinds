@@ -156,11 +156,11 @@ public class PhaseManager : MonoBehaviour
             yield return null;
         }
 
-        phoneOpener.OpenPhone();
+        //phoneOpener.OpenPhone();
 
         yield return new WaitForSeconds(0.5f);
         
-        phoneOpener.OpenMessagePanel();
+        //phoneOpener.OpenMessagePanel();
 
         while (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone"))
         {
@@ -169,7 +169,7 @@ public class PhaseManager : MonoBehaviour
 
         if (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone") == false)
         {
-            phoneOpener.OpenMessagePanel();
+            //phoneOpener.OpenMessagePanel();
         }
 
         dialogueTrigger.StartDialogue(" ", 2);
