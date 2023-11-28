@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,20 @@ public class GameUI : MonoBehaviour
     public GameObject MessagePanel;
     public GameObject ObjectivePanel;
     public CameraRotateScript cameraRotateScript;
+
+    public TextMeshProUGUI episodesText;
+    public TextMeshProUGUI phasesText;
+
+    private PhaseManager instance;
+
+    public string phases;
+    public int episode;
+
+    private void Awake()
+    {
+        episodesText.text = string.Empty;
+        phasesText.text = string.Empty;
+    }
 
     private void Update()
     {
@@ -35,7 +50,12 @@ public class GameUI : MonoBehaviour
             MessageButton.SetActive(true);
             ObjectiveButton.SetActive(true);
         }
+
+        episodesText.text = "EP: " + PhaseManager.instance.currentEpisode;
+        phasesText.text = PhaseManager.instance.currentPhase;
     }
+
+
 
     public void OpenSettingPanel()
     {
