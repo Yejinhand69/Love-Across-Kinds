@@ -70,9 +70,9 @@ public class Dialogue2 : MonoBehaviour
     public bool responseDone1b = false;
     public bool responseDone1c = false;
     public bool responseDone2a = false;
-    public bool responseDone2b = false;     
+    public bool responseDone2b = false;
     public bool responseDone2c = false;
-    public bool responseDone3a = false;    
+    public bool responseDone3a = false;
     public bool responseDone3b = false;
     public bool responseDone3c = false;
     public bool responseDone4a = false;
@@ -90,9 +90,16 @@ public class Dialogue2 : MonoBehaviour
     private int Rindex4;
 
     public static bool situation;
+
+    //public GameObject beniaIdle;
+    //public GameObject beniaSad;
+    //public GameObject beniaAngry;
+    //public GameObject beniaSmile;
+
+    public BeniaAnimation BA;
     void Start()
     {
-        
+
         textComponent.text = string.Empty;
         StartDialogue();
     }
@@ -111,7 +118,7 @@ public class Dialogue2 : MonoBehaviour
 
                 StopAllCoroutines();
                 textComponent.text = lines[index];
-                
+
             }
 
             if (responseDone1 == true)
@@ -156,7 +163,7 @@ public class Dialogue2 : MonoBehaviour
 
             if (done == true)
             {
-                
+
                 NextLine2();
                 done = false;
 
@@ -203,7 +210,7 @@ public class Dialogue2 : MonoBehaviour
 
             if (done2 == true)
             {
-                
+
                 NextLine3();
                 done2 = false;
 
@@ -305,14 +312,14 @@ public class Dialogue2 : MonoBehaviour
             timer.SetActive(false);
             responseDone1 = true;
         }
-        else if (ChoiceMade == 2 || time.chooseLeastScoreAnswer == true) 
+        else if (ChoiceMade == 2 || time.chooseLeastScoreAnswer == true)
         {
             Choice01.SetActive(false);
             Choice02.SetActive(false);
             Choice03.SetActive(false);
             timer.SetActive(false);
             responseDone1b = true;
-            
+
         }
         else if (ChoiceMade == 3)
         {
@@ -324,14 +331,14 @@ public class Dialogue2 : MonoBehaviour
         }
 
         if (ChoiceMade2 == 1)
-        {            
+        {
             Choice04.SetActive(false);
             Choice05.SetActive(false);
             Choice06.SetActive(false);
             timer2.SetActive(false);
             responseDone2a = true;
         }
-        else if(ChoiceMade2 == 2)
+        else if (ChoiceMade2 == 2)
         {
             Choice04.SetActive(false);
             Choice05.SetActive(false);
@@ -405,7 +412,8 @@ public class Dialogue2 : MonoBehaviour
         ChoiceMade = 1;
         Debug.Log("1.1 ans");
         scorePoint.AddScore(2);
-        
+        //beniaSmile.SetActive(true);
+        BA.smile();
     }
 
     public void ChoiceOption1b()
@@ -413,7 +421,8 @@ public class Dialogue2 : MonoBehaviour
         textComponent.text = "“Oh, nothing too interesting-”";
         ChoiceMade = 2;
         Debug.Log("1.2 ans");
-        
+        //beniaAngry.SetActive(true);
+        BA.angry();
     }
 
     public void ChoiceOption1c()
@@ -422,6 +431,8 @@ public class Dialogue2 : MonoBehaviour
         ChoiceMade = 3;
         Debug.Log("1.3 ans");
         scorePoint.AddScore(1);
+        //beniaSad.SetActive(true);
+        BA.sad();
     }
 
     public void ChoiceOption2a()
@@ -430,6 +441,8 @@ public class Dialogue2 : MonoBehaviour
         ChoiceMade2 = 1;
         Debug.Log("2.1 ans");
         scorePoint.AddScore(2);
+        //beniaSmile.SetActive(true);
+        BA.smile();
     }
 
     public void ChoiceOption2b()
@@ -438,6 +451,8 @@ public class Dialogue2 : MonoBehaviour
         ChoiceMade2 = 2;
         Debug.Log("2.2 ans");
         scorePoint.AddScore(1);
+        //beniaSad.SetActive(true);
+        BA.sad();
     }
 
     public void ChoiceOption2c()
@@ -445,7 +460,8 @@ public class Dialogue2 : MonoBehaviour
         textComponent.text = "“Well-”";
         ChoiceMade2 = 3;
         Debug.Log("2.3 ans");
-        
+        //beniaAngry.SetActive(true);
+        BA.angry();
     }
 
     public void ChoiceOption3a()
@@ -453,6 +469,8 @@ public class Dialogue2 : MonoBehaviour
         textComponent.text = "“Well considering that you look like a human-”";
         ChoiceMade3 = 1;
         Debug.Log("3.1 ans");
+        //beniaAngry.SetActive(true);
+        BA.angry();
     }
 
     public void ChoiceOption3b()
@@ -461,6 +479,8 @@ public class Dialogue2 : MonoBehaviour
         ChoiceMade3 = 2;
         Debug.Log("3.2 ans");
         scorePoint.AddScore(1);
+        //beniaSad.SetActive(true);
+        BA.sad();
     }
 
     public void ChoiceOption3c()
@@ -469,6 +489,8 @@ public class Dialogue2 : MonoBehaviour
         ChoiceMade3 = 3;
         Debug.Log("3.3 ans");
         scorePoint.AddScore(2);
+        //beniaSmile.SetActive(true);
+        BA.smile();
     }
 
     public void ChoiceOption4a()
@@ -476,6 +498,8 @@ public class Dialogue2 : MonoBehaviour
         textComponent.text = "“What, uh- totally-”";
         ChoiceMade4 = 1;
         Debug.Log("3.1 ans");
+        //beniaAngry.SetActive(true);
+        BA.angry();
     }
 
     public void ChoiceOption4b()
@@ -484,6 +508,8 @@ public class Dialogue2 : MonoBehaviour
         ChoiceMade4 = 2;
         Debug.Log("3.2 ans");
         scorePoint.AddScore(2);
+        //beniaSmile.SetActive(true);
+        BA.smile();
     }
 
     public void ChoiceOption4c()
@@ -492,6 +518,8 @@ public class Dialogue2 : MonoBehaviour
         ChoiceMade4 = 3;
         Debug.Log("3.3 ans");
         scorePoint.AddScore(1);
+        //beniaSad.SetActive(true); 
+        BA.sad();
     }
 
     void StartDialogue()
@@ -567,6 +595,7 @@ public class Dialogue2 : MonoBehaviour
 
     void Response2a()
     {
+        //beniaSmile.SetActive(true);
         Debug.Log(Rindex2);
         if (Rindex2 < response2a.Length - 1)
         {
@@ -585,6 +614,7 @@ public class Dialogue2 : MonoBehaviour
 
     void Response2b()
     {
+        //beniaSad.SetActive(true);
         Debug.Log(Rindex2);
         if (Rindex2 < response2b.Length - 1)
         {
@@ -603,6 +633,7 @@ public class Dialogue2 : MonoBehaviour
 
     void Response2c()
     {
+        //beniaAngry.SetActive(true);
         Debug.Log(Rindex2);
         if (Rindex2 < response2c.Length - 1)
         {
@@ -621,6 +652,7 @@ public class Dialogue2 : MonoBehaviour
 
     void Response3a()
     {
+        //beniaAngry.SetActive(true);
         Debug.Log(Rindex3);
         if (Rindex3 < response3a.Length - 1)
         {
@@ -639,6 +671,7 @@ public class Dialogue2 : MonoBehaviour
 
     void Response3b()
     {
+        //beniaSad.SetActive(true);
         Debug.Log(Rindex3);
         if (Rindex3 < response3b.Length - 1)
         {
@@ -657,6 +690,7 @@ public class Dialogue2 : MonoBehaviour
 
     void Response3c()
     {
+        //beniaSmile.SetActive(true);
         Debug.Log(Rindex3);
         if (Rindex3 < response3c.Length - 1)
         {
@@ -675,6 +709,7 @@ public class Dialogue2 : MonoBehaviour
 
     void Response4a()
     {
+        //beniaAngry.SetActive(true);
         Debug.Log(Rindex4);
         if (Rindex4 < response4a.Length - 1)
         {
@@ -693,6 +728,7 @@ public class Dialogue2 : MonoBehaviour
 
     void Response4b()
     {
+        //beniaSmile.SetActive(true);
         Debug.Log(Rindex4);
         if (Rindex4 < response4b.Length - 1)
         {
@@ -711,6 +747,7 @@ public class Dialogue2 : MonoBehaviour
 
     void Response4c()
     {
+        //beniaSad.SetActive(true);
         Debug.Log(Rindex4);
         if (Rindex4 < response4c.Length - 1)
         {
@@ -729,8 +766,9 @@ public class Dialogue2 : MonoBehaviour
 
     void NextLine()
     {
+        BA.idle();
         Debug.Log(index);
-        
+
         if (index < lines.Length - 1)
         {
             index++;
@@ -741,27 +779,32 @@ public class Dialogue2 : MonoBehaviour
             }
             //StartCoroutine(TypeLine());
         }
-        else if(index >= 1)
+        else if (index >= 1)
         {
             timer.SetActive(true);
             Choice01.SetActive(true);
             Choice02.SetActive(true);
             Choice03.SetActive(true);
-            
+
         }
         else
         {
             gameObject.SetActive(false);
         }
 
-        
+
     }
 
     void NextLine2()
     {
+
+        //beniaAngry.SetActive(false);
+        //beniaSad.SetActive(false);
+        //beniaSmile.SetActive(false);
         Debug.Log("int2" + index2);
         if (index2 < lines2.Length - 1)
         {
+            BA.idle();
             index2++;
             textComponent.text = string.Empty;
             //StartCoroutine(TypeLine2());
@@ -772,6 +815,7 @@ public class Dialogue2 : MonoBehaviour
             Choice04.SetActive(true);
             Choice05.SetActive(true);
             Choice06.SetActive(true);
+
         }
         else
         {
@@ -783,8 +827,13 @@ public class Dialogue2 : MonoBehaviour
 
     void NextLine3()
     {
+
+        //beniaAngry.SetActive(false);
+        //beniaSad.SetActive(false);
+        //beniaSmile.SetActive(false);
         if (index3 < lines3.Length - 1)
         {
+            BA.idle();
             index3++;
             textComponent.text = string.Empty;
             //StartCoroutine(TypeLine3());
@@ -806,8 +855,13 @@ public class Dialogue2 : MonoBehaviour
 
     void NextLine4()
     {
+
+        //beniaAngry.SetActive(false);
+        //beniaSad.SetActive(false);
+        //beniaSmile.SetActive(false);
         if (index4 < lines4.Length - 1)
         {
+            BA.idle();
             index4++;
             textComponent.text = string.Empty;
             //StartCoroutine(TypeLine3());
@@ -849,6 +903,11 @@ public class Dialogue2 : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("Lobby");
+    }
+
+    public void Continue()
+    {
+        SceneManager.UnloadScene("Jon Benia minigame");
     }
 }
 

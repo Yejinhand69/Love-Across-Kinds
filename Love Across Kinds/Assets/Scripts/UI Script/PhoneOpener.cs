@@ -11,6 +11,7 @@ public class PhoneOpener : MonoBehaviour
     public GameObject PhonePanel;
     public GameObject SettingPanel;
     public GameObject MessagePanel;
+    public GameObject ObjectivePanel;
     public CameraRotateScript cameraRotateScript;
 
     private void Update()
@@ -92,6 +93,23 @@ public class PhoneOpener : MonoBehaviour
                 bool isOpen = animator.GetBool("isOpenMessage");
 
                 animator.SetBool("isOpenMessage", !isOpen);
+            }
+        }
+    }
+
+    public void OpenObjectiveWindow()
+    {
+        Debug.Log("openObjectivePanel");
+        if (ObjectivePanel != null)
+        {
+            Animator animator = ObjectivePanel.GetComponent<Animator>();
+            if (animator != null)
+            {
+                AudioManager.instance.PlaySFX("Button Press");
+
+                bool isOpen = animator.GetBool("openObjectivePanel");
+
+                animator.SetBool("openObjectivePanel", !isOpen);
             }
         }
     }
