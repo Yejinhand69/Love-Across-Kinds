@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2801,9 +2801,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[0]
+      value: ' - Talk to the person at the bar'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[1]
+      value: ' - Talk to the jellyfish girl in the lobby'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[2]
+      value: ' - Talk to the gas on the bedroom floor '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[3]
+      value: ' - Find your room, Room 01 and turn in for the day.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: prologue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: title.Array.data[1]
+      value: End of the day
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: prologue.Array.data[0]
+      value: 
+      objectReference: {fileID: 1926930056}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: prologue.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100410251}
     - target: {fileID: 551755525059653929, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427710488348255141, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 731.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427710488348255141, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 218.624
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427710488348255141, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11.719
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427710488348255141, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 55.203
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521583566154452910, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2000057136302944009, guid: 2084e439f2fa3d444a9fe7792140c80c,
@@ -2866,6 +2923,52 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3152367123008429408, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 731.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152367123008429408, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 306.8318
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152367123008429408, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11.719
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152367123008429408, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 291.0398
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488120830256665393, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ca5d33f077a10cc429a9731a4b84b0ab,
+        type: 3}
+    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 3.1028748
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 5.6798706
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
     - target: {fileID: 5129512323629208371, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2883,6 +2986,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+--- !u!1 &1926930056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3152367123008429409, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794273907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1987853744
 GameObject:
   m_ObjectHideFlags: 0
@@ -3404,6 +3513,12 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &2100410251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1427710488348255140, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794273907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2132810661
 GameObject:
   m_ObjectHideFlags: 0
