@@ -1580,8 +1580,7 @@ MonoBehaviour:
   AffectionPanel: {fileID: 2000057134780194080}
   PhoneButton: {fileID: 0}
   PhonePanel: {fileID: 0}
-  SettingPanel: {fileID: 3314025257286337920, guid: a75119305b40316478d7b3177d81a82f,
-    type: 3}
+  SettingPanel: {fileID: 7388582906727807655}
   MessagePanel: {fileID: 1521583566154452910}
   ObjectivePanel: {fileID: 3488120830256665357}
   cameraRotateScript: {fileID: 0}
@@ -2696,7 +2695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 112, y: -409.01}
+  m_AnchoredPosition: {x: 150, y: -500}
   m_SizeDelta: {x: 213, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135722738096
@@ -2962,7 +2961,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.555, y: 0.31125462}
   m_AnchorMax: {x: 0.555, y: 0.31125462}
-  m_AnchoredPosition: {x: 298.00003, y: 1417.0004}
+  m_AnchoredPosition: {x: 307, y: 1399.3}
   m_SizeDelta: {x: 210, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057135979360726
@@ -3688,7 +3687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 112, y: -262}
+  m_AnchoredPosition: {x: 150, y: -350}
   m_SizeDelta: {x: 203, y: 127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2000057136552282931
@@ -3939,7 +3938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 310, y: -79}
+  m_AnchoredPosition: {x: 346, y: -171}
   m_SizeDelta: {x: 556, y: 174}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8837073465541422006
@@ -5644,8 +5643,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3314025257590385630, guid: a75119305b40316478d7b3177d81a82f,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenSettingsPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314025257590385630, guid: a75119305b40316478d7b3177d81a82f,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: OpenSettingPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314025257590385630, guid: a75119305b40316478d7b3177d81a82f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuOpener, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3314025257590385630, guid: a75119305b40316478d7b3177d81a82f,
         type: 3}
@@ -5672,6 +5681,12 @@ PrefabInstance:
 --- !u!224 &7388582906727807654 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3314025257286337921, guid: a75119305b40316478d7b3177d81a82f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5437055760828808999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7388582906727807655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3314025257286337920, guid: a75119305b40316478d7b3177d81a82f,
     type: 3}
   m_PrefabInstance: {fileID: 5437055760828808999}
   m_PrefabAsset: {fileID: 0}
