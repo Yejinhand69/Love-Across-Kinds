@@ -14,7 +14,7 @@ public class ScavengerEvent : MonoBehaviour
         if(PhaseManager.instance.currentPhase == "PreProduction" && PhaseManager.instance.currentEpisode == 1)
         {
             //Check if ScavengerEvent is started or not
-            if (isScavengerEvent)
+            if (isScavengerEvent && !isFoundBracelet)
             {
                 bracelet.SetActive(true);
             }
@@ -29,7 +29,6 @@ public class ScavengerEvent : MonoBehaviour
             {
                 //UI of bracelet deactive
                 BraceletUI.SetActive(false);
-                isFoundBracelet = true;
             }
 
             //Check if player pressed on the Event Object
@@ -38,6 +37,7 @@ public class ScavengerEvent : MonoBehaviour
                 if(DialogueManager.instance.currSentenceId == 67)
                 {
                     bracelet.SetActive(false);
+                    isFoundBracelet = true;
                 } 
             }
         }

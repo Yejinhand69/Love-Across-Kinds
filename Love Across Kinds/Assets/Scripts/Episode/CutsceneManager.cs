@@ -8,6 +8,7 @@ public class CutsceneManager : MonoBehaviour
     //private DialogueManager dialogueManager;
     private DialogueTrigger trigger;
     private Animator anim;
+    private bool isPlayed;
 
     private void Start()
     {
@@ -44,10 +45,14 @@ public class CutsceneManager : MonoBehaviour
     }
 
     IEnumerator PlayPhoneRinging()
-    {
-        yield return new WaitForSeconds(1f);
-        AudioManager.instance.PlaySFX("Phone Ring");
+    {       
         yield return new WaitForSeconds(4f);
         trigger.StartDialogue(" ", 26);
+        if (!isPlayed)
+        {
+            AudioManager.instance.PlaySFX("Phone Ring");
+            isPlayed = true;
+        }
+        
     }
 }

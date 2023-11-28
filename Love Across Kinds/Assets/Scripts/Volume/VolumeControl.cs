@@ -36,7 +36,7 @@ public class VolumeControl : MonoBehaviour
     {
         if (AudioManager.instance._SFXSource.isPlaying)
         {
-            AudioManager.instance._BGMSource.volume = AudioManager.instance._SFXSource.volume / 2;
+            AudioManager.instance._BGMSource.volume = AudioManager.instance._BGMSource.volume / 2;
         }
         else
         {
