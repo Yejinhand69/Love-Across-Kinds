@@ -27,10 +27,23 @@ public class VoiceOverAudioData : MonoBehaviour
             //}  
             for (int j = 0; j < _VoiceClips.Count; j++)
             {
-                if (splitName[2].Trim() == _VoiceClips[j].dialogueID.ToString().Trim() || splitName[3].Trim() == _VoiceClips[j].dialogueID.ToString().Trim())
+                if(splitName.Length == 3)
                 {
-                    _VoiceClips[j].voiceClip = voiceOver[i];
-                    break;
+                    if (splitName[2].Trim() == _VoiceClips[j].dialogueID.ToString().Trim())
+                    {
+                        _VoiceClips[j].voiceClip = voiceOver[i];
+                        break;
+                    }
+                }
+                
+               
+                if (splitName.Length == 4)
+                {
+                    if (splitName[3].Trim() == _VoiceClips[j].dialogueID.ToString().Trim())
+                    {
+                        _VoiceClips[j].voiceClip = voiceOver[i];
+                        break;
+                    }
                 }
             }
         }
