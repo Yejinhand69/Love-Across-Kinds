@@ -11,8 +11,8 @@ public class Objective : MonoBehaviour
     public GameObject[] prologue;
     public GameObject[] Preproduction;
     public GameObject filming;
-    public GameObject freeTime;
-    public GameObject interlude;
+    public GameObject[] freeTime;
+    public GameObject[] interlude;
     //public ObjectiveTitle T;
 
     private TextMeshProUGUI objectives;
@@ -49,28 +49,37 @@ public class Objective : MonoBehaviour
 
         if (PhaseManager.instance.currentPhase == "Filming")
         {
-            objectives.text = title[7] + "\n" + task[11];
+            objectives.text = title[7] + "\n" + "\n" + task[11] + "\n" + "\n" + task[12];
 
-            for (int i = 0; i <= Preproduction.Length; i++)
-            {
-                Preproduction[i].SetActive(false);
-                filming.SetActive(true);
+            filming.SetActive(true);
+            for (int i = 0; i <= 10; i++)
+            {               
+                Preproduction[i].SetActive(false);    
             }
+            
         }
 
         if (PhaseManager.instance.currentPhase == "FreeTime")
         {
-            objectives.text = title[9] + "\n" + task[13];
+            objectives.text = title[9] + "\n"+ "\n" + task[14] + "\n" + "\n" + task[15];
+
             filming.SetActive(false);
-            freeTime.SetActive(true);
+            for (int i = 0; i <= freeTime.Length; i++)
+            {     
+                freeTime[i].SetActive(true);
+            }
+            
         }
 
         if (PhaseManager.instance.currentPhase == "Special")
         {
-            objectives.text = title[11] + "\n" + task[15];
+            objectives.text = title[11] + "\n" + "\n" + task[17] + "\n" + "\n" + task[18];
 
-            freeTime.SetActive(false);
-            interlude.SetActive(true);
+            for (int i = 0; i <= freeTime.Length; i++)
+            {
+                freeTime[i].SetActive(false);
+                interlude[i].SetActive(true);
+            }     
         }
 
         //if (PhaseManager.instance.currentPhase == "Filming")

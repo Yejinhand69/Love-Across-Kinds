@@ -5093,6 +5093,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 551755525059653929, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2000057134794334324, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5198,6 +5203,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.61151123
       objectReference: {fileID: 0}
+    - target: {fileID: 5129512323629208371, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7049675741872392368, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_IsActive
@@ -5227,6 +5237,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388582905465275917, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388582906582969552, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9107275561141684596, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
@@ -5684,9 +5704,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40f1948e0f22ab4db925bfbd8ea70ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Xina: {fileID: 640361862}
-  Benia: {fileID: 787097434}
-  Florine: {fileID: 387805796}
+  Xina: {fileID: 696315263}
+  Benia: {fileID: 1495762306}
+  Florine: {fileID: 712658629}
 --- !u!4 &1851649901
 Transform:
   m_ObjectHideFlags: 0

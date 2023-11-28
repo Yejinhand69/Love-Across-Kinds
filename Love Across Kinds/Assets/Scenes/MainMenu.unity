@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &94327503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5393153370457385045, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794273907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &159314441
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +487,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &374185954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 948674919115781767, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794273907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &432341147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,6 +2548,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348633498}
   m_CullTransparentMesh: 1
+--- !u!1 &1452029641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2207559386013428042, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794273907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1457374395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,6 +2820,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: filming
+      value: 
+      objectReference: {fileID: 94327503}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: filming.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
       propertyPath: task.Array.data[0]
       value: ' - Talk to the person at the bar                ( optional )'
       objectReference: {fileID: 0}
@@ -2827,17 +2857,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
       propertyPath: task.Array.data[8]
-      value: ' - Seek for what has been lost. Xina stated  that she lost something
+      value: ' - Seek for what has been lost. Xina stated that she lost something
         important finding it and returning may give you benefit.'
       objectReference: {fileID: 0}
     - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: freeTime.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[12]
+      value: You will be pulling extra weight due to there not being enough guys
+        on board, what an honour.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
       propertyPath: task.Array.data[13]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[14]
       value: ' - Spend time with someone? ( optional )'
       objectReference: {fileID: 0}
     - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
       propertyPath: task.Array.data[15]
+      value: Maybe this is the chance for you to get to know one of them better?
+        Or you be an anti-social bum and just go to sleep.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[16]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[17]
       value: ' - Spend time with someone? ( optional )'
       objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[18]
+      value: Free Time period today, maybe this is the chance for you to get to know
+        one of them better? Or you be an anti-social bum and just go to sleep.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: task.Array.data[19]
+      value: Free Time period today
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: interlude.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: filming.Array.data[0]
+      value: 
+      objectReference: {fileID: 94327503}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: freeTime.Array.data[0]
+      value: 
+      objectReference: {fileID: 1452029641}
+    - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: interlude.Array.data[0]
+      value: 
+      objectReference: {fileID: 374185954}
     - target: {fileID: 1172831245, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
       propertyPath: Preproduction.Array.size
       value: 3
@@ -2969,6 +3046,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2207559386013428043, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 365.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207559386013428043, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 261.52316
+      objectReference: {fileID: 0}
     - target: {fileID: 3152367123008429408, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -3040,6 +3127,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5393153370457385044, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 391.8936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393153370457385044, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 248.5132
+      objectReference: {fileID: 0}
     - target: {fileID: 5393153370457385045, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_IsActive
@@ -3068,7 +3165,7 @@ PrefabInstance:
     - target: {fileID: 7049675742515772085, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6
+      value: -5.999878
       objectReference: {fileID: 0}
     - target: {fileID: 7049675743271314998, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
