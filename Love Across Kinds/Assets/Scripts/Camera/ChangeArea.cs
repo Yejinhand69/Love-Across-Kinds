@@ -166,7 +166,7 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void TransportToArcade()
     {
-        Camera.main.transform.position = new Vector3(0.0f, 13.42f, -7.06f);
+        Camera.main.transform.position = new Vector3(0.0f, 13.42f, -4.24f);
     }
 
     public void OpenRecordingDoorPanel()
