@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1921,7 +1921,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Designers
+  m_text: '
+
+
+
+
+
+
+    Designers
 
 
 
@@ -1933,6 +1940,14 @@ MonoBehaviour:
 
 
     Programmers
+
+
+
+
+
+
+    Voice
+    Actors
 
 '
   m_isRightToLeft: 0
@@ -1962,15 +1977,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 7
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1998,7 +2013,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 117.63574, z: 0, w: -207.94812}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2420,6 +2435,18 @@ RectTransform:
   m_AnchoredPosition: {x: -5.000122, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1308360883 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794273907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe170fd8a4af944abb88185f2912b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1348633498
 GameObject:
   m_ObjectHideFlags: 0
@@ -2787,25 +2814,44 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
-      propertyPath: PhonePanel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
-      propertyPath: PhoneButton
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
-      propertyPath: MessagePanel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
       propertyPath: SettingPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3314025257286337920, guid: a75119305b40316478d7b3177d81a82f,
+        type: 3}
     - target: {fileID: 551755525059653929, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000057135722738099, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000057135722738099, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000057135979360744, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1308360883}
+    - target: {fileID: 2000057135979360744, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenSettingPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000057135979360745, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 307
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000057135979360745, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1399.3
       objectReference: {fileID: 0}
     - target: {fileID: 2000057136302944009, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
@@ -2867,10 +2913,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2000057136552282934, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000057136552282934, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -350
+      objectReference: {fileID: 0}
     - target: {fileID: 5129512323629208371, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387916876281089694, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 346
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387916876281089694, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -171
       objectReference: {fileID: 0}
     - target: {fileID: 7388582905465275917, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
@@ -2882,46 +2948,41 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 432341148}
+    - target: {fileID: 7388582905962419449, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1308360883}
+    - target: {fileID: 7388582905962419449, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenSettingsPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388582905962419449, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OpenSettingPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388582905962419449, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuOpener, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388582905962419449, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PhoneOpener, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7388582906582969552, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7388582906664245119, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    - target: {fileID: 7388582906727807649, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
-      propertyPath: m_Name
-      value: BGMVolumeSlider
-      objectReference: {fileID: 0}
-    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 432341148}
-    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenSettingsPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OpenPhone
-      objectReference: {fileID: 0}
-    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenuOpener, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: eb21860258c01604a971d82d137e0e6c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
 --- !u!1 &1987853744
@@ -3215,7 +3276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.7767, y: -73}
+  m_AnchoredPosition: {x: 3.7767, y: -79}
   m_SizeDelta: {x: 1060.6653, y: 2228.3599}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067337461
@@ -3238,7 +3299,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chan Jay Sern
+  m_text: '
+
+
+
+
+
+
+
+    Chan Jay Sern
 
     Khoo Teng Cheng
 
@@ -3246,10 +3315,10 @@ MonoBehaviour:
 
     Chong Wei Lin
 
-    Vanthea Wong
+    Vanthea
+    Wong
 
-    Lim
-    Qiu Wen
+    Lim Qiu Wen
 
 
 
@@ -3257,11 +3326,17 @@ MonoBehaviour:
 
     Lai Zhi Jian
 
-    Kon Kok Wei
+    Kon Kok
+    Wei
 
     Jonathan
 
-'
+
+
+    Xina Voice Actor: Aina
+
+    Game Show Host Voice Actor:
+    Mr Johann'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0164c809776b0bc4fbff129d0309bc98, type: 2}
   m_sharedMaterial: {fileID: -712134963989762839, guid: 0164c809776b0bc4fbff129d0309bc98,
@@ -3289,15 +3364,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3325,7 +3400,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -116.656006, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

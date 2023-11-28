@@ -50,17 +50,14 @@ public class PhoneOpener : MonoBehaviour
     {
         if (SettingPanel != null)
         {
-            //bool isActive = Panel.activeSelf;//added
-            //Panel.SetActive(!isActive);//added
-
             Animator animator = SettingPanel.GetComponent<Animator>();
             if (animator != null)
             {
                 AudioManager.instance.PlaySFX("Button Press");
 
-                bool isOpen = animator.GetBool("openSettingPanel");
+                bool isOpen = animator.GetBool("openSettings");
 
-                animator.SetBool("openSettingPanel", !isOpen);
+                animator.SetBool("openSettings", !isOpen);
             }
         }
     }
