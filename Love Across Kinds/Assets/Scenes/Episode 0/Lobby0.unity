@@ -1734,6 +1734,8 @@ MonoBehaviour:
   - Name: FreeTime
     BGM: {fileID: 8300000, guid: e720ff77fd2aba54496d258d4ede350e, type: 3}
   voiceOverScript: {fileID: 0}
+  Episode_0_VA: {fileID: 0}
+  Episode_1_VA: []
 --- !u!4 &321514431
 Transform:
   m_ObjectHideFlags: 0
@@ -3510,6 +3512,11 @@ PrefabInstance:
       propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4208495209633101409, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5104200807676869324, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3544,6 +3551,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -3.5004883
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854110838521287803, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9019172559840153644, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
