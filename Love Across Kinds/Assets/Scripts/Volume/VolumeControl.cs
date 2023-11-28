@@ -20,7 +20,7 @@ public class VolumeControl : MonoBehaviour
     private void Start()
     {
         // Initialize the slider value to the saved audio source volume or set it to the default volume (e.g., 0.5f)
-        bgmVolumeSlider.value = PlayerPrefs.GetFloat("BGMVolume", 0.5f);
+        bgmVolumeSlider.value = PlayerPrefs.GetFloat("BGMVolume", 0.1f);
         sfxVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.5f);
 
         // Attach an event listener to the slider to handle volume changes

@@ -142,7 +142,7 @@ public class DialogueManager : MonoBehaviour
             {
                 currIndexPos = i;
 
-                //AudioManager.instance.PlayVoice(currSentenceId);
+                AudioManager.instance.PlayVoice(currSentenceId);
 
                 //Check and change NameBox for player's name
                 if (datas[currIndexPos].name == "Player")

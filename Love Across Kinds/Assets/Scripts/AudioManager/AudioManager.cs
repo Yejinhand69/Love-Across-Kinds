@@ -13,9 +13,10 @@ public class AudioManager : MonoBehaviour
     public AudioSource _VoiceOverSource;
 
     public BGM_Data[] bGM_Datas;
-    public List<SFX_Data> sFX_Datas;
-    [HideInInspector] 
+    private List<SFX_Data> sFX_Datas;
     public VoiceOverAudioData voiceOverScript;
+    public GameObject Episode_0_VA;
+    public GameObject[] Episode_1_VA;
 
     public Dictionary<string, AudioClip> SFXDictionary;
     public Dictionary<string, AudioClip> BGMDictionary;
@@ -72,6 +73,33 @@ public class AudioManager : MonoBehaviour
             _BGMSource.UnPause();
             _SFXSource.UnPause();
         }
+
+        if (PhaseManager.instance.currentEpisode == 0)
+        {
+            if (PhaseManager.instance.currentPhase == "Prologue")
+            {
+                voiceOverScript = Episode_0_VA.GetComponent<VoiceOverAudioData>();
+            }
+        }
+        else if (PhaseManager.instance.currentEpisode == 1)
+        {
+            if (PhaseManager.instance.currentPhase == "PreProduction")
+            {
+                voiceOverScript = Episode_1_VA[0].GetComponent<VoiceOverAudioData>();
+            }
+            else if (PhaseManager.instance.currentPhase == "Filming")
+            {
+                voiceOverScript = Episode_1_VA[1].GetComponent<VoiceOverAudioData>();
+            }
+            else if (PhaseManager.instance.currentPhase == "FreeTime")
+            {
+                voiceOverScript = Episode_1_VA[2].GetComponent<VoiceOverAudioData>();
+            }
+            else if (PhaseManager.instance.currentPhase == "Special")
+            {
+                voiceOverScript = Episode_1_VA[3].GetComponent<VoiceOverAudioData>();
+            }
+        }
     }
 
     public void UpdateSFX()
@@ -124,6 +152,7 @@ public class AudioManager : MonoBehaviour
     public void PlayVoice(int dialogueID)
     {
         _VoiceOverSource.Stop();
+
         if(voiceOverScript._VoiceClips[dialogueID].voiceClip != null)
         {
             //Case 1
