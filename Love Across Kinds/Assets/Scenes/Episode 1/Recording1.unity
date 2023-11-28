@@ -881,12 +881,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8829911700149924035, guid: 6f6a21e953d53b14ba5393e3d3f7e707,
         type: 3}
+      propertyPath: isDonePP1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829911700149924035, guid: 6f6a21e953d53b14ba5393e3d3f7e707,
+        type: 3}
       propertyPath: currentPhase
       value: PreProduction
       objectReference: {fileID: 0}
     - target: {fileID: 8829911700149924035, guid: 6f6a21e953d53b14ba5393e3d3f7e707,
         type: 3}
       propertyPath: currentEpisode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829911700149924035, guid: 6f6a21e953d53b14ba5393e3d3f7e707,
+        type: 3}
+      propertyPath: isDonePrologue
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8829911700149924035, guid: 6f6a21e953d53b14ba5393e3d3f7e707,
@@ -5614,9 +5624,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40f1948e0f22ab4db925bfbd8ea70ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Xina: {fileID: 640361862}
-  Benia: {fileID: 787097434}
-  Florine: {fileID: 387805796}
+  Xina: {fileID: 696315263}
+  Benia: {fileID: 1495762306}
+  Florine: {fileID: 712658629}
 --- !u!4 &1851649901
 Transform:
   m_ObjectHideFlags: 0

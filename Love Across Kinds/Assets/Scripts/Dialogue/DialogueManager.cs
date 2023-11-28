@@ -84,6 +84,7 @@ public class DialogueManager : MonoBehaviour
                 if (Input.anyKeyDown)
                 {
                     NextSentence();
+                    Epidose1Filming.isPlayedSFX = false;
                 }
             }
         }
@@ -209,16 +210,22 @@ public class DialogueManager : MonoBehaviour
                     dialogueBox.SetActive(true);
                 }
                 
-                if(nameText.text.Contains("Game") || nameText.text.Contains("Host") || nameText.text.Contains("Joe"))
+                if(_JoeHand != null)
                 {
-                    _JoeHand.SetActive(true);
-                    _JoeHand.transform.position = Camera.main.transform.position + Vector3.forward * 3 + Vector3.down;
+                    if (nameText.text.Contains("Game") || nameText.text.Contains("Host") || nameText.text.Contains("Joe"))
+                    {
+                        _JoeHand.SetActive(true);
+                        if (Camera.main != null)
+                        {
+                            _JoeHand.transform.position = Camera.main.transform.position + Vector3.forward * 3 + Vector3.down;
+                        }
+                    }
+                    else
+                    {
+                        _JoeHand.SetActive(false);
+                    }
                 }
-                else
-                {
-                    _JoeHand.SetActive(false);
-                }
-
+                
                 //Expressions
                 if(characterAnim != null)
                 {
@@ -270,6 +277,7 @@ public class DialogueManager : MonoBehaviour
                 if (datas[currIndexPos].checkIfAffection)
                 {
                     AffectionSystem.Instance.GetAffection();
+                    datas[currIndexPos].checkIfAffection = false;
                 }
 
                 if (datas[currIndexPos].checkIfOption)
@@ -313,7 +321,16 @@ public class DialogueManager : MonoBehaviour
 
         dialogueActive = false;
 
-        _JoeHand.SetActive(false);
+        if(_JoeHand != null)
+        {
+            _JoeHand.SetActive(false);
+        }
+
+        if (datas[currIndexPos].checkIfAffection)
+        {
+            AffectionSystem.Instance.GetAffection();
+            datas[currIndexPos].checkIfAffection = false;
+        }
 
         switch (datas[currIndexPos]._event)
         {
@@ -505,9 +522,14 @@ public class DialogueManager : MonoBehaviour
 
                 if (PhaseManager.instance.currentPhase == "FreeTime")
                 {
-                    SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
-               
+
+                if (PhaseManager.instance.currentPhase == "Special")
+                {
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                }
+
                 break;
 
 

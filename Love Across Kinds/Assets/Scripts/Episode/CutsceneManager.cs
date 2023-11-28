@@ -32,6 +32,11 @@ public class CutsceneManager : MonoBehaviour
             StartCoroutine(PlayPhoneRinging());
         }
 
+        if(DialogueManager.instance.currSentenceId == 27)
+        {
+            AudioManager.instance._SFXSource.Stop();
+        }
+
         if (DialogueManager.instance.currSentenceId == 61 && !(DialogueManager.dialogueActive))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -3573,7 +3573,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NamingBox: {fileID: 1493246185834134396}
-  NamingBG: {fileID: 0}
   isOnNaming: 0
   playerName: Player
 --- !u!1 &2000057136533541137
@@ -6179,6 +6178,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7049675742813397885}
     m_Modifications:
+    - target: {fileID: 163644005528759298, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 163644005528759298, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1481808091
+      objectReference: {fileID: 0}
+    - target: {fileID: 860278051494444824, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 860278051494444824, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1481808091
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364722620282072423, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364722620282072423, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1481808091
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514286466011585064, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514286466011585064, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1481808091
+      objectReference: {fileID: 0}
     - target: {fileID: 1974774539166393508, guid: 1f47e7e6d4eaee344a9e2a301272e586,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
@@ -6268,6 +6307,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Bounds.m_Extent.y
       value: 16.818851
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217897306005342776, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217897306005342776, guid: 1f47e7e6d4eaee344a9e2a301272e586,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1481808091
       objectReference: {fileID: 0}
     - target: {fileID: 4822406792353453341, guid: 1f47e7e6d4eaee344a9e2a301272e586,
         type: 3}
