@@ -46,7 +46,7 @@ public class CutsceneManager : MonoBehaviour
 
     IEnumerator PlayPhoneRinging()
     {       
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(4.5f);
         trigger.StartDialogue(" ", 26);
         if (!isPlayed)
         {

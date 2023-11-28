@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance;
 
     //UI stuffs
+    public GameObject _JoeHand;
     public GameObject dialogueBox;
     public GameObject storyBox;
     public TextMeshProUGUI nameText;
@@ -208,6 +209,16 @@ public class DialogueManager : MonoBehaviour
                     dialogueBox.SetActive(true);
                 }
                 
+                if(nameText.text.Contains("Game") || nameText.text.Contains("Host") || nameText.text.Contains("Joe"))
+                {
+                    _JoeHand.SetActive(true);
+                    _JoeHand.transform.position = Camera.main.transform.position + Vector3.forward * 3 + Vector3.down;
+                }
+                else
+                {
+                    _JoeHand.SetActive(false);
+                }
+
                 //Expressions
                 if(characterAnim != null)
                 {
@@ -301,7 +312,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         dialogueActive = false;
-        
+
+        _JoeHand.SetActive(false);
 
         switch (datas[currIndexPos]._event)
         {
