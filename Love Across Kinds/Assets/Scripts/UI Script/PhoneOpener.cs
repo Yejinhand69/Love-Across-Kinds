@@ -16,7 +16,7 @@ public class PhoneOpener : MonoBehaviour
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Episode 0")
+        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Episode 0")
         {
             PhoneButton.SetActive(false);
         }
@@ -42,10 +42,10 @@ public class PhoneOpener : MonoBehaviour
 
                 animator.SetBool("openPhone", !isOpen);
             }
-            
+
         }
     }
-   
+
     public void OpenSettingPanel()
     {
         if (SettingPanel != null)
@@ -84,7 +84,7 @@ public class PhoneOpener : MonoBehaviour
     public void OpenMessagePanel()
     {
         if (MessagePanel != null)
-        { 
+        {
             Animator animator = MessagePanel.GetComponent<Animator>();
             if (animator != null)
             {

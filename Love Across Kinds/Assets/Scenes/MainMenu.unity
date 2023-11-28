@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,12 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &149956073 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2000057134780194080, guid: 2084e439f2fa3d444a9fe7792140c80c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1794273907}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &159314441
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +371,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1.7824707, y: 0}
   m_SizeDelta: {x: 149.3364, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -517,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CreditPanel: {fileID: 1348633498}
-  SettingsPanel: {fileID: 2132810661}
+  SettingsPanel: {fileID: 890789222}
   animator: {fileID: 778555427}
   sceneToLoad: Episode 0
   delayBeforeLoad: 1.5
@@ -1172,7 +1166,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1725,6 +1719,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f6a21e953d53b14ba5393e3d3f7e707, type: 3}
+--- !u!1 &890789222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7388582906727807655, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794273907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &898885096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2145,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983564994}
   m_CullTransparentMesh: 1
+--- !u!114 &1039212528 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1525316790886783257, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794273907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1061921735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,56 +2270,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127283269}
   m_CullTransparentMesh: 1
---- !u!1 &1172831241 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3488120831934447222, guid: 2084e439f2fa3d444a9fe7792140c80c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1794273907}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1172831245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172831241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 868ade4358f7fad4898efff176761660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  task:
-  - ' - Talk to the person at the    bar'
-  - ' - Talk to the jellyfish girl    in the lobby'
-  - ' - Talk to the gas on the    bedroom floor '
-  - ' - Find your room, Room 01    and turn in for the day.'
-  - 
-  - ' - Talk to Benia'
-  - ' - Talk to Florine'
-  - ' - Talk to Xina'
-  - ' - Seek for what has been lost. Xina stated that she lost something important
-    finding it and returning may give you benefit.'
-  - ' - Head towards the recording room. Talk to Game Host Joe to start the filming
-    phase. '
-  - 
-  - ' - Play 2 Lies & 1 Truth with 2 of the contestants'
-  - 
-  - ' - Spend time with someone? '
-  - 
-  - ' - Spend time with someone? '
-  title:
-  - Get to know your fellow contestants
-  - The end of the day, but the start of something new?
-  - 
-  - 'It all starts with a Lie '
-  - The Lost Keepsake
-  - 'It''s Showtime! '
-  - 
-  - Choose your Partner/s
-  - 
-  - "It\u2019s Free Time."
-  - 
-  - Another One.
 --- !u!1 &1180454169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2342,7 +2304,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2596,12 +2558,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1532824962 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3488120830256665357, guid: 2084e439f2fa3d444a9fe7792140c80c,
+--- !u!114 &1467111348 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7388582906664245113, guid: 2084e439f2fa3d444a9fe7792140c80c,
     type: 3}
   m_PrefabInstance: {fileID: 1794273907}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1631307562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,7 +2737,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1.7824707, y: 0}
   m_SizeDelta: {x: 149.3364, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2811,18 +2779,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1662904749 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1794273907}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fe170fd8a4af944abb88185f2912b41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1794273907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2831,34 +2787,22 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
-      propertyPath: AffectionPanel
+      propertyPath: PhonePanel
       value: 
-      objectReference: {fileID: 149956073}
+      objectReference: {fileID: 0}
     - target: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
-      propertyPath: ObjectivePanel
+      propertyPath: PhoneButton
       value: 
-      objectReference: {fileID: 1532824962}
-    - target: {fileID: 99058915425883017, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.43078613
       objectReference: {fileID: 0}
-    - target: {fileID: 2000057135034884959, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2000057135722738098, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: MessagePanel
       value: 
-      objectReference: {fileID: 1662904749}
-    - target: {fileID: 2000057135722738098, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenAffectionWindow
       objectReference: {fileID: 0}
-    - target: {fileID: 2000057136198175106, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    - target: {fileID: 1662904749, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+      propertyPath: SettingPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 551755525059653929, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2923,125 +2867,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3488120830185661730, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_text
-      value: text
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120830185661756, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120830256665395, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: title.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120830256665395, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: title.Array.data[0]
-      value: 'Get to know your fellow contestants '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120830256665395, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: title.Array.data[1]
-      value: 'The end of the day, but the start of something new? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831099902781, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 22.218262
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_text
-      value: text
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_margin.x
-      value: 0.00012207031
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 75b00bc565b131d4ba2ad33fd5788095,
-        type: 2}
-    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_fontSizeBase
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -6031590698217913058, guid: 75b00bc565b131d4ba2ad33fd5788095,
-        type: 2}
-    - target: {fileID: 3488120831934447220, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447221, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.843736
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447221, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    - target: {fileID: 5129512323629208371, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.9238215
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447221, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    - target: {fileID: 7388582905465275917, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.08770708
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447221, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    - target: {fileID: 7388582905962419449, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 137.1231
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447221, guid: 2084e439f2fa3d444a9fe7792140c80c,
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 432341148}
+    - target: {fileID: 7388582906582969552, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 110.482
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447221, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1.0413818
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447221, guid: 2084e439f2fa3d444a9fe7792140c80c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.16320801
-      objectReference: {fileID: 0}
-    - target: {fileID: 3488120831934447222, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    - target: {fileID: 7388582906664245119, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_Name
-      value: text
+      value: BGMVolumeSlider
       objectReference: {fileID: 0}
-    - target: {fileID: 7049675742515772085, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -23.060028
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7049675742515772085, guid: 2084e439f2fa3d444a9fe7792140c80c,
+    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -6
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 432341148}
+    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenSettingsPanel
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3488120830256665395, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
+    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OpenPhone
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuOpener, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027505447637704604, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2084e439f2fa3d444a9fe7792140c80c, type: 3}
 --- !u!1 &1987853744
 GameObject:
@@ -3568,7 +3449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2132810662
 Animator:
   serializedVersion: 4
@@ -3658,14 +3539,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 333776852, guid: a16366390d3d858438258f65478d94e5, type: 3}
+    - target: {fileID: -3481282108396035092, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
       propertyPath: bgmVolumeSlider
       value: 
-      objectReference: {fileID: 2070939270}
-    - target: {fileID: 333776852, guid: a16366390d3d858438258f65478d94e5, type: 3}
+      objectReference: {fileID: 1467111348}
+    - target: {fileID: -3481282108396035092, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
       propertyPath: sfxVolumeSlider
       value: 
-      objectReference: {fileID: 714224248}
+      objectReference: {fileID: 1039212528}
     - target: {fileID: 402871720257666689, guid: a16366390d3d858438258f65478d94e5,
         type: 3}
       propertyPath: m_RootOrder
