@@ -5486,26 +5486,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0.08770708
       objectReference: {fileID: 0}
-    - target: {fileID: 2523720136534106470, guid: 2396132d259574049a44724906e44e76,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 5.1230927
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523720136534106470, guid: 2396132d259574049a44724906e44e76,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 334.482
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523720136534106470, guid: 2396132d259574049a44724906e44e76,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -2.0413818
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523720136534106470, guid: 2396132d259574049a44724906e44e76,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 111.83679
-      objectReference: {fileID: 0}
     - target: {fileID: 2523720136534106471, guid: 2396132d259574049a44724906e44e76,
         type: 3}
       propertyPath: m_text
@@ -5681,6 +5661,18 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2523720136198507552, guid: 2396132d259574049a44724906e44e76, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2396132d259574049a44724906e44e76, type: 3}
+--- !u!1 &1427710488348255140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 53614808235441335, guid: 2396132d259574049a44724906e44e76,
+    type: 3}
+  m_PrefabInstance: {fileID: 1400132940478422803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3152367123008429409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4094106656194134642, guid: 2396132d259574049a44724906e44e76,
+    type: 3}
+  m_PrefabInstance: {fileID: 1400132940478422803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3488120830256665357 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2523720136198507550, guid: 2396132d259574049a44724906e44e76,
@@ -5706,10 +5698,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   task:
-  - ' - Talk to the person at the    bar'
-  - ' - Talk to the jellyfish girl    in the lobby'
-  - ' - Talk to the gas on the    bedroom floor '
-  - ' - Find your room, Room 01    and turn in for the day.'
+  - ' - Talk to the person at the bar'
+  - ' - Talk to the jellyfish girl in the lobby'
+  - ' - Talk to the gas on the bedroom floor '
+  - ' - Find your room, Room 01 and turn in for the day.'
   - 
   - ' - Talk to Benia'
   - ' - Talk to Florine'
@@ -5726,7 +5718,7 @@ MonoBehaviour:
   - ' - Spend time with someone? '
   title:
   - Get to know your fellow contestants
-  - The end of the day, but the start of something new?
+  - End of the day
   - 
   - 'It all starts with a Lie '
   - The Lost Keepsake
@@ -5737,6 +5729,9 @@ MonoBehaviour:
   - "It\u2019s Free Time."
   - 
   - Another One.
+  prologue:
+  - {fileID: 3152367123008429409}
+  - {fileID: 1427710488348255140}
 --- !u!224 &3488120832006672146 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2523720136606601217, guid: 2396132d259574049a44724906e44e76,

@@ -157,6 +157,7 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     }
     public void OpenArcadeDoorPanel()
     {
+        
         if (ArcadeDoorPanel != null)
         {
             Animator animator = ArcadeDoorPanel.GetComponent<Animator>();
@@ -173,6 +174,7 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void TransportToArcade()
     {
+        Debug.Log("Transporting to arcade");
         Camera.main.transform.position = new Vector3(0.0f, 13.42f, -4.24f);
     }
 
