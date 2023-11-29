@@ -177,9 +177,16 @@ public class Epidose1Filming : MonoBehaviour
             if ( ( (isTalkXina && isTalkBenia) || (isTalkBenia && isTalkFlorine) || (isTalkFlorine && isTalkXina) ) && !isEndFilm)
             {
                 isEndFilm = true;
-                dialogueTrigger.StartDialogue("Game Host Joe", 317);
+                StartCoroutine(EndingDialogue());
             }
         }
         
+    }
+
+    IEnumerator EndingDialogue()
+    {
+        yield return new WaitForSeconds(1f);
+        dialogueTrigger.StartDialogue("Game Host Joe", 317);
+        yield return new WaitForSeconds(0.5f);
     }
 }

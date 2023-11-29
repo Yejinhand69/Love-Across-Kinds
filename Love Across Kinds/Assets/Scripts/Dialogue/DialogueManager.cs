@@ -35,6 +35,7 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector] public int currSentenceId = 0;
     public static bool dialogueActive;
     private string currInteractCharName;
+    private bool isSkipped;
 
     public string phaseIndicator;
     [HideInInspector] public int XinaAttemp;
@@ -61,6 +62,8 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.text = string.Empty;
         dialogueActive = false;
+        dialogueActive = false;
+        StopAllCoroutines();
     }
 
     private void Update()
@@ -76,7 +79,7 @@ public class DialogueManager : MonoBehaviour
 
             phaseIndicator = PhaseManager.instance.currentPhase;
         }
-
+        
         if (dialogueActive)
         {
             if (!datas[currIndexPos].checkIfOption)
@@ -507,26 +510,27 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             case 4:
-                
+                //if (PhaseManager.instance.currentPhase == "FreeTime")
+                //{
+                //    Debug.Log("Change SScene");
+                //    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                //}
+
                 PhaseManager.instance.ChangePhase();
-                
-                if (PhaseManager.instance.currentPhase == "Special")
-                {
-                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
-                }
 
                 if (PhaseManager.instance.currentPhase == "Filming")
                 {
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
                 }
 
-                if (PhaseManager.instance.currentPhase == "FreeTime")
+                else if (PhaseManager.instance.currentPhase == "FreeTime")
                 {
+                    Debug.Log("Change FTScene");
                     SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
-
-                if (PhaseManager.instance.currentPhase == "Special")
+                else  if (PhaseManager.instance.currentPhase == "Special")
                 {
+                    Debug.Log("Change SScene");
                     SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
 
@@ -642,18 +646,29 @@ public class DialogueManager : MonoBehaviour
     {
         for(int i = currIndexPos; i < datas.Count; i++)
         {
-            if (datas[i].checkIfOption)
+            if (datas[i].checkIfOption || datas[i].checkIfAffection)
             {
+                Debug.Log("Options");
                 currSentenceId = i;
                 currIndexPos = i;
+                isSkipped = true;
                 DisplaySentence();
                 break;
             }
             else if (datas[i].checkIfEnd)
             {
+                Debug.Log("End");
                 currSentenceId = i;
                 currIndexPos = i;
+                dialogueActive = false;
+                isSkipped = true;
                 EndDialogue();
+                break;
+            }
+
+            if (isSkipped)
+            {
+                isSkipped = false;
                 break;
             }
         }
