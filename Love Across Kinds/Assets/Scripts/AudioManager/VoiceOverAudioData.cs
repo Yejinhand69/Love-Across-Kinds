@@ -11,16 +11,41 @@ public class VoiceOverAudioData : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.instance.voiceOverScript = this;
+        //AudioManager.instance.voiceOverScript = this;
     }
 
     private void Update()
     {
-        var voiceOver = Resources.LoadAll(folderName).Cast<AudioClip>().ToArray();
-
+        var voiceOver = Resources.LoadAll("VoiceOver/" + folderName).Cast<AudioClip>().ToArray();
+        
         for (int i = 0; i < voiceOver.Length; i++)
         {
-            _VoiceClips[i].voiceClip = voiceOver[i];
+            string[] splitName = voiceOver[i].name.Split(new char[] { ' ' });
+            //if(voiceOver[i].name == (_VoiceClips[i].actorName + " line " + _VoiceClips[i].dialogueID))
+            //{
+            //    _VoiceClips[i].voiceClip = voiceOver[i];
+            //}  
+            for (int j = 0; j < _VoiceClips.Count; j++)
+            {
+                if(splitName.Length == 3)
+                {
+                    if (splitName[2].Trim() == _VoiceClips[j].dialogueID.ToString().Trim())
+                    {
+                        _VoiceClips[j].voiceClip = voiceOver[i];
+                        break;
+                    }
+                }
+                
+               
+                if (splitName.Length == 4)
+                {
+                    if (splitName[3].Trim() == _VoiceClips[j].dialogueID.ToString().Trim())
+                    {
+                        _VoiceClips[j].voiceClip = voiceOver[i];
+                        break;
+                    }
+                }
+            }
         }
     }
 }

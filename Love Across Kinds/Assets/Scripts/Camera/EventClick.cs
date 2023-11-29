@@ -8,15 +8,36 @@ using UnityEngine.SceneManagement;
 public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public static string interactObjectName;
+    public static Animator interactObjAnim;
     private DialogueTrigger DialogueTrigger;
 
     private float pressTime;
     public float swipeThreshold = 0.2f; // Adjust this threshold to your preference for distinguishing a tap from a swipe
     private bool isSwiping = false;
 
+    public GameObject mainCamera;
+   
+
     private void Awake()
     {
         DialogueTrigger = GetComponent<DialogueTrigger>();
+        
+        
+    }
+
+    private void Update()
+    {
+        if(DialogueManager.dialogueActive == false)
+        {
+            
+            mainCamera.SetActive(true);
+            
+        }
+        if (DialogueManager.dialogueActive == true)
+        {
+            
+            mainCamera.SetActive(false);
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -39,6 +60,11 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
                 if (!DialogueManager.dialogueActive)
                 {
                     interactObjectName = name;
+
+                    if (TryGetComponent(out Animator anim))
+                    {
+                        interactObjAnim = anim;
+                    }
 
                     DialogueTrigger.StartDialogue();
                 }

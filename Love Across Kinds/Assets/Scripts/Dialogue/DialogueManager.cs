@@ -10,9 +10,12 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance;
 
     //UI stuffs
-    //public Image actorImage;
+    public GameObject _JoeHand;
+    public GameObject dialogueBox;
+    public GameObject storyBox;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI storyText;
 
     //Options stuffs
     public GameObject optionBox1;
@@ -21,6 +24,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI option1Text;
     public TextMeshProUGUI option2Text;
     public TextMeshProUGUI option3Text;
+    public GameObject skipButtonDialogue;
+    public GameObject skipButtonStory;
 
     //Stroing data of Dialogues from .csv
     public List<DialogueData> datas;
@@ -31,14 +36,15 @@ public class DialogueManager : MonoBehaviour
     public static bool dialogueActive;
     private string currInteractCharName;
 
-    [HideInInspector] public string phaseIndicator;
+    public string phaseIndicator;
     [HideInInspector] public int XinaAttemp;
     [HideInInspector] public int BeniaAttemp;
     [HideInInspector] public int FlorineAttemp;
     [HideInInspector] public int GHJoeAttemp;
 
     //Animator
-    public Animator anim;
+    public Animator dialogueAnim;
+    public Animator characterAnim;
 
     private void Awake()
     {
@@ -78,16 +84,40 @@ public class DialogueManager : MonoBehaviour
                 if (Input.anyKeyDown)
                 {
                     NextSentence();
+                    Epidose1Filming.isPlayedSFX = false;
                 }
             }
         }
+
+        if(SceneManager.GetActiveScene().name == "Episode 0")
+        {
+            if (AudioManager.instance._SFXSource.isPlaying)
+            {
+                skipButtonDialogue.SetActive(false);
+                skipButtonStory.SetActive(false);
+            }
+            else
+            {
+                skipButtonDialogue.SetActive(true);
+                skipButtonStory.SetActive(true);
+            }
+        }
+        
     }
 
     //Method to show DialogueBox & Search the upmost data of each character by NAME
     public void OpenDialogue(string objName, int startID)
     {
-        anim.SetBool("isOpenDialogue", true);
+        dialogueAnim.SetBool("isOpenDialogue", true);
 
+        //Get animator from current interact object
+        characterAnim = EventClick.interactObjAnim;
+
+        if(characterAnim != null)
+        {
+            characterAnim.SetBool("DialogueActive", true);
+        }
+        
         StartCoroutine(DelayDialogueActive());
         currIndexPos = 0;
 
@@ -114,7 +144,7 @@ public class DialogueManager : MonoBehaviour
             {
                 currIndexPos = i;
 
-                //AudioManager.instance.PlayVoice(currSentenceId);
+                AudioManager.instance.PlayVoice(currSentenceId);
 
                 //Check and change NameBox for player's name
                 if (datas[currIndexPos].name == "Player")
@@ -167,30 +197,88 @@ public class DialogueManager : MonoBehaviour
                 }
 
                 dialogueText.text = sentence;
-
-                //Expressions
-                switch (datas[currIndexPos].expression)
+                storyText.text = sentence;
+                
+                if(nameText.text == " ")
                 {
-                    case "Neutral":
-                        //Expression change here...
-                        break;
-                    case "Happy":
-                        //Expression change here...
-                        break;
-                    case "Angry":
-                        //Expression change here...
-                        break;
-                    case "Sad":
-                        //Expression change here...
-                        break;
-                    case "Shy":
-                        //Expression change here...
-                        break;
-                    default:
-                        break;
+                    storyBox.SetActive(true);
+                    dialogueBox.SetActive(false);
+                }
+                else
+                {
+                    storyBox.SetActive(false);
+                    dialogueBox.SetActive(true);
+                }
+                
+                if(_JoeHand != null)
+                {
+                    if (nameText.text.Contains("Game") || nameText.text.Contains("Host") || nameText.text.Contains("Joe"))
+                    {
+                        _JoeHand.SetActive(true);
+                        if (Camera.main != null)
+                        {
+                            _JoeHand.transform.position = Camera.main.transform.position + Vector3.forward * 3 + Vector3.down;
+                        }
+                    }
+                    else
+                    {
+                        _JoeHand.SetActive(false);
+                    }
+                }
+                
+                //Expressions
+                if(characterAnim != null)
+                {
+                    switch (datas[currIndexPos].expression)
+                    {
+                        case 1:
+                            Debug.Log("Happy");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", true);
+                            characterAnim.SetBool("isAngry", false);
+                            characterAnim.SetBool("isSad", false);
+                            characterAnim.SetBool("isShy", false);
+                            break;
+                        case 2:
+                            Debug.Log("Angry");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", false);
+                            characterAnim.SetBool("isAngry", true);
+                            characterAnim.SetBool("isSad", false);
+                            characterAnim.SetBool("isShy", false);
+                            break;
+                        case 3:
+                            Debug.Log("Sad");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", false);
+                            characterAnim.SetBool("isAngry", false);
+                            characterAnim.SetBool("isSad", true);
+                            characterAnim.SetBool("isShy", false);
+                            break;
+                        case 4:
+                            Debug.Log("Shy");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", false);
+                            characterAnim.SetBool("isAngry", false);
+                            characterAnim.SetBool("isSad", false);
+                            characterAnim.SetBool("isShy", true);
+                            break;
+                        default:
+                            Debug.Log("Neutral");
+                            //Expression change here...
+                            characterAnim.SetBool("isSmile", false);
+                            characterAnim.SetBool("isAngry", false);
+                            characterAnim.SetBool("isSad", false);
+                            characterAnim.SetBool("isShy", false);
+                            break;
+                    }
                 }
 
-
+                if (datas[currIndexPos].checkIfAffection)
+                {
+                    AffectionSystem.Instance.GetAffection();
+                    datas[currIndexPos].checkIfAffection = false;
+                }
 
                 if (datas[currIndexPos].checkIfOption)
                 {
@@ -200,12 +288,12 @@ public class DialogueManager : MonoBehaviour
                 break;
             }
         }
-
     }
 
     //Method to Display next sentence/ End the dialogue
     public void NextSentence()
     {
+        
         if (datas[currIndexPos].checkIfEnd && currSentenceId == datas[currIndexPos].sentenceID)
         {
             EndDialogue();
@@ -221,81 +309,174 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    //Add reference to mini game script here 
-    public string rhythmGameSceneName = "Rhythm Game";
-    private Scene previousScene; // Store the previous scene
-    public string pairMatchingGameSceneName = "Jon macthing pair";
-    private Scene previousScene2; // Store the previous scene
-
+    
     public void EndDialogue()
     {
-        anim.SetBool("isOpenDialogue", false);
+        dialogueAnim.SetBool("isOpenDialogue", false);
+
+        if (characterAnim != null)
+        {
+            characterAnim.SetBool("DialogueActive", false);
+        }
+
         dialogueActive = false;
 
+        if(_JoeHand != null)
+        {
+            _JoeHand.SetActive(false);
+        }
 
         if (datas[currIndexPos].checkIfAffection)
         {
             AffectionSystem.Instance.GetAffection();
+            datas[currIndexPos].checkIfAffection = false;
         }
 
         switch (datas[currIndexPos]._event)
         {
-            case "AffectionEvent":
+            case 1:
                 switch (currInteractCharName)
                 {
                     case "Xina":
-                        if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                        //FreeTime
+                        if(PhaseManager.instance.currentPhase == "FreeTime")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 2 happens here...
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                            //    //Affection Event 2 happens here...
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 5);
+                                //Affection Event 1 happens here...
+                                StartCoroutine(RhythmGameFTAE1());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                                OpenDialogue(" ", 385);
+                            }
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                        //Special
+                        else if(PhaseManager.instance.currentPhase == "Special")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 1 happens here...
-                            previousScene = SceneManager.GetActiveScene();
-                            Debug.Log("AE1 Xina");
-                            StartCoroutine(LoadRhythmGameAsync());
-                        }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
-                        {
-                            //Spend time
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            {
+                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 389);
+                                //Affection Event 2 happens here...
+                                StartCoroutine(RhythmGameSAE2());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 8);
+                                //Affection Event 1 happens here...
+                                StartCoroutine(RhythmGameSAE1());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                                OpenDialogue(" ", 590);
+                            }
                         }
                         break;
 
                     case "Benia":
-                        if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                        //FreeTime
+                        if (PhaseManager.instance.currentPhase == "FreeTime")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 2 happens here...
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                            //    //Affection Event 2 happens here...
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 113);
+                                //Affection Event 1 happens here...
+                                StartCoroutine(TriviaGameFTAE1());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                                OpenDialogue(" ", 384);
+                            }
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                        //Special
+                        else if (PhaseManager.instance.currentPhase == "Special")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 1 happens here...
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                            //    //Affection Event 2 happens here...
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 116);
+                                //Affection Event 1 happens here...
+                                StartCoroutine(TriviaGameSAE1());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                                OpenDialogue(" ", 589);
+                            }
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
-                        {
-                            //Spend time
-                        }
+                        
                         break;
 
                     case "Florine":
-                        if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+
+                        //FreeTime
+                        if (PhaseManager.instance.currentPhase == "FreeTime")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 2 happens here...
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                            //    //Affection Event 2 happens here...
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 279);
+                                //Affection Event 1 happens here...
+                                StartCoroutine(PairMatchingGameFTAE1());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                                OpenDialogue(" ", 386);
+                            }
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                        //Special
+                        else if (PhaseManager.instance.currentPhase == "Special")
                         {
-                            //Dialogue Before Mini Game
-                            //Affection Event 1 happens here...
-                            StartCoroutine(LoadPairMatchingGameAsync());
+                            //if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 3)
+                            //{
+                            //    //Dialogue Before Mini Game
+                                
+                            //    //Affection Event 2 happens here...
+                                
+                            //}
+                            if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] >= 1)
+                            {
+                                //Dialogue Before Mini Game
+                                OpenDialogue(" ", 282);
+                                //Affection Event 1 happens here...
+                                StartCoroutine(PairMatchingGameSAE1());
+                            }
+                            else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
+                            {
+                                //Spend time
+                                OpenDialogue(" ", 591);
+                            }
                         }
-                        else if (AffectionSystem.Instance.affectionDictionary[currInteractCharName] == 0)
-                        {
-                            //Spend time
-                        }
+
                         break;
 
                     default:
@@ -303,18 +484,37 @@ public class DialogueManager : MonoBehaviour
                 }
                 break;
 
-            case "ScavengerEvent":
-
+            case 2:
+                ScavengerEvent.isScavengerEvent = true;
+                Debug.Log(ScavengerEvent.isScavengerEvent);
                 break;
 
-            case "Sleep":
+            case 3:
                 PhaseManager.instance.currentEpisode++;
+
+                if (PhaseManager.instance.currentPhase == "Special")
+                {
+                    SceneManager.LoadScene("Episode2");
+                }
+
+                if (PhaseManager.instance.currentPhase == "Prologue")
+                {
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                }
+
                 PhaseManager.instance.ChangePhase();
-                SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+
                 break;
 
-            case "ChangePhase":
+            case 4:
+                
                 PhaseManager.instance.ChangePhase();
+                
+                if (PhaseManager.instance.currentPhase == "Special")
+                {
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                }
+
                 if (PhaseManager.instance.currentPhase == "Filming")
                 {
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
@@ -322,17 +522,18 @@ public class DialogueManager : MonoBehaviour
 
                 if (PhaseManager.instance.currentPhase == "FreeTime")
                 {
-                    SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
 
                 if (PhaseManager.instance.currentPhase == "Special")
                 {
                     SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
+
                 break;
 
 
-            case "FilmingConvo":
+            case 5:
                 switch (currInteractCharName)
                 {
                     case "Xina":
@@ -439,48 +640,261 @@ public class DialogueManager : MonoBehaviour
 
     public void SkipDialogue()
     {
-        EndDialogue();
-        optionBox1.SetActive(false);
-        optionBox2.SetActive(false);
-        optionBox3.SetActive(false);
+        for(int i = currIndexPos; i < datas.Count; i++)
+        {
+            if (datas[i].checkIfOption)
+            {
+                currSentenceId = i;
+                currIndexPos = i;
+                DisplaySentence();
+                break;
+            }
+            else if (datas[i].checkIfEnd)
+            {
+                currSentenceId = i;
+                currIndexPos = i;
+                EndDialogue();
+                break;
+            }
+        }
     }
 
-    IEnumerator LoadRhythmGameAsync()
+    //Add reference to mini game script here 
+    private string rhythmGameSceneName = "Rhythm Game";
+    private string pairMatchingGameSceneName = "Jon macthing pair";
+    private string trivaSceneName = "Jon Benia minigame";
+
+    IEnumerator RhythmGameFTAE1()
     {
+        yield return new WaitForSeconds(0.5f);
+
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
         // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
-        SceneManager.UnloadSceneAsync(previousScene, UnloadSceneOptions.None);
-        // Wait for the scene to finish loading.
-        while (!asyncLoad.isDone)
+        SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
+
+        while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
         {
-            // You can add loading animations or progress updates here if needed.
+            checkWinLose = GameManager.situation;
             yield return null;
         }
 
-        while (!GameManager.instance.resultsScreen.activeInHierarchy)
+        if (checkWinLose)
         {
-            yield return null;
+            Debug.Log("Success");
+            OpenDialogue(" ", 31); // Call StartDialogue without arguments
         }
-
-        // The 'Rhythm Game' scene has finished loading; unload it and return to the previous scene.
-        SceneManager.UnloadSceneAsync(rhythmGameSceneName);
-        SceneManager.SetActiveScene(previousScene);
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 34); // Call StartDialogue without arguments
+        }
     }
 
-    IEnumerator LoadPairMatchingGameAsync()
+    IEnumerator RhythmGameSAE1()
     {
-        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(pairMatchingGameSceneName);
+        yield return new WaitForSeconds(0.5f);
 
-        // Wait for the scene to finish loading.
-        while (!asyncLoad.isDone)
+        while (dialogueActive)
         {
-            // You can add loading animations or progress updates here if needed.
             yield return null;
         }
 
-        // The 'Rhythm Game' scene has finished loading; unload it and return to the previous scene.
-        SceneManager.UnloadSceneAsync(pairMatchingGameSceneName);
-        SceneManager.SetActiveScene(previousScene2);
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
+
+        while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
+        {
+            Debug.Log("Loop");
+            checkWinLose = GameManager.situation;
+            yield return null;
+        }
+        
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 34); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 37); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator RhythmGameSAE2()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
+
+        while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
+        {
+            checkWinLose = GameManager.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 400); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 404); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator PairMatchingGameFTAE1()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(pairMatchingGameSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
+
+        while (SceneManager.GetSceneByName(pairMatchingGameSceneName).isLoaded)
+        {
+            checkWinLose = GameControllerScript.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 305); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 311); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator PairMatchingGameSAE1()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(pairMatchingGameSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
+
+        while (SceneManager.GetSceneByName(pairMatchingGameSceneName).isLoaded)
+        {
+            checkWinLose = GameControllerScript.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 308); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 314); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator TriviaGameFTAE1()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(trivaSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
+
+        while (SceneManager.GetSceneByName(trivaSceneName).isLoaded)
+        {
+            checkWinLose = Dialogue2.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 216); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 263); // Call StartDialogue without arguments
+        }
+    }
+
+    IEnumerator TriviaGameSAE1()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        while (dialogueActive)
+        {
+            yield return null;
+        }
+
+        // Use SceneManager.LoadSceneAsync to load the scene asynchronously.
+        SceneManager.LoadSceneAsync(trivaSceneName, LoadSceneMode.Additive);
+
+        bool checkWinLose = true;
+        yield return new WaitForSeconds(0.5f);
+
+        while (SceneManager.GetSceneByName(trivaSceneName).isLoaded)
+        {
+            checkWinLose = Dialogue2.situation;
+            yield return null;
+        }
+
+        if (checkWinLose)
+        {
+            Debug.Log("Success");
+            OpenDialogue(" ", 219); // Call StartDialogue without arguments
+        }
+        else
+        {
+            Debug.Log("Fail");
+            OpenDialogue(" ", 266); // Call StartDialogue without arguments
+        }
     }
 }

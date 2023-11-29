@@ -20,8 +20,9 @@ public class PhaseManager : MonoBehaviour
 
     public bool isDonePrologue;
     public bool isDonePP1;
+    public bool isDoneS1;
 
-    private string[] phases = { "Special", "PreProduction", "Filming", "FreeTime" };//added prologue phase
+    private string[] phases = { "Prologue", "PreProduction", "Filming", "FreeTime" , "Special" };//added prologue phase
 
     private void Awake()
     {
@@ -45,8 +46,7 @@ public class PhaseManager : MonoBehaviour
 
         if(SceneManager.GetActiveScene().name == "Lobby0" && !instance.isDonePrologue)
         {
-            instance.isDonePrologue = true;
-            dialogueTrigger.StartDialogue("Player", 62);     
+            dialogueTrigger.StartDialogue("Player", 62);
         }
 
         if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
@@ -58,13 +58,35 @@ public class PhaseManager : MonoBehaviour
             AudioManager.instance.PlaySFX("Notification 2");
 
             dialogueTrigger.StartDialogue(" ", 0);
-            Debug.Log("Dialogue Start 0");
-            
+            Debug.Log("Dialogue Start PP");
+        }
+
+        if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
+        {
+            GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
+            GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
+
+            AudioManager.instance.PlaySFX("Notification 2");
+
+            dialogueTrigger.StartDialogue(" ", 0);
+            Debug.Log("Dialogue Start S");
         }
     }
 
     private void Update()
     {
+        if(currentPhase == "Prologue" && currentEpisode == 0 && !instance.isDonePrologue && SceneManager.GetActiveScene().name == "Lobby0")
+        {
+            while (DialogueManager.dialogueActive)
+            {
+                continue;
+            }
+
+            StartCoroutine(PlayerNaming());
+
+            instance.isDonePrologue = true;
+        }
+
         if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
         {
             while (DialogueManager.dialogueActive)
@@ -75,12 +97,22 @@ public class PhaseManager : MonoBehaviour
             StartCoroutine(ShowPhoneMessage());
             instance.isDonePP1 = true;
         }
+
+        if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
+        {
+            while (DialogueManager.dialogueActive)
+            {
+                continue;
+            }
+
+            StartCoroutine(ShowPhoneMessage());
+            instance.isDoneS1 =true;
+        }
     }
 
     private void UpdatePhaseText()
     {
         currentPhase = phases[currentPhaseIndex];
-        //Debug.Log("Current Phase: " + currentPhase);
         DataProcessor.instance.ProcessDialogueData();
 
         // Save the currentPhaseIndex to PlayerPrefs
@@ -97,6 +129,25 @@ public class PhaseManager : MonoBehaviour
         AudioManager.instance.PlayBGM();
     }
 
+    IEnumerator PlayerNaming()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        while (DialogueManager.dialogueActive)
+        {
+            yield return null;
+        }
+
+        UserData.instance.OpenNamingBox();
+
+        while (UserData.instance.isOnNaming)
+        {
+            yield return null;
+        }
+
+        dialogueTrigger.StartDialogue(" ", 69);
+    }
+
     IEnumerator ShowPhoneMessage()
     {
         yield return new WaitForSeconds(0.5f);
@@ -105,11 +156,11 @@ public class PhaseManager : MonoBehaviour
             yield return null;
         }
 
-        phoneOpener.OpenPhone();
+        //phoneOpener.OpenPhone();
 
         yield return new WaitForSeconds(0.5f);
         
-        phoneOpener.OpenMessagePanel();
+        //phoneOpener.OpenMessagePanel();
 
         while (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone"))
         {
@@ -118,7 +169,7 @@ public class PhaseManager : MonoBehaviour
 
         if (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone") == false)
         {
-            phoneOpener.OpenMessagePanel();
+            //phoneOpener.OpenMessagePanel();
         }
 
         dialogueTrigger.StartDialogue(" ", 2);

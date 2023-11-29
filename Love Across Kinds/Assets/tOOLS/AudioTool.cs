@@ -47,19 +47,19 @@ public class AudioTool : EditorWindow
             return;
         }
 
-        if(idList.Count > 0)
+        if (idList.Count > 0)
         {
             idList.Clear();
         }
-        if(nameList.Count > 0)
+        if (nameList.Count > 0)
         {
             nameList.Clear();
         }
-        if(sentenceList.Count > 0)
+        if (sentenceList.Count > 0)
         {
             sentenceList.Clear();
         }
-        
+
         string[] data = dialogueData.text.Split(new char[] { '\n' });
         
         for(int i = 1; i < data.Length - 1; i++)

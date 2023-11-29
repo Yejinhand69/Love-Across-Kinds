@@ -8,6 +8,7 @@ public class CutsceneManager : MonoBehaviour
     //private DialogueManager dialogueManager;
     private DialogueTrigger trigger;
     private Animator anim;
+    private bool isPlayed;
 
     private void Start()
     {
@@ -31,9 +32,14 @@ public class CutsceneManager : MonoBehaviour
             StartCoroutine(PlayPhoneRinging());
         }
 
-        if(DialogueManager.instance.currSentenceId == 61 && !(DialogueManager.dialogueActive))
+        if(DialogueManager.instance.currSentenceId == 27)
         {
-            Skip();
+            AudioManager.instance._SFXSource.Stop();
+        }
+
+        if (DialogueManager.instance.currSentenceId == 61 && !(DialogueManager.dialogueActive))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -44,17 +50,14 @@ public class CutsceneManager : MonoBehaviour
     }
 
     IEnumerator PlayPhoneRinging()
-    {
-        yield return new WaitForSeconds(4f);
-        AudioManager.instance.PlaySFX("Together Succesfully");
-        yield return new WaitForSeconds(2f);
+    {       
+        yield return new WaitForSeconds(4.5f);
         trigger.StartDialogue(" ", 26);
-    }
-
-    public void Skip()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //PhaseManager.instance.currentPhase = "PreProduction";
-        //PhaseManager.instance.currentEpisode = 1;
+        if (!isPlayed)
+        {
+            AudioManager.instance.PlaySFX("Phone Ring");
+            isPlayed = true;
+        }
+        
     }
 }

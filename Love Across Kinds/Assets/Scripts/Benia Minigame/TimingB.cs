@@ -7,7 +7,9 @@ using UnityEngine.SocialPlatforms.Impl;
 public class TimingB : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] float remainingTime;
+    [SerializeField] public float remainingTime;
+    [SerializeField] public bool chooseLeastScoreAnswer = false;
+    
 
     void Update()
     {
@@ -18,6 +20,12 @@ public class TimingB : MonoBehaviour
         else if(remainingTime <= 0)
         {
             remainingTime = 0;
+        }
+
+        if(remainingTime <= 0)
+        {
+            chooseLeastScoreAnswer = true;
+            
         }
         
         int minutes = Mathf.FloorToInt(remainingTime / 60);

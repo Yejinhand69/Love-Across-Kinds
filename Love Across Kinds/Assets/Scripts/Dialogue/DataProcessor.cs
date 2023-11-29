@@ -31,7 +31,7 @@ public class DataProcessor : MonoBehaviour
 
         //Read/Load dialogue file
         TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/DialogueDataEpisode" + PhaseManager.instance.currentEpisode + PhaseManager.instance.currentPhase);
-        
+ 
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
 
@@ -57,8 +57,8 @@ public class DataProcessor : MonoBehaviour
             int.TryParse(row[10], out dialogueData.option3_sentenceID);
             bool.TryParse(row[11], out dialogueData.checkIfEnd);
             bool.TryParse(row[12], out dialogueData.checkIfAffection);
-            dialogueData._event = row[13];
-            dialogueData.expression = row[14];
+            int.TryParse(row[13], out dialogueData._event);
+            int.TryParse(row[14], out dialogueData.expression);
 
             //Add the variables with data into a list
             instance.dataList.Add(dialogueData);
@@ -82,6 +82,6 @@ public class DialogueData
     public int option3_sentenceID;
     public bool checkIfEnd;
     public bool checkIfAffection;
-    public string _event;
-    public string expression;
+    public int _event;
+    public int expression;
 }

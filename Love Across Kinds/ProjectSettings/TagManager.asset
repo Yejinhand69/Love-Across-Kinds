@@ -15,6 +15,7 @@ TagManager:
   - Note01
   - Note04
   - ArcadeDoor
+  - BarDoor
   layers:
   - Default
   - TransparentFX
@@ -51,4 +52,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: JoeHand
+    uniqueID: 1481808091
     locked: 0

@@ -27,6 +27,7 @@ public class GameControllerScript : MonoBehaviour
     [SerializeField] private Sprite[] images;
     [SerializeField] private AudioSource cardDis;
 
+    public static bool situation;
 
     private int[] Randomiser(int[] locations)
     {
@@ -84,6 +85,7 @@ public class GameControllerScript : MonoBehaviour
             win.SetActive(true);
             timing.SetActive(false);
             cannotWin = false;
+            situation = true;
         }
     }
 
@@ -155,5 +157,11 @@ public class GameControllerScript : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("Lobby1");
+    }
+
+    [System.Obsolete]
+    public void Continue()
+    {
+        SceneManager.UnloadScene("Jon macthing pair");
     }
 }

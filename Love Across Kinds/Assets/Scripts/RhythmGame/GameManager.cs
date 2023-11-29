@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     public bool startPlaying;
     public bool countDown;
-    public bool situation;
+    public static bool situation;
 
     public BeatScroller theBS;
 
@@ -77,7 +77,6 @@ public class GameManager : MonoBehaviour
                     inGameUI.SetActive(false);
                     finalScoreText.text = "Score: " + currentScore;
                 }
-                
             }
         }
         percentageCount = (noteCount / totalCountNote) *100;

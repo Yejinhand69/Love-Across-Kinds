@@ -1,0 +1,659 @@
+name	sentenceId	sentence	nextSentenceID	checkIfOption	option1	option2	option3	option1_sentenceID	option2_sentenceID	option3_sentenceID	checkIfEnd	checkIfAffection	"event (1 - AffectionEvent, 2 - ScavengerEvent, 3 - Sleep, 4 - ChangePhase, 5 - FilmingConvo)"	"expression (0 - Neutral, 1 - Happy, 2 - Angry, 3 - Sad, 4 - Shy)"
+ 	0	A loud notification from your phone drags you out of bed	1	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+Game Host Joe	1	"Goooooodddd Morning Human Contestant! Kick back & relax for today, filming of episode 2 will only take place tomorrow so take time today to rest & get to know your fellow contestants better!"	2	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	2	"Oh, today is Free Time huh?"	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+ 	3	"You see Xina in the arcade zone,"	4	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	4	She hasn't noticed you yet but if you get any closer she probably will.	5	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	5	"Knowing Xina, once she's got you it's gonna be a longggg time before you can leave."	6	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	6	Approach Xina?	7	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	7	Approach Xina?	-	TRUE	Yes 	Maybe Another Time	-	592	7	-	TRUE	FALSE	-	0
+ 	8	"Xina seems to be wearing a pair of virtual environment glasses,"	9	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	9	She's playing some kind of rhythm game and looks really good at it!	10	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	10	As you get closer you see her jump a little as if she was startled by something	11	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	11	"Xina takes off the VE glasses and turns around to face you, almost as if she knew you were there."	12	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	12	 PlayerName !	13	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	13	I knew I recognised your taste!	14	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	14	"Xina smiles radiantly at you, proud of her intuition"	15	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	15	She looks happy to see you	16	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	16	She looks happy to see you	-	TRUE	Is my taste that distinct?	I'm happy to see you too.	-	17	22	-	FALSE	FALSE	-	0
+Xina	17	Yup!	18	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	18	Xina says it with a chirp in her voice.	19	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	19	I could probably make out your taste from a crowd.	20	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	20	I wonder why…	21	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	21	She seems to try to ponder on her own question for a brief moment before dropping it and moving onto something else.	26	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	22	Xina turns a bright pink in response to you reading her emotions	23	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	23	I'm like an open book to you huh?	24	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	24	"Wait, aren't I supposed to be the mind reader here???"	25	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	25	She giggles at her own joke	26	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	26	Anyways-	27	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	27	You wanna try playing this game?	28	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	28	"It's really fun, It's like an updated version of a game my dad had!”"	29	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	29	She looks at you with anticipation and eagerness	30	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	30	You can't bring yourself to say no to her.	31	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	31	The game is simple you just got to get as much points as possible 	32	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	32	To get points just press on the notes	33	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	33	Here we go~	34	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+Xina	34	Oh wow!	35	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	35	You're surprisingly good!	36	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	36	Xina seems impressed with your skills.	37	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
+ 	37	Xina giggles at your poor score	38	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	38	Hehehe-	39	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	39	She teases you for your lack of skill	40	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	40	"It's ok, the game's pretty tough for beginners"	41	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	41	You Noooobbbb.	42	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	42	Even though you just met her recently it feels as if Xina has been part of your life for a long time-	43	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	43	"The atmosphere between the two of you is comfortable,"	44	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	44	Xina grabs your hand and pulls you along	45	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	45	Let's move over to the couches!	46	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	46	"You and Xina move over to the lounge area of the entertainment room,"	47	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	47	The both of you sit down on the couches while still holding hands	48	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	48	"Her hand feels soft and a bit squishy, but warm."	49	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	49	"You know,"	50	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	50	I've explored the whole ship but I like this place the most!	51	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	51	There are so many arcade machines here!	52	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	52	The pool's my second favourite though!	53	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	53	The pool's my second favourite though!	-	TRUE	You were really good at that game!	How'd you get so good at that game?	-	54	54	-	FALSE	FALSE	-	0
+Xina	54	Hehe-	55	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	55	"Xina's blushes a bit and puffs out her chest,"	56	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	56	"Her face looks a little smug and seems like it's saying 'Yes, Praise me more!'"	57	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	57	The version of that game is the ultra-definitive-game of the century version so it's got a lotta tough songs in it.	58	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	58	Luckily for me my skills from an older cabinet version carries over-	59	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	59	Xina looks at you with innocent eyes while explaining her history with the game	60	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	60	Oh!	61	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	61	"She very subtly squeezes your hand,"	62	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	62	"You see, my dad had an ancient arcade machine with the same older game on it-"	63	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	63	"He was such a nerd about it, he spent a lottt of money on it."	64	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	64	"He was such a nerd about it, he spent a lottt of money on it."	-	TRUE	Was?	How much did he spend on it?	-	65	71	-	FALSE	FALSE	-	0
+ 	65	Xina looks at you with sadness in her eyes. . .	66	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	66	Her grip on your hand loosens. . .	67	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	67	He's…	68	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	68	No longer with us.	69	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	69	"But I have a feeling you would get along with him,"	70	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	70	Xina's tone of voice cheers up a bit	74	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	71	A LOT.	72	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	72	Mom got reallyyyy mad him for that.	73	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	73	"He was fascinated with old tech from the humans,"	74	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	74	Probably because-	75	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	75	He was a human too!	76	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	76	Her grip on you tightens slightly once again.	77	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	77	Her grip on you tightens slightly once again.	-	TRUE	A human? Then how-	???	-	78	78	-	FALSE	FALSE	-	0
+ 	78	"Xina giggles at your confusion,"	79	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	79	"You see, Scyzoans often crossbreed with other sentient-species"	80	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	80	"Xina stares at your fingers and intertwines them with hers,"	81	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	81	"I think most of the new generation of Scyzoans are mixed actually,"	82	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	82	Xina stops staring off into space and focuses on you again	83	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	83	Even in my mother's generation-	84	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	84	Xina's expression freezes at the mention of her mother	85	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	85	She looks at you with an almost melancholic look on her face before continuing like nothing happened	86	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	86	Even in my mother's generation there were quite a few mixed species couples	87	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	87	"She moves closer to you on the couch while keeping her eyes locked to yours,"	88	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	88	"My dad fell in love with her at first sight, almost like a fairytale"	89	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	89	"Xina moves even closer, your hands tightly intertwine."	90	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	90	"He always told me stories about it, even though I was like 5-"	91	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	91	"She moves her face closer to yours, her grip becomes firmer"	92	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	92	He said that the person I would fall in love with would have a sparkle in their eyes when they looked at me.	93	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	93	Xina stops moving when her face is mere inches away from yours.	94	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	94	"The both of you lock eyes with each other for what feels like eons, all while your faces get closer and closer"	95	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	95	"Xina's eyes are like a clear & still body of water, the longer you stare into them the more captivated you are"	96	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	96	"Eventually Xina blinks and she pulls away from your face, her complexion slowly transitioning to pink"	97	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	97	She lets go of your hand as well	98	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	98	She lets go of your hand as well	-	TRUE	So close yet so far…	"So, did my eyes sparkle?"	-	99	102	-	FALSE	FALSE	-	0
+Xina	99	Hehe-	100	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	100	Maybe- not yet…	101	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	101	Xina turns away from you to try and hide her rapidly deepening blush	105	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	102	. . . 	103	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	103	"Xina closes her eyes and places her hands over her face,"	104	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	104	She also turns away from you in embarrassment.	105	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	105	Although you can't see Xina's face you can still see her complexion getting pinker and pinker	106	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	106	"As if out of embarrassment, she jumps up from the couch before turning around to talk to you in a rushed manner,"	107	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	107	I've uh- gotta go because of reasons-	108	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	108	I'll see you around!	109	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	109	"Xina dashes away, leaving you on the couch alone."	110	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	110	You feel like you've gotten closer with her-	111	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	111	"Having nothing else to do and drained from your time with Xina, you return to your room."	-	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	112	"Benia is standing by the bar all by her lonesome,"	113	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	113	She's staring at the bottles on the shelves in an almost trance-like state.	114	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	114	Spend time with Benia?	115	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	115	Spend time with Benia?	-	TRUE	Yes 	Maybe Another Time	-	592	115	-	TRUE	FALSE	-	0
+ 	116	As you approach Benia she sees your reflection in the bottles and turns to face you.	117	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	117	Well-	118	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	118	Benia looks down at you-	119	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	119	"I've been waiting for you,  PlayerName ~"	120	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	120	"She pats the seat next her, inviting you to sit down"	121	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	121	"She pats the seat next her, inviting you to sit down"	-	TRUE	Obediently sit down	Stand next to Benia	-	122	125	-	FALSE	FALSE	-	0
+ 	122	Benia smirks as you take a seat	123	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	123	It's good to see you  PlayerName -	124	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	124	Benia licks her lips while eying you	130	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	125	Benia looks at you with curiosity as you stand next to her	126	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	126	Hmm?	127	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	127	Oh	128	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	128	How considerate of you  PlayerName ~”	129	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	129	She makes some room for you to stand comfortably next to her.	130	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	130	Benia will be relentlessly trying to flirt with you.	131	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	131	You have a set amount of time to respond to her assaults.	132	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	132	Each of the options you are given might or might not impress Benia.	133	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	133	Correctly identify the correct options Benia would like.	134	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	134	Good luck~	-	FALSE	-	-	-	-	-	-	FALSE	FALSE	1	0
+Benia	135	"So dearie, tell me more about yourself-"	136	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	136	What led you aboard the matchmaker?	137	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	137	What led you aboard the matchmaker?	-	TRUE	Someone made me sign up actually-	"Oh, nothing too interesting-"	"Something boring, but because of it I met you-"	138	145	148	FALSE	FALSE	-	0
+Player	138	"They wouldn't stop pestering me about it,"	139	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	139	Didn't think I'd ever get chosen though.	140	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	140	Benia seems intrigued by your response.	141	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	141	Really?	142	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	142	Benia's voice softens	143	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	143	Sounds like they really care about you. . .	144	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	144	She spaces out for a bit before changing topics-	152	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	145	I just applied to the show and happened to be chosen. . .	146	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	146	Benia looks disinterested by your response.	147	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	147	A short awkward silence follows before she changes the topic-	152	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	148	So I guess I should thank the lucky stars	149	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	149	Benia seems amused by your response.	150	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	150	"Well then, I guess I should thank the 7 too~"	151	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	151	She adjusts her standing posture before changing the topic-	152	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	152	Benia moves a little closer to you.	153	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	153	"During our first filming session when you smiled, you really made my heart skip a beat~"	154	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	154	Where'd you learn such a killer move?	155	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	155	Benia chuckles seductively	156	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	156	Benia chuckles seductively	-	TRUE	It was a bit of an accident-	Guess it just came to me-	Well-	157	163	168	FALSE	FALSE	-	0
+Player	157	I realised that someone was cheering for me when I was under the spotlight.	158	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	158	And that made me genuinely smile.	159	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	159	Benia seems intrigued by your response.	160	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	160	Her eyes unfocus and she spaces out	161	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	161	A genuine smile huh?	162	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	162	Benia spaces out for awhile longer before continuing her assault-	171	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	163	Like it was second nature perhaps?	164	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	164	Benia seems amused by your response.	165	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	165	She chuckles	166	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	166	"E-heh-heh, well you're quite the charmer then~"	167	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	167	She adjusts her standing posture before changing topic-	171	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	168	"It wasn't really anything special you know, it kinda just happened."	169	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	169	Benia looks disinterested by your response.	170	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	170	A short awkward silence follows before she changes the topic-	171	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	171	Benia moves even closer to you	172	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	172	Do you know how the Verdure reproduce?	173	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	173	From what I read about humans it's quite different~	174	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	174	From what I read about humans it's quite different~	-	TRUE	Well considering that you look like a human-	I know a little bit-	Not exactly-	175	180	188	FALSE	FALSE	-	0
+Player	175	Your people can't be that different right?	176	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	176	Benia looks annoyed by your response.	177	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	177	"I look the way I do now because it's what would attract a humanoid partner, the Verdure are very different from humans."	178	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	178	"Benia stares at you coldly, you've really pissed her off with that response. . ."	179	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	179	A long awkward silence follows before she changes topics-	200	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	180	But only what Game Host Joe said. . .	181	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	181	Benia seems amused by your response.	182	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	182	"Ah, well then there's a lot to learn about me then~"	183	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	183	"The Verdure don't exactly have reproductive organs, we are only able to have offspring because of what we call our Family Tree."	184	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	184	"But that Family Tree needs genetic information before producing Verdure offspring, specifically from other species"	185	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	185	Why specifically other species?	186	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	186	"I don't know, I never got to learn how the Family Trees biologically functions"	187	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	187	A short silence follows before she changes the topic-	200	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	188	I haven't actually heard of the Verdure before. . .	189	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	189	"Ah, well then there's a lot you don't know then-"	190	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	190	"The Verdure don't exactly have reproductive organs, we are only able to have offspring because of what we call our Family Tree."	191	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	191	Benia seems to be enjoy telling you about her species's history	192	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	192	"But that Family Tree needs genetic information before producing Verdure offspring, specifically from other species"	193	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	193	Why specifically other species?	194	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	194	Who knows?	195	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	195	"Benia starts playing with her leafy hair,"	196	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	196	"But the way female Verdure collect that 'genetic information' is very, very. Similar to humans~"	197	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	197	"Benia smirks at you whilst licking her lips taking pleasure in teasing you,"	198	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	198	You quickly find an excuse to change the topic out of embarrassment-	199	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	199	"Erm-, Uh-, let's change the topic shall we?"	200	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	200	"Benia moves closer again, at this point she's rubbing against your shoulder"	201	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	201	I'm a bit curious-	202	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	202	Do you have any experience with women?	203	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	203	Do you have any experience with women?	-	TRUE	"What, uh- totally-"	Was it that obvious?	"Uh, Um-"	204	208	214	FALSE	FALSE	-	0
+Player	204	I've uh- had like a whole lot of partners in the past.	205	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	205	Real convincing there bud.	206	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	206	"Benia stares at you unconvinced, she definitely did not like that response. . ."	207	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	207	A long awkward silence follows-	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+Benia	208	Hahaha-	209	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	209	"Sorry, I didn't mean to laugh."	210	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	210	"Benia seems a bit different, she sounds more natural."	211	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	211	It's a little obvious but I don't see that as a bad thing.	212	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	212	Benia's seductive tone returns	213	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	213	It just means that I have a lot to teach you~	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+Player	214	No. . .	215	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	215	Having Benia standing right next to you really emphasises your height difference	216	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	216	"She's at least 2 heads taller than you, it actually strains your neck a bit to look up at her from this angle-"	217	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	217	Benia is staring into your eyes with a smirk on her face	218	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	218	"It's ok  PlayerName , there's always a first for everything~"	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+ 	219	Benia turns her body to face you and gently holds your face in her hand	220	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	220	You know how to stand your ground-	221	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	221	That's good~	222	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	222	"Your heart is beating out of your chest as she holds your face,"	223	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	223	Benia bends down to your height and looks into your eyes.	224	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	224	You're quite the smooth talker aren't you?	225	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	225	It's quite rare that I find anyone who can match wits with me-	226	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	226	Most of the other guys I've talked with either become too flustered or are just stupid imbeciles who only know how to talk about themselves.	227	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	227	Most of the other guys I've talked with either become too flustered or are just stupid imbeciles who only know how to talk about themselves.	-	TRUE	Sounds rough.	They couldn't have all been bad right?	-	228	230	-	FALSE	FALSE	-	0
+ 	228	"Benia's tone of voice changes after hearing your comment, she also lets go of your face"	229	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	229	"Tell me about it, I either run into stuttering virgins who have zero idea how to speak to a woman or a**holes who think they're hot shit."	234	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	230	"Benia's tone of voice changes after hearing your comment, she also lets go of your face"	231	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	231	Hahaha-	232	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	232	She's laughing quite loudly. . .	233	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	233	You have no idea the kind of people I've met while looking for a Donor-	234	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	234	Benia becomes more expressive and starts making sweeping hand gestures	235	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	235	She almost sounds like a different person	236	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	236	The a**holes are a minority but they're a loud one-	237	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	237	"Like-, Pyacinth has bigger things to worry about than how many Galacks you can bench press-"	238	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	238	She looks visibly pissed even mentioning it	239	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Pyacinth?	239	"OH! And don't get me started on the shy ones, they have potential most of the time but they get wayyyy too possessive after a SINGLE date."	240	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Pyacinth?	240	"I found it cute at first, creepy after a week."	241	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	241	Her body shivers as if remembering an unpleasant experience	242	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Pyacinth?	242	I might be desperate to find a donor to save my species but I still have STANDARDS DAMMIT.	243	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	243	Benia's huffing after blowing off some steam	244	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	244	She seems almost refreshed.	245	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	245	"You're a bit shocked to see this side of Benia, it's drastically different to the person you know,"	246	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	246	But it feels more genuine and less forced.	247	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	247	"Benia seems to have calmed down from her outburst,"	248	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	248	And realises that she's probably said too much.	249	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	249	She takes a few steps back and bows to you	250	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	250	"Sorry dear, I got a bit animated earlier-"	251	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	251	Her voice seems to have reverted back to how it was before	252	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	252	"I. . . should get going, sorry for dumping so much irrelevant information on you earlier-"	253	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	253	I will do my best in the future to prevent something like that from happening again.	254	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	254	As Benia finishes her sentence she starts walk away	255	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	255	Her behaviour is obviously strange-	256	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	256	"Benia sounds diplomatic, almost like she's apologising to a higher up."	257	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	257	It reminds you of something unpleasant-	258	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	258	You should say something to Benia before she gets too far.	259	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	259	You should say something to Benia before she gets too far.	-	TRUE	"Please don't speak like that,"	You sound like me-	-	260	260	-	FALSE	FALSE	-	0
+Benia	260	I don't like it.	261	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	261	Benia stops in her tracks for a brief moment to look back at you with a complicated expression.	262	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	262	She looks down at the floor for a moment before continuing on her path.	263	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	263	Leaving you alone at the bar.	264	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	264	You feel like you've learned a bit more about Benia-	265	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
+ 	265	"Having nothing else to do and drained from your time with Benia, you return to your room."	586	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	266	Benia backs away from you and folds her arms before turning to face you	267	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	267	Hmm. . .	268	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	268	"Sorry,  PlayerName  I can see we have something here but-"	269	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	269	You've kinda pissed me off.	270	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	270	So how about this-	271	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	271	I'm going to forget about our earlier conversation and go back to my room for today.	272	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	272	"I'll be here next free time too, so you can find me here-"	273	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Benia	273	"Until then,  PlayerName ."	274	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	274	Benia walks away from the bar leaving you alone.	275	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	275	"You seem to have really pissed her off, maybe next time you should try to pay more attention to what you say-"	276	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	276	"Having nothing else to do and drained from your time with Benia, you return to your room."	586	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	277	"You see Florine set-up by a table in the corner of the Dining Room,"	278	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	278	There's a big metal box on the table as well that looks pretty hefty.	279	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	279	It's probably the thing she needs help with.	280	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	280	Help Florine?	281	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	281	Help Florine?		TRUE	Yes	Maybe Another Time	-	592	281	-	TRUE	FALSE	-	0
+ 	282	You walk up to Florine's table and sit down opposite of her	283	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	283	"But Florine seems to be zoned out, she doesn't even notice you sitting down at her table."	284	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	284	"But Florine seems to be zoned out, she doesn't even notice you sitting down at her table."	-	TRUE	Florine?	"Helloooo, you there Flo?"	-	285	285	-	FALSE	FALSE	-	0
+ 	285	You see Florine's gas cloud. . . jump?	286	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	286	"To be more descriptive it actually disperses for a brief moment before reforming, but it seems you've startled her."	287	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	287	"You,  PlayerName -"	288	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	288	Florine seems relieved to see that it's you	289	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	289	You really came!	290	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	290	She sounds quite happy	291	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	291	"Uhm, as I told you the other day-"	292	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	292	I- just an extra pair of hands to need help sorting through these papers.	293	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	293	I- just an extra pair of hands to need help sorting through these papers.	-	TRUE	"Alright then, let's get started!"	I thought you couldn't touch the papers?	-	294	297	-	FALSE	FALSE	-	0
+Florine	294	Mmm-	295	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	295	Florine sounds determined despite the mountain of papers in front of her.	296	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	296	You should stay determined too!	305	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	297	Oh-	298	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	298	Florine's cloud turns light pink	299	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	299	"A-Actually, Xina helped me put a protective film over all the papers yesterday. . ."	300	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	300	She-	301	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	301	She's really nice. . .	302	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	302	She said she has the same problem since she's semi-aquatic. . .	303	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	303	Her cloud's colour changes back to normal after finishing.	304	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	304	W-we should get started. . .	305	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	305	Let's start-	306	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	306	This mini game is very simple . . . 	307	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	307	"You just have to match the cards, clear the board and win "	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	1	0
+ 	308	"You manage to finish sorting out all your documents before Florine,"	309	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	309	But it doesn't take that much longer before she finishes as well	310	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	310	Oh-	311	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	311	You finished before me?	312	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	312	G-good job.	313	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	313	Florine sounds impressed by your efficiency.	316	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
+ 	314	You're having trouble sorting out some of the documents.	315	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	315	"Florine finishes before you and she starts taking some documents from your pile, the two of you quickly sort through the pile."	316	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	316	As the two of you finish sorting through a portion of the documents something is made clear to the two of you.	317	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	317	The name of the person who these papers document is named-	318	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	318	Abella.	319	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	319	Florine sounds confused	320	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	320	These papers document her life but there's something that stands out to me. . .	321	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	321	These papers document her life but there's something that stands out to me. . .	-	TRUE	What is it?	Her name sounds weird?	-	322	322	-	FALSE	FALSE	-	0
+ 	322	"Florine seems to not have heard you, she continues-"	323	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	323	"For one, Abella was a human."	324	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	324	"And two, Abella was alive back in the Star Travel Era."	325	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	325	"And two, Abella was alive back in the Star Travel Era."	-	TRUE	A human?	The Star Travel Era?!?! Wasn't that centuries ago?	-	326	328	-	FALSE	FALSE	-	0
+Florine	326	Really? That's what you got from that?	327	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	327	Florine's tone sounds a little condescending-	329	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	328	"I could barely believe it either, these papers must be at least 7 centuries old if what's written here is true."	329	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	329	"Not only was Abella from the Star Travel Era, she was also an engineer on board one of the first ever starships to explore the galaxy."	330	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	330	Florine seems to have gone into her 'academic mode'	331	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	331	As the engineer she was the one in charge of maintaining the FTL Engines and making sure everything was functioning properly.	332	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	332	"Oh, according to this document she was selected because of her passionate and extroverted personality. . ."	333	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	333	Quote from an interviewer:	334	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	334	She wouldn't stop eagerly talking about how the FTL Engines are a marvel of Engineering to whoever would listen. 	335	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	335	A lot of the crew were quite fond of her and would willingly sit through her rants because her enthusiasm was contagious.'	336	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	336	A lot of the crew were quite fond of her and would willingly sit through her rants because her enthusiasm was contagious.'	-	TRUE	She sounds like a handful.	Abella sounds too different from you. . .	-	337	339	-	FALSE	FALSE	-	0
+Florine	337	"Indeed, she does."	338	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	338	Florine becomes quiet and her cloud constantly shifts-	340	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	339	"Florine stays quiet, her cloud constantly shifts."	340	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	340	It seems like she's processing what she read.	341	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	341	Florine speaks after an extended silence	342	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	342	"I originally theorised that I was in some way, the person detailed in the documents. . ."	343	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	343	But after reading a lot about Abella's personality and testimonies about her-	344	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	344	It's clear that I'm not Abella.	345	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	345	However if that's the case why do I have such a feeling of familiarity when looking at this box?	346	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	346	Florine's cloud changes colour to grey as if to reflect her confusion.	347	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	347	Florine's cloud changes colour to grey as if to reflect her confusion.	-	TRUE	"Since you theorised yourself as Abella, Isn't it still possible that you could be some kind of reincarnation of her then?"	"Perhaps instead of being Abella herself, you could be related to her in some way? That would make more sense."	-	348	351	-	FALSE	FALSE	-	0
+Florine	348	"That's unlikely, species that can reincarnate like the Vidyara still retain their personalities across their multiple lives."	349	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	349	"Those who reincarnate through their methods also still retain their personalities, despite losing their memories."	350	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	350	But does that mean Abella was a relative?	352	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	351	That would indeed make more sense. . .	352	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	352	Florine's cloud changes back to it's normal colour while coming up with a new theory	353	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	353	But does that mean Abella is my relative?	354	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	354	My mother? Not likely.	355	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	355	She would most likely be an ancestor.	356	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	356	"But if she was my ancestor, why would I have such a reaction to a box containing her documents?"	357	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	357	"She seems lost in thought, your head is spinning from all the theories."	358	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	358	"Abella was a human who lived centuries ago, she's most likely dead now so it's impossible to ask her about it."	359	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	359	Perhaps looking into Abella's Family could help track down Florine's lineage?	360	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	360	Perhaps looking into Abella's Family could help track down Florine's lineage?	-	TRUE	What if we look into Abella's Family?	What about her descendants?	-	361	361	-	FALSE	FALSE	-	0
+ 	361	Your words seem to have snapped Florine out of her confusion-	362	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	362	That's right!	363	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	363	"Florine suddenly exclaims loudly, it makes you jump a little."	364	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	364	I was saw a Family registry in the documents we sorted through earlier-	365	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	365	"As the two of you look back towards the box of papers you sorted through, something dawns on you.”"	366	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	366	The papers that Florine did not deem relevant were put back into box for safe keeping-	367	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	367	The papers that Florine did not deem relevant were put back into box for safe keeping-	-	TRUE	"Erm-, Flo you were the one putting away the papers I sorted through right?"	I don't remember where I put those. . .	-	368	372	-	FALSE	FALSE	-	0
+Florine	368	E-erm. . .	369	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	369	It seems Florine is no longer in academic mode	370	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	370	I-	371	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	371	Don't remember. . .	374	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	372	N-	373	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	373	Neither do I. . .	374	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	374	As the two of you look towards each other in defeat Florine's cloud turns pink.	375	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	375	Let's-	376	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	376	Look for them tomorrow. . .	377	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	377	Agreed.	378	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	378	The two of you decide to continue another time-	379	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	379	D-don't worry about the box-	380	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Florine	380	I-I've told the staff and host that it's mine. . .	381	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	381	Florine leaves her box of papers on the Dining Room table and leaves	382	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	382	You feel like you've gotten closer with Florine.	383	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	383	"Having nothing else to do and drained from your time with Florine, you return to your room."	586	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	384	"You see Xina in the arcade zone,"	385	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	385	She hasn't noticed you yet but if you get any closer she probably will.	386	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	386	"Knowing Xina, once she's got you it's gonna be a longggg time before you can leave."	387	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	387	Approach Xina?	388	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	388	Approach Xina?	-	TRUE	Yes	Maybe Another Time	-	592	388	-	TRUE	FALSE	-	0
+ 	389	"As you approach Xina something about her behaviour seems off,"	390	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	390	She's doing worse at the game compared to last time and it looks like she's distracted by something	391	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	391	Xina fails at completing the game's level and takes off the VE glasses	392	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	392	She turns around and offers you the glasses.	393	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	393	You wanna try  PlayerName ?	394	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	394	It seems that Xina knows you've been waiting for her	395	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	395	Maybe you could help me finish what I started-	396	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	396	Xina doesn't sound like her usual self.	397	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	397	You decide that it would be best if you played along with Xina	398	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	398	"Something is clearly bothering her, maybe you playing the game could cheer her up?"	399	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	399	Let's do this 	400	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+Xina	400	Wow-	401	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	401	I didn't expect you to actually be able to beat it!	402	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	402	Xina seems impressed with your skills.	403	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	403	"She's sounding like her usual self again,"	404	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	404	Xina is trying to hold in her laughter after watching you fail so spectacularly at the game	405	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	405	Pf-	406	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	406	She fails to hold back her laughter.	407	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	407	Hahahahahaha-	408	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	408	Xina is laughing loudly at your poor performance	409	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	409	I didn't expect you to do that bad-	410	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	410	"She's sounding like her usual self again,"	411	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	411	Xina returns to her usual cheery self briefly after watching you play	412	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	412	Xina returns to her usual cheery self briefly after watching you play	-	FALSE	Smile at Xina	There's the Xina I know	-	413	414	-	FALSE	FALSE	-	0
+ 	413	She notices you smiling at her and smiles back silently	416	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	414	"Xina blushes slightly at your comment,"	415	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	415	Sorry if I worried you. . .	416	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	416	An awkward silence follows after her words-	417	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	417	Xina is being unusually quiet	418	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	418	Saying the right things might get her to open up. . .	419	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	419	Saying the right things might get her to open up. . .	-	TRUE	Is something on your mind? Correct	There anything else you want to do?	Did you know I can cook 3 minute instant noodles in 2 minutes and 50 seconds?	420	423	426	FALSE	FALSE	-	0
+ 	420	Xina nods slightly at your question	421	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	421	She still seems reluctant to talk about it. . .	422	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	422	But at least you've managed to bring up the core issue.	429	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	423	Xina shakes her head	424	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	424	And continues the awkward silence	425	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	425	You might need to be more direct if you want Xina to open up to you. . .	429	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	426	Xina blinks at you three times in quick succession	427	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	427	She seems interested in your statement but isn't in the mood to ask about it	428	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	428	Seems that this is not the time for humour.	429	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	429	. . .	430	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	430	. . .	-	TRUE	Is it because of your mother?	Does it have something to do with your past?	I want to help you. Correct	431	434	436	FALSE	FALSE	-	0
+ 	431	Xina freezes up again at the mention of her mother	432	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	432	She's refusing to speak about it directly and is looking away from you	433	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	433	That might not have been the right thing to bring up right now. . .	439	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	434	Xina looks at you with a little bit of annoyance on her face	435	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	435	It's quite obvious this is about her past.	439	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	436	"Xina looks at you with innocent eyes,"	437	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	437	You can see her fighting back tears as she smiles gently at you	438	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	438	She seems to want to talk to you about it but is still hesitating. . .	439	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	439	. . .	440	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	440	. . .	-	TRUE	I can't help you if you don't tell me what's wrong. . .	What can I do to help?	"I know we haven't known each other for long, but I feel a connection with you. Correct"	441	443	445	FALSE	FALSE	-	0
+ 	441	Xina looks at you with visible annoyance on her face	442	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	442	Wrong choice buddy.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+ 	443	Xina shakes her head while keeping a neutral face	444	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	444	That didn't seem to be the right thing to ask.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+ 	445	Xina smiles warmly at you	446	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	446	She seems touched by your declaration	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+ 	447	Xina seems annoyed by your constant barrage of questions	448	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	448	"Actually she looks more pissed than annoyed,"	449	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	449	Xina walks past you with a 'Hmph-'	450	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	450	Before leaving the entertainment room	451	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	451	You probably should keep your distance for the rest of today. . .	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	-	0
+ 	452	Tears start to roll down Xina's face after your talk	453	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	453	She walks up to you and rests her forehead on your chest while she cries	454	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	454	It seems she might want you to hug her.	455	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	455	It seems she might want you to hug her.	-	TRUE	Hug her 	"It's ok, I'm here."	-	456	460	-	FALSE	FALSE	-	0
+ 	456	You take Xina into your arms as she cries	457	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	457	With Xina so close you notice that her eyes are puffy	458	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	458	She has probably been crying non-stop for some reason since you last met up.	459	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	459	Xina wraps her arms around you and softly cries into your chest.	462	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	460	Your words of assurance touch Xina as she cries	461	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	461	She wraps her arms around you and softly cries into your chest.	462	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	462	You stay that way for some time before Xina's grip loosens on you and she pulls away from your chest	463	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	463	She wipes the tears from her eyes before speaking	464	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	464	Sorry for wetting your shirt-	465	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	465	Xina tries to giggle at her joke but it sounds forced	466	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	466	She looks you in the eyes as she continues	467	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	467	I've been thinking a lot about the past. . .	468	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	468	It's been weighing down on me a lot since I've started focusing on it	469	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	469	Xina fidgets in place as she speaks	470	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	470	Do you mind if we change locations	471	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	471	I don't feel very comfortable here anymore. . .	472	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	472	I don't feel very comfortable here anymore. . .	-	TRUE	Ok	"Sure, where to?"	-	473	473	-	FALSE	FALSE	-	0
+ 	473	Xina grabs your hand and leads you out of the Entertainment Room.	474	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	474	You'll find out when we get there~	475	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	475	You can hear a hint of Xina's usual peppy voice as she leads by your	476	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	476	Xina leads you to the Pool.	477	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	477	The place looks well maintained but unused	478	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	478	Xina lets go of your hand as the two of you get closer to the pool	479	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	479	"She walks to the edge of the pool and sits down, dipping her legs into the water"	480	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	480	The water makes me feel at home for some reason	481	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	481	"I never really swam that much even when I was on my homeplanet, but it's still like second nature to me."	482	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	482	Guess it's just my Scyzoan natural instincts~	483	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	483	Guess it's just my Scyzoan natural instincts~	-	TRUE	Any other 'Scyzoan' instincts I should worry about?	. . .	-	484	487	-	FALSE	FALSE	-	0
+ 	484	Xina grins mischievously at you	485	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	485	Guess you're gonna have to figure that out for yourself-	486	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	486	She seems to have cheered up a bit but that cheeriness quickly dissolves as she continues.	489	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	487	Despite your silence Xina smiles solemnly at you	488	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	488	"I know, I'm just trying to lighten things a little"	489	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	489	Wanna sit with me?	490	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	490	Xina invites you to sit down next to her and you take her up on her offer	491	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	491	You take off your shoes and sit down next to her	492	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	492	The sound and the feeling of submerging your feet in the water makes you feel comfortable	493	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	493	Xina looks toward the opposite end of the pool with a sad look on her face	494	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	494	When I was at home I often felt like this-	495	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	495	Being on the opposite side from my mother	496	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	496	"When my father passed, that distance grew even further-"	497	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	497	Xina's voice wavers but she continues	498	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	498	"My grandparents were very opposed to my father, they wanted my mom to marry a Scyzoan."	499	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	499	"But she stood firm against them, saying he was 'different'."	500	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	500	"My grandparents eventually disowned her, threw her out of their house and never spoke to her again."	501	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	501	"My grandparents eventually disowned her, threw her out of their house and never spoke to her again."	-	TRUE	They sound like separatists. . .	Then why was she still on the other side of the pool?	-	502	510	-	FALSE	FALSE	-	0
+Xina	502	Separatists?	503	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	503	Basically people who want all sentient-species to stop interacting with each other-	504	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	504	Well that sounds bad. . .	505	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	505	"Oh, and revert to before space travel was a thing"	506	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	506	. . . And that makes it worse.	507	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	507	They're all just xenophobes and extremists at the end of the day.	508	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	508	Xina processes the information you just gave her	509	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	509	From the rumours I heard about them that sounds right-	515	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	510	"Well, even though my mother loved dad- she still wasn't too keen about other species."	511	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	511	After I was born she got a bit better but dad would always have to remind her about her 'tendencies'.	512	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	512	Things obviously got worse after Dad passed.	513	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	513	I was very young at the time but I remember a lot of it	514	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	514	She let her hate consume her-	515	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	515	Her last sentence is laced with hate	516	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	516	My mother kept me locked up at home after she heard the news-	517	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	517	"She rarely ever let me out,"	518	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	518	She chased away friends who she saw as 'untrustworthy'-	519	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	519	Xina almost spits at the word 'untrustworthy'	520	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	520	Everyday she would constantly PREACH to me about the horrible people who killed my dad.	521	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	521	"Xina gets up and stands on the edge of the pool,"	522	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	522	She starts shouting across the pool as if she's screaming at her mother-	523	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	523	Don't Trust THEM-	524	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	524	They KILLED your FATHER-	525	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	525	THEY TOOK OUR HAPPINESS.	526	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	526	HATE THEM-	527	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	527	Hate. . .	528	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	528	"She looks down into the water at her own reflection,"	529	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	529	I never wanted to hate anyone.	530	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	530	I DON'T want to hate anyone.	531	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	531	Xina lifts her head again and screams towards the other side of the pool.	532	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	532	I WILL NOT LET YOUR HATE CORRUPT ME-	533	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	533	After her final scream Xina catches her breath and she slumps down onto the pool's deck.	534	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	534	"She looks towards you for the first time in awhile with tears in her eyes,"	535	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	535	But-	536	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	536	Xina's breathing steadies and she calms down-	537	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	537	"At the end of the day she's still my mother, and I still love her."	538	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	538	"She takes a deep breath before continuing,"	539	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	539	"The day I left everything behind to join Love Across Kinds, I was ecstatic-"	540	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	540	I could finally leave my boring and suffocating life behind.	541	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	541	"I experienced so many new things, I was so happy."	542	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	542	She almost spits out the word 'happy'	543	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	543	"But, I never thought about it from my mother's point of view-"	544	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	544	While I was caught up in my ecstasy she probably thinks I was kidnapped.	545	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	545	Or worse.	546	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	546	"Xina looks down in surrender,"	547	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	547	I don't know what to do anymore-	548	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	548	"So,  PlayerName -"	549	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	549	"Xina looks up at you with tears flowing from her eyes, pleading-"	550	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	550	What do I do?	551	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	551	What do I do?	-	TRUE	Screw your mother-	Pursue your own happiness.	-	552	558	-	FALSE	FALSE	-	0
+ 	552	Xina seems shocked at your response.	553	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	553	Is what my opinion is.	554	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	554	While what your mother did was absolutely horrendous-	555	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	555	What you want to do matters.	556	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	556	Be it going out and exploring the universe-	557	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	557	Or confronting your mother.	563	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	558	Xina focuses on you while you speak	559	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	559	Something I've learned from wasting my own youth chasing others perception of the perfect life-	560	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	560	Is that happiness can only be what you decide it to be.	561	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	561	Whether it be going out and experiencing new things-	562	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	562	Or resolving the issues with your mother.	563	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	563	You reach out your hand to Xina	564	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	564	This is not a decision I should make.	565	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Player	565	It should be yours.	566	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	566	Xina takes your hand and you help her to her feet.	567	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	567	You wipe the tears from her face with your other hand and give her some space to think.	568	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	568	It doesn't take her long to reply to your words-	569	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	569	You're right.	570	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	570	But I'm going to need some time to decide what to do.	571	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	571	Xina smiles at you with sincerity.	572	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	572	"Thank you so much,  PlayerName ."	573	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	573	"Thank you so much,  PlayerName ."	-	TRUE	No problem-	You're welcome-	-	574	574	-	FALSE	FALSE	-	0
+ 	574	Before you can finish your sentence Xina tackles you to the ground in a hug.	575	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	575	Thank you for listening to me.	576	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	576	I'm a bit embarrassed to look at you right now so please don't look at me.	577	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	577	It takes a while before Xina loosens her grip on you and lets go-	578	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	578	"When she does, Xina quickly gets up off the ground and turns so you can't see her face."	579	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	579	Thank-	580	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	580	She stops herself-	581	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	581	I've probably said thank you too many times now…	582	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+Xina	582	I'll message you when I've made my decision.”	583	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	583	Xina exits the pool room leaving you on the floor.	584	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	584	You feel like you've gotten a LOT closer with her-	585	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
+ 	585	"Having nothing else to do, you get up and return to your room."	586	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	586	"Ahhhh your room at last,"	587	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	587	Today was a busy day wasn't it?	588	FALSE	-	-	-	-	-	-	FALSE	FALSE	-	0
+ 	588	But for now it's time to rest.	-	FALSE	-	-	-	-	-	-	TRUE	FALSE	3	0
+ 	589	You spent a very enjoyable moment with Benia	586	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
+ 	590	You spent a very enjoyable moment with Xina	586	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
+ 	591	You spent a very enjoyable moment with Florine	586	FALSE	-	-	-	-	-	-	FALSE	TRUE	-	0
+ 	592	. . .	- 	FALSE	-	-	-	-	-	-	TRUE	FALSE	1	0
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														
+ 														

@@ -23,7 +23,6 @@ public class TransportPoint : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-
         }
         else
         {
@@ -49,7 +48,8 @@ public class TransportPoint : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             if (pressDuration <= swipeThreshold)
             {
                 OpenTransportPanel();
-                //animator.SetTrigger("FadeOut");
+                
+               
                 //StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));
             }
         }
@@ -74,39 +74,41 @@ public class TransportPoint : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
     public void LoadLobby0()
     {
+        StartCoroutine(LoadSceneWithDelay("Lobby0",delayBeforeLoad));
+        //animator.SetTrigger("FadeOut");
+        //SceneManager.LoadScene("Lobby0");
         
-        SceneManager.LoadScene("Lobby0");
     }
     public void LoadRecording0()
     {
-        
-        SceneManager.LoadScene("Recording0");
+        StartCoroutine(LoadSceneWithDelay("Recording0", delayBeforeLoad));
     }
 
     public void LoadLivingFloor0()
     {
-        SceneManager.LoadScene("LivingFloor0");
+        StartCoroutine(LoadSceneWithDelay("LivingFloor0", delayBeforeLoad));
     }
 
     public void LoadLobby1()
     {
-
-        SceneManager.LoadScene("Lobby1");
+        StartCoroutine(LoadSceneWithDelay("Lobby1", delayBeforeLoad));
     }
     public void LoadRecording1()
     {
-
-        SceneManager.LoadScene("Recording1");
+        StartCoroutine(LoadSceneWithDelay("Recording1", delayBeforeLoad));
     }
     public void LoadLivingFloor1()
     {
-
-        SceneManager.LoadScene("LivingFloor1");
+        StartCoroutine(LoadSceneWithDelay("LivingFloor1", delayBeforeLoad));
     }
 
     private IEnumerator LoadSceneWithDelay(string sceneName, float delay)
     {
         yield return new WaitForSeconds(delay);
+        animator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneName);
+        animator.SetTrigger("FadeIdle");
+       
     }
 }

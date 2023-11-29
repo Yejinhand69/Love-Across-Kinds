@@ -41,7 +41,7 @@ public class LevelUI : MonoBehaviour
 
     void Update()
     {
-        wLSituation = gmMngr.situation;
+        wLSituation = GameManager.situation;
     }
 
     public void BackToMain()
@@ -54,50 +54,52 @@ public class LevelUI : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    [System.Obsolete]
     public void Continue()
     {
-        if (phases == "FreeTime" && episode == 1)
-        {
-            if (wLSituation)
-            {
-                SceneManager.LoadScene("Lobby1");
-                dialogueTrigger.StartDialogue(" ", 31); // Call StartDialogue without arguments
-            }
-            else if (!wLSituation)
-            {
-                SceneManager.LoadScene("Lobby1");
-                dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
-            }
-        }
-        else if (phases == "Special" && episode == 1)
-        {
-            if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 3)
-            {
-                if (wLSituation)
-                {
-                    SceneManager.LoadScene("Lobby1");
-                    dialogueTrigger.StartDialogue(" ", 400); // Call StartDialogue without arguments
-                }
-                else if (!wLSituation)
-                {
-                    SceneManager.LoadScene("Lobby1");
-                    dialogueTrigger.StartDialogue(" ", 404); // Call StartDialogue without arguments
-                }
-            }
-            else if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 1)
-            {
-                if (wLSituation)
-                {
-                    SceneManager.LoadScene("Lobby1");
-                    dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
-                }
-                else if (!wLSituation)
-                {
-                    SceneManager.LoadScene("Lobby1");
-                    dialogueTrigger.StartDialogue(" ", 37); // Call StartDialogue without arguments
-                }
-            }
+        SceneManager.UnloadScene("Rhythm Game");
+    //    if (phases == "FreeTime" && episode == 1)
+    //    {
+    //        if (wLSituation)
+    //        {
+    //            SceneManager.LoadScene("Lobby1");
+    //            dialogueTrigger.StartDialogue(" ", 31); // Call StartDialogue without arguments
+    //        }
+    //        else if (!wLSituation)
+    //        {
+    //            SceneManager.LoadScene("Lobby1");
+    //            dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
+    //        }
+    //    }
+    //    else if (phases == "Special" && episode == 1)
+    //    {
+    //        if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 3)
+    //        {
+    //            if (wLSituation)
+    //            {
+    //                SceneManager.LoadScene("Lobby1");
+    //                dialogueTrigger.StartDialogue(" ", 400); // Call StartDialogue without arguments
+    //            }
+    //            else if (!wLSituation)
+    //            {
+    //                SceneManager.LoadScene("Lobby1");
+    //                dialogueTrigger.StartDialogue(" ", 404); // Call StartDialogue without arguments
+    //            }
+    //        }
+    //        else if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 1)
+    //        {
+    //            if (wLSituation)
+    //            {
+    //                SceneManager.LoadScene("Lobby1");
+    //                dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
+    //            }
+    //            else if (!wLSituation)
+    //            {
+    //                SceneManager.LoadScene("Lobby1");
+    //                dialogueTrigger.StartDialogue(" ", 37); // Call StartDialogue without arguments
+    //            }
+    //        }
             
-        }
+    //    }
     }
 }
