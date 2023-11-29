@@ -9,6 +9,11 @@ public class ScavengerEvent : MonoBehaviour
     public GameObject BraceletUI;
     public static bool isFoundBracelet;
 
+    private void Start()
+    {
+        isFoundBracelet = false;
+    }
+
     private void Update()
     {
         if(PhaseManager.instance.currentPhase == "PreProduction" && PhaseManager.instance.currentEpisode == 1)

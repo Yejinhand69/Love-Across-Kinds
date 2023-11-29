@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 225273884}
   - component: {fileID: 225273883}
   - component: {fileID: 225273882}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1715,7 +1715,7 @@ GameObject:
   - component: {fileID: 517063697}
   - component: {fileID: 517063699}
   - component: {fileID: 517063698}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: NoPostCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1805,7 +1805,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517063696}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!4 &517063700
 Transform:
   m_ObjectHideFlags: 0
@@ -3234,6 +3234,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 965406948791140496, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2000057134794334324, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3329,12 +3334,27 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.61154175
       objectReference: {fileID: 0}
+    - target: {fileID: 3225674401647400366, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225674402648375155, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4602509794755914394, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5129512323629208371, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612147577442116234, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5002,7 +5022,7 @@ GameObject:
   - component: {fileID: 1879452597}
   - component: {fileID: 1879452596}
   - component: {fileID: 1879452595}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom Florine Camera0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5644,7 +5664,7 @@ GameObject:
   - component: {fileID: 2102478131}
   - component: {fileID: 2102478130}
   - component: {fileID: 2102478129}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fake Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}

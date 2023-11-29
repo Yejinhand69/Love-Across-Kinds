@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 278861143}
   - component: {fileID: 278861142}
   - component: {fileID: 278861141}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -752,7 +752,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3919,7 +3919,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471010614}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &471010618
 Camera:
   m_ObjectHideFlags: 0
@@ -5305,7 +5305,7 @@ GameObject:
   - component: {fileID: 792850695}
   - component: {fileID: 792850694}
   - component: {fileID: 792850693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom florine camera 1 fm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7594,6 +7594,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4974260512492568055, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448322942653902684, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633743204846440859, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975236254334804158, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8838019677566400128, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a16366390d3d858438258f65478d94e5, type: 3}
 --- !u!1 &921435987
@@ -8032,7 +8057,7 @@ GameObject:
   - component: {fileID: 1005379043}
   - component: {fileID: 1005379042}
   - component: {fileID: 1005379049}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom xina camera 1 fm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12027,7 +12052,7 @@ GameObject:
   - component: {fileID: 1279404428}
   - component: {fileID: 1279404427}
   - component: {fileID: 1279404434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom host camera 1 pp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12829,6 +12854,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 965406948791140496, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2000057134794334324, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12934,7 +12964,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.61151123
       objectReference: {fileID: 0}
+    - target: {fileID: 3225674401647400366, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225674402648375155, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5129512323629208371, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612147577442116234, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -13722,7 +13767,7 @@ GameObject:
   - component: {fileID: 1855790275}
   - component: {fileID: 1855790281}
   - component: {fileID: 1855790282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom xina camera 1 pp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14314,7 +14359,7 @@ GameObject:
   - component: {fileID: 1926420939}
   - component: {fileID: 1926420938}
   - component: {fileID: 1926420937}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fake Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14547,7 +14592,7 @@ GameObject:
   - component: {fileID: 1980974499}
   - component: {fileID: 1980974498}
   - component: {fileID: 1980974497}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom benia camera 1 fm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
