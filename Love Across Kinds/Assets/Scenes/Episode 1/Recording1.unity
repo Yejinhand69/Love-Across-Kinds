@@ -7529,6 +7529,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 402871720257666688, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
+      propertyPath: Episode_1_VA.Array.data[4]
+      value: 
+      objectReference: {fileID: 1386727704}
+    - target: {fileID: 402871720257666688, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
+      propertyPath: Episode_1_VA.Array.data[5]
+      value: 
+      objectReference: {fileID: 1386727704}
+    - target: {fileID: 402871720257666688, guid: a16366390d3d858438258f65478d94e5,
+        type: 3}
+      propertyPath: Episode_1_VA.Array.data[6]
+      value: 
+      objectReference: {fileID: 1386727704}
     - target: {fileID: 402871720257666689, guid: a16366390d3d858438258f65478d94e5,
         type: 3}
       propertyPath: m_RootOrder
@@ -12476,6 +12491,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371274685}
   m_CullTransparentMesh: 1
+--- !u!1 &1386727704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6761758106695783941, guid: a16366390d3d858438258f65478d94e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 865408776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1397318709
 GameObject:
   m_ObjectHideFlags: 0
