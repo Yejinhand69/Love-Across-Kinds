@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 278861143}
   - component: {fileID: 278861142}
   - component: {fileID: 278861141}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -752,7 +752,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3919,7 +3919,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471010614}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &471010618
 Camera:
   m_ObjectHideFlags: 0
@@ -5305,7 +5305,7 @@ GameObject:
   - component: {fileID: 792850695}
   - component: {fileID: 792850694}
   - component: {fileID: 792850693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom florine camera 1 fm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8072,7 +8072,7 @@ GameObject:
   - component: {fileID: 1005379043}
   - component: {fileID: 1005379042}
   - component: {fileID: 1005379049}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom xina camera 1 fm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12067,7 +12067,7 @@ GameObject:
   - component: {fileID: 1279404428}
   - component: {fileID: 1279404427}
   - component: {fileID: 1279404434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom host camera 1 pp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13788,7 +13788,7 @@ GameObject:
   - component: {fileID: 1855790275}
   - component: {fileID: 1855790281}
   - component: {fileID: 1855790282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom xina camera 1 pp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14380,7 +14380,7 @@ GameObject:
   - component: {fileID: 1926420939}
   - component: {fileID: 1926420938}
   - component: {fileID: 1926420937}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fake Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14613,7 +14613,7 @@ GameObject:
   - component: {fileID: 1980974499}
   - component: {fileID: 1980974498}
   - component: {fileID: 1980974497}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom benia camera 1 fm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
