@@ -7,44 +7,10 @@ public class PhoneOpener : MonoBehaviour
 {
     //UI stuffs
     [SerializeField] private GameObject AffectionPanel;
-    public GameObject PhoneButton;
-    public GameObject PhonePanel;
     public GameObject SettingPanel;
     public GameObject MessagePanel;
     public GameObject ObjectivePanel;
     public CameraRotateScript cameraRotateScript;
-
-    private void Update()
-    {
-        //if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Episode 0")
-        //{
-        //    PhoneButton.SetActive(false);
-        //}
-        //else
-        //{
-        //    PhoneButton.SetActive(true);
-        //}
-    }
-
-    public void OpenPhone()
-    {
-        if (PhonePanel != null)
-        {
-            //bool isActive = Panel.activeSelf;//added
-            //Panel.SetActive(!isActive);//added
-            //cameraRotateScript.FreezeCamera();
-            Animator animator = PhonePanel.GetComponent<Animator>();
-            if (animator != null)
-            {
-                AudioManager.instance.PlaySFX("Button Press");
-
-                bool isOpen = animator.GetBool("openPhone");
-
-                animator.SetBool("openPhone", !isOpen);
-            }
-
-        }
-    }
 
     public void OpenSettingPanel()
     {
