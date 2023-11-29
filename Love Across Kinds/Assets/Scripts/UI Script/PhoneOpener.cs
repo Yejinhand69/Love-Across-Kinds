@@ -16,14 +16,14 @@ public class PhoneOpener : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Episode 0")
-        {
-            PhoneButton.SetActive(false);
-        }
-        else
-        {
-            PhoneButton.SetActive(true);
-        }
+        //if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Episode 0")
+        //{
+        //    PhoneButton.SetActive(false);
+        //}
+        //else
+        //{
+        //    PhoneButton.SetActive(true);
+        //}
     }
 
     public void OpenPhone()

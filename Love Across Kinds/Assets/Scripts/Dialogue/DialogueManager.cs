@@ -35,6 +35,7 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector] public int currSentenceId = 0;
     public static bool dialogueActive;
     private string currInteractCharName;
+    private bool isSkipped;
 
     public string phaseIndicator;
     [HideInInspector] public int XinaAttemp;
@@ -509,18 +510,27 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             case 4:
-                
+                //if (PhaseManager.instance.currentPhase == "FreeTime")
+                //{
+                //    Debug.Log("Change SScene");
+                //    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                //}
+
                 PhaseManager.instance.ChangePhase();
 
                 if (PhaseManager.instance.currentPhase == "Filming")
                 {
-                    Debug.Log("Change FScene");
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
                 }
 
-                else if (PhaseManager.instance.currentPhase == "FreeTime" || PhaseManager.instance.currentPhase == "Special")
+                else if (PhaseManager.instance.currentPhase == "FreeTime")
                 {
                     Debug.Log("Change FTScene");
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                }
+                else  if (PhaseManager.instance.currentPhase == "Special")
+                {
+                    Debug.Log("Change SScene");
                     SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
 
@@ -641,6 +651,7 @@ public class DialogueManager : MonoBehaviour
                 Debug.Log("Options");
                 currSentenceId = i;
                 currIndexPos = i;
+                isSkipped = true;
                 DisplaySentence();
                 break;
             }
@@ -650,7 +661,14 @@ public class DialogueManager : MonoBehaviour
                 currSentenceId = i;
                 currIndexPos = i;
                 dialogueActive = false;
+                isSkipped = true;
                 EndDialogue();
+                break;
+            }
+
+            if (isSkipped)
+            {
+                isSkipped = false;
                 break;
             }
         }

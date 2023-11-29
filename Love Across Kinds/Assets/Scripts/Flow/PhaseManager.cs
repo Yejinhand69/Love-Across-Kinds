@@ -162,16 +162,16 @@ public class PhaseManager : MonoBehaviour
         
         //phoneOpener.OpenMessagePanel();
 
-        while (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone"))
-        {
-            yield return null;
-        }
+        //while (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone"))
+        //{
+        //    yield return null;
+        //}
 
-        if (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone") == false)
-        {
-            //phoneOpener.OpenMessagePanel();
-        }
+        //if (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone") == false)
+        //{
+        //    //phoneOpener.OpenMessagePanel();
+        //}
 
-        dialogueTrigger.StartDialogue(" ", 2);
+        dialogueTrigger.StartDialogue(" ", 1);
     }
 }
