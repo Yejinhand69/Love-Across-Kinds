@@ -6299,7 +6299,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
+  m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -10544,7 +10544,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
+  m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -15279,6 +15279,11 @@ PrefabInstance:
       propertyPath: m_Positions.Array.data[1].z
       value: 1.8214599
       objectReference: {fileID: 0}
+    - target: {fileID: 2768403521718313667, guid: 8944da7ca8c93464ca1146e096f5e1b2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3310221776644923845, guid: 8944da7ca8c93464ca1146e096f5e1b2,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15313,6 +15318,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396515679518542958, guid: 8944da7ca8c93464ca1146e096f5e1b2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5237917780346544266, guid: 8944da7ca8c93464ca1146e096f5e1b2,
         type: 3}
