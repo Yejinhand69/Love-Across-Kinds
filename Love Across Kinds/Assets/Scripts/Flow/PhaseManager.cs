@@ -41,7 +41,7 @@ public class PhaseManager : MonoBehaviour
         // Load the saved currentPhaseIndex from PlayerPrefs
         //currentPhaseIndex = PlayerPrefs.GetInt("CurrentPhaseIndex", 0);
 
-        phoneOpener = FindObjectOfType<PhoneOpener>();
+        //phoneOpener = FindObjectOfType<PhoneOpener>();
         dialogueTrigger = GetComponent<DialogueTrigger>();
 
         if(SceneManager.GetActiveScene().name == "Lobby0" && !instance.isDonePrologue)

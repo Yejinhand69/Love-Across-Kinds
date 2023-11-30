@@ -651,7 +651,6 @@ public class DialogueManager : MonoBehaviour
         {
             if (datas[i].checkIfOption || datas[i].checkIfAffection)
             {
-                Debug.Log("Options");
                 currSentenceId = i;
                 currIndexPos = i;
                 isSkipped = true;
@@ -660,7 +659,6 @@ public class DialogueManager : MonoBehaviour
             }
             else if (datas[i].checkIfEnd)
             {
-                Debug.Log("End");
                 currSentenceId = i;
                 currIndexPos = i;
                 dialogueActive = false;

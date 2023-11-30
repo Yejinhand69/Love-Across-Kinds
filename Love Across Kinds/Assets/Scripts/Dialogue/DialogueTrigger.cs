@@ -6,7 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] private int firstAttempSentenceID;
     public int repeatAttempSentenceID;
-    public static int attemp = 0;
+    public int attemp = 0;
     private bool isDoneSE;
 
     public void StartDialogue()
