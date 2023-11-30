@@ -34,7 +34,7 @@ public class DataProcessor : MonoBehaviour
         
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
-
+        Debug.Log(data.Length);
         //Data Processing
         for (int i = 1; i < data.Length - 1; i++)
         {

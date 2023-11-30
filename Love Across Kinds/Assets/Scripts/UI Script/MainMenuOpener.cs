@@ -13,7 +13,7 @@ public class MainMenuOpener : MonoBehaviour
     public string sceneToLoad;
     public float delayBeforeLoad = 1.0f;
 
-    private static MainMenuOpener instance;
+    public static MainMenuOpener instance;
 
 
     private void Awake()
