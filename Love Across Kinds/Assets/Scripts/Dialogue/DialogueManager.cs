@@ -215,7 +215,7 @@ public class DialogueManager : MonoBehaviour
                 
                 if(_JoeHand != null)
                 {
-                    if (nameText.text.Contains("Game") || nameText.text.Contains("Host") || nameText.text.Contains("Joe"))
+                    if ( (nameText.text.Contains("Game") || nameText.text.Contains("Host") || nameText.text.Contains("Joe") ))
                     {
                         _JoeHand.SetActive(true);
                         if (Camera.main != null)
@@ -226,6 +226,14 @@ public class DialogueManager : MonoBehaviour
                     else
                     {
                         _JoeHand.SetActive(false);
+                    }
+
+                    if(EventClick.interactObjectName != null)
+                    {
+                        if((EventClick.interactObjectName.Contains("Game Host Joe")))
+                        {
+                            _JoeHand.SetActive(false);
+                        }
                     }
                 }
                 
