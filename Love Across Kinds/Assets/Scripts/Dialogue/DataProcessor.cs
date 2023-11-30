@@ -31,7 +31,7 @@ public class DataProcessor : MonoBehaviour
 
         //Read/Load dialogue file
         TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/DialogueDataEpisode" + PhaseManager.instance.currentEpisode + PhaseManager.instance.currentPhase);
- 
+        
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
 

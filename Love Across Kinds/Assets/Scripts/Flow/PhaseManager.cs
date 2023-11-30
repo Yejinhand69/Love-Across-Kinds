@@ -16,7 +16,7 @@ public class PhaseManager : MonoBehaviour
     public static PhaseManager instance;
 
     private DialogueTrigger dialogueTrigger;
-    private PhoneOpener phoneOpener;
+    //private PhoneOpener phoneOpener;
 
     public bool isDonePrologue;
     public bool isDonePP1;
@@ -52,23 +52,25 @@ public class PhaseManager : MonoBehaviour
         if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
         {
             
-            GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
-            GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
+            //GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
+            //GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
 
             AudioManager.instance.PlaySFX("Notification 2");
 
             dialogueTrigger.StartDialogue(" ", 0);
+            instance.isDonePP1 = true;
             Debug.Log("Dialogue Start PP");
         }
 
         if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
         {
-            GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
-            GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
+            //GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
+            //GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
 
             AudioManager.instance.PlaySFX("Notification 2");
 
             dialogueTrigger.StartDialogue(" ", 0);
+            instance.isDoneS1 = true;
             Debug.Log("Dialogue Start S");
         }
     }
@@ -87,27 +89,27 @@ public class PhaseManager : MonoBehaviour
             instance.isDonePrologue = true;
         }
 
-        if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
-        {
-            while (DialogueManager.dialogueActive)
-            {
-                continue;
-            }
+        //if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
+        //{
+        //    while (DialogueManager.dialogueActive)
+        //    {
+        //        continue;
+        //    }
             
-            StartCoroutine(ShowPhoneMessage());
-            instance.isDonePP1 = true;
-        }
+        //    StartCoroutine(ShowPhoneMessage());
+            
+        //}
 
-        if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
-        {
-            while (DialogueManager.dialogueActive)
-            {
-                continue;
-            }
+        //if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
+        //{
+        //    while (DialogueManager.dialogueActive)
+        //    {
+        //        continue;
+        //    }
 
-            StartCoroutine(ShowPhoneMessage());
-            instance.isDoneS1 =true;
-        }
+        //    StartCoroutine(ShowPhoneMessage());
+            
+        //}
     }
 
     private void UpdatePhaseText()
@@ -148,30 +150,30 @@ public class PhaseManager : MonoBehaviour
         dialogueTrigger.StartDialogue(" ", 69);
     }
 
-    IEnumerator ShowPhoneMessage()
-    {
-        yield return new WaitForSeconds(0.5f);
-        while (DialogueManager.dialogueActive)
-        {
-            yield return null;
-        }
+    //IEnumerator ShowPhoneMessage()
+    //{
+    //    yield return new WaitForSeconds(0.5f);
+    //    while (DialogueManager.dialogueActive)
+    //    {
+    //        yield return null;
+    //    }
 
-        phoneOpener.OpenPhone();
+    //    //phoneOpener.OpenPhone();
 
-        yield return new WaitForSeconds(0.5f);
+    //    yield return new WaitForSeconds(0.5f);
         
-        phoneOpener.OpenMessagePanel();
+    //    //phoneOpener.OpenMessagePanel();
 
-        while (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone"))
-        {
-            yield return null;
-        }
+    //    //while (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone"))
+    //    //{
+    //    //    yield return null;
+    //    //}
 
-        if (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone") == false)
-        {
-            phoneOpener.OpenMessagePanel();
-        }
+    //    //if (phoneOpener.PhonePanel.GetComponent<Animator>().GetBool("openPhone") == false)
+    //    //{
+    //    //    //phoneOpener.OpenMessagePanel();
+    //    //}
 
-        dialogueTrigger.StartDialogue(" ", 2);
-    }
+    //    //dialogueTrigger.StartDialogue(" ", 1);
+    //}
 }

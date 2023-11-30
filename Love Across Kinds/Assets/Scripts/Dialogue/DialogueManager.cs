@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance;
 
     //UI stuffs
+    public GameObject _JoeHand;
     public GameObject dialogueBox;
     public GameObject storyBox;
     public TextMeshProUGUI nameText;
@@ -34,6 +35,7 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector] public int currSentenceId = 0;
     public static bool dialogueActive;
     private string currInteractCharName;
+    private bool isSkipped;
 
     public string phaseIndicator;
     [HideInInspector] public int XinaAttemp;
@@ -60,6 +62,8 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.text = string.Empty;
         dialogueActive = false;
+        dialogueActive = false;
+        StopAllCoroutines();
     }
 
     private void Update()
@@ -75,7 +79,7 @@ public class DialogueManager : MonoBehaviour
 
             phaseIndicator = PhaseManager.instance.currentPhase;
         }
-
+        
         if (dialogueActive)
         {
             if (!datas[currIndexPos].checkIfOption)
@@ -83,6 +87,7 @@ public class DialogueManager : MonoBehaviour
                 if (Input.anyKeyDown)
                 {
                     NextSentence();
+                    Epidose1Filming.isPlayedSFX = false;
                 }
             }
         }
@@ -208,13 +213,36 @@ public class DialogueManager : MonoBehaviour
                     dialogueBox.SetActive(true);
                 }
                 
+                if(_JoeHand != null)
+                {
+                    if ( (nameText.text.Contains("Game") || nameText.text.Contains("Host") || nameText.text.Contains("Joe") ))
+                    {
+                        _JoeHand.SetActive(true);
+                        if (Camera.main != null)
+                        {
+                            _JoeHand.transform.position = Camera.main.transform.position + Vector3.forward * 3 + Vector3.down;
+                        }
+                    }
+                    else
+                    {
+                        _JoeHand.SetActive(false);
+                    }
+
+                    if(EventClick.interactObjectName != null)
+                    {
+                        if((EventClick.interactObjectName.Contains("Game Host Joe")))
+                        {
+                            _JoeHand.SetActive(false);
+                        }
+                    }
+                }
+                
                 //Expressions
                 if(characterAnim != null)
                 {
                     switch (datas[currIndexPos].expression)
                     {
                         case 1:
-                            Debug.Log("Happy");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", true);
                             characterAnim.SetBool("isAngry", false);
@@ -222,7 +250,6 @@ public class DialogueManager : MonoBehaviour
                             characterAnim.SetBool("isShy", false);
                             break;
                         case 2:
-                            Debug.Log("Angry");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", false);
                             characterAnim.SetBool("isAngry", true);
@@ -230,7 +257,6 @@ public class DialogueManager : MonoBehaviour
                             characterAnim.SetBool("isShy", false);
                             break;
                         case 3:
-                            Debug.Log("Sad");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", false);
                             characterAnim.SetBool("isAngry", false);
@@ -238,7 +264,6 @@ public class DialogueManager : MonoBehaviour
                             characterAnim.SetBool("isShy", false);
                             break;
                         case 4:
-                            Debug.Log("Shy");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", false);
                             characterAnim.SetBool("isAngry", false);
@@ -246,7 +271,6 @@ public class DialogueManager : MonoBehaviour
                             characterAnim.SetBool("isShy", true);
                             break;
                         default:
-                            Debug.Log("Neutral");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", false);
                             characterAnim.SetBool("isAngry", false);
@@ -259,6 +283,7 @@ public class DialogueManager : MonoBehaviour
                 if (datas[currIndexPos].checkIfAffection)
                 {
                     AffectionSystem.Instance.GetAffection();
+                    datas[currIndexPos].checkIfAffection = false;
                 }
 
                 if (datas[currIndexPos].checkIfOption)
@@ -301,7 +326,17 @@ public class DialogueManager : MonoBehaviour
         }
 
         dialogueActive = false;
-        
+
+        if(_JoeHand != null)
+        {
+            _JoeHand.SetActive(false);
+        }
+
+        if (datas[currIndexPos].checkIfAffection)
+        {
+            AffectionSystem.Instance.GetAffection();
+            datas[currIndexPos].checkIfAffection = false;
+        }
 
         switch (datas[currIndexPos]._event)
         {
@@ -478,24 +513,30 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             case 4:
-                
+                //if (PhaseManager.instance.currentPhase == "FreeTime")
+                //{
+                //    Debug.Log("Change SScene");
+                //    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                //}
+
                 PhaseManager.instance.ChangePhase();
-                
-                if (PhaseManager.instance.currentPhase == "Special")
-                {
-                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
-                }
 
                 if (PhaseManager.instance.currentPhase == "Filming")
                 {
                     SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
                 }
 
-                if (PhaseManager.instance.currentPhase == "FreeTime")
+                else if (PhaseManager.instance.currentPhase == "FreeTime")
                 {
-                    SceneManager.LoadScene("Recording" + PhaseManager.instance.currentEpisode);
+                    Debug.Log("Change FTScene");
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
                 }
-               
+                else  if (PhaseManager.instance.currentPhase == "Special")
+                {
+                    Debug.Log("Change SScene");
+                    SceneManager.LoadScene("LivingFloor" + PhaseManager.instance.currentEpisode);
+                }
+
                 break;
 
 
@@ -608,18 +649,29 @@ public class DialogueManager : MonoBehaviour
     {
         for(int i = currIndexPos; i < datas.Count; i++)
         {
-            if (datas[i].checkIfOption)
+            if (datas[i].checkIfOption || datas[i].checkIfAffection)
             {
+                Debug.Log("Options");
                 currSentenceId = i;
                 currIndexPos = i;
+                isSkipped = true;
                 DisplaySentence();
                 break;
             }
             else if (datas[i].checkIfEnd)
             {
+                Debug.Log("End");
                 currSentenceId = i;
                 currIndexPos = i;
+                dialogueActive = false;
+                isSkipped = true;
                 EndDialogue();
+                break;
+            }
+
+            if (isSkipped)
+            {
+                isSkipped = false;
                 break;
             }
         }

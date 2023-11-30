@@ -43,6 +43,7 @@ public class UserData : MonoBehaviour
         if (NamingBox != null)
         {
             isOnNaming = true;
+
             Animator animator = NamingBox.GetComponent<Animator>();
             if (animator != null)
             {

@@ -7,6 +7,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private int firstAttempSentenceID;
     public int repeatAttempSentenceID;
     public static int attemp = 0;
+    private bool isDoneSE;
 
     public void StartDialogue()
     {
@@ -15,9 +16,10 @@ public class DialogueTrigger : MonoBehaviour
         {
             attemp = DialogueManager.instance.XinaAttemp;
 
-            if(ScavengerEvent.isScavengerEvent && ScavengerEvent.isFoundBracelet && PhaseManager.instance.currentPhase == "PreProduction" && PhaseManager.instance.currentEpisode == 0)
+            if(ScavengerEvent.isScavengerEvent && ScavengerEvent.isFoundBracelet && PhaseManager.instance.currentPhase == "PreProduction" && PhaseManager.instance.currentEpisode == 1 && !isDoneSE)
             {
                 attemp = 0;
+                isDoneSE = true;
                 firstAttempSentenceID = 81;
             }
         }
@@ -51,7 +53,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             DialogueManager.instance.XinaAttemp = attemp;
 
-            if (ScavengerEvent.isScavengerEvent && ScavengerEvent.isFoundBracelet && PhaseManager.instance.currentPhase == "PreProduction" && PhaseManager.instance.currentEpisode == 0)
+            if (ScavengerEvent.isScavengerEvent && ScavengerEvent.isFoundBracelet && PhaseManager.instance.currentPhase == "PreProduction" && PhaseManager.instance.currentEpisode == 1)
             {
                 repeatAttempSentenceID = 107;
             }

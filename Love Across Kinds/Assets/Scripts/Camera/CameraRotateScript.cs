@@ -34,7 +34,7 @@ public class CameraRotateScript : MonoBehaviour
     {
         
         // Check if the dialogue is active; if so, don't allow camera rotation
-        if (DialogueManager.dialogueActive)
+        if (DialogueManager.dialogueActive || UserData.instance.isOnNaming)
         {
             return; // Don't allow camera rotation
         }
