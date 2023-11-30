@@ -7,12 +7,12 @@ using UnityEngine.EventSystems;
 
 public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public GameObject LobbyDoorPanel;
-    public GameObject DiningRoomDoorPanel;
-    public GameObject PoolDoorPanel;
-    public GameObject RecordingDoorPanel;
-    public GameObject ArcadeDoorPanel;
-    public GameObject BarDoorPanel;
+    //public GameObject LobbyDoorPanel;
+    //public GameObject DiningRoomDoorPanel;
+    //public GameObject PoolDoorPanel;
+    //public GameObject RecordingDoorPanel;
+    //public GameObject ArcadeDoorPanel;
+    //public GameObject BarDoorPanel;
 
     private float pressTime;
     private bool isSwiping = false;
@@ -43,37 +43,37 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             if (pressDuration <= swipeThreshold)
             {
                 // Check if the object you clicked/touched has the "phase changer" tag
-                if (gameObject.CompareTag("LobbyDoor"))
-                {
-                    OpenLobbyDoorPanel();
-                    //Camera.main.transform.position = new Vector3(0.0f, 0.5f, -7.06f);
-                }
-                if (gameObject.CompareTag("DiningRoomDoor"))
-                {
-                    OpenDiningDoorPanel();
-                    //Camera.main.transform.position = new Vector3(6.08f, 0.5f, -14.23f);
-                }
-                if (gameObject.CompareTag("PoolDoor"))
-                {
-                    OpenPoolDoorPanel();
-                    //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
-                }
-                if (gameObject.CompareTag("ArcadeDoor"))
-                {
-                    OpenArcadeDoorPanel();
-                    //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
-                }
-                if (gameObject.CompareTag("BarDoor"))
-                {
-                    OpenBarDoorPanel();
-                    //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
-                }
+                //if (gameObject.CompareTag("LobbyDoor"))
+                //{
+                //    OpenLobbyDoorPanel();
+                //    //Camera.main.transform.position = new Vector3(0.0f, 0.5f, -7.06f);
+                //}
+                //if (gameObject.CompareTag("DiningRoomDoor"))
+                //{
+                //    OpenDiningDoorPanel();
+                //    //Camera.main.transform.position = new Vector3(6.08f, 0.5f, -14.23f);
+                //}
+                //if (gameObject.CompareTag("PoolDoor"))
+                //{
+                //    OpenPoolDoorPanel();
+                //    //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
+                //}
+                //if (gameObject.CompareTag("ArcadeDoor"))
+                //{
+                //    OpenArcadeDoorPanel();
+                //    //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
+                //}
+                //if (gameObject.CompareTag("BarDoor"))
+                //{
+                //    OpenBarDoorPanel();
+                //    //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
+                //}
 
-                if (gameObject.CompareTag("RecordingDoor"))
-                {
-                    OpenRecordingDoorPanel();
-                    //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
-                }
+                //if (gameObject.CompareTag("RecordingDoor"))
+                //{
+                //    OpenRecordingDoorPanel();
+                //    //Camera.main.transform.position = new Vector3(15.668f, 0.5f, 14.95f);
+                //}
                 if (gameObject.CompareTag("Bedroom"))
                 {
                     if(/*PhaseManager.instance.currentPhase == "FreeTime" ||*/   PhaseManager.instance.currentPhase == "Prologue")
@@ -93,84 +93,84 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
     }
 
-    public void OpenLobbyDoorPanel()
-    {
-        if (LobbyDoorPanel != null)
-        {
-            Animator animator = LobbyDoorPanel.GetComponent<Animator>();
-            if (animator != null)
-            {
+    //public void OpenLobbyDoorPanel()
+    //{
+    //    if (LobbyDoorPanel != null)
+    //    {
+    //        Animator animator = LobbyDoorPanel.GetComponent<Animator>();
+    //        if (animator != null)
+    //        {
                
-                bool isOpen = animator.GetBool("openLobbyDoorPanel");
+    //            bool isOpen = animator.GetBool("openLobbyDoorPanel");
 
-                animator.SetBool("openLobbyDoorPanel", !isOpen);
-            }
+    //            animator.SetBool("openLobbyDoorPanel", !isOpen);
+    //        }
 
-        }
-    }
+    //    }
+    //}
 
     public void TransportToLobby()
     {
         Camera.main.transform.position = new Vector3(0.0f, 0.5f, -7.06f);
     }
 
-    public void OpenDiningDoorPanel()
-    {
-        if (DiningRoomDoorPanel != null)
-        {
-            Animator animator = DiningRoomDoorPanel.GetComponent<Animator>();
-            if (animator != null)
-            {
+    //public void OpenDiningDoorPanel()
+    //{
+    //    if (DiningRoomDoorPanel != null)
+    //    {
+    //        Animator animator = DiningRoomDoorPanel.GetComponent<Animator>();
+    //        if (animator != null)
+    //        {
 
-                bool isOpen = animator.GetBool("openDiningDoorPanel");
+    //            bool isOpen = animator.GetBool("openDiningDoorPanel");
 
-                animator.SetBool("openDiningDoorPanel", !isOpen);
-            }
+    //            animator.SetBool("openDiningDoorPanel", !isOpen);
+    //        }
 
-        }
-    }
+    //    }
+    //}
 
     public void TransportToDining()
     {
         Camera.main.transform.position = new Vector3(0.0f, 4.3f, -7.06f);
     }
 
-    public void OpenPoolDoorPanel()
-    {
-        if (PoolDoorPanel != null)
-        {
-            Animator animator = PoolDoorPanel.GetComponent<Animator>();
-            if (animator != null)
-            {
+    //public void OpenPoolDoorPanel()
+    //{
+    //    if (PoolDoorPanel != null)
+    //    {
+    //        Animator animator = PoolDoorPanel.GetComponent<Animator>();
+    //        if (animator != null)
+    //        {
 
-                bool isOpen = animator.GetBool("openPoolDoorPanel");
+    //            bool isOpen = animator.GetBool("openPoolDoorPanel");
 
-                animator.SetBool("openPoolDoorPanel", !isOpen);
-            }
+    //            animator.SetBool("openPoolDoorPanel", !isOpen);
+    //        }
 
-        }
-    }
+    //    }
+    //}
 
     public void TransportToPool()
     {
         Camera.main.transform.position = new Vector3(0.0f, 8.9f, -7.06f);
     }
-    public void OpenArcadeDoorPanel()
-    {
+    //public void OpenArcadeDoorPanel()
+    //{
         
-        if (ArcadeDoorPanel != null)
-        {
-            Animator animator = ArcadeDoorPanel.GetComponent<Animator>();
-            if (animator != null)
-            {
+    //    if (ArcadeDoorPanel != null)
+    //    {
+    //        Animator animator = ArcadeDoorPanel.GetComponent<Animator>();
+    //        if (animator != null)
+    //        {
 
-                bool isOpen = animator.GetBool("openArcadeDoorPanel");
+    //            bool isOpen = animator.GetBool("openArcadeDoorPanel");
 
-                animator.SetBool("openArcadeDoorPanel", !isOpen);
-            }
+    //            animator.SetBool("openArcadeDoorPanel", !isOpen);
+    //        }
 
-        }
-    }
+    //    }
+    //}
 
     public void TransportToArcade()
     {
@@ -178,42 +178,42 @@ public class ChangeArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         Camera.main.transform.position = new Vector3(0.0f, 13.42f, -4.24f);
     }
 
-    public void OpenRecordingDoorPanel()
-    {
-        if (RecordingDoorPanel != null)
-        {
-            Animator animator = RecordingDoorPanel.GetComponent<Animator>();
-            if (animator != null)
-            {
+    //public void OpenRecordingDoorPanel()
+    //{
+    //    if (RecordingDoorPanel != null)
+    //    {
+    //        Animator animator = RecordingDoorPanel.GetComponent<Animator>();
+    //        if (animator != null)
+    //        {
 
-                bool isOpen = animator.GetBool("openRecordingDoorPanel");
+    //            bool isOpen = animator.GetBool("openRecordingDoorPanel");
 
-                animator.SetBool("openRecordingDoorPanel", !isOpen);
-            }
+    //            animator.SetBool("openRecordingDoorPanel", !isOpen);
+    //        }
 
-        }
-    }
+    //    }
+    //}
 
     public void TransportToRecording()
     {
         Camera.main.transform.position = new Vector3(0.0f, -4.03f, -10f);
     }
 
-    public void OpenBarDoorPanel()
-    {
-        if (BarDoorPanel != null)
-        {
-            Animator animator = BarDoorPanel.GetComponent<Animator>();
-            if (animator != null)
-            {
+    //public void OpenBarDoorPanel()
+    //{
+    //    if (BarDoorPanel != null)
+    //    {
+    //        Animator animator = BarDoorPanel.GetComponent<Animator>();
+    //        if (animator != null)
+    //        {
 
-                bool isOpen = animator.GetBool("openBarDoorPanel");
+    //            bool isOpen = animator.GetBool("openBarDoorPanel");
 
-                animator.SetBool("openBarDoorPanel", !isOpen);
-            }
+    //            animator.SetBool("openBarDoorPanel", !isOpen);
+    //        }
 
-        }
-    }
+    //    }
+    //}
 
     public void TransportToBar()
     {
