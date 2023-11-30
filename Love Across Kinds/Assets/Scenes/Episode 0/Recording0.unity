@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e752da85b4771eb47b6f48b26e90e394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: -0.1
+  sensitivity: -0.05
   zoomXinaCamera0: {fileID: 1243944070}
   zoomBeniaCamera0: {fileID: 1243944070}
   zoomFlorineCamera0: {fileID: 1243944070}
@@ -8417,12 +8417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f935aa5c8062a48947622d6dfb74b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LobbyDoorPanel: {fileID: 0}
-  DiningRoomDoorPanel: {fileID: 0}
-  PoolDoorPanel: {fileID: 0}
-  RecordingDoorPanel: {fileID: 1022060704}
-  ArcadeDoorPanel: {fileID: 0}
-  BarDoorPanel: {fileID: 0}
   swipeThreshold: 0.2
 --- !u!65 &1931310308
 BoxCollider:
