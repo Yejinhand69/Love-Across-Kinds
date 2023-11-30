@@ -17,7 +17,7 @@ public class VolumeControl : MonoBehaviour
     {
         // Find the sliders using their respective names or tags
         bgmVolumeSlider = GameObject.Find("BGMVolumeSlider").GetComponent<Slider>();
-        sfxVolumeSlider = GameObject.Find("SFXVolumeSlider").GetComponent<Slider>();
+        sfxVolumeSlider = GameObject.Find("SfxVolumeSlider").GetComponent<Slider>();
 
         // Set initial volumes based on PlayerPrefs
         bgmAudioSource.volume = PlayerPrefs.GetFloat("BGMVolume", 0.1f);
@@ -41,11 +41,11 @@ public class VolumeControl : MonoBehaviour
     {
         if (bgmAudioSource.isPlaying)
         {
-            bgmAudioSource.volume = Mathf.Lerp(bgmAudioSource.volume, targetBGMVolume, Time.deltaTime * 1.5f);
+            bgmAudioSource.volume = targetBGMVolume;
         }
         if (sfxAudioSource.isPlaying)
         {
-            sfxAudioSource.volume = Mathf.Lerp(sfxAudioSource.volume, targetSFXVolume, Time.deltaTime * 1.5f);
+            sfxAudioSource.volume = targetSFXVolume;
         }
     }
 
@@ -53,18 +53,18 @@ public class VolumeControl : MonoBehaviour
     {
         targetBGMVolume = volume;
 
-        // Save the BGM volume setting to PlayerPrefs
-        PlayerPrefs.SetFloat("BGMVolume", volume);
-        PlayerPrefs.Save();
+        //// Save the BGM volume setting to PlayerPrefs
+        //PlayerPrefs.SetFloat("BGMVolume", volume);
+        //PlayerPrefs.Save();
     }
 
     private void ChangeSFXVolume(float volume)
     {
         targetSFXVolume = volume;
 
-        // Save the SFX volume setting to PlayerPrefs
-        PlayerPrefs.SetFloat("SFXVolume", volume);
-        PlayerPrefs.Save();
+        //// Save the SFX volume setting to PlayerPrefs
+        //PlayerPrefs.SetFloat("SFXVolume", volume);
+        //PlayerPrefs.Save();
     }
 
   

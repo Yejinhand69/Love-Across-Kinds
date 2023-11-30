@@ -13,10 +13,21 @@ public class MainMenuOpener : MonoBehaviour
     public string sceneToLoad;
     public float delayBeforeLoad = 1.0f;
 
+    private static MainMenuOpener instance;
+
 
     private void Awake()
     {
         PhaseManager.instance.currentPhase = "MainMenu";
+
+        if(instance== null)
+        {
+            // This is the first instance of the script, so we set it as the instance
+            instance = this;
+
+            // Make sure this object persists between scenes
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     public void OpenCreditPanel()
