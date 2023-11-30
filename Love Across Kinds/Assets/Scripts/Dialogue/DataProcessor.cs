@@ -31,10 +31,10 @@ public class DataProcessor : MonoBehaviour
 
         //Read/Load dialogue file
         TextAsset dialogue = Resources.Load<TextAsset>("Dialogue/DialogueDataEpisode" + PhaseManager.instance.currentEpisode + PhaseManager.instance.currentPhase);
-        
+        Debug.Log(dialogue.name);
         //Split the data line by line
         string[] data = dialogue.text.Split(new char[] { '\n' });
-        Debug.Log(data.Length);
+        
         //Data Processing
         for (int i = 1; i < data.Length - 1; i++)
         {
@@ -62,7 +62,10 @@ public class DataProcessor : MonoBehaviour
 
             //Add the variables with data into a list
             instance.dataList.Add(dialogueData);
+            //Debug.Log(dialogueData.option2);
         }
+
+        
     }
 }
 

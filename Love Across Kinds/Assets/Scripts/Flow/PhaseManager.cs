@@ -49,30 +49,7 @@ public class PhaseManager : MonoBehaviour
             dialogueTrigger.StartDialogue("Player", 62);
         }
 
-        if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
-        {
-            
-            //GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
-            //GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
-
-            AudioManager.instance.PlaySFX("Notification 2");
-
-            dialogueTrigger.StartDialogue(" ", 0);
-            instance.isDonePP1 = true;
-            Debug.Log("Dialogue Start PP");
-        }
-
-        if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
-        {
-            //GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
-            //GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
-
-            AudioManager.instance.PlaySFX("Notification 2");
-
-            dialogueTrigger.StartDialogue(" ", 0);
-            instance.isDoneS1 = true;
-            Debug.Log("Dialogue Start S");
-        }
+        
     }
 
     private void Update()
@@ -89,27 +66,30 @@ public class PhaseManager : MonoBehaviour
             instance.isDonePrologue = true;
         }
 
-        //if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
-        //{
-        //    while (DialogueManager.dialogueActive)
-        //    {
-        //        continue;
-        //    }
-            
-        //    StartCoroutine(ShowPhoneMessage());
-            
-        //}
+        if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
+        {
 
-        //if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
-        //{
-        //    while (DialogueManager.dialogueActive)
-        //    {
-        //        continue;
-        //    }
+            //GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
+            //GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
 
-        //    StartCoroutine(ShowPhoneMessage());
-            
-        //}
+            AudioManager.instance.PlaySFX("Notification 2");
+
+            dialogueTrigger.StartDialogue(" ", 0);
+            instance.isDonePP1 = true;
+            Debug.Log("Dialogue Start PP");
+        }
+
+        if (currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
+        {
+            //GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
+            //GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
+
+            AudioManager.instance.PlaySFX("Notification 2");
+
+            dialogueTrigger.StartDialogue(" ", 0);
+            instance.isDoneS1 = true;
+            Debug.Log("Dialogue Start S");
+        }
     }
 
     private void UpdatePhaseText()
