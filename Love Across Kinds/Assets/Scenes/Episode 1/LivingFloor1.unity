@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -237,6 +237,7 @@ Transform:
   m_Children:
   - {fileID: 74024530}
   - {fileID: 543450652341821369}
+  - {fileID: 99112291}
   m_Father: {fileID: 805820079}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -246,6 +247,154 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3341592314791091145}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &99112290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 99112291}
+  - component: {fileID: 99112298}
+  - component: {fileID: 99112297}
+  - component: {fileID: 99112296}
+  - component: {fileID: 99112295}
+  - component: {fileID: 99112294}
+  - component: {fileID: 99112293}
+  m_Layer: 0
+  m_Name: Room Door
+  m_TagString: Bedroom
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &99112291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99112290}
+  m_LocalRotation: {x: -0, y: 0.69683534, z: -0, w: 0.7172312}
+  m_LocalPosition: {x: -5.85, y: 1.0945, z: -5.44}
+  m_LocalScale: {x: 0.58885, y: 1.00314, z: 0.1857}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 506337365}
+  m_Father: {fileID: 68119847}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -91.653, z: 0}
+--- !u!114 &99112293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99112290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f935aa5c8062a48947622d6dfb74b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LobbyDoorPanel: {fileID: 0}
+  DiningRoomDoorPanel: {fileID: 0}
+  PoolDoorPanel: {fileID: 0}
+  RecordingDoorPanel: {fileID: 0}
+  ArcadeDoorPanel: {fileID: 0}
+  BarDoorPanel: {fileID: 0}
+  swipeThreshold: 0.2
+--- !u!114 &99112294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99112290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e2058b087f674478bcf73975ac23be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstAttempSentenceID: 280
+  repeatAttempSentenceID: 0
+--- !u!114 &99112295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99112290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58902457a49330e478c56b827d5cb896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swipeThreshold: 0.2
+  transportPoint: {fileID: 0}
+--- !u!65 &99112296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99112290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.281747, y: 3.1035604, z: 1.655963}
+  m_Center: {x: 0.027102891, y: -0.06546013, z: -0.0000015485508}
+--- !u!23 &99112297
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99112290}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d843a0cb4ed4d944db8e1a4f62ae2237, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &99112298
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99112290}
+  m_Mesh: {fileID: -2763165878154245879, guid: 9c0d5dc6c433bff42a3809fbabc3abeb, type: 3}
 --- !u!1 &104918059
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +770,7 @@ GameObject:
   - component: {fileID: 225273884}
   - component: {fileID: 225273883}
   - component: {fileID: 225273882}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1446,7 +1595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &440747416
 Transform:
   m_ObjectHideFlags: 0
@@ -1703,6 +1852,89 @@ Transform:
   m_Father: {fileID: 129673219}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &506337364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 506337365}
+  - component: {fileID: 506337367}
+  - component: {fileID: 506337366}
+  m_Layer: 0
+  m_Name: Door Knob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &506337365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506337364}
+  m_LocalRotation: {x: -0.000000043711534, y: 1, z: -0.0000004013393, w: -0.00000037227576}
+  m_LocalPosition: {x: 0.0000038146973, y: -0.39465356, z: 0.7446213}
+  m_LocalScale: {x: 1.471, y: 0.927875, z: 5.814551}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 99112291}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &506337366
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506337364}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d843a0cb4ed4d944db8e1a4f62ae2237, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &506337367
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506337364}
+  m_Mesh: {fileID: 5764389604867576749, guid: 9c0d5dc6c433bff42a3809fbabc3abeb, type: 3}
 --- !u!1 &517063696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,7 +1947,7 @@ GameObject:
   - component: {fileID: 517063697}
   - component: {fileID: 517063699}
   - component: {fileID: 517063698}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: NoPostCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1805,7 +2037,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517063696}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!4 &517063700
 Transform:
   m_ObjectHideFlags: 0
@@ -3234,6 +3466,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 965406948791140496, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2000057134794334324, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3329,12 +3566,27 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.61154175
       objectReference: {fileID: 0}
+    - target: {fileID: 3225674401647400366, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225674402648375155, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4602509794755914394, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5129512323629208371, guid: 2084e439f2fa3d444a9fe7792140c80c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612147577442116234, guid: 2084e439f2fa3d444a9fe7792140c80c,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5002,7 +5254,7 @@ GameObject:
   - component: {fileID: 1879452597}
   - component: {fileID: 1879452596}
   - component: {fileID: 1879452595}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zoom Florine Camera0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5644,7 +5896,7 @@ GameObject:
   - component: {fileID: 2102478131}
   - component: {fileID: 2102478130}
   - component: {fileID: 2102478129}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fake Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}

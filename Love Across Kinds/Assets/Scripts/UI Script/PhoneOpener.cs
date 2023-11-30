@@ -76,4 +76,26 @@ public class PhoneOpener : MonoBehaviour
             }
         }
     }
+
+    public void BackToMain()
+    {
+        Debug.Log("backToMain");
+
+        AudioManager.instance.PlaySFX("Button Press");
+
+        SceneManager.LoadScene("MainMenu");
+        if (SettingPanel != null)
+        {
+            Animator animator = SettingPanel.GetComponent<Animator>();
+            if (animator != null)
+            {
+                AudioManager.instance.PlaySFX("Button Press");
+
+                bool isOpen = animator.GetBool("openSettings");
+
+                animator.SetBool("openSettings", !isOpen);
+            }
+        }
+
+    }
 }

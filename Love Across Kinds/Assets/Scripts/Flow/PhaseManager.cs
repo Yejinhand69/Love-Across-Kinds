@@ -52,8 +52,8 @@ public class PhaseManager : MonoBehaviour
         if (currentPhase == "PreProduction" && currentEpisode == 1 && !instance.isDonePP1)
         {
             
-            GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
-            GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
+            //GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
+            //GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
 
             AudioManager.instance.PlaySFX("Notification 2");
 
@@ -63,8 +63,8 @@ public class PhaseManager : MonoBehaviour
 
         if(currentPhase == "Special" && currentEpisode == 1 && !instance.isDoneS1)
         {
-            GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
-            GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
+            //GameObject.Find("SenderName").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].name;
+            //GameObject.Find("Message").GetComponent<TextMeshProUGUI>().text = DialogueManager.instance.datas[1].sentence;
 
             AudioManager.instance.PlaySFX("Notification 2");
 

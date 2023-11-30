@@ -215,7 +215,7 @@ public class DialogueManager : MonoBehaviour
                 
                 if(_JoeHand != null)
                 {
-                    if ( (nameText.text.Contains("Game") || nameText.text.Contains("Host") || nameText.text.Contains("Joe") ) && !(EventClick.interactObjectName.Contains("Game Host Joe")) )
+                    if ( (nameText.text.Contains("Game") || nameText.text.Contains("Host") || nameText.text.Contains("Joe") ))
                     {
                         _JoeHand.SetActive(true);
                         if (Camera.main != null)
@@ -227,6 +227,14 @@ public class DialogueManager : MonoBehaviour
                     {
                         _JoeHand.SetActive(false);
                     }
+
+                    if(EventClick.interactObjectName != null)
+                    {
+                        if((EventClick.interactObjectName.Contains("Game Host Joe")))
+                        {
+                            _JoeHand.SetActive(false);
+                        }
+                    }
                 }
                 
                 //Expressions
@@ -235,7 +243,6 @@ public class DialogueManager : MonoBehaviour
                     switch (datas[currIndexPos].expression)
                     {
                         case 1:
-                            Debug.Log("Happy");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", true);
                             characterAnim.SetBool("isAngry", false);
@@ -243,7 +250,6 @@ public class DialogueManager : MonoBehaviour
                             characterAnim.SetBool("isShy", false);
                             break;
                         case 2:
-                            Debug.Log("Angry");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", false);
                             characterAnim.SetBool("isAngry", true);
@@ -251,7 +257,6 @@ public class DialogueManager : MonoBehaviour
                             characterAnim.SetBool("isShy", false);
                             break;
                         case 3:
-                            Debug.Log("Sad");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", false);
                             characterAnim.SetBool("isAngry", false);
@@ -259,7 +264,6 @@ public class DialogueManager : MonoBehaviour
                             characterAnim.SetBool("isShy", false);
                             break;
                         case 4:
-                            Debug.Log("Shy");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", false);
                             characterAnim.SetBool("isAngry", false);
@@ -267,7 +271,6 @@ public class DialogueManager : MonoBehaviour
                             characterAnim.SetBool("isShy", true);
                             break;
                         default:
-                            Debug.Log("Neutral");
                             //Expression change here...
                             characterAnim.SetBool("isSmile", false);
                             characterAnim.SetBool("isAngry", false);
