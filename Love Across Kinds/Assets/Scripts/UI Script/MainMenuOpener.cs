@@ -80,6 +80,7 @@ public class MainMenuOpener : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         PhaseManager.instance.currentPhase = "Prologue";
+        PhaseManager.instance.currentEpisode = 0;
         SceneManager.LoadScene(sceneName);
     }
 }
