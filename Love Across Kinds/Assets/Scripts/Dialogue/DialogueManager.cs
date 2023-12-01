@@ -693,13 +693,15 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
         {
             checkWinLose = GameManager.situation;
             yield return null;
         }
+
+        yield return new WaitForSeconds(0.5f);
 
         if (checkWinLose)
         {
@@ -726,7 +728,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
         {
@@ -734,17 +736,19 @@ public class DialogueManager : MonoBehaviour
             checkWinLose = GameManager.situation;
             yield return null;
         }
-        
-        if (checkWinLose)
-        {
-            Debug.Log("Success");
-            OpenDialogue(" ", 34); // Call StartDialogue without arguments
-        }
-        else
-        {
-            Debug.Log("Fail");
-            OpenDialogue(" ", 37); // Call StartDialogue without arguments
-        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        //if (checkWinLose)
+        //{
+        //    Debug.Log("Success");
+        //    OpenDialogue(" ", 34); // Call StartDialogue without arguments
+        //}
+        //else
+        //{
+        //    Debug.Log("Fail");
+        //    OpenDialogue(" ", 37); // Call StartDialogue without arguments
+        //}
     }
 
     IEnumerator RhythmGameSAE2()
@@ -760,7 +764,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(rhythmGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         while (SceneManager.GetSceneByName(rhythmGameSceneName).isLoaded)
         {
@@ -768,16 +772,18 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
 
-        if (checkWinLose)
-        {
-            Debug.Log("Success");
-            OpenDialogue(" ", 400); // Call StartDialogue without arguments
-        }
-        else
-        {
-            Debug.Log("Fail");
-            OpenDialogue(" ", 404); // Call StartDialogue without arguments
-        }
+        yield return new WaitForSeconds(0.5f);
+
+        //if (checkWinLose)
+        //{
+        //    Debug.Log("Success");
+        //    OpenDialogue(" ", 400); // Call StartDialogue without arguments
+        //}
+        //else
+        //{
+        //    Debug.Log("Fail");
+        //    OpenDialogue(" ", 404); // Call StartDialogue without arguments
+        //}
     }
 
     IEnumerator PairMatchingGameFTAE1()
@@ -793,7 +799,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(pairMatchingGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         while (SceneManager.GetSceneByName(pairMatchingGameSceneName).isLoaded)
         {
@@ -801,16 +807,18 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
 
-        if (checkWinLose)
-        {
-            Debug.Log("Success");
-            OpenDialogue(" ", 305); // Call StartDialogue without arguments
-        }
-        else
-        {
-            Debug.Log("Fail");
-            OpenDialogue(" ", 311); // Call StartDialogue without arguments
-        }
+        yield return new WaitForSeconds(0.5f);
+
+        //if (checkWinLose)
+        //{
+        //    Debug.Log("Success");
+        //    OpenDialogue(" ", 305); // Call StartDialogue without arguments
+        //}
+        //else
+        //{
+        //    Debug.Log("Fail");
+        //    OpenDialogue(" ", 311); // Call StartDialogue without arguments
+        //}
     }
 
     IEnumerator PairMatchingGameSAE1()
@@ -827,7 +835,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(pairMatchingGameSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1);
 
         while (SceneManager.GetSceneByName(pairMatchingGameSceneName).isLoaded)
         {
@@ -835,16 +843,18 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
 
-        if (checkWinLose)
-        {
-            Debug.Log("Success");
-            OpenDialogue(" ", 308); // Call StartDialogue without arguments
-        }
-        else
-        {
-            Debug.Log("Fail");
-            OpenDialogue(" ", 314); // Call StartDialogue without arguments
-        }
+        yield return new WaitForSeconds(0.5f);
+
+        //if (checkWinLose)
+        //{
+        //    Debug.Log("Success");
+        //    OpenDialogue(" ", 308); // Call StartDialogue without arguments
+        //}
+        //else
+        //{
+        //    Debug.Log("Fail");
+        //    OpenDialogue(" ", 314); // Call StartDialogue without arguments
+        //}
     }
 
     IEnumerator TriviaGameFTAE1()
@@ -861,7 +871,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(trivaSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         while (SceneManager.GetSceneByName(trivaSceneName).isLoaded)
         {
@@ -869,16 +879,18 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
 
-        if (checkWinLose)
-        {
-            Debug.Log("Success");
-            OpenDialogue(" ", 216); // Call StartDialogue without arguments
-        }
-        else
-        {
-            Debug.Log("Fail");
-            OpenDialogue(" ", 263); // Call StartDialogue without arguments
-        }
+        yield return new WaitForSeconds(0.5f);
+
+        //if (checkWinLose)
+        //{
+        //    Debug.Log("Success");
+        //    OpenDialogue(" ", 216); // Call StartDialogue without arguments
+        //}
+        //else
+        //{
+        //    Debug.Log("Fail");
+        //    OpenDialogue(" ", 263); // Call StartDialogue without arguments
+        //}
     }
 
     IEnumerator TriviaGameSAE1()
@@ -894,7 +906,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadSceneAsync(trivaSceneName, LoadSceneMode.Additive);
 
         bool checkWinLose = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         while (SceneManager.GetSceneByName(trivaSceneName).isLoaded)
         {
@@ -902,15 +914,17 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
 
-        if (checkWinLose)
-        {
-            Debug.Log("Success");
-            OpenDialogue(" ", 219); // Call StartDialogue without arguments
-        }
-        else
-        {
-            Debug.Log("Fail");
-            OpenDialogue(" ", 266); // Call StartDialogue without arguments
-        }
+        yield return new WaitForSeconds(0.5f);
+
+        //if (checkWinLose)
+        //{
+        //    Debug.Log("Success");
+        //    OpenDialogue(" ", 219); // Call StartDialogue without arguments
+        //}
+        //else
+        //{
+        //    Debug.Log("Fail");
+        //    OpenDialogue(" ", 266); // Call StartDialogue without arguments
+        //}
     }
 }

@@ -58,48 +58,76 @@ public class LevelUI : MonoBehaviour
     public void Continue()
     {
         SceneManager.UnloadScene("Rhythm Game");
-    //    if (phases == "FreeTime" && episode == 1)
-    //    {
-    //        if (wLSituation)
-    //        {
-    //            SceneManager.LoadScene("Lobby1");
-    //            dialogueTrigger.StartDialogue(" ", 31); // Call StartDialogue without arguments
-    //        }
-    //        else if (!wLSituation)
-    //        {
-    //            SceneManager.LoadScene("Lobby1");
-    //            dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
-    //        }
-    //    }
-    //    else if (phases == "Special" && episode == 1)
-    //    {
-    //        if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 3)
-    //        {
-    //            if (wLSituation)
-    //            {
-    //                SceneManager.LoadScene("Lobby1");
-    //                dialogueTrigger.StartDialogue(" ", 400); // Call StartDialogue without arguments
-    //            }
-    //            else if (!wLSituation)
-    //            {
-    //                SceneManager.LoadScene("Lobby1");
-    //                dialogueTrigger.StartDialogue(" ", 404); // Call StartDialogue without arguments
-    //            }
-    //        }
-    //        else if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 1)
-    //        {
-    //            if (wLSituation)
-    //            {
-    //                SceneManager.LoadScene("Lobby1");
-    //                dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
-    //            }
-    //            else if (!wLSituation)
-    //            {
-    //                SceneManager.LoadScene("Lobby1");
-    //                dialogueTrigger.StartDialogue(" ", 37); // Call StartDialogue without arguments
-    //            }
-    //        }
-            
-    //    }
+        if (PhaseManager.instance.currentPhase == "FreeTime")
+        {
+            if (GameManager.situation)
+            {
+                Debug.Log("Success");
+                DialogueManager.instance.OpenDialogue(" ", 34); // Call StartDialogue without arguments
+            }
+            else
+            {
+                Debug.Log("Fail");
+                DialogueManager.instance.OpenDialogue(" ", 37); // Call StartDialogue without arguments
+            }
+        }
+
+        else if (PhaseManager.instance.currentPhase == "Special")
+        {
+            if (GameManager.situation)
+            {
+                Debug.Log("Success");
+                DialogueManager.instance.OpenDialogue(" ", 400); // Call StartDialogue without arguments
+            }
+            else
+            {
+                Debug.Log("Fail");
+                DialogueManager.instance.OpenDialogue(" ", 404); // Call StartDialogue without arguments
+
+            }
+        }
+        //    if (phases == "FreeTime" && episode == 1)
+        //    {
+        //        if (wLSituation)
+        //        {
+        //            SceneManager.LoadScene("Lobby1");
+        //            dialogueTrigger.StartDialogue(" ", 31); // Call StartDialogue without arguments
+        //        }
+        //        else if (!wLSituation)
+        //        {
+        //            SceneManager.LoadScene("Lobby1");
+        //            dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
+        //        }
+        //    }
+        //    else if (phases == "Special" && episode == 1)
+        //    {
+        //        if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 3)
+        //        {
+        //            if (wLSituation)
+        //            {
+        //                SceneManager.LoadScene("Lobby1");
+        //                dialogueTrigger.StartDialogue(" ", 400); // Call StartDialogue without arguments
+        //            }
+        //            else if (!wLSituation)
+        //            {
+        //                SceneManager.LoadScene("Lobby1");
+        //                dialogueTrigger.StartDialogue(" ", 404); // Call StartDialogue without arguments
+        //            }
+        //        }
+        //        else if (AffectionSystem.Instance.affectionDictionary["Xina"] >= 1)
+        //        {
+        //            if (wLSituation)
+        //            {
+        //                SceneManager.LoadScene("Lobby1");
+        //                dialogueTrigger.StartDialogue(" ", 34); // Call StartDialogue without arguments
+        //            }
+        //            else if (!wLSituation)
+        //            {
+        //                SceneManager.LoadScene("Lobby1");
+        //                dialogueTrigger.StartDialogue(" ", 37); // Call StartDialogue without arguments
+        //            }
+        //        }
+
+        //    }
     }
 }

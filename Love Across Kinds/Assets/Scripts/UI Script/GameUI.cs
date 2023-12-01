@@ -33,7 +33,7 @@ public class GameUI : MonoBehaviour
 
     private void Update()
     {
-        if(SceneManager.sceneCount > 1)
+        if(SceneManager.sceneCount > 1 || DialogueManager.dialogueActive)
         {
             SettingButton.SetActive(false);
             AffectionButton.SetActive(false);

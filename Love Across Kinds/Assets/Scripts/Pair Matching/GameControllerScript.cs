@@ -162,5 +162,33 @@ public class GameControllerScript : MonoBehaviour
     public void Continue()
     {
         SceneManager.UnloadScene("Jon macthing pair");
+        if(PhaseManager.instance.currentPhase == "FreeTime")
+        {
+            if (situation)
+            {
+                Debug.Log("Success");
+                DialogueManager.instance.OpenDialogue(" ", 305); // Call StartDialogue without arguments
+            }
+            else
+            {
+                Debug.Log("Fail");
+                DialogueManager.instance.OpenDialogue(" ", 311); // Call StartDialogue without arguments
+            }
+        }
+        
+        else if (PhaseManager.instance.currentPhase == "Special")
+        {
+            if (situation)
+            {
+                Debug.Log("Success");
+                DialogueManager.instance.OpenDialogue(" ", 308); // Call StartDialogue without arguments
+            }
+            else
+            {
+                Debug.Log("Fail");
+                DialogueManager.instance.OpenDialogue(" ", 314); // Call StartDialogue without arguments
+
+            }
+        }
     }
 }

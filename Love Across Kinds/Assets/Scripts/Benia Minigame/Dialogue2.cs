@@ -908,6 +908,35 @@ public class Dialogue2 : MonoBehaviour
     public void Continue()
     {
         SceneManager.UnloadScene("Jon Benia minigame");
+
+        if (PhaseManager.instance.currentPhase == "FreeTime")
+        {
+            if (situation)
+            {
+                Debug.Log("Success");
+                DialogueManager.instance.OpenDialogue(" ", 216); // Call StartDialogue without arguments
+            }
+            else
+            {
+                Debug.Log("Fail");
+                DialogueManager.instance.OpenDialogue(" ", 263); // Call StartDialogue without arguments
+            }
+        }
+
+        else if (PhaseManager.instance.currentPhase == "Special")
+        {
+            if (situation)
+            {
+                Debug.Log("Success");
+                DialogueManager.instance.OpenDialogue(" ", 219); // Call StartDialogue without arguments
+            }
+            else
+            {
+                Debug.Log("Fail");
+                DialogueManager.instance.OpenDialogue(" ", 266); // Call StartDialogue without arguments
+
+            }
+        }
     }
 }
 
