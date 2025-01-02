@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour
 
     public BGM_Data[] bGM_Datas;
     private List<SFX_Data> sFX_Datas;
-    public VoiceOverAudioData voiceOverScript;
+    private VoiceOverAudioData voiceOverScript;
     public GameObject Episode_0_VA;
     public GameObject[] Episode_1_VA;
 
