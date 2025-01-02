@@ -59,6 +59,7 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
             {
                 if (!DialogueManager.dialogueActive)
                 {
+                    Debug.Log(name);
                     interactObjectName = name;
 
                     if (TryGetComponent(out Animator anim))

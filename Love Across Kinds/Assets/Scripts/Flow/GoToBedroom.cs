@@ -37,8 +37,16 @@ public class GoToBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
             if (pressDuration <= swipeThreshold)
             {
-                dialogueTrigger.StartDialogue();
-                StartCoroutine(CheckDialogueActive());
+                if(SceneManager.GetActiveScene().name == "Prologue")
+                {
+                    dialogueTrigger.StartDialogue();
+                    StartCoroutine(CheckDialogueActive());
+                }
+                else
+                {
+                    Camera.main.transform.position = new Vector3(0.0f, 4.33f, -7.06f);
+                }
+                
                 //OpenSleepPanel();
                 //animator.SetTrigger("FadeOut");
                 //StartCoroutine(LoadSceneWithDelay(sceneToLoad, delayBeforeLoad));

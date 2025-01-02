@@ -33,7 +33,25 @@ public class GameUI : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Episode 0")
+        if(SceneManager.sceneCount > 1 || DialogueManager.dialogueActive)
+        {
+            SettingButton.SetActive(false);
+            AffectionButton.SetActive(false);
+            EpisodesPhases.SetActive(false);
+            MessageButton.SetActive(false);
+            ObjectiveButton.SetActive(false);
+            return;
+        }
+        else
+        {
+            SettingButton.SetActive(true);
+            AffectionButton.SetActive(true);
+            EpisodesPhases.SetActive(true);
+            MessageButton.SetActive(true);
+            ObjectiveButton.SetActive(true);
+        }
+
+        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Episode 0" || SceneManager.GetActiveScene().name == "Episode2")
         {
             SettingButton.SetActive(false);
             AffectionButton.SetActive(false);

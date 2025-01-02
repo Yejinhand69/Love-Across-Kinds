@@ -12,6 +12,14 @@ public class PhoneOpener : MonoBehaviour
     public GameObject ObjectivePanel;
     public CameraRotateScript cameraRotateScript;
 
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            MainMenuOpener.instance.SettingsPanel = SettingPanel;
+        }
+    }
+
     public void OpenSettingPanel()
     {
         if (SettingPanel != null)

@@ -13,7 +13,7 @@ public class MainMenuOpener : MonoBehaviour
     public string sceneToLoad;
     public float delayBeforeLoad = 1.0f;
 
-    private static MainMenuOpener instance;
+    public static MainMenuOpener instance;
 
 
     private void Awake()
@@ -80,6 +80,7 @@ public class MainMenuOpener : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         PhaseManager.instance.currentPhase = "Prologue";
+        PhaseManager.instance.currentEpisode = 0;
         SceneManager.LoadScene(sceneName);
     }
 }

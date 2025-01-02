@@ -19,7 +19,10 @@ public class GoOutsideBedroom : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         currentSceneName = SceneManager.GetActiveScene().name;
         if(currentSceneName == "LivingFloor1")
         {
-            transportPoint.SetActive(false);
+            if(transportPoint != null)
+            {
+                transportPoint.SetActive(false);
+            }
         }
     }
 
