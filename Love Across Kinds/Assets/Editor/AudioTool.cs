@@ -10,7 +10,7 @@ public class AudioTool : EditorWindow
     public DefaultAsset voiceOverFolder;
 
     private List<string> nameList;
-    private List<int> idList;
+    private List<int> idList = new List<int>();
     private List<string> sentenceList;
 
     [MenuItem("Tools/Audio Tool")]

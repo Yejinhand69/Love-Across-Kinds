@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Unity.VisualScripting;
 
 [ExecuteInEditMode]
 public class VoiceOverAudioData : MonoBehaviour
@@ -9,15 +10,17 @@ public class VoiceOverAudioData : MonoBehaviour
     public string folderName;
     public List<VoiceOverData> _VoiceClips;
 
-    private void Start()
-    {
-        //AudioManager.instance.voiceOverScript = this;
-    }
-
+#if UNITY_EDITOR
     private void Update()
     {
+        ProcessVoiceOver();
+    }
+
+
+    public void ProcessVoiceOver()
+    {
         var voiceOver = Resources.LoadAll("VoiceOver/" + folderName).Cast<AudioClip>().ToArray();
-        
+
         for (int i = 0; i < voiceOver.Length; i++)
         {
             string[] splitName = voiceOver[i].name.Split(new char[] { ' ' });
@@ -27,7 +30,7 @@ public class VoiceOverAudioData : MonoBehaviour
             //}  
             for (int j = 0; j < _VoiceClips.Count; j++)
             {
-                if(splitName.Length == 3)
+                if (splitName.Length == 3)
                 {
                     if (splitName[2].Trim() == _VoiceClips[j].dialogueID.ToString().Trim())
                     {
@@ -35,8 +38,8 @@ public class VoiceOverAudioData : MonoBehaviour
                         break;
                     }
                 }
-                
-               
+
+
                 if (splitName.Length == 4)
                 {
                     if (splitName[3].Trim() == _VoiceClips[j].dialogueID.ToString().Trim())
@@ -48,6 +51,8 @@ public class VoiceOverAudioData : MonoBehaviour
             }
         }
     }
+
+#endif
 }
 
 [System.Serializable]

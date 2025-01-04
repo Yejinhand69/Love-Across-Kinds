@@ -18,12 +18,16 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI storyText;
 
     //Options stuffs
-    public GameObject optionBox1;
-    public GameObject optionBox2;
-    public GameObject optionBox3;
-    public TextMeshProUGUI option1Text;
-    public TextMeshProUGUI option2Text;
-    public TextMeshProUGUI option3Text;
+    #region Options Variables (Manual)
+    //public GameObject optionBox1;
+    //public GameObject optionBox2;
+    //public GameObject optionBox3;
+    //public TextMeshProUGUI option1Text;
+    //public TextMeshProUGUI option2Text;
+    //public TextMeshProUGUI option3Text;
+    #endregion
+    public GameObject[] optionBoxes;
+    public TextMeshProUGUI[] optionTexts;
     public GameObject skipButtonDialogue;
     public GameObject skipButtonStory;
 
@@ -566,31 +570,42 @@ public class DialogueManager : MonoBehaviour
     //Method to Show options
     public void ShowOptions()
     {
+        for(int i = 0; i < DataProcessor.instance.totalOptionNum; i++)
+        {
+            if (datas[currIndexPos].options[i] != "-")
+            {
+                optionBoxes[i].SetActive(true);
+                optionTexts[i].text = datas[currIndexPos].options[i];
+            }
+        }
 
-        if (datas[currIndexPos].option1 != "-")
-        {
-            optionBox1.SetActive(true);
-            option1Text.text = datas[currIndexPos].option1;
-        }
-        if (datas[currIndexPos].option2 != "-")
-        {
-            optionBox2.SetActive(true);
-            option2Text.text = datas[currIndexPos].option2;
-        }
-        if (datas[currIndexPos].option3 != "-")
-        {
-            optionBox3.SetActive(true);
-            option3Text.text = datas[currIndexPos].option3;
-        }
+        #region ShowOption Function (Manual)
+        //if (datas[currIndexPos].option1 != "-")
+        //{
+        //    optionBox1.SetActive(true);
+        //    option1Text.text = datas[currIndexPos].option1;
+        //}
+        //if (datas[currIndexPos].option2 != "-")
+        //{
+        //    optionBox2.SetActive(true);
+        //    option2Text.text = datas[currIndexPos].option2;
+        //}
+        //if (datas[currIndexPos].option3 != "-")
+        //{
+        //    optionBox3.SetActive(true);
+        //    option3Text.text = datas[currIndexPos].option3;
+        //}
+        #endregion
     }
 
-    public void ChooseOption1()
+    public void ChooseOption(int optionID)
     {
-        currSentenceId = datas[currIndexPos].option1_sentenceID;
+        currSentenceId = datas[currIndexPos].options_sentenceID[optionID];
 
-        optionBox1.SetActive(false);
-        optionBox2.SetActive(false);
-        optionBox3.SetActive(false);
+        for (int i = 0; i < optionBoxes.Length; i++)
+        {
+            optionBoxes[i].SetActive(false);
+        }
 
         if (currSentenceId == datas[currIndexPos].sentenceID && datas[currIndexPos].checkIfEnd)
         {
@@ -602,42 +617,62 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void ChooseOption2()
-    {
-        currSentenceId = datas[currIndexPos].option2_sentenceID;
+    #region ChooseOption Function (Manual)     
+    //public void ChooseOption1()
+    //{
+    //    currSentenceId = datas[currIndexPos].options_sentenceID[0];
 
-        optionBox1.SetActive(false);
-        optionBox2.SetActive(false);
-        optionBox3.SetActive(false);
+    //    optionBox1.SetActive(false);
+    //    optionBox2.SetActive(false);
+    //    optionBox3.SetActive(false);
 
-        if (currSentenceId == datas[currIndexPos].sentenceID && datas[currIndexPos].checkIfEnd)
-        {
-            EndDialogue();
-        }
-        else
-        {
-            NextSentence();
-        }
-    }
+    //    if (currSentenceId == datas[currIndexPos].sentenceID && datas[currIndexPos].checkIfEnd)
+    //    {
+    //        EndDialogue();
+    //    }
+    //    else
+    //    {
+    //        NextSentence();
+    //    }
+    //}
 
-    public void ChooseOption3()
-    {
-        currSentenceId = datas[currIndexPos].option3_sentenceID;
+    //public void ChooseOption2()
+    //{
+    //    currSentenceId = datas[currIndexPos].options_sentenceID[1];
 
-        optionBox1.SetActive(false);
-        optionBox2.SetActive(false);
-        optionBox3.SetActive(false);
+    //    optionBox1.SetActive(false);
+    //    optionBox2.SetActive(false);
+    //    optionBox3.SetActive(false);
 
-        if (currSentenceId == datas[currIndexPos].sentenceID && datas[currIndexPos].checkIfEnd)
-        {
-            EndDialogue();
-        }
-        else
-        {
-            NextSentence();
-        }
-        //SceneManager.LoadScene("Rhythm Game"); // put here first , change later ......... ( for testing purposes )
-    }
+    //    if (currSentenceId == datas[currIndexPos].sentenceID && datas[currIndexPos].checkIfEnd)
+    //    {
+    //        EndDialogue();
+    //    }
+    //    else
+    //    {
+    //        NextSentence();
+    //    }
+    //}
+
+    //public void ChooseOption3()
+    //{
+    //    currSentenceId = datas[currIndexPos].options_sentenceID[2];
+
+    //    optionBox1.SetActive(false);
+    //    optionBox2.SetActive(false);
+    //    optionBox3.SetActive(false);
+
+    //    if (currSentenceId == datas[currIndexPos].sentenceID && datas[currIndexPos].checkIfEnd)
+    //    {
+    //        EndDialogue();
+    //    }
+    //    else
+    //    {
+    //        NextSentence();
+    //    }
+    //    //SceneManager.LoadScene("Rhythm Game"); // put here first , change later ......... ( for testing purposes )
+    //}
+    #endregion
 
     IEnumerator DelayDialogueActive()
     {
