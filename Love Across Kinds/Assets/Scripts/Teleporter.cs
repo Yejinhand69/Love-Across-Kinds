@@ -10,7 +10,7 @@ public class Teleporter : MonoBehaviour
 
     public float delayBeforeLoad = 1.0f;
     private float pressTime;
-    private bool isSwiping = false;
+    //private bool isSwiping = false;
     public float swipeThreshold = 0.2f; // Adjust this threshold to your preference for distinguishing a tap from a swipe
 
     public void LoadLobby0()
